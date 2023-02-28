@@ -2,7 +2,8 @@
     color: red;
 }*/
 
-.visually-hidden {
+.visually-hidden
+{
     position: absolute;
     width: 1px;
     height: 1px;
@@ -15,18 +16,31 @@
     overflow: hidden;
   }
 
-.header {
+.header
+{
     background-color: bisque;
 }
 
 .header__list
 {
+    margin: 0;
+    padding: 0;
     background-color: coral;
-    display:inline;
-}
-
-.list__item {
-    background-color: aquamarine;
     display: inline;
 }
 
+/*.list__item
+{
+    display: inline-block;
+    border: 1px solid #000;
+    padding: 3px;
+    background-color: aquamarine;
+}*/
+
+.list__link
+{
+    display: inline-block;
+    border: 1px solid #000;
+    padding: 3px;
+    background-color: aquamarine;
+}
