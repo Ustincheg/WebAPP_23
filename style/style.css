@@ -1,6 +1,6 @@
-/* * {
+/** {
     color: red;
-} */
+}*/
 
 .visually-hidden {
     position: absolute;
@@ -14,3 +14,19 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
+
+.header {
+    background-color: bisque;
+}
+
+.header__list
+{
+    background-color: coral;
+    display:inline;
+}
+
+.list__item {
+    background-color: aquamarine;
+    display: inline;
+}
+
