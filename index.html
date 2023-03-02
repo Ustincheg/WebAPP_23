@@ -12,6 +12,7 @@
     <!--Блок заголовка страницы-->
     <header class="header">
         <!--Первый блок заголовка-->
+        <section class="header__first">
         <ul class="header__topnav-list topnav-list">
             <li class="topnav-list__item">
                 <a class="topnav-list__link" href="#">
@@ -29,9 +30,11 @@
                 </a>
             </li>
         </ul>
-
-        <!-- Второй блок заголовка -->
         <a class="header__tel" href="tel:+74954448885">8 (495) 444-888-5</a>
+        <div class="header__first__background"></div>
+        </section>
+
+         <!-- Второй блок заголовка -->
         <a class="header__logo logo" href="#">
             <img class="logo__image" src="#" alt="Логотип">
         </a>
@@ -87,6 +90,45 @@
         <!-- Основной баннер -->
         <section class="main-banner">
             <h2 class="visually-hidden">Главный баннер</h2>
+            <ul class="main-banner__list list">
+                <li class="list__item item">
+                    <a class="item__link-img" href="#">
+                        <p class="item__header">Микроволновая печь HUNDAI</p>
+                        <p class="item__text">Готовьте вкусно и быстро</p>
+                        <button class="item__left-button">Left</button>
+                        <button class="item__right-button">Right</button>
+                        <ul class="item__selected selected">
+                            <li class="selecter__circle">
+                                <div class="circle"></div>
+                            </li>
+
+                            <li class="selecter__circle">
+                                <div class="circle"></div>
+                            </li>
+
+                            <li class="selecter__circle">
+                                <div class="circle"></div>
+                            </li>
+
+                            <li class="selecter__circle">
+                                <div class="circle"></div>
+                            </li>
+
+                            <li class="selecter__circle">
+                                <div class="circle"></div>
+                            </li>
+                        </ul>
+                        <img class="item__imagemain" src="#" alt="Микроволновая печь HUNDAI">
+                    </a>
+                </li>
+
+                <li class="list__item item">
+                    <p class="item__text-second">Новая линейка телевизоров samsung</p>
+                    <img class="item__img" src="#" alt="">
+                    <a class="item__link" href="#">Смотреть каталог</a>
+                    <div class="item__background"></div>
+                </li>
+            </ul>
         </section>
 
         <!-- Хиты продаж -->
@@ -209,43 +251,43 @@
             <p class="news-stocks__header">Новости и акции</p>
             <a class="news-stocks__view-button view-button" href="#">Смотреть все</a>
 
-            <div class="news-stocks__list list">
-                <div class="list__main main">
+            <ul class="news-stocks__list list">
+                <li class="list__main main">
                     <p class="main__header">Бренд BLOODY представил мышь W60 Pro</p>
                     <p class="main__text">Популярный бренд компьютерных аксессуаров</p>
-                    <button class="main__button">Подробнее</button>
+                    <a class="main__button">Подробнее</a>
                     <img class="main__img" src="#" alt="Bloody">   
-                </div>
+                </li>
 
-                <div class="list__item item">
+                <li class="list__item item">
                     <p class="item__header">Плата asus</p>
-                    <button class="item__button">Подробнее</button>
+                    <a class="item__button">Подробнее</a>
                     <img class="item__img" src="#" alt="Плата asus">   
-                </div>
+                </li>
 
-                <div class="list__item item">
+                <li class="list__item item">
                     <p class="item__header">Системный блок acer</p>
-                    <button class="item__button">Подробнее</button>
+                    <a class="item__button">Подробнее</a>
                     <img class="item__img" src="#" alt="Системный блок acer">   
-                </div>
+                </li>
 
-                <div class="list__item item">
+                <li class="list__item item">
                     <p class="item__header">Планшет samsung</p>
-                    <button class="item__button">Подробнее</button>
+                    <a class="item__button">Подробнее</a>
                     <img class="item__img" src="#" alt="Планшет samsung">   
-                </div>
+                </li>
 
-                <div class="list__item item">
+                <li class="list__item item">
                     <p class="item__header">Новые наушники Razer</p>
-                    <button class="item__button">Подробнее</button>
+                    <a class="item__button">Подробнее</a>
                     <img class="item__img" src="#" alt="Новые наушники Razer">   
-                </div>
+                </li>
 
-                <div class="list__item item">
+                <li class="list__item item">
                     <p class="item__header">Мультипекарь Redmond плюс</p>
-                    <button class="item__button">Подробнее</button>
+                    <a class="item__button">Подробнее</a>
                     <img class="item__img" src="#" alt="Мультипекарь Redmond плюс">   
-                </div>
+                </li>
             </ul>
         </section>
 
@@ -375,31 +417,31 @@
                 </li>
             </ul>
 
-            <div class="footer__icon-container icon-container">
-                <div class="icon-container__element element">
+            <ul class="footer__icon-container icon-container">
+                <li class="icon-container__element element">
                     <a class="element__link" href="#">
                         <img class="element__img" src="#" alt="Facebook">
                     </a>
-                </div>
+                </li>
 
-                <div class="icon-container__element element">
+                <li class="icon-container__element element">
                     <a class="element__link" href="#">
                         <img class="element__img" src="#" alt="Instagram">
                     </a>
-                </div>
+                </li>
 
-                <div class="icon-container__element element">
+                <li class="icon-container__element element">
                     <a class="element__link" href="#">
                         <img class="element__img" src="#" alt="VK">
                     </a>
-                </div>
+                </li>
 
-                <div class="icon-container__element element">
+                <li class="icon-container__element element">
                     <a class="element__link" href="#">
                         <img class="element__img" src="#" alt="YouTube">
                     </a>
-                </div>
-            </div>
+                </li>
+            </ul>
         </section>
 
         <section class="footer__dev-info dev-info">
