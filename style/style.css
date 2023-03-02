@@ -1,6 +1,6 @@
 /** {
     color: red;
-}*/
+}/**/
 
 .visually-hidden
 {
@@ -16,16 +16,26 @@
     overflow: hidden;
   }
 
-.header
+.header__upp-panel
 {
-    background-color: bisque;
+    background-color: rgb(54, 54, 54);
+}
+
+.header__telephone
+{
+    color: white;
 }
 
 .header__list
 {
-    margin: 0;
-    padding: 0;
-    background-color: coral;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header__list__link
+{
+    color: white;
 }
 
 .hori-list__item
@@ -33,3 +43,17 @@
     display: inline-block;
 
 }
+
+@font-face {
+	font-family: 'Nautilus';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Nautilus'),
+		url('../data/fonts/Nautilus.woff2') format('woff2');
+}
+ 
+/**/
+.text-1
+{
+	font-family: 'Nautilus';
+}/**/

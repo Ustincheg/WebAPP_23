@@ -6,40 +6,56 @@
     </head>
     <body>
         <header class="header">
-            <ul class="header__list list">
-                <li class="list__item hori-list__item">
-                    <a class="list__link" href="#">
-                        Магазины
+            <div class="header__upp-panel">
+                <ul class="header__list list">
+                    <li class="header__list__item hori-list__item">
+                        <a class="header__list__link" href="#">
+                            <p class="text-1">
+                                Магазины
+                            </p>
+                        </a>
+                    </li>
+                    <li class="header__list__item  hori-list__item">
+                        <a class="header__list__link" href="#">
+                            <p class="text-1">
+                                Доставка и оплата
+                            </p>
+                        </a>
+                    </li>
+                    <li class="header__list__item hori-list__item">
+                        <a class="header__list__link" href="#">
+                            <p class="text-1">
+                                Кредиты и рассрочка
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+                <a class="header__telephone" href="tel:+79804444444">+7 (980) 444 44-44</a>
+            </div>
+            <ul>
+                <li class="hori-list__item">
+                    <a class="header__logo" href="#">
+                        <img class="logo__image" src="#" alt="Логотип" />
                     </a>
                 </li>
-                <li class="list__item  hori-list__item">
-                    <a class="list__link" href="#">
-                        Доставка и оплата
-                    </a>
+                <li class="hori-list__item">
+                    <form class="search__form">
+                        <input class="header__search" type="text" name="header__search" placeholder="Поиск">
+                    </form>
                 </li>
-                <li class="list__item hori-list__item">
-                    <a class="list__link" href="#">
-                        Кредиты и рассрочка
-                    </a>
-                </li>
-            </ul>
-            <a class="header__telephone" href="tel:+79804444444">+7 (980) 444 44-44</a>
-            <a class="header__logo" href="#">
-                <img class="logo__image" src="#" alt="Логотип" />
-            </a>
-            <form class="search__form">
-                <input class="header__search" type="text" name="header__search" placeholder="Поиск">
-            </form>
-            <ul class="header__user-list">
-                <li class="user-list__item hori-list__item">
-                    <a class="list__link" href="#">
-                        <img class="logo__favorites" src="#" alt="Избранное" /> Избранное
-                    </a>
-                </li>
-                <li class="user-list__item hori-list__item">
-                    <a class="list__link" href="#">
-                        <img class="logo__user-cart" src="#" alt="Избранное" /> Корзина
-                    </a>
+                <li class="hori-list__item">
+                    <ul class="header__user-list">
+                        <li class="user-list__item hori-list__item">
+                            <a class="list__link" href="#">
+                                <img class="logo__favorites" src="#" alt="Избранное" /> Избранное
+                            </a>
+                        </li>
+                        <li class="user-list__item hori-list__item">
+                            <a class="list__link" href="#">
+                                <img class="logo__user-cart" src="#" alt="Корзина" /> Корзина
+                            </a>
+                        </li>
+                    </ul>
                 </li>
             </ul>
             <button class="header__button">
@@ -99,23 +115,89 @@
                     Главный баннер
                 </h2>
             </section>
+            <section class="banner">
+                <h2 class="visually-hidden">Главный банер</h2>
+                <ul class="banner__slider">
+                    <li class="banner__slider-item">
+                        <img src="#" alt="Фото">
+                    </li>
+                    <li class="banner__slider-item">
+                        <img src="#" alt="Фото">
+                    </li>
+                    <li class="banner__slider-item">
+                        <img src="#" alt="Фото">
+                    </li>
+                </ul>
+                <figure>
+                    <figcaption>Новая линейка телевизоров samsung </figcaption>
+                    <img src="#" alt="Телевизор">
+                </figure>
+                <a href="#">Смотреть каталог</a>
+            </section>
             <section class="sales-hits">
                 <h2 class="visually-hidden">
-                    Хиты продаж
-                </h2>
-                <p>Хиты продаж</p>
-                <a href="#">
-                    Смотреть все
-                </a>
+                    Хиты продаж</h2>
+                <p class="sales-hits__title title">Хиты продаж</p>
+                <a href="#" class="sales-hits__link-btn link-btn">Смотреть все</a>
+                <ul class="sales-hits__list">
+                    <li class="sales-hits__list-item hit-card">
+                        <a href="#" class="hit-card__link">                        
+                            <figure class="hit-card__figure">
+                                <img src="#" alt="Фото техники" class="hit-card__img">
+                                <figcaption class="hit-card__desc"></figcaption>
+                            </figure>
+                            <p class="hit-card__price hit-card__price--cross-out">6 990 ₽</p>
+                            <p class="hit-card__price">5 533 ₽</p>
+                        </a>
+                    </li>
+                    <li class="sales-hits__list-item hit-card">
+                        <a href="#" class="hit-card__link">                        
+                            <figure class="hit-card__figure">
+                                <img src="#" alt="Фото техники" class="hit-card__img">
+                                <figcaption class="hit-card__desc"></figcaption>
+                            </figure>
+                            <p class="hit-card__price hit-card__price--cross-out">6 990 ₽</p>
+                            <p class="hit-card__price">5 533 ₽</p>
+                        </a>
+                    </li>
+                    <li class="sales-hits__list-item hit-card">
+                        <a href="#" class="hit-card__link">                        
+                            <figure class="hit-card__figure">
+                                <img src="#" alt="Фото техники" class="hit-card__img">
+                                <figcaption class="hit-card__desc"></figcaption>
+                            </figure>
+                            <p class="hit-card__price hit-card__price--cross-out">6 990 ₽</p>
+                            <p class="hit-card__price">5 533 ₽</p>
+                        </a>
+                    </li>
+                    <li class="sales-hits__list-item hit-card">
+                        <a href="#" class="hit-card__link">                        
+                            <figure class="hit-card__figure">
+                                <img src="#" alt="Фото техники" class="hit-card__img">
+                                <figcaption class="hit-card__desc"></figcaption>
+                            </figure>
+                            <p class="hit-card__price hit-card__price--cross-out">6 990 ₽</p>
+                            <p class="hit-card__price">5 533 ₽</p>
+                        </a>
+                    </li>
+                </ul>   
             </section>
             <section class="popular-brends">
                 <h2 class="visually-hidden">
                     Популярные бренды
                 </h2>
-                <p>Популярные бренды</p>
-                <a href="#">
-                    Смотреть все
-                </a>
+                <p class="popular-brends__title title">Популярные бренды</p>
+                <a href="#" class="popular-brends__link-btn link-btn">Смотреть все</a>
+                <ul class="popular-brends__list">
+                    <li class="popular-brends__list-item"><img src="#" alt="Лого бренда"></li>
+                    <li class="popular-brends__list-item"><img src="#" alt="Лого бренда"></li>
+                    <li class="popular-brends__list-item"><img src="#" alt="Лого бренда"></li>
+                    <li class="popular-brends__list-item"><img src="#" alt="Лого бренда"></li>
+                    <li class="popular-brends__list-item"><img src="#" alt="Лого бренда"></li>
+                    <li class="popular-brends__list-item"><img src="#" alt="Лого бренда"></li>
+                    <li class="popular-brends__list-item"><img src="#" alt="Лого бренда"></li>
+                    <li class="popular-brends__list-item"><img src="#" alt="Лого бренда"></li>
+                </ul>
             </section>
             <section class="news_and_promotions">
                 <h2 class="visually-hidden">
