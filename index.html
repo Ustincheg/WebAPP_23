@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
+
 <body>
     <header class="header">
 
@@ -29,10 +37,11 @@
         </ul>
 
         <a class="header__tel" href="tel:+74954448885">8 (495) 444-888-5</a>
-
-        <a class="header_logo logo" href="#">
-            <img class="logo-image" src="#" alt="Логотип">
+        <div class="header__background"></div>
+        <a class="header__logo logo" href="#">
+            <img class="logo__image" src="img/Logo.svg" width="215" alt="Логотип">
         </a>
+
 
         <input class="header__search" placeholder="Поиск" type="text" name="Searchbar">
 
@@ -143,14 +152,14 @@
                     <button class="list__button-fav button-fav">
                         <img class="button-fav__fav" src="#" alt="favourite">
                     </button>
-                    <img class="list__top-selling__product" src="#" alt="Фото товара">
+                    <img class="list__top-selling__product" src="img/multivarka.png" width="200" alt="Фото товара">
                     <a class="list__top-selling__link" href="#">
                         Название продукта
                     </a>
                     <p class="list__old-price">
                         Старая цена
                     </p>
-                        <p class="list__new-price">
+                    <p class="list__new-price">
                         Новая цена
                     </p>
                 </li>
@@ -165,9 +174,9 @@
                     </a>
                     <p class="list__old-price">
                         Старая цена
-                        </p>
+                    </p>
                     <p class="list__new-price">
-                            Новая цена
+                        Новая цена
                     </p>
                 </li>
                 <li class="list__top-selling">
@@ -194,7 +203,7 @@
                 Популярные бренды
             </h2>
             <p class="popular-brands__header">
-                 Популярные бренды
+                Популярные бренды
             </p>
 
             <a class="popular-brands__view-button view-button" href="#">
@@ -281,192 +290,195 @@
                 </li>
             </ul>
         </section>
-            <section class="advantages">
-                <h2 class="visually-hidden">
-                    Преимущества
-                </h2>
-                <p class="advantages__header">
-                    Преимущества
-                </p>
+        <section class="advantages">
+            <h2 class="visually-hidden">
+                Преимущества
+            </h2>
+            <p class="advantages__header">
+                Преимущества
+            </p>
 
-                <ul class="advantages__list list">
-                    <li class="list__item item">
-                        <img class="item__image" src="" alt="Иконка компьютера">
-                        <p class="item__header">
-                            Простая и удобная система заказа товара
-                        </p>
-                        <p class="item__text">
-                            Мы знаем, как важна простая система 
-                            регистрации и оформления заказа, поэтому 
-                            делаем все для того, чтобы оформить заказ 
-                            было удобно (и быстро!).
-                        </p>
-                    </li>
-                    <li class="list__item item">
-                        <img class="item__image" src="" alt="Иконка смартфона">
-                        <p class="item__header">
-                            Оповещаем о состоянии заказа по SMS
-                        </p>
-                        <p class="item__text">
-                            Для тех, кто всегда хочет быть в курсе: вы 
-                            сами можете контролировать свой заказ, 
-                            получая статус о его формировании 
-                            посредством sms-сообщений.
-                        </p>
-                    </li>
-                    <li class="list__item item">
-                        <img class="item__image" src="" alt="Иконка грузовика">
-                        <p class="item__header">
-                            Оперативная доставка
-                        </p>
-                        <p class="item__text">
-                            Мы привыкли работать с большими 
-                            объемами заказов, поэтому вам не стоит 
-                            беспокоиться о том, что ваш заказ будет 
-                            обработан не вовремя.
-                        </p>
-                    </li>
-                </ul>
-            </section>
-
-            <section class="contacts">
-                <h2 class="visually-hidden">
-                    Контакты
-                </h2>
-                <p class="contacts__header">
-                    Контакты
-                </p>
-                <div class="contacts__map" style="position:relative;overflow:hidden;">
-                    <iframe src="https://yandex.ru/map-widget/v1/?ll=37.675109%2C55.710692&mode=whatshere&whatshere%5Bpoint%5D=37.675109%2C55.710692&whatshere%5Bzoom%5D=17&z=16" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
-                </div>
-                <ul class="contacts__list list">
-                    <img src="" alt="Иконка метки">
-                    <li class="list__info info">
-                        <p class="info__header">
-                            Адрес
-                        </p>
-                        <p class="info__text">
-                            7-я Кожуховская ул., 9, Москва (этаж 1)
-                        </p>
-                    </li>
-                    <img src="" alt="Иконка трубки">
-                    <li class="list__info info">
-                        <p class="info__header">
-                            Телефон
-                        </p>
-                        <p class="info__text">
-                            8 (495) 444-888-5
-                        </p>
-                    </li>
-                    <img src="" alt="Иконка часов">
-                    <li class="list__info info">
-                        <p class="info__header">
-                            График работы
-                        </p>
-                        <p class="info__text">
-                            Пн-Пт 9:00 до 20:00
-                        </p>
-                    </li>
-                </ul>
-                <button class="contacts__button">
-                    Написать нам
-                </button>
-            </section>
-
-            <section class="subscription">
-                <h2 class="visually-hidden">
-                    Получайте самые интересные предложения первыми!
-                </h2>
-                <p class="subscription__header">
-                    Получайте самые интересные предложения первыми!
-                </p>
-
-                <input class="header__search" placeholder="Поиск" type="text" name="Searchbar">
-                <button class="subscription__button">
-                    Подписаться
-                </button>
-            </section>
-
-            <footer class="footer">
-                <section class="footer__info">
-                    <img class="footer__logo" src="#" alt="Logo">
-                    <p class="footer__adress-text">7-я Кожуховская ул., 9, Москва (этаж 1)</p>
-                    <ul class="footer_list-first list-first">
-                        <li class="list-first__item item">
-                            <a class="item__link" href="#">Скидки</a>
-                        </li>
-        
-                        <li class="list-first__item item">
-                            <a class="item__link" href="#">Акции</a>
-                        </li>
-        
-                        <li class="list-first__item item">
-                            <a class="item__link" href="#">Покупателям</a>
-                        </li>
-        
-                        <li class="list-first__item item">
-                            <a class="item__link" href="#">Информация</a>
-                        </li>
-        
-                        <li class="list-first__item item">
-                            <a class="item__link" href="#">Доставка</a>
-                        </li>
-                    </ul>
-        
-                    <ul class="footer_list-second list-second">
-                        <li class="list-second__item item">
-                            <a class="item__link" href="#">Гарантия</a>
-                        </li>
-        
-                        <li class="list-second__item item">
-                            <a class="item__link" href="#">Кредит и рассрочка</a>
-                        </li>
-        
-                        <li class="list-second__item item">
-                            <a class="item__link" href="#">Новости</a>
-                        </li>
-        
-                        <li class="list-second__item item">
-                            <a class="item__link" href="#">Вакансии</a>
-                        </li>
-                    </ul>
-        
-                    <div class="footer__icon-container icon-container">
-                        <div class="icon-container__element element">
-                            <a class="element__link" href="#">
-                                <img class="element__img" src="#" alt="Facebook">
-                            </a>
-                        </div>
-        
-                        <div class="icon-container__element element">
-                            <a class="element__link" href="#">
-                                <img class="element__img" src="#" alt="Instagram">
-                            </a>
-                        </div>
-        
-                        <div class="icon-container__element element">
-                            <a class="element__link" href="#">
-                                <img class="element__img" src="#" alt="VK">
-                            </a>
-                        </div>
-        
-                        <div class="icon-container__element element">
-                            <a class="element__link" href="#">
-                                <img class="element__img" src="#" alt="YouTube">
-                            </a>
-                        </div>
-                    </div>
-                </section>
-        
-                <section class="footer__dev-info dev-info">
-                    <p class="dev-info__1text">© Electro place, 2003–2021</p>
-                    <p class="dev-info__2text">Политика обработки персональных данных</p>
-                    <p class="dev-info__developer">
-                        Разработка сайта:
-                        <img class="dev-info__img" src="#" alt="Garpix">
+            <ul class="advantages__list list">
+                <li class="list__item item">
+                    <img class="item__image" src="" alt="Иконка компьютера">
+                    <p class="item__header">
+                        Простая и удобная система заказа товара
                     </p>
-                </section>
-            </footer>
+                    <p class="item__text">
+                        Мы знаем, как важна простая система
+                        регистрации и оформления заказа, поэтому
+                        делаем все для того, чтобы оформить заказ
+                        было удобно (и быстро!).
+                    </p>
+                </li>
+                <li class="list__item item">
+                    <img class="item__image" src="" alt="Иконка смартфона">
+                    <p class="item__header">
+                        Оповещаем о состоянии заказа по SMS
+                    </p>
+                    <p class="item__text">
+                        Для тех, кто всегда хочет быть в курсе: вы
+                        сами можете контролировать свой заказ,
+                        получая статус о его формировании
+                        посредством sms-сообщений.
+                    </p>
+                </li>
+                <li class="list__item item">
+                    <img class="item__image" src="" alt="Иконка грузовика">
+                    <p class="item__header">
+                        Оперативная доставка
+                    </p>
+                    <p class="item__text">
+                        Мы привыкли работать с большими
+                        объемами заказов, поэтому вам не стоит
+                        беспокоиться о том, что ваш заказ будет
+                        обработан не вовремя.
+                    </p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="contacts">
+            <h2 class="visually-hidden">
+                Контакты
+            </h2>
+            <p class="contacts__header">
+                Контакты
+            </p>
+            <div class="contacts__map" style="position:relative;overflow:hidden;">
+                <iframe
+                    src="https://yandex.ru/map-widget/v1/?ll=37.675109%2C55.710692&mode=whatshere&whatshere%5Bpoint%5D=37.675109%2C55.710692&whatshere%5Bzoom%5D=17&z=16"
+                    width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+            </div>
+            <ul class="contacts__list list">
+                <img src="" alt="Иконка метки">
+                <li class="list__info info">
+                    <p class="info__header">
+                        Адрес
+                    </p>
+                    <p class="info__text">
+                        7-я Кожуховская ул., 9, Москва (этаж 1)
+                    </p>
+                </li>
+                <img src="" alt="Иконка трубки">
+                <li class="list__info info">
+                    <p class="info__header">
+                        Телефон
+                    </p>
+                    <p class="info__text">
+                        8 (495) 444-888-5
+                    </p>
+                </li>
+                <img src="" alt="Иконка часов">
+                <li class="list__info info">
+                    <p class="info__header">
+                        График работы
+                    </p>
+                    <p class="info__text">
+                        Пн-Пт 9:00 до 20:00
+                    </p>
+                </li>
+            </ul>
+            <button class="contacts__button">
+                Написать нам
+            </button>
+        </section>
+
+        <section class="subscription">
+            <h2 class="visually-hidden">
+                Получайте самые интересные предложения первыми!
+            </h2>
+            <p class="subscription__header">
+                Получайте самые интересные предложения первыми!
+            </p>
+
+            <input class="header__search" placeholder="Поиск" type="text" name="Searchbar">
+            <button class="subscription__button">
+                Подписаться
+            </button>
+        </section>
+
+        <footer class="footer">
+            <section class="footer__info">
+                <img class="footer__logo" src="#" alt="Logo">
+                <p class="footer__adress-text">7-я Кожуховская ул., 9, Москва (этаж 1)</p>
+                <ul class="footer_list-first list-first">
+                    <li class="list-first__item item">
+                        <a class="item__link" href="#">Скидки</a>
+                    </li>
+
+                    <li class="list-first__item item">
+                        <a class="item__link" href="#">Акции</a>
+                    </li>
+
+                    <li class="list-first__item item">
+                        <a class="item__link" href="#">Покупателям</a>
+                    </li>
+
+                    <li class="list-first__item item">
+                        <a class="item__link" href="#">Информация</a>
+                    </li>
+
+                    <li class="list-first__item item">
+                        <a class="item__link" href="#">Доставка</a>
+                    </li>
+                </ul>
+
+                <ul class="footer_list-second list-second">
+                    <li class="list-second__item item">
+                        <a class="item__link" href="#">Гарантия</a>
+                    </li>
+
+                    <li class="list-second__item item">
+                        <a class="item__link" href="#">Кредит и рассрочка</a>
+                    </li>
+
+                    <li class="list-second__item item">
+                        <a class="item__link" href="#">Новости</a>
+                    </li>
+
+                    <li class="list-second__item item">
+                        <a class="item__link" href="#">Вакансии</a>
+                    </li>
+                </ul>
+
+                <div class="footer__icon-container icon-container">
+                    <div class="icon-container__element element">
+                        <a class="element__link" href="#">
+                            <img class="element__img" src="#" alt="Facebook">
+                        </a>
+                    </div>
+
+                    <div class="icon-container__element element">
+                        <a class="element__link" href="#">
+                            <img class="element__img" src="#" alt="Instagram">
+                        </a>
+                    </div>
+
+                    <div class="icon-container__element element">
+                        <a class="element__link" href="#">
+                            <img class="element__img" src="#" alt="VK">
+                        </a>
+                    </div>
+
+                    <div class="icon-container__element element">
+                        <a class="element__link" href="#">
+                            <img class="element__img" src="#" alt="YouTube">
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="footer__dev-info dev-info">
+                <p class="dev-info__1text">© Electro place, 2003–2021</p>
+                <p class="dev-info__2text">Политика обработки персональных данных</p>
+                <p class="dev-info__developer">
+                    Разработка сайта:
+                    <img class="dev-info__img" src="#" alt="Garpix">
+                </p>
+            </section>
+        </footer>
     </main>
 </body>
+
 </html>
