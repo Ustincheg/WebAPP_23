@@ -13,4 +13,21 @@
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-  }
+}
+
+* {
+    color: red;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+.navlist__link {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
