@@ -14,3 +14,23 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
+
+* {
+    color:red;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.list__link {
+    font-family: 'Open Sans';
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
