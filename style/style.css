@@ -14,3 +14,13 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
+  
+  *{
+    color: rgba(184, 22, 22, 0.685);
+    font-family: "Roboto", sans-serif;
+  }
+
+  body{
+    font-family: "Open Sans", sans-serif;
+  }
+  
