@@ -12,6 +12,11 @@
     overflow: hidden;
   }
 
+  .body__header {
+    background:  #363636;
+}
+
+
   body {
     font-family: 'Open Sans', sans-serif;
     /* color: yellow; */
@@ -55,6 +60,15 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
+    color: #000000;
+  }
+
+  .txt2 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
     color: #000000;
   }
 
