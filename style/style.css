@@ -16,11 +16,52 @@
   }
   
   *{
-    color: rgba(184, 22, 22, 0.685);
+    color: rgb(0, 0, 0);
     font-family: "Roboto", sans-serif;
   }
 
   body{
     font-family: "Open Sans", sans-serif;
   }
+  .old_price
+  {
+    color: darkgray;
+    font-size: small;
+    text-decoration: line-through;
+  }
+  .banner-header
+  {
+    font-family: "Roboto", sans-serif;
+    size: 22px;
+    color: red;
+  }
+  .banner-text
+  {
+    font-family: "Open Sans", sans-serif;
+    size: 16px;
+    color: red;
+  }
+
+  .main-banner__news
+  {
+    background-color: black;
+  }
+  .main-banner__news-text
+  {
+    color: white;
+  }
+
+  .button__favorites
+  {
+    width: 20px;
+    height: 20px;
+  }
+
+  .banner-slider
+  {
+    width: 870px;
+    height: 360px;
+  }
+
+  
   
