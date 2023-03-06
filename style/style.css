@@ -16,7 +16,7 @@
   }
 
 * {
-    color:red;
+    color:black;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -26,7 +26,6 @@ body{
 
 .list__link {
     font-family: 'Open Sans';
-
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
