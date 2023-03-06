@@ -44,15 +44,6 @@
 
 }
 
-@font-face
-{
-	font-family: 'Nautilus';
-	font-style: normal;
-	font-weight: normal;
-	src: local('Nautilus'),
-		url('../data/fonts/Nautilus.woff2') format('woff2');
-}
- 
 /**/
 .text-1
 {
