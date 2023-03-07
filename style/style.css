@@ -1,7 +1,19 @@
-/* * {
-    color: red;
-} */
+* {
+    color: rgb(38, 0, 255);
+}
 
+body {
+    font-family: 'opensans', sans-serif;
+    font-weight: 400;
+}
+.head_back{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    height: 53px;
+    background: rgb(36, 29, 29);
+}
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -13,4 +25,4 @@
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-  }
+}
