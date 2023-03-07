@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@500;700;900&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+
+        <ul class="header__topnav-list topnav-list">
+            <li class="topnav-list__item">
+                <a class="topnav-list__item-link" href="#">
+                    Магазины
+                </a>
+            </li>
+            <li class="topnav-list__item">
+                <a class="topnav-list__item-link" href="#">
+                    Доставка и оплата
+                </a>
+            </li>
+            <li class="topnav-list__item">
+                <a class="topnav-list__item-link" href="#">
+                    Кредиты и рассрочка
+                </a>
+            </li>
+        </ul>
+
+        <a class="header__tel" href="tel:+74954448885">8 (495) 444-888-5</a>
+        <div class="header__background"></div>
+        <a class="header__logo logo" href="#">
+            <img class="logo__image" src="img/Logo.svg" width="215" alt="Логотип">
+        </a>
+
+
+        <input class="header__search" placeholder="Поиск" type="text" name="Searchbar">
+
+        <ul class="header__list-link list-link">
+            <li class="list-link__item">
+                <a class="list-link__link" href="">
+                    Избранное
+                </a>
+                <button class="list-link__button-fav button-fav">
+                    <img class="button-fav__fav" src="img/Header/heart.png" width="20" alt="Избранное">
+                </button>
+            </li>
+            <li class="list-link__item">
+                <a class="list-link__link" href="">
+                    Корзина
+                </a>
+                <button class="list-link__button-cart button-cart">
+                    <img class="button-fav__fav" src="img/Header/shopping-cart.png" width="20" alt="Избранное">
+                </button>
+            </li>
+        </ul>
+
+        <button class="header__button">
+            <img class="header__button-catalog" src="img/Menu icon.png" width="24" alt="Избранное">
+            Каталог
+        </button>
+
+        <nav class="header__main-nav main-nav">
+            <ul class="main-nav__list list">
+                <li class="list__item">
+                    <a class="list__link" href="#">
+                        СКИДКИ
+                    </a>
+                </li>
+            </ul>
+            <ul class="main-nav__list list">
+                <li class="list__item">
+                    <a class="list__link" href="#">
+                        СМАРТФОНЫ
+                    </a>
+                </li>
+            </ul>
+            <ul class="main-nav__list list">
+                <li class="list__item">
+                    <a class="list__link" href="#">
+                        ТЕЛЕВИЗОРЫ
+                    </a>
+                </li>
+            </ul>
+            <ul class="main-nav__list list">
+                <li class="list__item">
+                    <a class="list__link" href="#">
+                        НОУТБУКИ
+                    </a>
+                </li>
+            </ul>
+            <ul class="main-nav__list list">
+                <li class="list__item">
+                    <a class="list__link" href="#">
+                        СТИРАЛЬНЫЕ МАШИНЫ
+                    </a>
+                </li>
+            </ul>
+            <ul class="main-nav__list list">
+                <li class="list__item">
+                    <a class="list__link" href="#">
+                        ХОЛОДИЛЬНИКИ
+                    </a>
+                </li>
+            </ul>
+            <ul class="main-nav__list list">
+                <li class="list__item">
+                    <a class="list__link" href="#">
+                        ПЫЛЕСОСЫ
+                    </a>
+                </li>
+            </ul>
+            <ul class="main-nav__list list">
+                <li class="list__item">
+                    <a class="list__link" href="#">
+                        МИКРОВОЛНОВКИ
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="visually-hidden">
+            Каталог смартфонов
+        </h1>
+
+        <section class="main-banner">
+            <h2 class="visually-hidden">
+                Главный баннер
+            </h2>
+        </section>
+
+        <section class="phones">
+            <h2 class="phones">
+                Смартфоны
+            </h2>
+            <p class="phones__header">
+                Смартфоны
+            </p>
+            <ul class="phones__header-list">
+                <p class="phones__header-classify header-classify">
+                    Сортировать:
+                </p>
+                <button class="header-classify__button">
+                    По цене
+                </button>
+                <button class="header-classify__button">
+                    По популярности
+                </button>
+                <button class="header-classify__button">
+                    По новизне
+                </button>
+            </ul>
+            <aside>
+                <form action="">
+                    <fieldset>
+                        <legend>
+                            Цена, Р
+                        </legend>
+                        <input type="range" id="price">
+                        <input type="number" id="price">
+                        <label for="price">Цена</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>
+                            Диагональ экрана
+                        </legend>
+                        <select>
+                            <option value="">От 6"</option>
+                        </select>
+                        <label for="dio"></label>                       
+                    </fieldset>
+                </form>
+            </aside>
+
+    </main>
