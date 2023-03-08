@@ -1,82 +1,104 @@
 
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
-  .body__header {
-    background:  #363636;
+.body__header {
+  background:  #363636;
+}
+
+.footer {
+background:  #363636;
 }
 
 
-  body {
-    font-family: 'Open Sans', sans-serif;
-    /* color: yellow; */
-  }
+body {
+  font-family: 'Open Sans', sans-serif;
+  /* color: yellow; */
+}
 
-  * {
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    /* color: red; */
-  }
+* {
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  /* color: red; */
+}
 
-  .navlist__list-item-link {
-    font-family: 'Open Sans';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 19px;
-    color: #FFFFFF;
-  }
+.navlist__list-item-link {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
 
-  .main-hits-items {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
-    color: #000000;
-  }
+.main-hits-items {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+}
 
-  .news__list-item {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 26px;
-    color: #000000;
-  }
+.news__list-item {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+}
 
-  .txt {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
-    color: #000000;
-  }
+.txt {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+}
 
-  .txt2 {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 19px;
-    color: #000000;
-  }
+.txt2 {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+}
 
-  .contacts__list__list-item-link {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 22px;
-    color: #000000;
-  }
+.contacts__list__list-item-link {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.katalog_filtr {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.price {
+  font-family: 'Roboto';
+  font-style: Medium;
+  font-weight: 500;
+  Font-size: 22px;
+  Line-height: 26px;
+  color: #000000;
+}
