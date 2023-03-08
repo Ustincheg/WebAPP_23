@@ -1,7 +1,3 @@
-/* * {
-    color: red;
-} */
-
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -13,15 +9,6 @@
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-}
-
-* {
-    color: red;
-    font-family: "Roboto", sans-serif;
-}
-
-body {
-    font-family: "Open Sans", sans-serif;
 }
 
 .navlist__link {
