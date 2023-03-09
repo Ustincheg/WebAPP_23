@@ -12,8 +12,70 @@
   overflow: hidden;
 }
 
-.body__header {
+.content{
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+ul{
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.header__navlist{
+  display: flex;
   background:  #363636;
+  justify-content: space-between;
+}
+
+.navlist{
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #FFFFFF;
+  list-style: none;
+  gap: 30px;
+  display: flex;
+}
+
+.header__navigation-list{
+  list-style: none;
+  gap: 25px;
+  display: flex;
+}
+
+.main-banner__slider{
+  list-style: none;
+  gap: 30px;
+  display: flex;
+}
+
+.hits__items{
+  list-style: none;
+  gap: 30px;
+  display: flex;
+}
+
+.brands__items{
+  list-style: none;
+  gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.news__items{
+  list-style: none;
+  gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantages__items{
+  list-style: none;
+  gap: 30px;
+  display: flex;
 }
 
 .footer {
@@ -23,13 +85,6 @@ background:  #363636;
 
 body {
   font-family: 'Open Sans', sans-serif;
-  /* color: yellow; */
-}
-
-* {
-  font-family: 'Open Sans', sans-serif;
-  font-family: 'Roboto', sans-serif;
-  /* color: red; */
 }
 
 .navlist__list-item-link {
@@ -85,7 +140,44 @@ body {
   color: #000000;
 }
 
-.katalog_filtr {
+.OS400_14_19_w {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.OS400_14_19_b {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.OS600_14_19_b {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.OS400_16_22_b {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.OS600_16_22_b {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 600;
@@ -94,11 +186,29 @@ body {
   color: #000000;
 }
 
-.price {
+.R500_22_26_b {
   font-family: 'Roboto';
   font-style: Medium;
   font-weight: 500;
   Font-size: 22px;
   Line-height: 26px;
+  color: #000000;
+}
+
+.R700_22_26_b {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.R700_32_38_b {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
   color: #000000;
 }
