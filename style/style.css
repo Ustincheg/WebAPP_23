@@ -21,10 +21,42 @@
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
+    line-height: 19px;
+}
+
+.header__button button {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+}
+
+h3 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+}
+
+
+.main-nav__list{
+    
 }
 
 .top-nav-list__link {
@@ -40,4 +72,8 @@ body {
 
 .header__phone-link {
     color: #FFFFFF;
+}
+
+.footer__img {
+    background-color: black;
 }

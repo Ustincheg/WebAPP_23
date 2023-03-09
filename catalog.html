@@ -13,6 +13,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,600&family=Roboto:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -100,7 +110,9 @@
                 <ul class="main__sorting sorting">
                     <p>Сортировать:</p>
                     <li class="sorting__item">
+                        <button>
 
+                        </button>
                         <a class="sorting-list__link" href="#">
                             По цене
                         </a>
@@ -121,57 +133,63 @@
             </nav>
         </section>
         <section class="filters">
-            <section class="filters__price">
-                <div class="filters__price price">
-                    <p class="filters__price title">Цена,₽</p>
-                    <form action="get" method="">
-                        <div class="filters__price wrapper">
-                            <div class="filters__price__wrapper amount" data-step="10">
-                                <input type="text" id="min_price" name="min_price" value="0" data-min="0"
-                                    placeholder="Минимальная цена">
-                                <input type="text" id="max_price" name="max_price" value="85000" data-min="85000"
-                                    placeholder="Максимальная цена">
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </section>
-            <div class="filters__diagonal">
-                <form action="get" method="#">
-                    <p class="filters__diagonal title">Диагональ экрана</p>
+            <form action="#">
+                <fieldset class="filters__price">
+                    <legend class="filters__price title">Цена, ₽</legend>
+                    <input type="text" id="min_price" name="min_price" value="0" data-min="0"
+                        placeholder="Минимальная цена">
+                    <input type="text" id="max_price" name="max_price" value="85000" data-min="85000"
+                        placeholder="Максимальная цена">
+                </fieldset>
+                <fieldset class="filters__screen">
+                    <legend class="filters__screen title">Диагональ экрана</legend>
                     <select name="screen diagonal" id="">
                         <option value="one_opt">От 6''</option>
                         <option value="one_opt"></option>
                         <option value="one_opt"></option>
                     </select>
-                </form>
-            </div>
-            <div class="filters__brands">
-                <p class="filters__brands title">Бренд</p>
-                <form action="get" method="#">
-                    <input type="checkbox" name="brand" value="0" /> APPLE
-                    <input type="checkbox" name="brand" value="1" /> BLACKVIEW
-                    <input type="checkbox" name="brand" value="2" /> CLEVERCEL
-                    <input type="checkbox" name="brand" value="3" /> NOKIA
-                    <input type="checkbox" name="brand" value="4" /> XIAOMI
-                    <input type="checkbox" name="brand" value="5" /> ZTE
-                </form>
-            </div>
-            <div class="filters__sim">
-                <p class="filters__sim title">Количество сим-карт</p>
-                <form action="get">
-                    <input type="radio" name="sim" value="0" /> 1SIM
-                    <input type="radio" name="sim" value="1" /> 2SIM
-                </form>
-            </div>
+                </fieldset>
+                <fieldset class="filters__brands">
+                    <legend class="filters__brands title">Бренд</legend>
+                    <ul>
+                        <li> <input type="checkbox" id="checkbox1" />
+                            <label for="checkbox1">APPLE</label>
+                        </li>
+                        <li><input type="checkbox" id="checkbox2" />
+                            <label for="checkbox2">BLACKVIEW</label>
+                        </li>
+                        <li><input type="checkbox" id="checkbox3" />
+                            <label for="checkbox3">CLEVERCEL</label>
+                        </li>
+                        <li><input type="checkbox" id="checkbox4" />
+                            <label for="checkbox4">NOKIA</label>
+                        </li>
+                        <li><input type="checkbox" id="checkbox5" />
+                            <label for="checkbox5">XIAOMI</label>
+                        </li>
+                        <li><input type="checkbox" id="checkbox6" />
+                            <label for="checkbox6">ZTE</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset class="filters__sim">
+                    <legend class="filters__sim title">Количество сим-карт</legend>
+                    <ul>
+                        <li><input type="radio" id="radio1" name="sim" value="0" />
+                            <label for="radio1">1SIM</label>
+                        </li>
+                        <li><input type="radio" id="radio2" name="sim" value="1" />
+                            <label for="radio2">2SIM</label>
+                        </li>
+                    </ul>
+                </fieldset>
+            </form>
         </section>
         <section>
             <ul class="phone__list">
                 <li class="phone__list-item phone-card">
                     <a href="#" class="phone-card__link">
                         <figure class="phone-card__figure">
-                            <p class="phone-card__text-New">New</p>
-                            <button class="hit-card__like"></button>
                             <img src="images/phone_1.png" alt="Смартфон Samsung Galaxy S21 128GB Phantom Violet"
                                 class="phone-card__img">
                             <figcaption class="phone-card__desc">Смартфон Samsung Galaxy S21 128GB Phantom Violet
@@ -184,7 +202,6 @@
                 <li class="phone__list-item phone-card">
                     <a href="#" class="phone-card__link">
                         <figure class="phone-card__figure">
-                            <button class="phone-card__like"></button>
                             <img src="images/phone_2.png" alt="Смартфон Apple iPhone 11 128GB White"
                                 class="phone-card__img">
                             <figcaption class="phone-card__desc">Смартфон Apple iPhone 11 128GB White</figcaption>
@@ -196,7 +213,6 @@
                 <li class="phone__list-item phone-card">
                     <a href="#" class="phone-card__link">
                         <figure class="phone-card__figure">
-                            <button class="phone-card__like"></button>
                             <img src="images/phone_3.png" alt="Смартфон Samsung Galaxy A52 128 GB Awesome Black"
                                 class="phone-card__img">
                             <figcaption class="phone-card__desc">Смартфон Samsung Galaxy A52 128 GB Awesome Black
@@ -209,8 +225,6 @@
                 <li class="phone__list-item phone-card">
                     <a href="#" class="phone-card__link">
                         <figure class="phone-card__figure">
-                            <p class="phone-card__text-New">New</p>
-                            <button class="phone-card__like"></button>
                             <img src="images/phone_4.png" alt="Смартфон Samsung Galaxy S21 128GB Phantom Gray"
                                 class="phone-card__img">
                             <figcaption class="phone-card__desc">Смартфон Samsung Galaxy S21 128GB Phantom Gray
@@ -223,8 +237,6 @@
                 <li class="phone__list-item phone-card">
                     <a href="#" class="phone-card__link">
                         <figure class="phone-card__figure">
-                            <p class="phone-card__text-New">New</p>
-                            <button class="phone-card__like"></button>
                             <img src="images/phone_5.png" alt="Смартфон Huawei Mate 40 Pro Mystic Silver (NOH-NX9)"
                                 class="phone-card__img">
                             <figcaption class="phone-card__desc">Смартфон Huawei Mate 40 Pro Mystic Silver (NOH-NX9)
@@ -237,7 +249,6 @@
                 <li class="phone__list-item phone-card">
                     <a href="#" class="phone-card__link">
                         <figure class="phone-card__figure">
-                            <button class="phone-card__like"></button>
                             <img src="images/phone_6.png" alt="Смартфон Honor 10X Lite 4+ 128GB Icelandic Frost"
                                 class="phone-card__img">
                             <figcaption class="phone-card__desc">Смартфон Honor 10X Lite 4+ 128GB Icelandic Frost
@@ -250,8 +261,6 @@
                 <li class="phone__list-item phone-card">
                     <a href="#" class="phone-card__link">
                         <figure class="phone-card__figure">
-                            <p class="phone-card__text-New">New</p>
-                            <button class="phone-card__like"></button>
                             <img src="images/phone_7.png" alt="Смартфон Huawei P40 Pro Silver Frost"
                                 class="phone-card__img">
                             <figcaption class="phone-card__desc">Смартфон Huawei P40 Pro Silver Frost
@@ -264,7 +273,6 @@
                 <li class="phone__list-item phone-card">
                     <a href="#" class="phone-card__link">
                         <figure class="phone-card__figure">
-                            <button class="phone-card__like"></button>
                             <img src="images/phone_8.png" alt="Смартфон Honor 9X 4+128GB Sapphire Blue"
                                 class="phone-card__img">
                             <figcaption class="phone-card__desc">Смартфон Honor 9X 4+128GB Sapphire Blue
@@ -277,8 +285,6 @@
                 <li class="phone__list-item phone-card">
                     <a href="#" class="phone-card__link">
                         <figure class="phone-card__figure">
-                            <p class="phone-card__text-New">New</p>
-                            <button class="phone-card__like"></button>
                             <img src="images/phone_9.png" alt="Смартфон Apple iPhone SE 64GB Black"
                                 class="phone-card__img">
                             <figcaption class="phone-card__desc">Смартфон Apple iPhone SE 64GB Black
@@ -355,7 +361,8 @@
         </ul>
         <p class="footer__bottom-txt">© Electro place, 2003–2021</p>
         <a href="#" class="footer__bottom-link">Политика обработки персональных данных</a>
-        <p class="footer__developer">Разработка сайта: <img src="#" alt="logo"></p>
+        <p class="footer__developer">Разработка сайта: <img class="footer__img" src="images/Garpix logo.svg"
+                alt="garpix_logo"></p>
     </footer>
 </body>
 
