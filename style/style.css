@@ -23,33 +23,143 @@
   body{
     font-family: "Open Sans", sans-serif;
   }
+  .main__catalog{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+  }
+  h1{
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 41px;
+    align-items: center;
+  }
+
+  h2{
+    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+  }
+
+  h3{
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+  }
+  .text-buttons{
+    font-family: "Open Sans", sans-serif;
+    width: 600px;
+    size: 14px;
+  }
+  .new_price
+  {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .main__news-banner{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+  }
+  .main__news-text{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+  }
+  .main__adventages-first{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+  }
+  .main__adventages-second{
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+  }
+  .main__contacts-first{
+    font-family: "Open Sans", sans-serif;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .main__contacts-second{
+    font-family: "Open Sans", sans-serif;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .main__input-email{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+
+
+
+
+
+
+
+
+
+  
   .old_price
   {
     color: darkgray;
     font-size: small;
     text-decoration: line-through;
-  }
-  .banner-header
-  {
-    font-family: "Roboto", sans-serif;
-    size: 22px;
-    color: red;
-  }
-  .banner-text
-  {
-    font-family: "Open Sans", sans-serif;
-    size: 16px;
-    color: red;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
   }
 
-  .main-banner__news
-  {
-    background-color: black;
-  }
-  .main-banner__news-text
-  {
-    color: white;
-  }
 
   .button__favorites
   {
