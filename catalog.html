@@ -6,7 +6,288 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    
+<body class="body">
+    <header class="header">
+        <ul class="header__top-nav top-nav">
+            <li class = "top-nav__item">
+                <a class="top-nav__item-link" href="#">Магазин</a>
+            </li>
+            <li class="top-nav__item">
+                <a class="top-nav__item-link" href="#">Доставка и оплата</a>
+            </li>
+            <li class = "top-nav__item">
+                <a class="top-nav__item-link" href="#">Кредиты и рассрочка</a>
+            </li>
+        </ul>
+        <a class="header__tel" href="8 (495) 444-888-5">8 (495) 444-888-5</a>
+        <a class="header__logo" href="#"> <img class="header__logo-img" src="" alt="Логотип"></a>
+        <input class="header__search" type="text">
+        <a class="header__like" href="#">Избранное</a>
+        <a class="header__cart" href="#">Корзина</a>
+        <button class="header__catalog">Каталог</button>
+        <nav class="header__main-nav">
+            <ul class="header__main-nav-list list">
+                <li class="list__item"><a href="#">СКИДКИ</a></li>
+                <li class="list__item"><a href="#">СМАРТФОНЫ</a></li>
+                <li class="list__item"><a href="#"></a>ТЕЛЕВИЗОРЫ</li>
+                <li class="list__item"><a href="#"></a>НОУТБУКИ</li>
+                <li class="list__item"><a href="#"></a>СТИРАЛЬНЫЕ МАШИНЫ</li>
+                <li class="list__item"><a href="#"></a>ХОЛОДИЛЬНИКИ</li>
+                <li class="list__item"><a href="#"></a>ПЫЛЕСОСЫ</li>
+                <li class="list__item"><a href="#"></a>МИКРОВОЛНОВКИ</li>
+            </ul>
+        </nav>
+        
+    </header>
+    <section class="catalog">
+        <ul class="catalog__nav nav">
+            <li class="nav__item">
+                <a href="#" class="nav__item-link">Главная</a>
+            </li>
+            <li class="nav__item">
+                <a href="#" class="nav__item-link">Каталог</a>
+            </li>
+            <li class="nav__item">
+                <a href="#" class="nav__item-link">Смартфоны</a>
+            </li>
+        </ul>
+    <h2 class="">Смартфоны</h2>
+    <p class="catalog__title">Смартфоны</p>
+    <p class="catalog__num-item">656 смартфонов</p>
+        <ul class="catalog__sort sort">
+            <li class="sort__item">
+                <p class="sort__item-desk">Сортировка:</p>
+            </li>
+            <li class="sort__item">
+                <button class="sort__item-button">по цене</button>
+            </li>
+            <li class="sort__item">
+                <button class="sort__item-button">по популярности</button>
+            </li>
+            <li class="sort__item">
+                <button class="sort__item-button">по новизне</button>
+            </li>
+        </ul>
+    </section>
+    <aside class="filter">
+        <form class="filter__form form">
+            <fieldset class="form__field">
+                <legend class="form__field-desk">Цена</legend>
+                    <input type="number">
+                    <input type="number">
+                    <input type="range" min="0">
+            </fieldset>
+            <fieldset class="form__field">
+                <legend class="form__field-desk">Диагональ экрана</legend>
+                    <select>
+                        <option>6"</option>
+                        <option>7"</option>
+                        <option>10.2"</option>
+                        <option>7.2"</option>
+                        <option>4.8"</option>
+                        <option>3.5"</option>
+                        <option>15.6"</option>
+                    </select>
+            </fieldset>
+            <fieldset class="form__field">
+                <legend>Производитель</legend>
+                <label class="form__field-label label">
+                    <input type="checkbox" class="label__input">Apple</label>
+                <label class="form__field-label label">
+                    <input type="checkbox" class="label__input">SAMSUNG</label>
+                <label class="form__field-label label">
+                    <input type="checkbox" class="label__input">Sony</label>
+                <label class="form__field-label label">
+                    <input type="checkbox" class="label__input">BLACKVIEW</label>
+                <label class="form__field-label label">
+                    <input type="checkbox" class="label__input">ZTE</label>
+                <label class="form__field-label label">
+                    <input type="checkbox" class="label__input">XIAOMI</label>
+            </fieldset>
+            <fieldset class="form__field">
+                <legend>Кол-во SIM-карт</legend>
+                <label>
+                    <input type="radio">1 sim</label>
+                <label>
+                    <input type="radio">2 sim</label>
+            </fieldset>
+        </form>
+    </aside>
+    <section class="all-item">
+        <p class="all-item__title">Смартфоны</p>
+        <ul class="all-item__list-items list-items">
+            <li class="__item-card item-card">
+                <a href="#" class="item-card__link">
+                    <figure class="item-card__fig">
+                        <img src="#" alt="Фото товара" class="item-card__img">
+                        <figcaption class="item-card__fig-title"></figcaption>
+                    </figure>
+                    <p class="item-card__price item-card__price--cross-out">62990 ₽</p>
+                    <p class="item-card__price">59990 ₽</p>
+                </a>
+                <button>Добавить в избранное</button>
+            </li>
+            <li class="__item-card item-card">
+                <a href="#" class="item-card__link">
+                    <figure class="item-card__fig">
+                        <img src="#" alt="Фото товара" class="item-card__img">
+                        <figcaption class="item-card__fig-title"></figcaption>
+                    </figure>
+                    <p class="item-card__price item-card__price--cross-out">62990 ₽</p>
+                    <p class="item-card__price">59990 ₽</p>
+                </a>
+                <button>Добавить в избранное</button>
+            </li>
+            <li class="__item-card item-card">
+                <a href="#" class="item-card__link">
+                    <figure class="item-card__fig">
+                        <img src="#" alt="Фото товара" class="item-card__img">
+                        <figcaption class="item-card__fig-title"></figcaption>
+                    </figure>
+                    <p class="item-card__price item-card__price--cross-out">62990 ₽</p>
+                    <p class="item-card__price">59990 ₽</p>
+                </a>
+                <button>Добавить в избранное</button>
+            </li>
+            <li class="__item-card item-card">
+                <a href="#" class="item-card__link">
+                    <figure class="item-card__fig">
+                        <img src="#" alt="Фото товара" class="item-card__img">
+                        <figcaption class="item-card__fig-title"></figcaption>
+                    </figure>
+                    <p class="item-card__price item-card__price--cross-out">62990 ₽</p>
+                    <p class="item-card__price">59990 ₽</p>
+                </a>
+                <button>Добавить в избранное</button>
+            </li>
+            <li class="__item-card item-card">
+                <a href="#" class="item-card__link">
+                    <figure class="item-card__fig">
+                        <img src="#" alt="Фото товара" class="item-card__img">
+                        <figcaption class="item-card__fig-title"></figcaption>
+                    </figure>
+                    <p class="item-card__price item-card__price--cross-out">62990 ₽</p>
+                    <p class="item-card__price">59990 ₽</p>
+                </a>
+                <button>Добавить в избранное</button>
+            </li>
+            <li class="__item-card item-card">
+                <a href="#" class="item-card__link">
+                    <figure class="item-card__fig">
+                        <img src="#" alt="Фото товара" class="item-card__img">
+                        <figcaption class="item-card__fig-title"></figcaption>
+                    </figure>
+                    <p class="item-card__price item-card__price--cross-out">62990 ₽</p>
+                    <p class="item-card__price">59990 ₽</p>
+                </a>
+                <button>Добавить в избранное</button>
+            </li>
+            <li class="__item-card item-card">
+                <a href="#" class="item-card__link">
+                    <figure class="item-card__fig">
+                        <img src="#" alt="Фото товара" class="item-card__img">
+                        <figcaption class="item-card__fig-title"></figcaption>
+                    </figure>
+                    <p class="item-card__price item-card__price--cross-out">62990 ₽</p>
+                    <p class="item-card__price">59990 ₽</p>
+                </a>
+                <button>Добавить в избранное</button>
+            </li>
+            <li class="__item-card item-card">
+                <a href="#" class="item-card__link">
+                    <figure class="item-card__fig">
+                        <img src="#" alt="Фото товара" class="item-card__img">
+                        <figcaption class="item-card__fig-title"></figcaption>
+                    </figure>
+                    <p class="item-card__price item-card__price--cross-out">62990 ₽</p>
+                    <p class="item-card__price">59990 ₽</p>
+                </a>
+                <button>Добавить в избранное</button>
+            </li>
+            <li class="__item-card item-card">
+                <a href="#" class="item-card__link">
+                    <figure class="item-card__fig">
+                        <img src="#" alt="Фото товара" class="item-card__img">
+                        <figcaption class="item-card__fig-title"></figcaption>
+                    </figure>
+                    <p class="item-card__price item-card__price--cross-out">62990 ₽</p>
+                    <p class="item-card__price">59990 ₽</p>
+                </a>
+                <button>Добавить в избранное</button>
+            </li>
+        </ul>
+        <ul class="page-nav">
+            <li class="page-nav__item">
+                <label>
+                    <button class="page-nav__item-num">←</button>
+                </label>
+            </li>
+            <li class="page-nav__item">
+                <label>
+                    <button class="page-nav__item-num">1</button>
+                </label>
+            </li>
+            <li class="page-nav__item">
+                <label>
+                    <button class="page-nav__item-num">2</button>
+                </label>
+            </li>
+            <li class="page-nav__item">
+                <label>
+                    <button class="page-nav__item-num">3</button>
+                </label>
+            </li>
+            <li class="page-nav__item">
+                <label>
+                    <button class="page-nav__item-num">→</button>
+                </label>
+            </li>
+        </ul>
+    </section>
+    <footer class="footer">
+        <img src="#" alt="logo" class="footer__logo">
+        <p class="footer__addres">7-я Кожуховская ул., 9, Москва (этаж 1)</p>
+        <ul class="footer__nav-list">
+            <li class="footer__nav-list-item">
+                <a href="#" class="footer__nav-list-link">Скидки</a>
+            </li>
+            <li class="footer__nav-list-item">
+                <a href="#" class="footer__nav-list-link">Акции</a>
+            </li>
+            <li class="footer__nav-list-item">
+                <a href="#" class="footer__nav-list-link">Покупателям</a>
+            </li>
+            <li class="footer__nav-list-item">
+                <a href="#" class="footer__nav-list-link">Информация</a>
+            </li>
+            <li class="footer__nav-list-item">
+                <a href="#" class="footer__nav-list-link">Гарантия</a>
+            </li>
+            <li class="footer__nav-list-item">
+                <a href="#" class="footer__nav-list-link">Кредит и рассрочка</a>
+            </li>
+            <li class="footer__nav-list-item">
+                <a href="#" class="footer__nav-list-link">Новости</a>
+            </li>
+            <li class="footer__nav-list-item">
+                <a href="#" class="footer__nav-list-link">Вакансии</a>
+            </li>
+        </ul>
+        <ul class="footer__social-list social-list">
+            <li class="social-list__item"><a href="#" class="social-list__desc"><span
+                        class="social-list__alt">FaceBook</span></a></li>
+            <li class="social-list__item"><a href="#" class="social-list__desc"><span
+                        class="social-list__alt">instagram</span></a></li>
+            <li class="social-list__item"><a href="#" class="social-list__desc"><span
+                        class="social-list__alt">VK</span></a></li>
+            <li class="social-list__item"><a href="#" class="social-list__desc"><span
+                        class="social-list__alt">Youtube</span></a></li>
+        </ul>
+        <p class="footer__bottom-txt">© Electro place, 2003–2021</p>
+        <a href="#" class="footer__bottom-link">Политика обработки персональных данных</a>
+        <p class="footer__developer">Разработка сайта: <img src="#" alt="logo"></p>
+    </footer>
+
+    <h1>electroplace</h1>
 </body>
 </html>
