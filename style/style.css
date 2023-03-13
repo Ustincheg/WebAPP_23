@@ -1,5 +1,6 @@
 /* * {
     color: red;
+    font-family: 'Open Sans', sans-serif;
 } */
 
 .visually-hidden {
@@ -13,4 +14,14 @@
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+  }
+
+  .top-nav-list__link {
+    /* Верхняя строка */
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+    background: #363636;
   }
