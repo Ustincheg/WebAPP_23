@@ -18,7 +18,7 @@
 
 .header__upp-panel
 {
-    background-color: rgb(54, 54, 54);
+    background-color: #363636;
 }
 
 .header__telephone
@@ -41,11 +41,34 @@
 .hori-list__item
 {
     display: inline-block;
-
 }
 
-/**/
-.text-1
+.advantages
+{
+    background-color: #F1F5F7;
+}
+
+.footer
+{
+    font-family: 'Open Sans';
+}
+
+.footer__upp-part
+{
+    background-color: #F1F5F7;
+}
+
+.footer__down-part
+{
+    background-color: #333333;
+}
+
+.text-open-sans
 {
 	font-family: 'Open Sans';
-}/**/
+}
+
+.text-roboto
+{
+	font-family: 'Roboto';
+}
