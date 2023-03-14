@@ -1,5 +1,5 @@
 * {
-  color: #fea100;
+  color: #000000;
   /* font-family: 'Open Sans', sans-serif;
     font-weight: 400; */
 }
@@ -8,6 +8,7 @@
 
 
 body {
+  background: #695e5e; /* Цвет фона */
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
 }
