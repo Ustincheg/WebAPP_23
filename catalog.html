@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
+    <head class="head">
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,36 +9,28 @@
         <link rel="stylesheet" href="styles/opensans.css">
         <link rel="stylesheet" href="styles/roboto.css">
     </head>
-    <body>
+    <body class="body">
         <header class="header">
-            <div class="header__upp-panel">
-                <ul class="header__list list">
-                    <li class="header__list__item item hori-list__item">
-                        <a class="header__list__link link" href="#">
-                            <p class="text-open-sans">
-                                Магазины
-                            </p>
+            <div class="header__upp-panel upp-panel">
+                <ul class="header__upp-list list">
+                    <li class="header__upp-list__item item hori-list__item">
+                        <a class="header__upp-list__link link" href="#">
+                            Магазины
                         </a>
                     </li>
-                    <li class="header__list__item item hori-list__item">
-                        <a class="header__list__link link" href="#">
-                            <p class="text-open-sans">
-                                Доставка и оплата
-                            </p>
+                    <li class="header__upp-list__item item hori-list__item">
+                        <a class="header__upp-list__link link" href="#">
+                            Доставка и оплата
                         </a>
                     </li>
-                    <li class="header__list__item item hori-list__item">
-                        <a class="header__list__link link" href="#">
-                            <p class="text-open-sans">
-                                Кредиты и рассрочка
-                            </p>
+                    <li class="header__upp-list__item item hori-list__item">
+                        <a class="header__upp-list__link link" href="#">
+                            Кредиты и рассрочка
                         </a>
                     </li>
                 </ul>
                 <a class="header__telephone telephone" href="tel:+79804444444">
-                    <p class="text-open-sans">
-                        +7 (980) 444 44-44
-                    </p>
+                    +7 (980) 444 44-44
                 </a>
             </div>
             <a class="header__logo logo" href="#">
@@ -50,25 +42,19 @@
             <ul class="header__user-list user-list">
                 <li class="header__user-list__item item hori-list__item">
                     <a class="header__user-list__link link" href="#">
-                        <img class="logo__favorites" src="data/images/user-list/heart.jpg" alt="Избранное" />
-                        <p class="text-open-sans">
-                            Избранное
-                        </p>
+                        <img class="logo__favorites" src="data/images/user-list/heart.jpg" alt="Избранное" />Избранное
                     </a>
                 </li>
                 <li class="header__user-list__item item hori-list__item">
                     <a class="header__user-list__link link" href="#">
-                        <img class="logo__user-cart" src="data/images/user-list/cart.jpg" alt="Корзина" />
-                        <p class="text-open-sans">
-                            Корзина
-                        </p>
+                        <img class="logo__user-cart" src="data/images/user-list/cart.jpg" alt="Корзина" />Корзина
                     </a>
                 </li>
             </ul>
             <button class="header__button">
                 Каталог
             </button>
-            <nav>
+            <nav class="header__nav">
                 <ul class="header__nav-list nav-list">
                     <li class="header__nav-list__item item hori-list__item">
                         <a class="nav-list__link link" href="#">
@@ -113,170 +99,187 @@
                 </ul>
             </nav>
         </header>
-        <main>
-            <a href="#">
-                ГЛАВНАЯ
-            </a>
-            <ul>
-                <li class="hori-list__item">
-                    <a href="#">
-                        <p>> КАТАЛОГ</p>
-                    </a>
-                </li>
-                <li class="hori-list__item">
-                    <p>> СМАРТФОНЫ</p>
-                </li>
-            </ol>
+        <main class="main">
+            <div class="breadcrumb">
+                <a class="breadcrumb__main-link" href="#">
+                    ГЛАВНАЯ
+                </a>
+                <ul class="breadcrumb__list">
+                    <li class="breadcrumb__item hori-list__item">
+                        <a class="breadcrumb__link link" href="#">
+                            > КАТАЛОГ
+                        </a>
+                    </li>
+                    <li class="breadcrumb__item hori-list__item">
+                        > СМАРТФОНЫ
+                    </li>
+                </ul>
+            </div>
             <h1 class="visually-hidden">
                 Смартфоны
             </h1>
             <p class="text-roboto">
                 Смартфоны
             </p>
-            <br >
-            <p>656 товаров</p>
-            <p>Сортировать:</p>
+            <br>
+            <p class="text-roboto">
+                656 товаров
+            </p>
+            <p class="text-open-sans">
+                Сортировать:
+            </p>
             <ul class="sort-list">
-                <li class="sort-list__item">
-                    <a class="sort-list__link">
+                <li class="sort-list__item hori-list__item">
+                    <a class="sort-list__link" href="#">
                         По цене
                     </a>
                 </li>
-                <li class="sort-list__item">
-                    <a class="sort-list__link">
+                <li class="sort-list__item hori-list__item">
+                    <a class="sort-list__link" href="#">
                         По популярности
                     </a>
                 </li>
-                <li class="sort-list__item">
-                    <a class="sort-list__link">
+                <li class="sort-list__item hori-list__item">
+                    <a class="sort-list__link" href="#">
                         По новизне
                     </a>
                 </li>
             </ul>
-            <hr >
-            <form action="form.php" method="post">
-                <label for="price">Цена</label><br>
-                <input type="text" id="min-price" name="min-price">
-                <input type="text" id="max-price" name="max-price"><br>
-                <label for="screen-diagonal">Диагональ экрана</label><br>
-                <select id="screen-diagonal" name="screen-diagonal">
-                    <option value="От 6''">От 6''</option>
-                    <option value="От 7''">От 7''</option>
-                </select><br>
-                <label>Бренд</label><br>
-                <input type="checkbox" id="apple" value="apple" name="brand"><label class="light" for="apple">apple</label><br>
-                <input type="checkbox" id="blackview" value="interest_business" name="brand"><label class="light" for="blackview">blackview</label><br>
-                <input type="checkbox" id="clevercel" value="interest_law" name="brand"><label class="light" for="clevercel">clevercel</label><br>
-                <input type="checkbox" id="nokia" value="interest_law" name="brand"><label class="light" for="nokia">nokia</label><br>
-                <input type="checkbox" id="xiaomi" value="interest_law" name="brand"><label class="light" for="xiaomi">xiaomi</label><br>
-                <input type="checkbox" id="zte" value="interest_law" name="brand"><label class="light" for="zte">zte</label><br>
-                <label>Количество SIM-карт</label><br>
-                <input type="radio" id="1SIM" value="1SIM" name="SIM"><label for="1SIM" class="light">1SIM</label><br>
-                <input type="radio" id="2SIM" value="2SIM" name="SIM"><label for="2SIM" class="light">2SIM</label><br>
-            </form>
+            <hr>
+            <aside class="left-goods-form">
+                <form class="goods-form" action="form.php" method="post">
+                    <fieldset class="goods-form__price price">
+                        <legend class="goods-form__price__legend">Цена, ₽</legend>
+                        <input type="text" id="min-price" name="min-price">
+                        <input type="text" id="max-price" name="max-price"><br>
+                        <input type="range" id="price=range" name="range">
+                    </fieldset>
+                    <fieldset class="goods-form__diagonal diagonal">
+                        <legend class="goods-form__diagonal__legeng legeng">Диагональ экрана</legend>
+                        <select id="screen-diagonal" name="screen-diagonal">
+                            <option value="От 6''">От 6''</option>
+                            <option value="От 7''">От 7''</option>
+                        </select>
+                    </fieldset>
+                    <fieldset class="goods-form__brand brand">
+                        <legend class="goods-form__brand__legend">Бренд</legend><br>
+                        <input type="checkbox" id="apple" value="apple" name="brand"><label class="light" for="apple">apple</label><br>
+                        <input type="checkbox" id="blackview" value="blackview" name="brand"><label class="light" for="blackview">blackview</label><br>
+                        <input type="checkbox" id="clevercel" value="clevercel" name="brand"><label class="light" for="clevercel">clevercel</label><br>
+                        <input type="checkbox" id="nokia" value="nokia" name="brand"><label class="light" for="nokia">nokia</label><br>
+                        <input type="checkbox" id="xiaomi" value="xiaomi" name="brand"><label class="light" for="xiaomi">xiaomi</label><br>
+                        <input type="checkbox" id="zte" value="zte" name="brand"><label class="light" for="zte">zte</label>
+                    </fieldset>
+                    <fieldset class="goods-form__sim-amount">
+                        <legend class="goost-form__sim-amount__legend">Количество SIM-карт</legend>
+                        <input type="radio" id="1SIM" value="1SIM" name="SIM"><label for="1SIM" class="light">1SIM</label><br>
+                        <input type="radio" id="2SIM" value="2SIM" name="SIM"><label for="2SIM" class="light">2SIM</label>
+                    </fieldset>
+                </form>
+            </aside>
             <section class="goods">
-                <ul class="goods__list">
-                    <li class="goods__list-item hit-card">
-                        <a href="#" class="hit-card__link">                        
-                            <figure class="hit-card__figure">
-                                <img src="data/images/goods/hit-cards/hit-card-1.jpg" alt="Фото техники" class="hit-card__img" loading="lazy">
-                                <figcaption class="hit-card__desc">
+                <ul class="goods__cards-list">
+                    <li class="goods__cards-list__list__item card item">
+                        <a href="#" class="goods__cards-list__link link">                        
+                            <figure class="card__figure">
+                                <img src="data/images/goods/cards/card-1.jpg" alt="Фото техники" class="card__img" loading="lazy">
+                                <figcaption class="card__desc">
 
                                 </figcaption>
                             </figure>
-                            <p class="hit-card__price">54 440 ₽</p>
+                            <p class="card__price">54 440 ₽</p>
                         </a>
                     </li>
-                    <li class="goods__list-item hit-card">
-                        <a href="#" class="hit-card__link">                        
-                            <figure class="hit-card__figure">
-                                <img src="data/images/goods/hit-cards/hit-card-2.jpg" alt="Фото техники" class="hit-card__img" loading="lazy">
-                                <figcaption class="hit-card__desc">
+                    <li class="goods__cards-list__list__item card item">
+                        <a href="#" class="goods__cards-list__link link">                        
+                            <figure class="card__figure">
+                                <img src="data/images/goods/cards/card-2.jpg" alt="Фото техники" class="card__img" loading="lazy">
+                                <figcaption class="card__desc">
 
                                 </figcaption>
                             </figure>
-                            <p class="hit-card__price hit-card__price--cross-out">62 990 ₽</p>
-                            <p class="hit-card__price">59 990 ₽</p>
+                            <p class="card__price card__price--cross-out">62 990 ₽</p>
+                            <p class="card__price">59 990 ₽</p>
                         </a>
                     </li>
-                    <li class="goods__list-item hit-card">
-                        <a href="#" class="hit-card__link">                        
-                            <figure class="hit-card__figure">
-                                <img src="data/images/goods/hit-cards/hit-card-3.jpg" alt="Фото техники" class="hit-card__img" loading="lazy">
-                                <figcaption class="hit-card__desc">
+                    <li class="goods__cards-list__list__item card item">
+                        <a href="#" class="goods__cards-list__link link">                        
+                            <figure class="card__figure">
+                                <img src="data/images/goods/cards/card-3.jpg" alt="Фото техники" class="card__img" loading="lazy">
+                                <figcaption class="card__desc">
 
                                 </figcaption>
                             </figure>
-                            <p class="hit-card__price hit-card__price--cross-out">32 990 ₽</p>
-                            <p class="hit-card__price">26 790 ₽</p>
+                            <p class="card__price card__price--cross-out">32 990 ₽</p>
+                            <p class="card__price">26 790 ₽</p>
                         </a>
                     </li>
-                    <li class="goods__list-item hit-card">
-                        <a href="#" class="hit-card__link">                        
-                            <figure class="hit-card__figure">
-                                <img src="data/images/goods/hit-cards/hit-card-4.jpg" alt="Фото техники" class="hit-card__img" loading="lazy">
-                                <figcaption class="hit-card__desc">
+                    <li class="goods__cards-list__list__item card item">
+                        <a href="#" class="goods__cards-list__link link">                        
+                            <figure class="card__figure">
+                                <img src="data/images/goods/cards/card-4.jpg" alt="Фото техники" class="card__img" loading="lazy">
+                                <figcaption class="card__desc">
 
                                 </figcaption>
                             </figure>
-                            <p class="hit-card__price hit-card__price--cross-out">65 990 ₽</p>
-                            <p class="hit-card__price">61 990 ₽</p>
+                            <p class="card__price card__price--cross-out">65 990 ₽</p>
+                            <p class="card__price">61 990 ₽</p>
                         </a>
                     </li>
-                    <li class="goods__list-item hit-card">
-                        <a href="#" class="hit-card__link">                        
-                            <figure class="hit-card__figure">
-                                <img src="data/images/goods/hit-cards/hit-card-5.jpg" alt="Фото техники" class="hit-card__img" loading="lazy">
-                                <figcaption class="hit-card__desc">
+                    <li class="goods__cards-list__list__item card item">
+                        <a href="#" class="goods__cards-list__link link">                        
+                            <figure class="card__figure">
+                                <img src="data/images/goods/cards/card-5.jpg" alt="Фото техники" class="card__img" loading="lazy">
+                                <figcaption class="card__desc">
 
                                 </figcaption>
                             </figure>
-                            <p class="hit-card__price">36 990 ₽</p>
+                            <p class="card__price">36 990 ₽</p>
                         </a>
                     </li>
-                    <li class="goods__list-item hit-card">
-                        <a href="#" class="hit-card__link">                        
-                            <figure class="hit-card__figure">
-                                <img src="data/images/goods/hit-cards/hit-card-6.jpg" alt="Фото техники" class="hit-card__img" loading="lazy">
-                                <figcaption class="hit-card__desc">
+                    <li class="goods__cards-list__list__item card item">
+                        <a href="#" class="goods__cards-list__link link">                        
+                            <figure class="card__figure">
+                                <img src="data/images/goods/cards/card-6.jpg" alt="Фото техники" class="card__img" loading="lazy">
+                                <figcaption class="card__desc">
 
                                 </figcaption>
                             </figure>
-                            <p class="hit-card__price">15  990 ₽</p>
+                            <p class="card__price">15  990 ₽</p>
                         </a>
                     </li>
-                    <li class="goods__list-item hit-card">
-                        <a href="#" class="hit-card__link">                        
-                            <figure class="hit-card__figure">
-                                <img src="data/images/goods/hit-cards/hit-card-7.jpg" alt="Фото техники" class="hit-card__img" loading="lazy">
-                                <figcaption class="hit-card__desc">
+                    <li class="goods__cards-list__list__item card item">
+                        <a href="#" class="goods__cards-list__link link">                        
+                            <figure class="card__figure">
+                                <img src="data/images/goods/cards/card-7.jpg" alt="Фото техники" class="card__img" loading="lazy">
+                                <figcaption class="card__desc">
 
                                 </figcaption>
                             </figure>
-                            <p class="hit-card__price hit-card__price--cross-out">70 990 ₽</p>
-                            <p class="hit-card__price">65 990 ₽</p>
+                            <p class="card__price card__price--cross-out">70 990 ₽</p>
+                            <p class="card__price">65 990 ₽</p>
                         </a>
                     </li>
-                    <li class="goods__list-item hit-card">
-                        <a href="#" class="hit-card__link">                        
-                            <figure class="hit-card__figure">
-                                <img src="data/images/goods/hit-cards/hit-card-8.jpg" alt="Фото техники" class="hit-card__img" loading="lazy">
-                                <figcaption class="hit-card__desc">
+                    <li class="goods__cards-list__list__item card item">
+                        <a href="#" class="goods__cards-list__link link">                        
+                            <figure class="card__figure">
+                                <img src="data/images/goods/cards/card-8.jpg" alt="Фото техники" class="card__img" loading="lazy">
+                                <figcaption class="card__desc">
 
                                 </figcaption>
                             </figure>
-                            <p class="hit-card__price">15 000 ₽</p>
+                            <p class="card__price">15 000 ₽</p>
                         </a>
                     </li>
-                    <li class="goods__list-item hit-card">
-                        <a href="#" class="hit-card__link">                        
-                            <figure class="hit-card__figure">
-                                <img src="data/images/goods/hit-cards/hit-card-9.jpg" alt="Фото техники" class="hit-card__img" loading="lazy">
-                                <figcaption class="hit-card__desc">
+                    <li class="goods__cards-list__list__item card item">
+                        <a href="#" class="goods__cards-list__link link">                        
+                            <figure class="card__figure">
+                                <img src="data/images/goods/cards/card-9.jpg" alt="Фото техники" class="card__img" loading="lazy">
+                                <figcaption class="card__desc">
 
                                 </figcaption>
                             </figure>
-                            <p class="hit-card__price">39 990 ₽</p>
+                            <p class="card__price">39 990 ₽</p>
                         </a>
                     </li>
                 </ul>   
@@ -295,7 +298,7 @@
                 </section>
             </div>
             <div class="footer__down-part" >
-                <img class="logo__image" src="data/footer/Logo.svg" alt="Логотип" />
+                <img class="footer__logo__image" src="data/footer/Logo.svg" alt="Логотип" />
                 <ul class="footer__user-list">
                     <li class="list__item ">
                         <a class="list__link" href="#">
@@ -367,7 +370,7 @@
                     </li>
                 </ul>
                 <hr />
-                <p>
+                <p class="footer__text text-open-sans">
                     ©️ Electro plice, 2003–2023 <br />
                     Политика обработки персональных данных
                 </p>
