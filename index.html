@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
+    <head class="head">
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,110 +9,8 @@
         <link rel="stylesheet" href="styles/opensans.css">
         <link rel="stylesheet" href="styles/roboto.css">
     </head>
-    <body>
-        <header class="header">
-            <div class="header__upp-panel">
-                <ul class="header__list list">
-                    <li class="header__list__item item hori-list__item">
-                        <a class="header__list__link link" href="#">
-                            <p class="text-open-sans">
-                                Магазины
-                            </p>
-                        </a>
-                    </li>
-                    <li class="header__list__item item hori-list__item">
-                        <a class="header__list__link link" href="#">
-                            <p class="text-open-sans">
-                                Доставка и оплата
-                            </p>
-                        </a>
-                    </li>
-                    <li class="header__list__item item hori-list__item">
-                        <a class="header__list__link link" href="#">
-                            <p class="text-open-sans">
-                                Кредиты и рассрочка
-                            </p>
-                        </a>
-                    </li>
-                </ul>
-                <a class="header__telephone telephone" href="tel:+79804444444">
-                    <p class="text-open-sans">
-                        +7 (980) 444 44-44
-                    </p>
-                </a>
-            </div>
-            <a class="header__logo logo" href="#">
-                <img class="logo__image" src="data/images/logo.svg" alt="Логотип" width="215" height="46"/>
-            </a>
-            <form class="header__search-form search-form" action="handler.php">
-                <input class="header__search__input" type="text" name="header__search__input" placeholder="Поиск...">
-            </form action="handler.php">
-            <ul class="header__user-list user-list">
-                <li class="header__user-list__item item hori-list__item">
-                    <a class="header__user-list__link link" href="#">
-                        <img class="logo__favorites" src="data/images/user-list/heart.jpg" alt="Избранное" />
-                        <p class="text-open-sans">
-                            Избранное
-                        </p>
-                    </a>
-                </li>
-                <li class="header__user-list__item item hori-list__item">
-                    <a class="header__user-list__link link" href="#">
-                        <img class="logo__user-cart" src="data/images/user-list/cart.jpg" alt="Корзина" />
-                        <p class="text-open-sans">
-                            Корзина
-                        </p>
-                    </a>
-                </li>
-            </ul>
-            <button class="header__button">
-                Каталог
-            </button>
-            <nav>
-                <ul class="header__nav-list nav-list">
-                    <li class="header__nav-list__item item hori-list__item">
-                        <a class="nav-list__link link" href="#">
-                            СКИДКИ
-                        </a>
-                    </li>
-                    <li class="header__nav-list__item item hori-list__item">
-                        <a class="nav-list__link link" href="#">
-                            СМАРТФОНЫ
-                        </a>
-                    </li>
-                    <li class="header__nav-list__item item hori-list__item">
-                        <a class="nav-list__link link" href="#">
-                            ТЕЛЕВИЗОРЫ
-                        </a>
-                    </li>
-                    <li class="header__nav-list__item item hori-list__item">
-                        <a class="nav-list__link link" href="#">
-                            НОУТБУКИ
-                        </a>
-                    </li>
-                    <li class="header__nav-list__item item hori-list__item">
-                        <a class="nav-list__link link" href="#">
-                            СТИРАЛЬНЫЕ МАШИНЫ
-                        </a>
-                    </li>
-                    <li class="header__nav-list__item item hori-list__item">
-                        <a class="nav-list__link link" href="#">
-                            ХОЛОДИЛЬНИКИ
-                        </a>
-                    </li>
-                    <li class="header__nav-list__item item hori-list__item">
-                        <a class="nav-list__link link" href="#">
-                            ПЫЛЕСОСЫ
-                        </a>
-                    </li>
-                    <li class="header__nav-list__item item hori-list__item">
-                        <a class="nav-list__link link" href="#">
-                            МИКРОВОЛНОВКИ
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+    <body class="body">
+        <iframe src="components/header.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
         <main>
             <h1 class="visually-hidden">
                 Интернет магазин бытовой электроники
@@ -139,16 +37,16 @@
                     <figcaption>Новая линейка телевизоров samsung </figcaption>
                     <img src="data/images/samsung_tv.png" alt="Телевизор">
                 </figure>
-                <a href="#">Смотреть каталог</a>
+                <a class="button-text" href="#">Смотреть каталог</a>
             </section>
             <section class="sales-hits">
                 <h2 class="visually-hidden">
                     Хиты продаж
                 </h2>
-                <p class="sales-hits__title title text-roboto">
+                <p class="sales-hits__title title titles-text">
                     Хиты продаж
                 </p>
-                <a href="#" class="sales-hits__link-btn link-btn">Смотреть все</a>
+                <a href="#" class="sales-hits__link-btn link-btn button-text">Смотреть все</a>
                 <ul class="sales-hits__list">
                     <li class="sales-hits__list-item hit-card">
                         <a href="#" class="hit-card__link">                        
@@ -203,10 +101,10 @@
                 <h2 class="visually-hidden">
                     Популярные бренды
                 </h2>
-                <p class="popular-brands__title title text-roboto">
+                <p class="popular-brands__title title titles-text">
                     Популярные бренды
                 </p>
-                <a href="#" class="popular-brands__link-btn link-btn">Смотреть все</a>
+                <a href="#" class="popular-brands__link-btn link-btn button-text">Смотреть все</a>
                 <ul class="popular-brands__list">
                     <li class="popular-brands__list-item">
                         <img src="data/images/brands/brand-card-1.jpg" alt="Лого бренда" loading="lazy">
@@ -238,10 +136,10 @@
                 <h2 class="visually-hidden">
                     Новости и акции
                 </h2>
-                <p class="text-roboto">
+                <p class="news_and_promotions__title title titles-text">
                     Новости и акции
                 </p>
-                <a href="#">
+                <a class="news_and_promotions__link link button-text" href="#">
                     Смотреть все
                 </a>
             </section>
@@ -249,35 +147,41 @@
                 <h2 class="visually-hidden">
                     Преимущества
                 </h2>
-                <p class="text-roboto">
+                <p class="advantages__title title titles-text">
                     Преимущества
                 </p>
                 <ul class="advantages__list">
                     <li class="list__item hori-list__item">
                         <img class="item__logo" src="data/images/advantages/advantages-1.png" alt="Преимущество_1"  loading="lazy" />
-                        <p>
-                            <b>Простая и удобная система заказа товара</b>
+                        <p class="advantages-text">
+                            <b class="advantages-title">Простая и удобная система заказа товара</b>
                             <br />
-                            Мы знаем, как важна простая система регистрации и оформления заказа,
-                            поэтому делаем всё для того, чтобы оформить заказ было удобно (и быстро!).
+                            <p class="advantages-context">
+                                Мы знаем, как важна простая система регистрации и оформления заказа,
+                                поэтому делаем всё для того, чтобы оформить заказ было удобно (и быстро!).
+                            </p>
                         </p>
                     </li>
                     <li class="list__item hori-list__item">
                         <img class="item__logo" src="data/images/advantages/advantages-2.png" alt="Преимущество_2"  loading="lazy" />
-                        <p>
-                            <b>Оповещаем о состоянии заказа по SMS</b>
+                        <p class="advantages-text">
+                            <b class="advantages-title">Оповещаем о состоянии заказа по SMS</b>
                             <br />
-                            Для тех, кто всегда хочет быть в курсе: вы сами можете контролировать свой заказ
-                            получая статус о его формировании посредством sms-сообщений.
+                            <p class="advantages-context"></p>
+                                Для тех, кто всегда хочет быть в курсе: вы сами можете контролировать свой заказ
+                                получая статус о его формировании посредством sms-сообщений.
+                            </p>
                         </p>
                     </li>
                     <li class="list__item hori-list__item">
                         <img class="item__logo" src="data/images/advantages/advantages-3.png" alt="Преимущество_3"  loading="lazy" />
-                        <p>
-                            <b>Оперативаня доставка</b>
+                        <p class="advantages-text">
+                            <b class="advantages-title">Оперативаня доставка</b>
                             <br />
-                            Мы привыкли работать с большими объёмами заказов, поэтому вам не стоит беспокоиться
-                            о том, что ваш заказ будет обработан не вовремя.
+                            <p class="advantages-context"></p>
+                                Мы привыкли работать с большими объёмами заказов, поэтому вам не стоит беспокоиться
+                                о том, что ваш заказ будет обработан не вовремя.
+                            </p>
                         </p>
                     </li>
                 </ul>
@@ -286,131 +190,45 @@
                 <h2 class="visually-hidden">
                     Контакты
                 </h2>
-                <p class="text-roboto">
+                <p class="contacts__title title titles-text">
                     Контакты
                 </p>
                 <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6b66280b83cdf1611d547ce5796e33a51a5b5e1228da0a1fe5beb70106635ee7&width=759&height=543&lang=ru_RU&scroll=true"></script>
                 <ul class="contacts__list">
                     <li class="list__item">
                         <img class="item__logo" src="data/images/contacts/contacts-1.jpg" alt="Адрес" />
-                        <p>
-                            <b>Адрес</b>
+                        <p class="contacts-text">
+                            <b class="contacts-title">Адрес</b>
                             <br />
-                            7-ая Кожуховская улица, 9, Москва (1 этаж)
+                            <p class="contacts-context">
+                                7-ая Кожуховская улица, 9, Москва (1 этаж)
+                            </p>
                         </p>
                     </li>
                     <li class="list__item">
                         <img class="item__logo" src="data/images/contacts/contacts-2.jpg" alt="Телефон" />
-                        <p>
-                            <b>Телефон</b>
+                        <p class="contacts-text">
+                            <b class="contacts-title">Телефон</b>
                             <br />
-                            <a class="contacts__telephone" href="tel:+79804444444">+7 (980) 444 44-44</a>
+                            <a class="contacts__telephone contacts-context" href="tel:+79804444444">+7 (980) 444 44-44</a>
                         </p>
                     </li>
                     <li class="list__item">
                         <img class="item__logo" src="data/images/contacts/contacts-3.jpg" alt="График" />
-                        <p>
-                            <b>График работы</b>
+                        <p class="contacts-text">
+                            <b class="contacts-title">График работы</b>
                             <br />
-                            Пн–Пт 9:00 до 20:00
+                            <p class="contacts-context">
+                                Пн–Пт 9:00 до 20:00
+                            </p>
                         </p>
                     </li>
                 </ul>
-                <a href="#">
+                <a class="button-text" href="#">
                     Написать нам
                 </a>
             </section>
         </main>
-        <footer class="footer">
-            <div class="footer__upp-part">
-                <section class="subscribe">
-                    <p class="text-roboto">
-                        Получайте самые интересные предложения первыми!
-                    </p>
-                    <form class="subscribe__form" action="handler.php">
-                        <input type="text" placeholder="Введите ваш email" />
-                        <button >Подписаться</button>
-                    </form>
-                </section>
-            </div>
-            <div class="footer__down-part" >
-                <img class="logo__image" src="data/footer/Logo.svg" alt="Логотип" />
-                <ul class="footer__user-list">
-                    <li class="list__item ">
-                        <a class="list__link" href="#">
-                            Скидки
-                        </a>
-                    </li>
-                    <li class="list__item">
-                        <a class="list__link" href="#">
-                            Акции
-                        </a>
-                    </li>
-                    <li class="list__item">
-                        <a class="list__link" href="#">
-                            Покупателям
-                        </a>
-                    </li>
-                    <li class="list__item">
-                        <a class="list__link" href="#">
-                            Информация
-                        </a>
-                    <li class="list__item">
-                        <a class="list__link" href="#">
-                            Доставка
-                        </a>
-                    </li>
-                </ul>
-                <ul class="footer__general-list">
-                    <li class="list__item">
-                        <a class="list__link" href="#">
-                            Гарантия
-                        </a>
-                    </li>
-                    <li class="list__item">
-                        <a class="list__link" href="#">
-                            Кредит и рассрочка
-                        </a>
-                    </li>
-                    <li class="list__item">
-                        <a class="list__link" href="#">
-                            Новости
-                        </a>
-                    </li>
-                    <li class="list__item">
-                        <a class="list__link" href="#">
-                            Вакансии
-                        </a>
-                    </li>
-                </ul>
-                <ul class="footer__link-list">
-                    <li class="list__item hori-list__item">
-                        <a class="list__link" href="#">
-                            <img src="data/footer/links/link-1.png" alt="VK"/>
-                        </a>
-                    </li>
-                    <li class="list__item hori-list__item">
-                        <a class="list__link" href="#">
-                            <img src="data/footer/links/link-2.png" alt="Facebook"/>
-                        </a>
-                    </li>
-                    <li class="list__item hori-list__item">
-                        <a class="list__link" href="#">
-                            <img src="data/footer/links/link-3.png" alt="YouTube"/>
-                        </a>
-                    </li>
-                    <li class="list__item hori-list__item">
-                        <a class="list__link" href="#">
-                            <img src="data/footer/links/link-4.png" alt="Instagram"/>
-                        </a>
-                    </li>
-                </ul>
-                <hr />
-                <p>
-                    ©️ Electro plice, 2003–2023 <br />
-                    Политика обработки персональных данных
-                </p>
-            </div>
-        </footer>
+        <iframe src="components/footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
     </body>
 </html>
