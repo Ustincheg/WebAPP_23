@@ -12,25 +12,42 @@
   overflow: hidden;
 }
 
-.content{
+.content {
   max-width: 1170px;
   margin: 0 auto;
 }
 
-ul{
+ul {
   list-style: none;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
 }
 
-.header__navlist{
+.header__content {
   display: flex;
-  background:  #363636;
   justify-content: space-between;
+  min-height: 107px;
+  max-width: 1170px;
+  align-items: center;
+}
+
+.header__navlist {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1170px;
+  min-height: 53px;
+  margin: 0 auto;
+}
+
+.body__header__background {
+  background:  #363636;
+  min-height: 53px;
 }
 
 .navlist{
   font-family: 'Open Sans';
+   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 19px;
@@ -38,6 +55,19 @@ ul{
   list-style: none;
   gap: 30px;
   display: flex;
+}
+
+.contacts__list {
+  display: flex;
+  gap: 79px;
+}
+
+.header__navigation{
+  display: flex;
+  justify-content: space-between;
+  min-height: 45px;
+  max-width: 1170px;
+  align-items: center;  
 }
 
 .header__navigation-list{
@@ -54,8 +84,9 @@ ul{
 
 .hits__items{
   list-style: none;
-  gap: 30px;
+  gap: 100px;
   display: flex;
+  justify-content: space-between;
 }
 
 .brands__items{
@@ -72,19 +103,78 @@ ul{
   flex-wrap: wrap;
 }
 
+.advantages {
+  background-color: #F1F5F7;
+  min-height: 443px;
+}
+
 .advantages__items{
   list-style: none;
   gap: 30px;
+  min-height: 443px;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subscription__content {
+  background-color: #F1F5F7;
+  min-height: 152px;
+}
+
+.subscription__setings{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 152px;
 }
 
 .footer {
 background:  #363636;
+min-height: 296px;
 }
 
+.footer__info {
+  display: flex;
+  justify-content: space-between; 
+  min-height: 296px;
+}
+
+.footer__social-list_social-list {
+  list-style: none;
+  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer__end {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+}
 
 body {
   font-family: 'Open Sans', sans-serif;
+}
+
+.main-title-sort {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+  align-items: center;
+}
+
+.smart__list{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+
+.smart__list-item {
+  max-width: 270px;
+  max-height: 443px;
 }
 
 .navlist__list-item-link {
@@ -211,4 +301,6 @@ body {
   font-size: 32px;
   line-height: 38px;
   color: #000000;
+  display: flex;
+  justify-content: space-between;
 }
