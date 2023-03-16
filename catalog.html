@@ -30,11 +30,11 @@
             <h1 class="visually-hidden">
                 Смартфоны
             </h1>
-            <p class="text-roboto">
+            <p class="titles-text">
                 Смартфоны
             </p>
             <br>
-            <p class="text-roboto">
+            <p class="goods-text">
                 656 товаров
             </p>
             <p class="text-open-sans">
@@ -61,31 +61,31 @@
             <aside class="left-goods-form">
                 <form class="goods-form" action="form.php" method="post">
                     <fieldset class="goods-form__price price">
-                        <legend class="goods-form__price__legend">Цена, ₽</legend>
-                        <input type="text" id="min-price" name="min-price">
-                        <input type="text" id="max-price" name="max-price"><br>
-                        <input type="range" id="price=range" name="range">
+                        <legend class="goods-form__price__legend legend">Цена, ₽</legend>
+                        <input class="input-min-price" type="text" id="min-price" name="min-price">
+                        <input class="input-max-price" type="text" id="max-price" name="max-price"><br>
+                        <input class="input-price-range" type="range" id="price=range" name="range">
                     </fieldset>
                     <fieldset class="goods-form__diagonal diagonal">
-                        <legend class="goods-form__diagonal__legeng legeng">Диагональ экрана</legend>
-                        <select id="screen-diagonal" name="screen-diagonal">
+                        <legend class="goods-form__diagonal__legend legend">Диагональ экрана</legend>
+                        <select class="form-select-diagonal" id="screen-diagonal" name="screen-diagonal">
                             <option value="От 6''">От 6''</option>
                             <option value="От 7''">От 7''</option>
                         </select>
                     </fieldset>
                     <fieldset class="goods-form__brand brand">
-                        <legend class="goods-form__brand__legend">Бренд</legend><br>
-                        <input type="checkbox" id="apple" value="apple" name="brand"><label class="light" for="apple">apple</label><br>
-                        <input type="checkbox" id="blackview" value="blackview" name="brand"><label class="light" for="blackview">blackview</label><br>
-                        <input type="checkbox" id="clevercel" value="clevercel" name="brand"><label class="light" for="clevercel">clevercel</label><br>
-                        <input type="checkbox" id="nokia" value="nokia" name="brand"><label class="light" for="nokia">nokia</label><br>
-                        <input type="checkbox" id="xiaomi" value="xiaomi" name="brand"><label class="light" for="xiaomi">xiaomi</label><br>
-                        <input type="checkbox" id="zte" value="zte" name="brand"><label class="light" for="zte">zte</label>
+                        <legend class="goods-form__brand__legend legend">Бренд</legend><br>
+                        <input class="brand-checkbox" type="checkbox" id="apple" value="apple" name="brand"><label class="light" for="apple">apple</label><br>
+                        <input class="brand-checkbox" type="checkbox" id="blackview" value="blackview" name="brand"><label class="light" for="blackview">blackview</label><br>
+                        <input class="brand-checkbox" type="checkbox" id="clevercel" value="clevercel" name="brand"><label class="light" for="clevercel">clevercel</label><br>
+                        <input class="brand-checkbox" type="checkbox" id="nokia" value="nokia" name="brand"><label class="light" for="nokia">nokia</label><br>
+                        <input class="brand-checkbox" type="checkbox" id="xiaomi" value="xiaomi" name="brand"><label class="light" for="xiaomi">xiaomi</label><br>
+                        <input class="brand-checkbox" type="checkbox" id="zte" value="zte" name="brand"><label class="light" for="zte">zte</label>
                     </fieldset>
                     <fieldset class="goods-form__sim-amount">
-                        <legend class="goost-form__sim-amount__legend">Количество SIM-карт</legend>
-                        <input type="radio" id="1SIM" value="1SIM" name="SIM"><label for="1SIM" class="light">1SIM</label><br>
-                        <input type="radio" id="2SIM" value="2SIM" name="SIM"><label for="2SIM" class="light">2SIM</label>
+                        <legend class="goost-form__sim-amount__legend legend">Количество SIM-карт</legend>
+                        <input class="sim-amount-radio" type="radio" id="1SIM" value="1SIM" name="SIM"><label for="1SIM" class="light">1SIM</label><br>
+                        <input class="sim-amount-radio" type="radio" id="2SIM" value="2SIM" name="SIM"><label for="2SIM" class="light">2SIM</label>
                     </fieldset>
                 </form>
             </aside>
