@@ -14,3 +14,9 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
+
+  li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
