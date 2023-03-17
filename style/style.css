@@ -11,7 +11,15 @@
     overflow: hidden;
 }
 
-.navlist__link {
+.nav-list__link {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+.header__phone-link {
     font-family: 'Open Sans';
     font-weight: 400;
     font-size: 14px;

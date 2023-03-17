@@ -22,7 +22,7 @@
             <li class="nav-list__item"><a class="nav-list__link" href="#">Кредиты и рассрочка</a></li>
         </ul>
         <a class="header__phone-link" href="tel:+74954448885">8 (495) 444-888-5</a>
-        <a class="header__logo-link" href="#"><img src="img/Logo.svg" alt="logo"></a>
+        <a class="header__logo-link" href="#"><img class="header__logo-img" src="img/Logo.svg" alt="logo"></a>
         <form action=""><input class="header__search-text" type="text" placeholder="Поиск.." name="search"></form>
         <a class="header__favorite-link" href="#">Избранное (0)</a>
         <a class="header__cart-link" href="#">Корзина (0)</a>
@@ -49,32 +49,32 @@
                 <li class="slider__item">
                     <p class="slider__text">Микроволновая печь HUNDAI</p>
                     <p class="slider__txt">Готовьте вкусно и быстро</p>
-                    <img src="img/Nuke.jpg" alt="picture-one">
+                    <img class="slider__img" src="img/index/banner/Nuke.jpg" alt="picture-one">
                 </li>
                 <li class="slider__item">
                     <p class="slider__text">TWO</p>
                     <p class="slider__txt">Two</p>
-                    <img src="#" alt="picture-two" loading="lazy">
+                    <img class="slider__img" src="#" alt="picture-two" loading="lazy">
                 </li>
                 <li class="slider__item">
                     <p class="slider__text">THREE</p>
                     <p class="slider__txt">three</p>
-                    <img src="#" alt="picture-three" loading="lazy">
+                    <img class="slider__img" src="#" alt="picture-three" loading="lazy">
                 </li>
                 <li class="slider__item">
                     <p class="slider__text">FOUR</p>
                     <p class="slider__txt">four</p>
-                    <img src="#" alt="picture-four" loading="lazy">
+                    <img class="slider__img" src="#" alt="picture-four" loading="lazy">
                 </li>
                 <li class="slider__item">
                     <p class="slider__text">FIVE</p>
                     <p class="slider__txt">five</p>
-                    <img src="#" alt="picture-five" loading="lazy">
+                    <img class="slider__img" src="#" alt="picture-five" loading="lazy">
                 </li>
             </ul>
             <div class="banner__mini mini">
                 <p class="mini__text">Новая линейка телевизоров samsung</p>
-                <img src="img/TV.jpg" alt="picture-TV">
+                <img class="mini__img" src="img/index/banner/TV.jpg" alt="picture-TV">
                 <a class="mini__catalog-link" href="#">Смотреть каталог</a>
             </div>
         </section>
@@ -85,33 +85,41 @@
             <ul class="hits__card-list card-list">
                 <li class="card-list__item">
                     <a class="card-list__link" href="#">
-                        <img src="img/Multicooker.jpg" alt="picture-multicooker">
-                        <p class="card-list__text">Мультиварка Redmond</p>
-                        <strike class="card-list___wording">6 990 ₽</strike>
-                        <p class="card-list__txt">5 533 ₽</p>
+                        <figure class="card-list__figure">
+                            <img class="card-list__img" src="img/index/hits/Multicooker.jpg" alt="picture-multicooker">
+                            <figcaption class="card-list__txt">Мультиварка Redmond</figcaption>
+                        </figure>
+                        <strike class="card-list___old-price">6 990 ₽</strike>
+                        <p class="card-list__price">5 533 ₽</p>
                     </a>
                 </li>
                 <li class="card-list__item">
                     <a class="card-list__link" href="#">
-                        <img src="#" alt="picture-smartphone">
-                        <p class="card-list__text">Смартфон Huawei Mate 40 Pro Mystic Silver</p>
-                        <p class="card-list__txt">36 990 ₽</p>
+                        <figure class="card-list__figure">
+                            <img class="card-list__img" src="img/index/hits/Smartphone.jpg" alt="picture-smartphone">
+                            <figcaption class="card-list__txt">Смартфон Huawei Mate 40 Pro Mystic Silver</figcaption>
+                        </figure>
+                        <p class="card-list__price">36 990 ₽</p>
                     </a>
                 </li>
                 <li class="card-list__item">
                     <a class="card-list__link" href="#">
-                        <img src="#" alt="picture-electric kettle">
-                        <p class="card-list__text">Электрочайник Moulinex</p>
-                        <strike class="card-list___wording">3 990 ₽</strike>
-                        <p class="card-list__txt">1 990 ₽</p>
+                        <figure class="card-list__figure">
+                            <img class="card-list__img" src="img/index/hits/Teapot.jpg" alt="picture-electric kettle">
+                            <figcaption class="card-list__txt">Электрочайник Moulinex</figcaption>
+                        </figure>
+                        <strike class="card-list___old-price">3 990 ₽</strike>
+                        <p class="card-list__price">1 990 ₽</p>
                     </a>
                 </li>
                 <li class="card-list__item">
                     <a class="card-list__link" href="#">
-                        <img src="#" alt="picture-cleaner">
-                        <p class="card-list__text">Пылесос с контейнером для пыли Tefal City Space</p>
-                        <strike class="card-list___wording">16 990 ₽</strike>
-                        <p class="card-list__txt">14 990 ₽</p>
+                        <figure class="card-list__figure">
+                            <img class="card-list__img" src="img/index/hits/Cleaner.jpg" alt="picture-cleaner">
+                            <figcaption class="card-list__txt">Пылесос с контейнером для пыли Tefal City Space</figcaption>
+                        </figure>
+                        <strike class="card-list___old-price">16 990 ₽</strike>
+                        <p class="card-list__price">14 990 ₽</p>
                     </a>
                 </li>
             </ul>
@@ -121,21 +129,21 @@
             <p class="brands__heading">Популярные бренды</p>
             <a class="brands__link-btn link-btn" href="#">Смотреть все</a>
             <ul class="brands__picture-list picture-list">
-                <li class="picture-list__item"><a class="picture-list__link" href="#"><img src="#"
+                <li class="picture-list__item"><a class="picture-list__link" href="#"><img class="picture-list__img" src="img/index/brands/Samsung.jpg"
                             alt="picture-samsung"></a></li>
-                <li class="picture-list__item"><a class="picture-list__link" href="#"><img src="#"
+                <li class="picture-list__item"><a class="picture-list__link" href="#"><img class="picture-list__img" src="img/index/brands/Oral-B.jpg"
                             alt="picture-oral-b"></a></li>
-                <li class="picture-list__item"><a class="picture-list__link" href="#"><img src="#"
+                <li class="picture-list__item"><a class="picture-list__link" href="#"><img class="picture-list__img" src="img/index/brands/LG Life's Good.jpg"
                             alt="picture-LG-Life's-Good"></a></li>
-                <li class="picture-list__item"><a class="picture-list__link" href="#"><img src="#"
+                <li class="picture-list__item"><a class="picture-list__link" href="#"><img class="picture-list__img" src="img/index/brands/Apple.jpg"
                             alt="picture-apple"></a></li>
-                <li class="picture-list__item"><a class="picture-list__link" href="#"><img src="#" alt="picture-APC"
+                <li class="picture-list__item"><a class="picture-list__link" href="#"><img class="picture-list__img" src="img/index/brands/APC.jpg" alt="picture-APC"
                             loading="lazy"></a></li>
-                <li class="picture-list__item"><a class="picture-list__link" href="#"><img src="#" alt="picture-xiaomi"
+                <li class="picture-list__item"><a class="picture-list__link" href="#"><img class="picture-list__img" src="img/index/brands/Xiaomi.jpg" alt="picture-xiaomi"
                             loading="lazy"></a></li>
-                <li class="picture-list__item"><a class="picture-list__link" href="#"><img src="#" alt="picture-LG-OLED"
+                <li class="picture-list__item"><a class="picture-list__link" href="#"><img class="picture-list__img" src="img/index/brands/LG OLED.jpg" alt="picture-LG-OLED"
                             loading="lazy"></a></li>
-                <li class="picture-list__item"><a class="picture-list__link" href="#"><img src="#" alt="picture-digma"
+                <li class="picture-list__item"><a class="picture-list__link" href="#"><img class="picture-list__img" src="img/index/brands/Digma.jpg" alt="picture-digma"
                             loading="lazy"></a></li>
             </ul>
         </section>
@@ -147,32 +155,32 @@
                 <li class="products-list__item">
                     <p class="products-list__text">Бренд BLOODY представил мышь W60 Pro</p>
                     <p class="products-list__txt">Популярный бренд компьютерных аксессуаров</p>
-                    <img src="#" alt="picture-computer-mouse" loading="lazy">
+                    <img class="products-list__img" src="img/index/news-stocks/Computer mouse.jpg" alt="picture-computer-mouse" loading="lazy">
                     <a class="products-list__link" href="#">Подробнее</a>
                 </li>
                 <li class="products-list__item">
                     <p class="products-list__text">Плата asus</p>
-                    <img src="#" alt="picture-computer-board" loading="lazy">
+                    <img class="products-list__img" src="img/index/news-stocks/Computer board.jpg" alt="picture-computer-board" loading="lazy">
                     <a class="products-list__link" href="#">Подробнее</a>
                 </li>
                 <li class="products-list__item">
                     <p class="products-list__text">Системный блок acer</p>
-                    <img src="#" alt="picture-system-unit" loading="lazy">
+                    <img class="products-list__img" src="img/index/news-stocks/System unit.jpg" alt="picture-system-unit" loading="lazy">
                     <a class="products-list__link" href="#">Подробнее</a>
                 </li>
                 <li class="products-list__item">
                     <p class="products-list__text">Планшет samsung</p>
-                    <img src="#" alt="picture-tablet" loading="lazy">
+                    <img class="products-list__img" src="img/index/news-stocks/Tablet.jpg" alt="picture-tablet" loading="lazy">
                     <a class="products-list__link" href="#">Подробнее</a>
                 </li>
                 <li class="products-list__item">
                     <p class="products-list__text">Новые наушники Razer</p>
-                    <img src="#" alt="picture-headphones" loading="lazy">
+                    <img class="products-list__img" src="img/index/news-stocks/Headphones.jpg" alt="picture-headphones" loading="lazy">
                     <a class="products-list__link" href="#">Подробнее</a>
                 </li>
                 <li class="products-list__item">
                     <p class="products-list__text">Мультипекарь Redmond плюс</p>
-                    <img src="#" alt="picture-multipekar" loading="lazy">
+                    <img class="products-list__img" src="img/index/news-stocks/Multipekar.jpg" alt="picture-multipekar" loading="lazy">
                     <a class="products-list__link" href="#">Подробнее</a>
                 </li>
             </ul>
@@ -182,19 +190,19 @@
             <p class="advantages__headingt">Преимущества</p>
             <ul class="advantages__top-list top-list">
                 <li class="top-list__item">
-                    <img src="#" alt="picture-order" loading="lazy">
+                    <img class="top-list__img" src="img/index/advantages/Order.svg" alt="picture-order" loading="lazy">
                     <p class="top-list__text">Простая и удобная система заказа товара</p>
                     <p class="top-list__txt">Мы знаем, как важна простая система регистрации и оформления заказа,
                         поэтому делаем все для того, чтобы оформить заказ было удобно (и быстро!).</p>
                 </li>
                 <li class="top-list__item">
-                    <img src="#" alt="picture-SMS" loading="lazy">
+                    <img class="top-list__img" src="img/index/advantages/SMS.svg" alt="picture-SMS" loading="lazy">
                     <p class="top-list__text">Оповещаем о состоянии заказа по SMS</p>
                     <p class="top-list__txt">Для тех, кто всегда хочет быть в курсе: вы сами можете контролировать свой
                         заказ, получая статус о его формировании посредством sms-сообщений.</p>
                 </li>
                 <li class="top-list__item">
-                    <img src="#" alt="picture-delivery" loading="lazy">
+                    <img class="top-list__img" src="img/index/advantages/Delivery.svg" alt="picture-delivery" loading="lazy">
                     <p class="top-list__text">Оперативная доставка</p>
                     <p class="top-list__txt">Мы привыкли работать с большими объемами заказов, поэтому вам не стоит
                         беспокоиться о том, что ваш заказ будет обработан не вовремя.</p>
@@ -204,7 +212,7 @@
         <section class="main__contacts contacts">
             <h2 class="contacts__title">Контакты</h2>
             <p class="contacts__headingt">Контакты</p>
-            <img src="#" alt="map" loading="lazy">
+            <img class="contacts__map-img" src="img/index/contacts/Map.jpg" alt="map" loading="lazy">
             <address>
                 <ul class="contacts__addr-list">
                     <li class="addr-list__item">
@@ -235,7 +243,7 @@
     </main>
 
     <footer class="footer">
-        <img src="img/Logo.svg" alt="logo">
+        <img class="footer__logo-img" src="img/Logo.svg" alt="logo">
         <p class="footer__addres">7-я Кожуховская ул., 9, Москва (этаж 1)</p>
         <ul class="footer__navigat-list navigat-list">
             <li class="navigat-list__item"><a href="#" class="navigat-list__link">Скидки</a></li>
@@ -259,7 +267,7 @@
         </ul>
         <p class="footer__text">© Electro place, 2003–2021</p>
         <a href="#" class="footer__link">Политика обработки персональных данных</a>
-        <p class="footer__developer">Разработка сайта: <img src="#" alt="logo"></p>
+        <p class="footer__developer">Разработка сайта: <img class="footer__img" src="img/Garpix logo.svg" alt="logo"></p>
     </footer>
 
 </body>
