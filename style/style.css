@@ -20,6 +20,42 @@
     font-family: "Roboto", sans-serif;
   }
 
+  footer{
+    background-color: black;
+  }
+  .footer__nav-list{
+    color: white;
+  }
+  .footer__addres{
+    color: white;
+  }
+  .footer__nav-list-item{
+    color: white;
+  }
+  .footer__nav-list-link{
+    color: white;
+  }
+  .social-list__desc{
+    color: white;
+  }
+  .social-list__alt{
+    color: white;
+  }
+  .social-list__item{
+    color: white;
+  }
+  .footer__bottom-txt{
+    color: white;
+  }
+  .footer__bottom-link{
+    color: white;
+  }
+  .footer__developer
+  {
+    color: white;
+  }
+
+
   body{
     font-family: "Open Sans", sans-serif;
   }
@@ -54,7 +90,14 @@
     display: flex;
     align-items: center;
   }
+  .header__path{
 
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+  }
   h3{
     font-family: "Roboto", sans-serif;
     font-style: normal;
