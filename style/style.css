@@ -1,5 +1,8 @@
 /* * {
     color: red;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
 } */
 
 .visually-hidden {
@@ -13,10 +16,10 @@
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-  }
+}
 
-  li {
+li {
     list-style: none;
     margin: 0;
     padding: 0;
-  }
+}
