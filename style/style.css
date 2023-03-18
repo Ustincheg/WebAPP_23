@@ -54,9 +54,242 @@ h3 {
     align-items: center;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 
-.main-nav__list{
-    
+body {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.top-nav-list__link {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+.header__phone-link {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+
+.content{
+    margin: 0 auto;
+    max-width: 1170px;
+}
+
+.subscribe{
+    background: #F1F5F7;
+}
+
+
+.header__top-nav-list{
+    display: flex;
+    gap: 20px;
+}
+
+.header__top .content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__top{
+    padding: 17px 0;
+}
+
+.advantages {
+    background: #F1F5F7;
+    display: block;
+    padding: 7px 0px;
+}
+
+
+.advantages__list{
+    display: flex;
+}
+.header__top {
+    background: #363636;
+}
+
+.header__button {
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+.main-nav__list-item-link {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.banner__slider-item.active {
+    display: block;
+}
+
+.banner__slider-item {
+    display: none;
+}
+
+.banner__card-desc {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+.banner__card-link {
+    background: #FFFFFF;
+    border-radius: 8px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #000000;
+}
+
+.banner__card {
+    background: #363636;
+    border-radius: 8px;
+}
+
+.footer {
+    background: #333333;
+}
+
+.title {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #000000;
+}
+
+.link-btn {
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #005AAB;
+    box-sizing: border-box;
+    border: 1px solid #005AAB;
+    border-radius: 8px;
+}
+
+.hit-card__desc {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.list-news__item-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+.list-news__item-desc {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.list-news__item-link {
+    background: #FFFFFF;
+    border-radius: 8px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #000000;
+}
+
+.advantages__list-title {
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.advantages__list-desc {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.contacts__list-title {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.contacts__list-desc,
+.contacts__list-desc a {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.blue__button {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+    background: #005AAB;
+    border-radius: 8px;
+    border: none;
 }
 
 .top-nav-list__link {
@@ -67,13 +300,4 @@ h3 {
     display: flex;
     align-items: center;
     color: #FFFFFF;
-}
-
-
-.header__phone-link {
-    color: #FFFFFF;
-}
-
-.footer__img {
-    background-color: black;
 }
