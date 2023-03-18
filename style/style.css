@@ -17,11 +17,320 @@
   }
 
   .top-nav-list__link {
-    /* Верхняя строка */
+    /* Верхняя строка (Магазин, доставка, кредиты) */
     font-family: 'Open Sans';
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
+
     color: #FFFFFF;
     background: #363636;
+  }
+
+
+  .header__phone-link {
+    /* Телефон (сверху) */
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+
+    color: #FFFFFF;
+    background: #363636;
+  }
+
+
+  .header__button.button {
+    /* Каталог */
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+
+    color: #FFFFFF;
+    background: #005AAB;
+  }
+
+  .main-nav__list-item-link {
+    /* Каталог: ... */
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    
+    color: #000000;
+  }
+/* ------------------------------------------------------- Главная страница интернет магазина бытовой электроники------------------------------------------------------------- */
+
+/* -------------------------------------------------------- Главный банер ------------------------------------------------------------ */
+
+/* --------------------------------------------------------- Хиты продаж ------------------------------------------------------------- */
+
+  .sales-hits__title.title {
+    /* Хиты продаж */
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+
+    color: #000000;
+  }
+
+  .sales-hits__link-btn.link-btn {
+    /* Смотреть всё */
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+
+    color: #005AAB;
+  }
+
+  .hit-card__price.hit-card__price--cross-out {
+    /* Обычная цена */
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+
+    text-decoration-line: line-through;
+
+    color: #7D868F;
+  }
+
+  .hit-card__price {
+    /* Текущая цена */
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+
+    color: #000000;
+  }
+
+  /* ---------------------------------------- Популярные бренды ---------------------------------------- */
+
+  .top-brands__title.title {
+    /* Популярные бренды */
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+
+    color: #000000;
+  }
+
+  .top-brands__link-btn.link-btn {
+    /* Смотреть всё */
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+
+    color: #005AAB;
+  }
+
+   /* ----------------------------------------- Новости и акции ----------------------------------------- */
+
+   .news-promo__title {
+    /* Новости и акции */
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+
+    color: #000000;
+   }
+
+   .list-news__item-title {
+    /* Бренды */
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+
+    /*color: #FFFFFF;*/
+   }
+
+   .list-news__item-desc {
+    /* Мелкими про бренд мышки */
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+
+    /*color: #FFFFFF;*/
+   }
+
+   .list-news__item-link {
+    /* Подробнее */
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+
+    color: #000000;
+   }
+
+  /* --------------------------------------------- Преимущества --------------------------------------------- */
+
+  .advantages__title {
+    /* Преимущества */
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+
+    color: #000000;
+  }
+
+  .advantages__list-title {
+    /* Какие преимущества */
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #000000;
+  }
+
+  .advantages__list-desc {
+    /* Подробности про преимущества */
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #000000;
+  }
+
+  /* ----------------------------------------------- Контакты ----------------------------------------------- */
+
+  .contacts__title {
+    /* Контакты */
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+
+    color: #000000;
+  }
+
+  .contacts__list-title {
+    /* Какие контакты (адрес, телефон, график работы) */
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #000000;
+  }
+
+  .contacts__list-desc {
+    /* Сами контакты */
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #000000;
+  }
+
+  .contacts__button {
+    /* Кнопка "Написать нам" */
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+
+    color: #FFFFFF;
+    background: #005AAB;
+  }
+
+  /* -------------------------------------------------- Подписка на новости и акции ---------------------------------------------- */
+
+  .subscription__title {
+    /* "Получайте самые интересные предложения первыми!" */
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+
+    color: #000000;
+  }
+
+  .subscription__form-input {
+    /* "Введите емаил" */
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #7D868F;
+  }
+
+  .subscription__form-button {
+    /* Кнопка "Подписаться" */
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+
+    color: #FFFFFF;
+    background: #005AAB;
+  }
+
+  .footer__addres {
+    /* адрес */
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+
+    color: #FFFFFF;
+    background: #333333;
+  }
+
+  .footer__nav-list-link {
+    /* Скидка, гарантия и т.д. */
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+
+    color: #FFFFFF;
+    background: #333333;
+  }
+
+  .footer__bottom-txt {
+    /* Нижний колонтитул */
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+
+    color: #FFFFFF;
+    background: #333333;
+  }
+
+  .footer__bottom-link {
+    /* "Политика обр. перс. данных" */
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+
+    color: #FFFFFF;
+    background: #333333;
+  }
+
+  .footer__developer {
+    /* Кто разработал сайт */
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+
+    color: #FFFFFF;
+    background: #333333;
   }
