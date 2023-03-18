@@ -20,41 +20,34 @@
     font-family: "Roboto", sans-serif;
   }
 
-  footer{
+  .header__top{
     background-color: black;
+    justify-content: space-between;
   }
-  .footer__nav-list{
-    color: white;
+  .conent{
+    margin:auto;
+    max-width: 1170px;
   }
-  .footer__addres{
-    color: white;
+  .header__top{
+    display: flex;
   }
-  .footer__nav-list-item{
-    color: white;
+  .header__top-navigation{
+    display: flex;
+    justify-content:flex-start;
+    
   }
-  .footer__nav-list-link{
-    color: white;
-  }
-  .social-list__desc{
-    color: white;
-  }
-  .social-list__alt{
-    color: white;
-  }
-  .social-list__item{
-    color: white;
-  }
-  .footer__bottom-txt{
-    color: white;
-  }
-  .footer__bottom-link{
-    color: white;
-  }
-  .footer__developer
+  .header__navigation_text,.telephone-number
   {
     color: white;
+    display: inline;
   }
-
+  ul.header__navigation li
+  {
+    display: inline;
+  }
+  .footer__nav-list,.footer__addres,.footer__nav-list-item,.footer__nav-list-link,.social-list__desc,.social-list__alt,.social-list__item,.footer__bottom-txt,.footer__bottom-link,.footer__developer{
+    color:white;
+  }
 
   body{
     font-family: "Open Sans", sans-serif;
@@ -112,6 +105,25 @@
     width: 600px;
     size: 14px;
   }
+  .main__block-top{
+    display: flex;
+    justify-content: space-between;
+  }
+  .main__brands a{
+    display: inline;
+    
+  }
+  ul.main-hits__slider-slider li{
+    display: inline;
+    padding: 20px;
+  }
+
+
+
+
+
+
+  
   .new_price
   {
     font-family: "Open Sans", sans-serif;

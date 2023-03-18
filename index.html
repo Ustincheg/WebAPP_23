@@ -15,12 +15,17 @@
 
 <body>
     <header class="header">
-        <ul class="header__navigation">
-            <li><a href="#">Магазины</a></li>
-            <li><a href="#">Доставка и оплата</a></li>
-            <li><a href="#">Кредиты и рассрочка</a></li>
-        </ul>
-        <a class="tel" href="tel:+71111111111">+71111111111</a>
+        <div class="header__top">
+            <div class="header__top-navigation">
+                <ul class="header__navigation">
+                    <li class="header__navigation_element"><a href="#" class="header__navigation_text">Магазины</a></li>
+                    <li class="header__navigation_element"><a href="#" class="header__navigation_text">Доставка и оплата</a></li>
+                    <li class="header__navigation_element"><a href="#" class="header__navigation_text">Кредиты и рассрочка</a></li>
+                </ul>
+            </div>
+            <a class="telephone-number" href="tel:+71111111111" >+71111111111</a>
+        </div>
+        
         <a class="header__logo" href="header__logo"><img src="images/Logo.svg" alt="header__logo"></a>
         <input class="header__search" type="text">
         <a class="header__favorites" href="#"><img src="#" alt="Избранное"></a>
@@ -50,28 +55,43 @@
             <div class="main-banner__news"><h3 class="main-banner__news-text">Новая линейка телевизоров</h3><img src="images/Image (1).png" alt="HUNDAI"> <button class="header__catalog">Смотреть каталог</button> </div>
         </section>
         <section>
-            <h2>Хиты продаж </h2>
-            <a href="#">Смотреть всё</a>
-            <ul class="main-hits__slider slider">
-                <li><button class="button__favorites"></button><a href="#"><img src="images/products/Image1.jpg" alt="HUNDAI"><h3>Мультиварка Redmond</h3></a><p1 class="old_price">5333</p1><p class="new_price">6990</p></li>
-                <li><button class="button__favorites"></button><a href="#"><img src="images/products/Image2.jpg" alt="HUNDAI"><h3>Смартфон Huawei</h3></a><p1 class="old_price"></p1><p class="new_price">36990</p></li>
-                <li><button class="button__favorites"></button><a href="#"><img src="images/products/Image3.jpg" alt="HUNDAI"><h3>Электрочайник Moulinex</h3></a><p1 class="old_price">3990</p1><p class="new_price">1990</p></li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Популярные бренды</h2>
-            <a href="#">Смотреть всё</a>
-            <ul class="main-hits__slider slider">
-                <li><a href="#"><img src="images/brands/1.png" alt=""></a></li>
-                <li><a href="#"><img src="images/brands/2.png" alt=""></a></li>
-                <li><a href="#"><img src="images/brands/3.png" alt=""></a></li>
-                <li><a href="#"><img src="images/brands/4.png" alt=""></a></li>
-            </ul>
+            <div class="main__block-top">
+                <h2>Хиты продаж </h2>
+                <a href="#">Смотреть всё</a>
+            </div>
+            <div>
+                <ul class="main-hits__slider slider">
+                    <li><button class="button__favorites"></button><a href="#"><img src="images/products/Image1.jpg" alt="HUNDAI"><h3>Мультиварка Redmond</h3></a><p1 class="old_price">5333</p1><p class="new_price">6990</p></li>
+                    <li><button class="button__favorites"></button><a href="#"><img src="images/products/Image2.jpg" alt="HUNDAI"><h3>Смартфон Huawei</h3></a><p1 class="old_price"></p1><p class="new_price">36990</p></li>
+                    <li><button class="button__favorites"></button><a href="#"><img src="images/products/Image3.jpg" alt="HUNDAI"><h3>Электрочайник Moulinex</h3></a><p1 class="old_price">3990</p1><p class="new_price">1990</p></li>
+                </ul>
+            </div>
+            
         </section>
         <section>
-            <h2>Новости и акции</h2>
-            <a href="#">Смотреть всё</a>
+            <div class="content">
+                <div class="main__block-top">
+                    <h2>Популярные бренды</h2>
+                    <a href="#">Смотреть всё</a>
+                </div>
+                
+                <div class="main__brands-list">
+                    <ul class="main-hits__slider-slider">
+                        <li><a href="#"><img src="images/brands/1.png" alt=""></a></li>
+                        <li><a href="#"><img src="images/brands/2.png" alt=""></a></li>
+                        <li><a href="#"><img src="images/brands/3.png" alt=""></a></li>
+                        <li><a href="#"><img src="images/brands/4.png" alt=""></a></li>
+                    </ul>
+                </div>
+                
+            </div>
+        </section> 
+        <section>
+            <div class="main__block-top">
+                <h2>Новости и акции</h2>
+                <a href="#">Смотреть всё</a>
+            </div>
+            
             <ul class="main-hits__slider slider">
                 <li><a href="#"><h3 class="main__news-banner">Бренд BLOODY представил мышь W60 Pro</h3><h4 class="main__news-text">Популярный бренд компьютерных аксессуаров</h4><img src="images/news/1.jpg" alt=""><button>Подробнее</button></a></li>
                 <li><a href="#"><h3 class="main__news-banner">Плата asus </h3><img src="#" alt="HUNDAI"><img src="images/news/2.jpg" alt=""></a></li>

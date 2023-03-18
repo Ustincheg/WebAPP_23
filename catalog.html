@@ -15,9 +15,9 @@
 <body>
     <header class="header">
         <ul class="header__navigation">
-            <li><a href="#">Магазины</a></li>
-            <li><a href="#">Доставка и оплата</a></li>
-            <li><a href="#">Кредиты и рассрочка</a></li>
+            <li><a href="#" class="header__navigation_text">Магазины</a></li>
+            <li><a href="#" class="header__navigation_text">Доставка и оплата</a></li>
+            <li><a href="#" class="header__navigation_text">Кредиты и рассрочка</a></li>
         </ul>
         <a class="tel" href="tel:+71111111111">+71111111111</a>
         <a class="header__logo" href="header__logo"><img src="images/Logo.svg" alt="header__logo"></a>
@@ -56,20 +56,24 @@
             <input type="range" min="0" max="6999999" value="0">
             <input type="range" min="0" max="6999999" value="6999999">
             <p>Диагональ экрана</p>
-            <div>От 6”</div>
+            <div><select name="diagonal" id="1">
+                <option value="1">От 6”</option>
+                <option value="2">От 9”</option>
+                <option value="3">От 12”</option>
+            </select> </div>
             <p>Бренд</p>
             <ul class="brand__list">
-                <li><div>APPLE</div></li>
-                <li><div>BLACKVIEW</div></li>
-                <li><div>NOKIA</div></li>
-                <li><div>CLEVERCEL</div></li>
-                <li><div>XIAOMI</div></li>
-                <li><div>ZTE</div></li>
+                <ul><input type="checkbox"> APPLE </input></ul>
+                <ul><input type="checkbox"> BLACKVIEW </input></ul>
+                <ul><input type="checkbox"> NOKIA </input></ul>
+                <ul><input type="checkbox"> CLEVERCEL </input></ul>
+                <ul><input type="checkbox"> XIAOMI </input></ul>
+                <ul><input type="checkbox"> ZTE </input></ul>
             </ul>
             <p>Количество SIM-карт</p>
             <ul class="radiobutton__list">
-                <ul><span>1SIM</span></ul>
-                <ul><span>2SIM</span></ul>
+                <ul><input type="radio" name="SIMradio" id="0"> 1SIM</input></ul>
+                <ul><input type="radio" name="SIMradio" id="1"> 2SIM</input></ul>
             </ul>
         </section>
         <section>
