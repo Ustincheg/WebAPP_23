@@ -34,6 +34,74 @@ body {
     font-weight: 600;
     font-size: 14px;
     line-height: 19px;
+    max-width: 116px;
+    max-height: 45px;
+    background: #005AAB;
+    border-radius: 8px;
+    padding: 13px 45px 13px 45px;
+    margin: 31px 15px 0 0;
+    display: flex;
+    border-color: white;
+    align-items: center;
+}
+
+.side_block{
+    background: #363636;
+    width: 270px;
+    height: 360px;
+    border-radius: 8px;
+    margin: 50px 0 0 0;
+    display: flex;
+    
+}
+
+.side_block__text{
+    margin:30px 30px 251px 30px;
+    position: absolute;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    color:#FFFFFF;
+    width: 210px;
+    height: 79px;
+
+}
+
+.tv_samsung-logo{
+    position: absolute;
+    width: 196px;
+    height: 147px;
+    margin: 122px 37px 91px 37px;
+    display: flex;
+}
+
+.watch-menu{
+    background: white;
+    border-radius: 8px;
+    margin: 282px 30px 30px 30px;
+    display: flex;
+    padding: 14px 41px 15px 42px;
+}
+
+.shift-images{
+    display: flex;
+    margin: 51px 30px 0 0;
+}
+
+.banner-nuke{
+    width: 870px;
+    height:360px;
+    border-radius: 8px;
+}
+
+.main-banner{
+    display: flex;
+    gap:30px;
+    justify-content: space-between;
 }
 
 h2 {
@@ -42,6 +110,7 @@ h2 {
     font-weight: 700;
     font-size: 32px;
     line-height: 38px;
+    color:#7D868F;
 }
 
 h3 {
@@ -97,6 +166,70 @@ a {
     color: #FFFFFF;
 }
 
+.header__link{
+    font-family: 'OpenSans';
+    font-size:14px;
+    font-weight: 400;
+}
+
+.header-button{
+    margin: 29px 0 0 34px;
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+
+.header__list-link{
+    margin:0;
+    display: flex;
+    justify-content: space-between;
+    gap: 21px;
+}
+
+.search_form{
+    margin: 29px 0 0 0;
+}
+
+.header__logo{
+    margin: 15px 0 0 0;
+
+}
+
+.header_like{
+    margin: 41px 0 0 0;
+}
+
+.header_cart{
+    margin: 41px 0 0 0;
+}
+
+.header_search-logo{
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    margin: 15px 13px 15px 15px;
+
+}
+
+input[type="text"]{
+    padding: 13px 390px 13px 46px;
+    border-radius: 8px;
+    border: 1px solid #DEDEE2;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    
+}
+
+.header-button{
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
 
 .content{
     margin: 0 auto;
@@ -106,6 +239,7 @@ a {
 .subscribe{
     background: #F1F5F7;
 }
+
 
 
 .header__top-nav-list{
@@ -144,6 +278,33 @@ a {
     color: #FFFFFF;
 }
 
+.menu-logo{
+    position: absolute;
+    margin: 41px 0 0 10px;
+}
+
+.main-nav__list{
+    background: #F1F5F7;
+    margin: 30px 0 0 0;
+    width:1039px;
+    height:45px;
+    display: flex;
+    justify-content: space-between;
+    gap:25px;
+    border-radius: 8px;
+    align-items: center;
+    padding: 0 25px 0 25px;
+}
+
+.catalog-menu{
+    display: flex;
+
+}
+
+.banner__slider{
+    margin: 51px 0 0 0;
+}
+
 .main-nav__list-item-link {
     font-family: 'Open Sans';
     font-style: normal;
@@ -155,13 +316,13 @@ a {
     color: #000000;
 }
 
-.banner__slider-item.active {
+/* .banner__slider-item.active {
     display: block;
-}
+} */
 
-.banner__slider-item {
+/* .banner__slider-item {
     display: none;
-}
+} */
 
 .banner__card-desc {
     font-family: 'Roboto';
@@ -196,6 +357,7 @@ a {
     font-size: 32px;
     line-height: 38px;
     color: #000000;
+    display: flex;
 }
 
 .link-btn {
@@ -207,6 +369,55 @@ a {
     box-sizing: border-box;
     border: 1px solid #005AAB;
     border-radius: 8px;
+    padding: 13px 25px 13px 25px;
+    float: right;
+    display: inline-flex;
+}
+
+.sales-hits__list{
+    display: flex;
+    justify-content: space-between;
+    gap:30px;
+
+}
+
+.hit-card__price{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    padding:0 163px 30px 30px;
+}
+
+.hit-card__price--cross-out{
+    text-decoration: line-through;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color:#7D868F;
+
+}
+
+.hit-card{
+    border: 1px solid #DEDEE2;
+    border-radius: 8px;
+    padding: 0;
+}
+
+.hit-card-img{
+    margin: 65px 0 0 0;
+    padding: 0;
+}
+
+.hit-card__desc{
+    margin: 20px 0 0 0;
+    padding: 0;
+}
+
+.hit-card__price{
+    margin: 0 0 30px 0;
 }
 
 .hit-card__desc {
@@ -215,6 +426,57 @@ a {
     font-size: 16px;
     line-height: 22px;
     color: #000000;
+}
+
+.popular-brands__list{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap:30px;
+
+}
+
+.popular-brands__list-item{
+    width: 270px;
+    height: 150px;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid #DEDEE2;
+}
+
+.brands-img{
+    margin:32px 0;
+}
+
+.list-news{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap:30px;
+}
+
+.list-news__item-img1{
+    width: 770px;
+    height: 370px;
+}
+
+.list-news__item-img{
+    width: 370px;
+    height: 170px;
+}
+
+.list-news__item-link{
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color:#000000;
+    text-align: center;
+    border-radius: 8px;
+    background: white;
+    padding: 14px 65px 15px 66px;
+    position: absolute;
+    
 }
 
 .list-news__item-title {
@@ -233,6 +495,9 @@ a {
     line-height: 22px;
     color: #FFFFFF;
 }
+
+
+
 
 .list-news__item-link {
     background: #FFFFFF;
