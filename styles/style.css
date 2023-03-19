@@ -1,0 +1,50 @@
+* {
+    font-family: "Roboto";
+}
+
+.header {
+    font-family: OpenSans;
+}
+
+.header__top-nav {
+    background: #363636;
+}
+
+.body {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+}
+
+.header__main-nav-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 25px;
+}
+
+.header__catalog {
+    background: #005AAB;
+    border-radius: 8px;
+}
+
+.pb__title {
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 38px;
+color: #000000;
+}
+
+.pb__list-of-brands {
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 38px;
+color: #000000;
+}
