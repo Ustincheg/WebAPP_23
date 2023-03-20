@@ -1,0 +1,61 @@
+.new-lin-samsung
+{
+    width: 270px;
+    height: 360px;
+    border-radius: 8px;
+
+    background: #363636;
+    color: white;
+}
+
+.banner__slider__item
+{
+    width: 870px;
+    height: 360px;
+    border-radius: 8px;
+}
+
+
+.menu-button-samsung
+{
+    padding: 14px 42px;
+    border-radius: 8px;
+
+    background: white;
+    color: black;
+}
+
+.popular-brands__list-item
+{
+    width: 270px;
+    height: 150px;
+}
+
+.hit-card
+{
+    width: 270px;
+    height: 443px;
+}
+
+.brand-image
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-btn
+{
+    padding: 13px 25px;
+    border-radius: 8px;
+
+    color: #005AAB;
+    background: white;
+    border: 1px solid #005AAB;
+}
+
+.link-card
+{
+    border: 1px solid #DEDEE2;
+    border-radius: 8px;
+}

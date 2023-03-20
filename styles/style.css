@@ -2,6 +2,47 @@
     color: red;
 }/**/
 
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.reflex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    flex-direction: column;
+}
+
+.blue-button
+{
+    border: none;
+
+    padding: 15px 55px;
+    border-radius: 8px;
+
+    background: #005AAB;
+    color: white;
+}
+
+
+.container {
+    padding: 30px 375px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+    padding-inline-start: 0px;
+}
+
 .visually-hidden
 {
     position: absolute;
@@ -16,27 +57,6 @@
     overflow: hidden;
   }
 
-.header__upp-panel
-{
-    background-color: #363636;
-}
-
-.header__telephone
-{
-    color: white;
-}
-
-.header__list
-{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.header__list__link
-{
-    color: white;
-}
 
 .hori-list__item
 {

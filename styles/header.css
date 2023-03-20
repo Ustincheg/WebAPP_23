@@ -1,0 +1,47 @@
+.header__upp-panel
+{
+    padding: 17px 375px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    color: white;
+    background-color: #363636;
+}
+
+.header__upp-list
+{
+    display: flex;
+    gap: 30px;
+}
+
+.header__user-list
+{
+    display: flex;
+    gap: 20px;
+}
+
+.header__button-menu
+{
+    border: none;
+
+    padding: 13px 25px;
+    border-radius: 8px;
+
+    background: #005AAB;
+    color: white;
+}
+
+.header__nav-list
+{
+    padding: 13px 25px;
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+
+    background: #F1F5F7;
+}

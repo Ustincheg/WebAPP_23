@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>ELECTRO PLACE</title>
         <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/index.css">
         <link rel="stylesheet" href="styles/opensans.css">
         <link rel="stylesheet" href="styles/roboto.css">
     </head>
@@ -20,35 +22,41 @@
                     Главный баннер
                 </h2>
             </section>
-            <section class="banner">
-                <h2 class="visually-hidden">Главный банер</h2>
-                <ul class="banner__slider slider">
-                    <li class="banner__slider__item item">
-                        <img src="data/images/banners/banner-1.jpg" alt="Фото">
-                    </li>
-                    <li class="banner__slider__item item">
-                        <img src="#" alt="Фото">
-                    </li>
-                    <li class="banner__slider__item item">
-                        <img src="#" alt="Фото">
-                    </li>
-                </ul>
-                <figure>
-                    <figcaption>Новая линейка телевизоров samsung </figcaption>
-                    <img src="data/images/samsung_tv.png" alt="Телевизор">
-                </figure>
-                <a class="button-text" href="#">Смотреть каталог</a>
-            </section>
-            <section class="sales-hits">
+            <div class="container">
+                <section class="banner flex-container">
+                    <h2 class="visually-hidden">Главный банер</h2>
+                    <ul class="banner__slider slider">
+                        <li class="banner__slider__item item">
+                            <img src="data/images/banners/banner-1.jpg" alt="Фото">
+                        </li>
+                        <!--<li class="banner__slider__item item">
+                            <img src="#" alt="Фото">
+                        </li>
+                        <li class="banner__slider__item item">
+                            <img src="#" alt="Фото">
+                        </li>-->
+                    </ul>
+                    <div class="new-lin-samsung">
+                        <figure>
+                            <figcaption>Новая линейка телевизоров samsung </figcaption>
+                            <img src="data/images/samsung_tv.png" alt="Телевизор">
+                        </figure>
+                        <a class="menu-button-samsung button-text" href="#">Смотреть каталог</a>
+                    </div>
+                </section>
+            </div>
+            <section class="sales-hits container">
                 <h2 class="visually-hidden">
                     Хиты продаж
                 </h2>
-                <p class="sales-hits__title title titles-text">
-                    Хиты продаж
-                </p>
-                <a href="#" class="sales-hits__link-btn link-btn button-text">Смотреть все</a>
-                <ul class="sales-hits__list">
-                    <li class="sales-hits__list-item hit-card">
+                <div class="flex-container">
+                    <p class="sales-hits__title title titles-text">
+                        Хиты продаж
+                    </p>
+                    <a href="#" class="sales-hits__link-btn link-btn button-text">Смотреть все</a>
+                </div>
+                <ul class="sales-hits__list flex-container">
+                    <li class="sales-hits__list-item hit-card link-card">
                         <a href="#" class="hit-card__link">                        
                             <figure class="hit-card__figure">
                                 <img src="data/images/hit-cards/hit-card-1.jpg" alt="Фото техники" class="hit-card__img" loading="lazy">
@@ -60,7 +68,7 @@
                             <p class="hit-card__price">5 533 ₽</p>
                         </a>
                     </li>
-                    <li class="sales-hits__list-item hit-card">
+                    <li class="sales-hits__list-item hit-card link-card">
                         <a href="#" class="hit-card__link">                        
                             <figure class="hit-card__figure">
                                 <img src="data/images/hit-cards/hit-card-2.jpg" alt="Фото техники" class="hit-card__img" loading="lazy">
@@ -71,7 +79,7 @@
                             <p class="hit-card__price">36 990 ₽</p>
                         </a>
                     </li>
-                    <li class="sales-hits__list-item hit-card">
+                    <li class="sales-hits__list-item hit-card link-card">
                         <a href="#" class="hit-card__link">                        
                             <figure class="hit-card__figure">
                                 <img src="data/images/hit-cards/hit-card-3.jpg" alt="Фото техники" class="hit-card__img" loading="lazy">
@@ -83,7 +91,7 @@
                             <p class="hit-card__price">1 990 ₽</p>
                         </a>
                     </li>
-                    <li class="sales-hits__list-item hit-card">
+                    <li class="sales-hits__list-item hit-card link-card">
                         <a href="#" class="hit-card__link">                        
                             <figure class="hit-card__figure">
                                 <img src="data/images/hit-cards/hit-card-4.jpg" alt="Фото техники" class="hit-card__img" loading="lazy">
@@ -95,62 +103,84 @@
                             <p class="hit-card__price">14 990 ₽</p>
                         </a>
                     </li>
-                </ul>   
+                </ul>
             </section>
-            <section class="popular-brands">
-                <h2 class="visually-hidden">
-                    Популярные бренды
-                </h2>
-                <p class="popular-brands__title title titles-text">
-                    Популярные бренды
-                </p>
-                <a href="#" class="popular-brands__link-btn link-btn button-text">Смотреть все</a>
-                <ul class="popular-brands__list">
-                    <li class="popular-brands__list-item">
-                        <img src="data/images/brands/brand-card-1.jpg" alt="Лого бренда" loading="lazy">
+            <section class="popular-brands container">
+                <div class="flex-container">
+                    <h2 class="visually-hidden">
+                        Популярные бренды
+                    </h2>
+                    <p class="popular-brands__title title titles-text">
+                        Популярные бренды
+                    </p>
+                    <a href="#" class="popular-brands__link-btn link-btn button-text">Смотреть все</a>
+                </div>
+                <ul class="popular-brands__list flex-container">
+                    <li class="popular-brands__list-item link-card">
+                        <a href="#" class="brand__link link_card">
+                            <img class="brand-image" src="data/images/brands/brand-card-1.svg" alt="Лого бренда" loading="lazy">
+                        </a>
                     </li>
-                    <li class="popular-brands__list-item">
-                        <img src="data/images/brands/brand-card-2.jpg" alt="Лого бренда" loading="lazy">
+                    <li class="popular-brands__list-item link-card">
+                        <a href="#" class="brand__link link_card">
+                            <img class="brand-image" src="data/images/brands/brand-card-2.svg" alt="Лого бренда" loading="lazy">
+                        </a>
                     </li>
-                    <li class="popular-brands__list-item">
-                        <img src="data/images/brands/brand-card-3.jpg" alt="Лого бренда" loading="lazy">
+                    <li class="popular-brands__list-item link-card">
+                        <a href="#" class="brand__link link_card">
+                            <img class="brand-image" src="data/images/brands/brand-card-3.svg" alt="Лого бренда" loading="lazy">
+                        </a>
                     </li>
-                    <li class="popular-brands__list-item">
-                        <img src="data/images/brands/brand-card-4.jpg" alt="Лого бренда" loading="lazy">
+                    <li class="popular-brands__list-item link-card">
+                        <a href="#" class="brand__link link_card">
+                            <img class="brand-image" src="data/images/brands/brand-card-4.svg" alt="Лого бренда" loading="lazy">
+                        </a>
                     </li>
-                    <li class="popular-brands__list-item">
-                        <img src="data/images/brands/brand-card-5.jpg" alt="Лого бренда" loading="lazy">
+                </ul>
+                <ul class="popular-brands__list flex-container">
+                    <li class="popular-brands__list-item link-card">
+                        <a href="#" class="brand__link link_card">
+                            <img class="brand-image" src="data/images/brands/brand-card-5.svg" alt="Лого бренда" loading="lazy">
+                        </a>
                     </li>
-                    <li class="popular-brands__list-item">
-                        <img src="data/images/brands/brand-card-6.jpg" alt="Лого бренда" loading="lazy">
+                    <li class="popular-brands__list-item link-card">
+                        <a href="#" class="brand__link link_card">
+                            <img class="brand-image" src="data/images/brands/brand-card-6.svg" alt="Лого бренда" loading="lazy">
+                        </a>
                     </li>
-                    <li class="popular-brands__list-item">
-                        <img src="data/images/brands/brand-card-7.jpg" alt="Лого бренда" loading="lazy">
+                    <li class="popular-brands__list-item link-card">
+                        <a href="#" class="brand__link link_card">
+                            <img class="brand-image" src="data/images/brands/brand-card-7.svg" alt="Лого бренда" loading="lazy">
+                        </a>
                     </li>
-                    <li class="popular-brands__list-item">
-                        <img src="data/images/brands/brand-card-8.jpg" alt="Лого бренда" loading="lazy">
+                    <li class="popular-brands__list-item link-card">
+                        <a href="#" class="brand__link link_card">
+                            <img class="brand-image" src="data/images/brands/brand-card-8.svg" alt="Лого бренда" loading="lazy">
+                        </a>
                     </li>
                 </ul>
             </section>
-            <section class="news_and_promotions">
+            <section class="news_and_promotions container">
                 <h2 class="visually-hidden">
                     Новости и акции
                 </h2>
+                <div class="flex-container">
                 <p class="news_and_promotions__title title titles-text">
                     Новости и акции
                 </p>
-                <a class="news_and_promotions__link link button-text" href="#">
+                <a class="news_and_promotions__link link button-text link-btn" href="#">
                     Смотреть все
                 </a>
+                </div>
             </section>
-            <section class="advantages">
+            <section class="advantages container">
                 <h2 class="visually-hidden">
                     Преимущества
                 </h2>
                 <p class="advantages__title title titles-text">
                     Преимущества
                 </p>
-                <ul class="advantages__list">
+                <ul class="advantages__list flex-container">
                     <li class="list__item hori-list__item">
                         <img class="item__logo" src="data/images/advantages/advantages-1.png" alt="advantages-1"  loading="lazy" />
                         <p class="advantages-text">
@@ -186,45 +216,47 @@
                     </li>
                 </ul>
             </section>
-            <section class="contacts">
+            <section class="contacts container">
                 <h2 class="visually-hidden">
                     Контакты
                 </h2>
                 <p class="contacts__title title titles-text">
                     Контакты
                 </p>
-                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6b66280b83cdf1611d547ce5796e33a51a5b5e1228da0a1fe5beb70106635ee7&width=759&height=543&lang=ru_RU&scroll=true"></script>
-                <ul class="contacts__list">
-                    <li class="list__item">
-                        <img class="item__logo" src="data/images/contacts/contacts-1.jpg" alt="Адрес" />
-                        <p class="contacts-text">
-                            <b class="contacts-title">Адрес</b>
-                            <br />
-                            <p class="contacts-context">
-                                7-ая Кожуховская улица, 9, Москва (1 этаж)
+                <div class="flex-container">
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6b66280b83cdf1611d547ce5796e33a51a5b5e1228da0a1fe5beb70106635ee7&width=759&height=543&lang=ru_RU&scroll=true"></script>
+                    <ul class="contacts__list">
+                        <li class="list__item">
+                            <img class="item__logo" src="data/images/contacts/contacts-1.jpg" alt="Адрес" />
+                            <p class="contacts-text">
+                                <b class="contacts-title">Адрес</b>
+                                <br />
+                                <p class="contacts-context">
+                                    7-ая Кожуховская улица, 9, Москва (1 этаж)
+                                </p>
                             </p>
-                        </p>
-                    </li>
-                    <li class="list__item">
-                        <img class="item__logo" src="data/images/contacts/contacts-2.jpg" alt="Телефон" />
-                        <p class="contacts-text">
-                            <b class="contacts-title">Телефон</b>
-                            <br />
-                            <a class="contacts__telephone contacts-context" href="tel:+79804444444">+7 (980) 444 44-44</a>
-                        </p>
-                    </li>
-                    <li class="list__item">
-                        <img class="item__logo" src="data/images/contacts/contacts-3.jpg" alt="График" />
-                        <p class="contacts-text">
-                            <b class="contacts-title">График работы</b>
-                            <br />
-                            <p class="contacts-context">
-                                Пн–Пт 9:00 до 20:00
+                        </li>
+                        <li class="list__item">
+                            <img class="item__logo" src="data/images/contacts/contacts-2.jpg" alt="Телефон" />
+                            <p class="contacts-text">
+                                <b class="contacts-title">Телефон</b>
+                                <br />
+                                <a class="contacts__telephone contacts-context" href="tel:+79804444444">+7 (980) 444 44-44</a>
                             </p>
-                        </p>
-                    </li>
-                </ul>
-                <a class="button-text" href="#">
+                        </li>
+                        <li class="list__item">
+                            <img class="item__logo" src="data/images/contacts/contacts-3.jpg" alt="График" />
+                            <p class="contacts-text">
+                                <b class="contacts-title">График работы</b>
+                                <br />
+                                <p class="contacts-context">
+                                    Пн–Пт 9:00 до 20:00
+                                </p>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <a class="button-text blue-button" href="#">
                     Написать нам
                 </a>
             </section>
