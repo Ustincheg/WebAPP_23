@@ -16,258 +16,317 @@
 
 <body class="body">
     <header class="header">
-        <ul class="header__nav-list nav-list">
-            <li class="nav-list__item"><a class="nav-list__link" href="#">Магазины</a></li>
-            <li class="nav-list__item"><a class="nav-list__link" href="#">Доставка и оплата</a></li>
-            <li class="nav-list__item"><a class="nav-list__link" href="#">Кредиты и рассрочка</a></li>
-        </ul>
-        <a class="header__phone-link" href="tel:+74954448885">8 (495) 444-888-5</a>
-        <a class="header__logo-link" href="#"><img class="header__logo-img" src="img/Logo.svg" alt="logo"></a>
-        <form action=""><input class="header__search-text" type="text" placeholder="Поиск.." name="search"></form>
-        <a class="header__favorite-link" href="#">Избранное (0)</a>
-        <a class="header__cart-link" href="#">Корзина (0)</a>
-        <button class="header__button-catalog button-catalog">Каталог</button>
-        <nav class="header__navigation navigation">
-            <ul class="navigation__navig-list navig-list ">
-                <li class="navig-list__item"><a class="navig-list__link" href="#">СКИДКИ</a></li>
-                <li class="navig-list__item"><a class="navig-list__link" href="#">СМАРТФОНЫ</a></li>
-                <li class="navig-list__item"><a class="navig-list__link" href="#">ТЕЛЕВИЗОРЫ</a></li>
-                <li class="navig-list__item"><a class="navig-list__link" href="#">НОУТБУКИ</a></li>
-                <li class="navig-list__item"><a class="navig-list__link" href="#">СТИРАЛЬНЫЕ МАШИНЫ</a></li>
-                <li class="navig-list__item"><a class="navig-list__link" href="#">ХОЛОДИЛЬНИКИ</a></li>
-                <li class="navig-list__item"><a class="navig-list__link" href="#">ПЫЛЕСОСЫ</a></li>
-                <li class="navig-list__item"><a class="navig-list__link" href="#">МИКРОВОЛНОВКИ</a></li>
-            </ul>
-        </nav>
+        <div class="header__top">
+            <div class="container">
+                <ul class="header__top-nav-list top-nav-list">
+                    <li class="top-nav-list__item"><a class="top-nav-list__link" href="#">Магазины</a></li>
+                    <li class="top-nav-list__item"><a class="top-nav-list__link" href="#">Доставка и оплата</a></li>
+                    <li class="top-nav-list__item"><a class="top-nav-list__link" href="#">Кредиты и рассрочка</a></li>
+                </ul>
+                <a class="header__phone-link" href="tel:+74954448885">8 (495) 444-888-5</a>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="container">
+                <div class="header__l-s-f-c">
+                    <a class="header__logo-link" href="#"><img class="header__logo-img" src="img/Logo.svg"
+                            alt="logo"></a>
+                    <form class="header__l-s-f-c-search" action=""><input class="header__search-text" type="text" placeholder="Поиск.." name="search">
+                    </form>
+                    <a class="header__favorite-link" href="#">Избранное (0)</a>
+                    <a class="header__cart-link" href="#">Корзина (0)</a>
+                </div>
+                <div class="header__assortment">
+                    <button class="header__button-catalog button-catalog">Каталог</button>
+                    <nav class="header__navigation navigation">
+                        <ul class="navigation__bottom-nav-list bottom-nav-list">
+                            <li class="bottom-nav-list__item"><a class="bottom-nav-list__link" href="#">СКИДКИ</a></li>
+                            <li class="bottom-nav-list__item"><a class="bottom-nav-list__link" href="#">СМАРТФОНЫ</a>
+                            </li>
+                            <li class="bottom-nav-list__item"><a class="bottom-nav-list__link" href="#">ТЕЛЕВИЗОРЫ</a>
+                            </li>
+                            <li class="bottom-nav-list__item"><a class="bottom-nav-list__link" href="#">НОУТБУКИ</a>
+                            </li>
+                            <li class="bottom-nav-list__item"><a class="bottom-nav-list__link" href="#">СТИРАЛЬНЫЕ
+                                    МАШИНЫ</a></li>
+                            <li class="bottom-nav-list__item"><a class="bottom-nav-list__link" href="#">ХОЛОДИЛЬНИКИ</a>
+                            </li>
+                            <li class="bottom-nav-list__item"><a class="bottom-nav-list__link" href="#">ПЫЛЕСОСЫ</a>
+                            </li>
+                            <li class="bottom-nav-list__item"><a class="bottom-nav-list__link"
+                                    href="#">МИКРОВОЛНОВКИ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
     </header>
 
     <main class="main">
-        <h1 class="main__title">Главная страница интернет-магазина бытовой техники и электроники</h1>
+        <h1 class="main__title visually-hidden">Главная страница интернет-магазина бытовой техники и электроники</h1>
         <section class="main__banner banner">
-            <h2 class="banner__tittle">Главный баннер</h2>
-            <ul class="banner__slider slider">
-                <li class="slider__item">
-                    <p class="slider__text">Микроволновая печь HUNDAI</p>
-                    <p class="slider__txt">Готовьте вкусно и быстро</p>
-                    <img class="slider__img" src="img/index/banner/Nuke.jpg" alt="picture-one">
-                </li>
-                <li class="slider__item">
-                    <p class="slider__text">TWO</p>
-                    <p class="slider__txt">Two</p>
-                    <img class="slider__img" src="#" alt="picture-two" loading="lazy">
-                </li>
-                <li class="slider__item">
-                    <p class="slider__text">THREE</p>
-                    <p class="slider__txt">three</p>
-                    <img class="slider__img" src="#" alt="picture-three" loading="lazy">
-                </li>
-                <li class="slider__item">
-                    <p class="slider__text">FOUR</p>
-                    <p class="slider__txt">four</p>
-                    <img class="slider__img" src="#" alt="picture-four" loading="lazy">
-                </li>
-                <li class="slider__item">
-                    <p class="slider__text">FIVE</p>
-                    <p class="slider__txt">five</p>
-                    <img class="slider__img" src="#" alt="picture-five" loading="lazy">
-                </li>
-            </ul>
-            <div class="banner__mini mini">
-                <p class="mini__text">Новая линейка телевизоров samsung</p>
-                <img class="mini__img" src="img/index/banner/TV.jpg" alt="picture-TV">
-                <a class="mini__catalog-link" href="#">Смотреть каталог</a>
+            <h2 class="banner__tittle visually-hidden">Главный баннер</h2>
+            <div class="container">
+                <div class="banner__d-slider">
+                <ul class="banner__slider slider">
+                    <li class="slider__item">
+                        <p class="slider__text">Микроволновая печь HUNDAI</p>
+                        <p class="slider__txt">Готовьте вкусно и быстро</p>
+                        <img class="slider__img" src="img/index/banner/Nuke.jpg" alt="picture-one">
+                    </li>
+                    <li class="slider__item">
+                        <p class="slider__text">TWO</p>
+                        <p class="slider__txt">Two</p>
+                        <img class="slider__img" src="#" alt="picture-two" loading="lazy">
+                    </li>
+                    <li class="slider__item">
+                        <p class="slider__text">THREE</p>
+                        <p class="slider__txt">three</p>
+                        <img class="slider__img" src="#" alt="picture-three" loading="lazy">
+                    </li>
+                    <li class="slider__item">
+                        <p class="slider__text">FOUR</p>
+                        <p class="slider__txt">four</p>
+                        <img class="slider__img" src="#" alt="picture-four" loading="lazy">
+                    </li>
+                    <li class="slider__item">
+                        <p class="slider__text">FIVE</p>
+                        <p class="slider__txt">five</p>
+                        <img class="slider__img" src="#" alt="picture-five" loading="lazy">
+                    </li> -->
+                </ul>
+            </div>
+                <div class="banner__mini mini">
+                    <p class="mini__text">Новая линейка телевизоров samsung</p>
+                    <img class="mini__img" src="img/index/banner/TV.jpg" alt="picture-TV">
+                    <a class="mini__catalog-link" href="#">Смотреть каталог</a>
+                </div>
             </div>
         </section>
         <section class="main__hits hits">
-            <h2 class="hits__title">Наиболее часто продаваемые товары</h2>
-            <p class="hits__heading">Хиты продаж</p>
-            <a class="hits__link-btn link-btn" href="#">Смотреть все</a>
-            <ul class="hits__card-list card-list">
-                <li class="card-list__item">
-                    <a class="card-list__link" href="#">
-                        <figure class="card-list__figure">
-                            <img class="card-list__img" src="img/index/hits/Multicooker.jpg" alt="picture-multicooker">
-                            <figcaption class="card-list__txt">Мультиварка Redmond</figcaption>
-                        </figure>
-                        <strike class="card-list___old-price">6 990 ₽</strike>
-                        <p class="card-list__price">5 533 ₽</p>
-                    </a>
-                </li>
-                <li class="card-list__item">
-                    <a class="card-list__link" href="#">
-                        <figure class="card-list__figure">
-                            <img class="card-list__img" src="img/index/hits/Smartphone.jpg" alt="picture-smartphone">
-                            <figcaption class="card-list__txt">Смартфон Huawei Mate 40 Pro Mystic Silver</figcaption>
-                        </figure>
-                        <p class="card-list__price">36 990 ₽</p>
-                    </a>
-                </li>
-                <li class="card-list__item">
-                    <a class="card-list__link" href="#">
-                        <figure class="card-list__figure">
-                            <img class="card-list__img" src="img/index/hits/Teapot.jpg" alt="picture-electric kettle">
-                            <figcaption class="card-list__txt">Электрочайник Moulinex</figcaption>
-                        </figure>
-                        <strike class="card-list___old-price">3 990 ₽</strike>
-                        <p class="card-list__price">1 990 ₽</p>
-                    </a>
-                </li>
-                <li class="card-list__item">
-                    <a class="card-list__link" href="#">
-                        <figure class="card-list__figure">
-                            <img class="card-list__img" src="img/index/hits/Cleaner.jpg" alt="picture-cleaner">
-                            <figcaption class="card-list__txt">Пылесос с контейнером для пыли Tefal City Space</figcaption>
-                        </figure>
-                        <strike class="card-list___old-price">16 990 ₽</strike>
-                        <p class="card-list__price">14 990 ₽</p>
-                    </a>
-                </li>
-            </ul>
-        </section>
-        <section class="main__brands brands">
-            <h2 class="brands__title">Наиболее известные и продаваемые бренды</h2>
-            <p class="brands__heading">Популярные бренды</p>
-            <a class="brands__link-btn link-btn" href="#">Смотреть все</a>
-            <ul class="brands__picture-list picture-list">
-                <li class="picture-list__item"><a class="picture-list__link" href="#"><img class="picture-list__img" src="img/index/brands/Samsung.jpg"
-                            alt="picture-samsung"></a></li>
-                <li class="picture-list__item"><a class="picture-list__link" href="#"><img class="picture-list__img" src="img/index/brands/Oral-B.jpg"
-                            alt="picture-oral-b"></a></li>
-                <li class="picture-list__item"><a class="picture-list__link" href="#"><img class="picture-list__img" src="img/index/brands/LG Life's Good.jpg"
-                            alt="picture-LG-Life's-Good"></a></li>
-                <li class="picture-list__item"><a class="picture-list__link" href="#"><img class="picture-list__img" src="img/index/brands/Apple.jpg"
-                            alt="picture-apple"></a></li>
-                <li class="picture-list__item"><a class="picture-list__link" href="#"><img class="picture-list__img" src="img/index/brands/APC.jpg" alt="picture-APC"
-                            loading="lazy"></a></li>
-                <li class="picture-list__item"><a class="picture-list__link" href="#"><img class="picture-list__img" src="img/index/brands/Xiaomi.jpg" alt="picture-xiaomi"
-                            loading="lazy"></a></li>
-                <li class="picture-list__item"><a class="picture-list__link" href="#"><img class="picture-list__img" src="img/index/brands/LG OLED.jpg" alt="picture-LG-OLED"
-                            loading="lazy"></a></li>
-                <li class="picture-list__item"><a class="picture-list__link" href="#"><img class="picture-list__img" src="img/index/brands/Digma.jpg" alt="picture-digma"
-                            loading="lazy"></a></li>
-            </ul>
-        </section>
-        <section class="main__news-stocks news-stocks">
-            <h2 class="news-stocks__title">Новости и акции</h2>
-            <p class="news-stocks__headingt">Новости и акции</p>
-            <a class="news-stocks__link-btn link-btn" href="#">Смотреть все</a>
-            <ul class="news-stocks__products-list products-list">
-                <li class="products-list__item">
-                    <p class="products-list__text">Бренд BLOODY представил мышь W60 Pro</p>
-                    <p class="products-list__txt">Популярный бренд компьютерных аксессуаров</p>
-                    <img class="products-list__img" src="img/index/news-stocks/Computer mouse.jpg" alt="picture-computer-mouse" loading="lazy">
-                    <a class="products-list__link" href="#">Подробнее</a>
-                </li>
-                <li class="products-list__item">
-                    <p class="products-list__text">Плата asus</p>
-                    <img class="products-list__img" src="img/index/news-stocks/Computer board.jpg" alt="picture-computer-board" loading="lazy">
-                    <a class="products-list__link" href="#">Подробнее</a>
-                </li>
-                <li class="products-list__item">
-                    <p class="products-list__text">Системный блок acer</p>
-                    <img class="products-list__img" src="img/index/news-stocks/System unit.jpg" alt="picture-system-unit" loading="lazy">
-                    <a class="products-list__link" href="#">Подробнее</a>
-                </li>
-                <li class="products-list__item">
-                    <p class="products-list__text">Планшет samsung</p>
-                    <img class="products-list__img" src="img/index/news-stocks/Tablet.jpg" alt="picture-tablet" loading="lazy">
-                    <a class="products-list__link" href="#">Подробнее</a>
-                </li>
-                <li class="products-list__item">
-                    <p class="products-list__text">Новые наушники Razer</p>
-                    <img class="products-list__img" src="img/index/news-stocks/Headphones.jpg" alt="picture-headphones" loading="lazy">
-                    <a class="products-list__link" href="#">Подробнее</a>
-                </li>
-                <li class="products-list__item">
-                    <p class="products-list__text">Мультипекарь Redmond плюс</p>
-                    <img class="products-list__img" src="img/index/news-stocks/Multipekar.jpg" alt="picture-multipekar" loading="lazy">
-                    <a class="products-list__link" href="#">Подробнее</a>
-                </li>
-            </ul>
-        </section>
-        <section class="main__advantages advantages">
-            <h2 class="advantages__title">Преимущества</h2>
-            <p class="advantages__headingt">Преимущества</p>
-            <ul class="advantages__top-list top-list">
-                <li class="top-list__item">
-                    <img class="top-list__img" src="img/index/advantages/Order.svg" alt="picture-order" loading="lazy">
-                    <p class="top-list__text">Простая и удобная система заказа товара</p>
-                    <p class="top-list__txt">Мы знаем, как важна простая система регистрации и оформления заказа,
-                        поэтому делаем все для того, чтобы оформить заказ было удобно (и быстро!).</p>
-                </li>
-                <li class="top-list__item">
-                    <img class="top-list__img" src="img/index/advantages/SMS.svg" alt="picture-SMS" loading="lazy">
-                    <p class="top-list__text">Оповещаем о состоянии заказа по SMS</p>
-                    <p class="top-list__txt">Для тех, кто всегда хочет быть в курсе: вы сами можете контролировать свой
-                        заказ, получая статус о его формировании посредством sms-сообщений.</p>
-                </li>
-                <li class="top-list__item">
-                    <img class="top-list__img" src="img/index/advantages/Delivery.svg" alt="picture-delivery" loading="lazy">
-                    <p class="top-list__text">Оперативная доставка</p>
-                    <p class="top-list__txt">Мы привыкли работать с большими объемами заказов, поэтому вам не стоит
-                        беспокоиться о том, что ваш заказ будет обработан не вовремя.</p>
-                </li>
-            </ul>
-        </section>
-        <section class="main__contacts contacts">
-            <h2 class="contacts__title">Контакты</h2>
-            <p class="contacts__headingt">Контакты</p>
-            <img class="contacts__map-img" src="img/index/contacts/Map.jpg" alt="map" loading="lazy">
-            <address>
-                <ul class="contacts__addr-list">
-                    <li class="addr-list__item">
-                        <p class="addr-list__text">Адрес</p>
-                        <p class="addr-list__txt">7-я Кожуховская ул., 9, Москва (этаж 1)</p>
+            <h2 class="hits__title visually-hidden">Наиболее часто продаваемые товары</h2>
+            <div class="container">
+                <p class="index__section-heading">Хиты продаж</p>
+                <a class="hits__link-btn link-btn" href="#">Смотреть все</a>
+                <ul class="hits__card-list card-list">
+                    <li class="card-list__item">
+                        <a class="card-list__link" href="#">
+                            <figure class="card-list__figure">
+                                <img class="card-list__img" src="img/index/hits/Multicooker.jpg"
+                                    alt="picture-multicooker">
+                                <figcaption class="card-list__txt">Мультиварка Redmond</figcaption>
+                            </figure>
+                            <strike class="card-list___old-price">6 990 ₽</strike>
+                            <p class="card-list__price">5 533 ₽</p>
+                        </a>
                     </li>
-                    <li class="addr-list__item">
-                        <p class="addr-list__text">Телефон</p>
-                        <p class="addr-list__txt"><a class="addr-list__phone-link" href="tel:+74954448885">8 (495)
-                                444-888-5</a></p>
+                    <li class="card-list__item">
+                        <a class="card-list__link" href="#">
+                            <figure class="card-list__figure">
+                                <img class="card-list__img" src="img/index/hits/Smartphone.jpg"
+                                    alt="picture-smartphone">
+                                <figcaption class="card-list__txt">Смартфон Huawei Mate 40 Pro Mystic Silver
+                                </figcaption>
+                            </figure>
+                            <p class="card-list__price">36 990 ₽</p>
+                        </a>
                     </li>
-                    <li class="addr-list__item">
-                        <p class="addr-list__text">График работы</p>
-                        <p class="addr-list__txt">Пн-Пт 9:00 до 20:00</p>
+                    <li class="card-list__item">
+                        <a class="card-list__link" href="#">
+                            <figure class="card-list__figure">
+                                <img class="card-list__img" src="img/index/hits/Teapot.jpg"
+                                    alt="picture-electric kettle">
+                                <figcaption class="card-list__txt">Электрочайник Moulinex</figcaption>
+                            </figure>
+                            <strike class="card-list___old-price">3 990 ₽</strike>
+                            <p class="card-list__price">1 990 ₽</p>
+                        </a>
+                    </li>
+                    <li class="card-list__item">
+                        <a class="card-list__link" href="#">
+                            <figure class="card-list__figure">
+                                <img class="card-list__img" src="img/index/hits/Cleaner.jpg" alt="picture-cleaner">
+                                <figcaption class="card-list__txt">Пылесос с контейнером для пыли Tefal City Space
+                                </figcaption>
+                            </figure>
+                            <strike class="card-list___old-price">16 990 ₽</strike>
+                            <p class="card-list__price">14 990 ₽</p>
+                        </a>
                     </li>
                 </ul>
-            </address>
-            <button class="contacts__button">Написать нам</button>
+            </div>
+        </section>
+        <section class="main__brands brands">
+            <h2 class="brands__title visually-hidden">Наиболее известные и продаваемые бренды</h2>
+            <div class="container">
+                <p class="index__section-heading">Популярные бренды</p>
+                <a class="brands__link-btn link-btn" href="#">Смотреть все</a>
+                <ul class="brands__picture-list picture-list">
+                    <li class="picture-list__item"><a class="picture-list__link" href="#"><img class="picture-list__img"
+                                src="img/index/brands/Samsung.jpg" alt="picture-samsung"></a></li>
+                    <li class="picture-list__item"><a class="picture-list__link" href="#"><img class="picture-list__img"
+                                src="img/index/brands/Oral-B.jpg" alt="picture-oral-b"></a></li>
+                    <li class="picture-list__item"><a class="picture-list__link" href="#"><img class="picture-list__img"
+                                src="img/index/brands/LG Life's Good.jpg" alt="picture-LG-Life's-Good"></a></li>
+                    <li class="picture-list__item"><a class="picture-list__link" href="#"><img class="picture-list__img"
+                                src="img/index/brands/Apple.jpg" alt="picture-apple"></a></li>
+                    <li class="picture-list__item"><a class="picture-list__link" href="#"><img class="picture-list__img"
+                                src="img/index/brands/APC.jpg" alt="picture-APC" loading="lazy"></a></li>
+                    <li class="picture-list__item"><a class="picture-list__link" href="#"><img class="picture-list__img"
+                                src="img/index/brands/Xiaomi.jpg" alt="picture-xiaomi" loading="lazy"></a></li>
+                    <li class="picture-list__item"><a class="picture-list__link" href="#"><img class="picture-list__img"
+                                src="img/index/brands/LG OLED.jpg" alt="picture-LG-OLED" loading="lazy"></a></li>
+                    <li class="picture-list__item"><a class="picture-list__link" href="#"><img class="picture-list__img"
+                                src="img/index/brands/Digma.jpg" alt="picture-digma" loading="lazy"></a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="main__news-stocks news-stocks">
+            <h2 class="news-stocks__title visually-hidden">Новости и акции</h2>
+            <div class="container">
+                <p class="index__section-heading">Новости и акции</p>
+                <a class="news-stocks__link-btn link-btn" href="#">Смотреть все</a>
+                <ul class="news-stocks__products-list products-list">
+                    <li class="products-list__item">
+                        <p class="products-list__text">Бренд BLOODY представил мышь W60 Pro</p>
+                        <p class="products-list__txt">Популярный бренд компьютерных аксессуаров</p>
+                        <img class="products-list__img" src="img/index/news-stocks/Computer mouse.jpg"
+                            alt="picture-computer-mouse" loading="lazy">
+                        <a class="products-list__link" href="#">Подробнее</a>
+                    </li>
+                    <li class="products-list__item">
+                        <p class="products-list__text">Плата asus</p>
+                        <img class="products-list__img" src="img/index/news-stocks/Computer board.jpg"
+                            alt="picture-computer-board" loading="lazy">
+                        <a class="products-list__link" href="#">Подробнее</a>
+                    </li>
+                    <li class="products-list__item">
+                        <p class="products-list__text">Системный блок acer</p>
+                        <img class="products-list__img" src="img/index/news-stocks/System unit.jpg"
+                            alt="picture-system-unit" loading="lazy">
+                        <a class="products-list__link" href="#">Подробнее</a>
+                    </li>
+                    <li class="products-list__item">
+                        <p class="products-list__text">Планшет samsung</p>
+                        <img class="products-list__img" src="img/index/news-stocks/Tablet.jpg" alt="picture-tablet"
+                            loading="lazy">
+                        <a class="products-list__link" href="#">Подробнее</a>
+                    </li>
+                    <li class="products-list__item">
+                        <p class="products-list__text">Новые наушники Razer</p>
+                        <img class="products-list__img" src="img/index/news-stocks/Headphones.jpg"
+                            alt="picture-headphones" loading="lazy">
+                        <a class="products-list__link" href="#">Подробнее</a>
+                    </li>
+                    <li class="products-list__item">
+                        <p class="products-list__text">Мультипекарь Redmond плюс</p>
+                        <img class="products-list__img" src="img/index/news-stocks/Multipekar.jpg"
+                            alt="picture-multipekar" loading="lazy">
+                        <a class="products-list__link" href="#">Подробнее</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="main__advantages advantages">
+            <h2 class="advantages__title visually-hidden">Преимущества</h2>
+            <div class="container">
+                <p class="index__section-heading">Преимущества</p>
+                <ul class="advantages__top-list top-list">
+                    <li class="top-list__item">
+                        <img class="top-list__img" src="img/index/advantages/Order.svg" alt="picture-order"
+                            loading="lazy">
+                        <p class="top-list__text">Простая и удобная система заказа товара</p>
+                        <p class="top-list__txt">Мы знаем, как важна простая система регистрации и оформления заказа,
+                            поэтому делаем все для того, чтобы оформить заказ было удобно (и быстро!).</p>
+                    </li>
+                    <li class="top-list__item">
+                        <img class="top-list__img" src="img/index/advantages/SMS.svg" alt="picture-SMS" loading="lazy">
+                        <p class="top-list__text">Оповещаем о состоянии заказа по SMS</p>
+                        <p class="top-list__txt">Для тех, кто всегда хочет быть в курсе: вы сами можете контролировать
+                            свой
+                            заказ, получая статус о его формировании посредством sms-сообщений.</p>
+                    </li>
+                    <li class="top-list__item">
+                        <img class="top-list__img" src="img/index/advantages/Delivery.svg" alt="picture-delivery"
+                            loading="lazy">
+                        <p class="top-list__text">Оперативная доставка</p>
+                        <p class="top-list__txt">Мы привыкли работать с большими объемами заказов, поэтому вам не стоит
+                            беспокоиться о том, что ваш заказ будет обработан не вовремя.</p>
+                    </li>
+                </ul>
+        </section>
+        <section class="main__contacts contacts">
+            <h2 class="contacts__title visually-hidden">Контакты</h2>
+            <div class="container">
+                <p class="index__section-heading">Контакты</p>
+                <img class="contacts__map-img" src="img/index/contacts/Map.jpg" alt="map" loading="lazy">
+                <address>
+                    <ul class="contacts__addr-list">
+                        <li class="addr-list__item">
+                            <p class="addr-list__text">Адрес</p>
+                            <p class="addr-list__txt">7-я Кожуховская ул., 9, Москва (этаж 1)</p>
+                        </li>
+                        <li class="addr-list__item">
+                            <p class="addr-list__text">Телефон</p>
+                            <p class="addr-list__txt"><a class="addr-list__phone-link" href="tel:+74954448885">8 (495)
+                                    444-888-5</a></p>
+                        </li>
+                        <li class="addr-list__item">
+                            <p class="addr-list__text">График работы</p>
+                            <p class="addr-list__txt">Пн-Пт 9:00 до 20:00</p>
+                        </li>
+                    </ul>
+                </address>
+                <button class="contacts__button">Написать нам</button>
+            </div>
         </section>
         <section class="main__subscription subscription">
-            <h2 class="subscription__title">Подписка на новости и акции</h2>
-            <p class="subscription__headingt">Получайте самые интересные предложения первыми!</p>
-            <form action="#" method="get" class="subscription__form">
-                <input type="text" placeholder="Введите ваш e-mail" class="subscription__form-text">
-                <input type="button" value="Подписаться" class="subscription__form-button">
-            </form>
+            <h2 class="subscription__title visually-hidden">Подписка на новости и акции</h2>
+            <div class="container">
+                <p class="subscription__heading">Получайте самые интересные предложения первыми!</p>
+                <form action="#" method="get" class="subscription__form">
+                    <input type="text" placeholder="Введите ваш e-mail" class="subscription__form-text">
+                    <input type="button" value="Подписаться" class="subscription__form-button">
+                </form>
+            </div>
         </section>
     </main>
 
     <footer class="footer">
-        <img class="footer__logo-img" src="img/Logo.svg" alt="logo">
-        <p class="footer__addres">7-я Кожуховская ул., 9, Москва (этаж 1)</p>
-        <ul class="footer__navigat-list navigat-list">
-            <li class="navigat-list__item"><a href="#" class="navigat-list__link">Скидки</a></li>
-            <li class="navigat-list__item"><a href="#" class="navigat-list__link">Акции</a></li>
-            <li class="navigat-list__item"><a href="#" class="navigat-list__link">Покупателям</a></li>
-            <li class="navigat-list__item"><a href="#" class="navigat-list__link">Информация</a></li>
-            <li class="navigat-list__item"><a href="#" class="navigat-list__link">Гарантия</a></li>
-            <li class="navigat-list__item"><a href="#" class="navigat-list__link">Кредит и рассрочка</a></li>
-            <li class="navigat-list__item"><a href="#" class="navigat-list__link">Новости</a></li>
-            <li class="navigat-list__item"><a href="#" class="navigat-list__link">Вакансии</a></li>
-        </ul>
-        <ul class="footer__social-network-list social-network-list">
-            <li class="social-network-list__item"><a href="#" class="social-network-list__link"><span
-                        class="social-network-list__alt">FaceBook</span></a></li>
-            <li class="social-network-list__item"><a href="#" class="social-network-list__link"><span
-                        class="social-network-list__alt">Instagram</span></a></li>
-            <li class="social-network-list__item"><a href="#" class="social-network-list__link"><span
-                        class="social-network-list__alt">VK</span></a></li>
-            <li class="social-network-list__item"><a href="#" class="social-network-list__link"><span
-                        class="social-network-list__alt">YouTube</span></a></li>
-        </ul>
-        <p class="footer__text">© Electro place, 2003–2021</p>
-        <a href="#" class="footer__link">Политика обработки персональных данных</a>
-        <p class="footer__developer">Разработка сайта: <img class="footer__img" src="img/Garpix logo.svg" alt="logo"></p>
+        <div class="footer__top">
+            <div class="container">
+                <img class="footer__logo-img" src="img/Logo.svg" alt="logo">
+                <p class="footer__addres">7-я Кожуховская ул., 9, Москва (этаж 1)</p>
+                <ul class="footer__navigat-list navigat-list">
+                    <li class="navigat-list__item"><a href="#" class="navigat-list__link">Скидки</a></li>
+                    <li class="navigat-list__item"><a href="#" class="navigat-list__link">Акции</a></li>
+                    <li class="navigat-list__item"><a href="#" class="navigat-list__link">Покупателям</a></li>
+                    <li class="navigat-list__item"><a href="#" class="navigat-list__link">Информация</a></li>
+                    <li class="navigat-list__item"><a href="#" class="navigat-list__link">Гарантия</a></li>
+                    <li class="navigat-list__item"><a href="#" class="navigat-list__link">Кредит и рассрочка</a></li>
+                    <li class="navigat-list__item"><a href="#" class="navigat-list__link">Новости</a></li>
+                    <li class="navigat-list__item"><a href="#" class="navigat-list__link">Вакансии</a></li>
+                </ul>
+                <ul class="footer__social-network-list social-network-list">
+                    <li class="social-network-list__item"><a href="#" class="social-network-list__link"><span
+                                class="social-network-list__alt">FaceBook</span></a></li>
+                    <li class="social-network-list__item"><a href="#" class="social-network-list__link"><span
+                                class="social-network-list__alt">Instagram</span></a></li>
+                    <li class="social-network-list__item"><a href="#" class="social-network-list__link"><span
+                                class="social-network-list__alt">VK</span></a></li>
+                    <li class="social-network-list__item"><a href="#" class="social-network-list__link"><span
+                                class="social-network-list__alt">YouTube</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <p class="footer__text">© Electro place, 2003–2021</p>
+                <a href="#" class="footer__link">Политика обработки персональных данных</a>
+                <p class="footer__developer">Разработка сайта: <img class="footer__img" src="img/Garpix logo.svg"
+                        alt="logo"></p>
+            </div>
+        </div>
     </footer>
 
 </body>

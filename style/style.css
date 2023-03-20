@@ -11,8 +11,9 @@
     overflow: hidden;
 }
 
-.nav-list__link {
+.top-nav-list__link {
     font-family: 'Open Sans';
+    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
@@ -21,6 +22,7 @@
 
 .header__phone-link {
     font-family: 'Open Sans';
+    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
@@ -29,37 +31,53 @@
 
 .header__search-text {
     font-family: 'Open Sans';
+    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
-    color: #7D868F;
+    color: #7D868F;    
+    border: none;
+    outline: none;
+    padding: 13px 0 13px 46px;
+    border-radius: 8px;
+    width: 564px;
 }
 
 .header__favorite-link {
     font-family: 'Open Sans';
+    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
     color: #000000;
+    margin: 44px 0;
 }
 
 .header__cart-link {
     font-family: 'Open Sans';
+    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
     color: #000000;
+    margin: 44px 0;
 }
 
 .button-catalog {
     font-family: 'Open Sans';
+    font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 19px;
     color: #FFFFFF;
+    padding: 13px 15px 13px 45px;
+    border-radius: 8px;
+    background: #005AAB;
+    border: none;
 }
-.navig-list__link {
+.bottom-nav-list__link {
     font-family: 'Open Sans';
+    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
@@ -68,6 +86,7 @@
 
 .slider__text {
     font-family: 'Roboto';
+    font-style: normal;
     font-weight: 900;
     font-size: 35px;
     line-height: 41px;
@@ -76,6 +95,7 @@
 
 .slider__txt {
     font-family: 'Open Sans';
+    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
@@ -84,6 +104,7 @@
 
 .mini__text {
     font-family: 'Roboto';
+    font-style: normal;
     font-weight: 700;
     font-size: 22px;
     line-height: 26px;
@@ -92,14 +113,16 @@
 
 .mini__catalog-link {
     font-family: 'Open Sans';
+    font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 19px;
     color: #000000;
 }
 
-.hits__heading {
+.index__section-heading {
     font-family: 'Roboto';
+    font-style: normal;
     font-weight: 700;
     font-size: 32px;
     line-height: 38px;
@@ -108,6 +131,7 @@
 
 .link-btn {
     font-family: 'Open Sans';
+    font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 19px;
@@ -116,6 +140,7 @@
 
 .card-list__txt {
     font-family: 'Open Sans';
+    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
@@ -124,6 +149,7 @@
 
 .card-list___old-price {
     font-family: 'Open Sans';
+    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
@@ -132,30 +158,16 @@
 
 .card-list__price {
     font-family: 'Roboto';
+    font-style: normal;
     font-weight: 500;
     font-size: 22px;
     line-height: 26px;
     color: #000000;
 }
 
-.brands__heading {
-    font-family: 'Roboto';
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 38px;
-    color: #000000;
-}
-
-.news-stocks__headingt {
-    font-family: 'Roboto';
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 38px;
-    color: #000000;
-}
-
 .products-list__text {
     font-family: 'Roboto';
+    font-style: normal;
     font-weight: 700;
     font-size: 22px;
     line-height: 26px;
@@ -164,6 +176,7 @@
 
 .products-list__txt {
     font-family: 'Open Sans';
+    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
@@ -172,22 +185,16 @@
 
 .products-list__link {
     font-family: 'Open Sans';
+    font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 19px;
     color: #000000;
 }
 
-.advantages__headingt {
-    font-family: 'Roboto';
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 38px;
-    color: #000000;
-}
-
 .top-list__text {
     font-family: 'Open Sans';
+    font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 22px;
@@ -196,22 +203,16 @@
 
 .top-list__txt {
     font-family: 'Open Sans';
+    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
     color: #000000;
 }
 
-.contacts__headingt {
-    font-family: 'Roboto';
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 38px;
-    color: #000000;
-}
-
 .addr-list__text {
     font-family: 'Open Sans';
+    font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 22px;
@@ -220,6 +221,7 @@
 
 .addr-list__txt {
     font-family: 'Open Sans';
+    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
@@ -228,14 +230,16 @@
 
 .contacts__button {
     font-family: 'Open Sans';
+    font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 19px;
     color: #FFFFFF;
 }
 
-.subscription__headingt {
+.subscription__heading {
     font-family: 'Roboto';
+    font-style: normal;
     font-weight: 700;
     font-size: 22px;
     line-height: 26px;
@@ -244,6 +248,7 @@
 
 .subscription__form-text {
     font-family: 'Open Sans';
+    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
@@ -252,6 +257,7 @@
 
 .subscription__form-button {
     font-family: 'Open Sans';
+    font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 19px;
@@ -260,6 +266,7 @@
 
 .footer__addres {
     font-family: 'Open Sans';
+    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
@@ -268,6 +275,7 @@
 
 .navigat-list__link {
     font-family: 'Open Sans';
+    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
@@ -276,6 +284,7 @@
 
 .footer__text {
     font-family: 'Open Sans';
+    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
@@ -284,6 +293,7 @@
 
 .footer__link {
     font-family: 'Open Sans';
+    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
@@ -292,6 +302,7 @@
 
 .footer__developer {
     font-family: 'Open Sans';
+    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
@@ -436,8 +447,132 @@
 
 .number-list__link {
     font-family: 'Open Sans';
+    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
     color: #FFFFFF;
 }
+
+.header__top {
+    background: #363636;
+    padding: 17px 0;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.footer__top {
+    background: #333333;
+    padding: 17px 0;
+}
+
+.footer__bottom {
+    background: #333333;
+}
+
+.advantages {
+    background: #F1F5F7;
+}
+
+.subscription{
+    background: #F1F5F7;
+}
+
+.navigation {
+    background: #F1F5F7;
+    border-radius: 8px;
+    padding: 13px 25px;
+}
+
+body {
+    margin: 0;
+}
+
+.top-nav-list {
+    display: flex;
+    gap: 30px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header__top .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header__assortment {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-nav-list{
+    display: flex;
+    padding: 0;
+    gap: 25px;
+}
+
+.header__l-s-f-c{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo-link {
+    margin: 30px 0 31px;
+}
+
+.header__l-s-f-c-search {
+    border: 1px solid #DEDEE2;
+    border-radius: 8px;
+    width:619px;
+    height: 46px;
+    margin: 29px 0 30px;
+    display: flex;
+}
+
+.banner .container {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto 70px;
+    position: relative;
+}
+
+.slider__text {
+    position: absolute;
+    padding: 30px 349px 289px 30px;
+    margin: 0;
+}
+
+.slider__txt {
+    position: absolute;
+    padding: 81px 637px 257px 30px;
+    margin: 0;
+}
+
+.mini {
+    background: #363636;
+    border-radius: 8px;
+    margin: 0 0 0 30px;
+
+}
+
+.mini__text {
+    position: absolute;
+    padding: 30px 30px 251px 30px;
+    margin: 0;
+}
+
+.slider__img {
+    height: 100%;
+}
+
