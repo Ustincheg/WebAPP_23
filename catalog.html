@@ -14,81 +14,126 @@
 
 <body>
     <header class="header">
-        <ul class="header__navigation">
-            <li><a href="#" class="header__navigation_text">Магазины</a></li>
-            <li><a href="#" class="header__navigation_text">Доставка и оплата</a></li>
-            <li><a href="#" class="header__navigation_text">Кредиты и рассрочка</a></li>
-        </ul>
-        <a class="tel" href="tel:+71111111111">+71111111111</a>
-        <a class="header__logo" href="header__logo"><img src="images/Logo.svg" alt="header__logo"></a>
-        <input class="header__search" type="text">
-        <a class="header__favorites" href="#"><img src="#" alt="Избранное"></a>
-        <a class="header__basket" href="#"><img src="#" alt="Корзина"></a>
-        <button class="header__catalog">Каталог</button>
-        <ul class="header__navlist">
-            <li><a href="#">Скидки</a></li>
-            <li><a href="#">Смартфоны</a></li>
-            <li><a href="#">Телефизоры</a></li>
-            <li><a href="#">Ноутбуки</a></li>
-            <li><a href="#">Стиральные машины</a></li>
-            <li><a href="#">Холодильники</a></li>
-            <li><a href="#">Пылесосы</a></li>
-            <li><a href="#">Микроволновки</a></li>
-        </ul>
-        <h2 class="header__path">Главная > Каталог > Смартфоны</h2>
+        
+        <div class="header__top">
+            <div class="content">
+                <div class="header__top-content">
+                    <div class="header__top-navigation">
+                        <ul class="header__navigation">
+                            <li class="header__navigation_element"><a href="#" class="header__navigation_text">Магазины</a></li>
+                            <li class="header__navigation_element"><a href="#" class="header__navigation_text">Доставка и оплата</a></li>
+                            <li class="header__navigation_element"><a href="#" class="header__navigation_text">Кредиты и рассрочка</a></li>
+                        </ul>
+                    </div>
+                    <a class="telephone-number" href="tel:+71111111111" >+71111111111</a>
+                </div>
+                
+            </div>
+            
+        </div>
+        <div class="content">
+            <div class="header__bottom-first">
+                <div class="header__bottom-first-box-1"><a class="header__logo" href="header__logo"><img src="images/Logo.svg" alt="header__logo"></a></div>
+                <div class="header__bottom-first-box-2"><input class="header__search" type="text"></div>
+                <div class="header__bottom-first-box-3"><a class="header__favorites" href="#">Избранное</a></div>
+                <div class="header__bottom-first-box-4"><a class="header__basket" href="#">Корзина</a></div>  
+            </div>
+            <div class="header__bottom-second">
+                <button class="main__catalog"><img src="images/Menu icon.png" alt="HUNDAI">Каталог</button>
+                <ul class="header__navlist">
+                    <li><a href="#"></a></li>
+                    <li><a href="#">Скидки</a></li>
+                    <li><a href="#">Смартфоны</a></li>
+                    <li><a href="#">Телефизоры</a></li>
+                    <li><a href="#">Ноутбуки</a></li>
+                    <li><a href="#">Стиральные машины</a></li>
+                    <li><a href="#">Холодильники</a></li>
+                    <li><a href="#">Пылесосы</a></li>
+                    <li><a href="#">Микроволновки</a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+            <h2 class="header__path">Главная > Каталог > Смартфоны</h2>
+        </div>
+       
     </header>
     <main class="main">
-        <h1>Смартфоны</h1>
+        <div class="content">
+            <h1 class="catalog__main-footer-heading">Смартфоны</h1>
+        </div>
+        
+        <div class="catalog__main-footer-block">
+                
+            <section>
+                <p class="number of products">656 товаров</p>
+                <p class="sort">Сортировать:</p>
+                <ul class="sort__list">
+                    <li><button class="">По цене</button><a href="#"></a></li>
+                    <li><button class="">По популярности</button><a href="#"></a></li>
+                    <li><button class="">По новизне</button><a href="#"></a></li>
+                </ul>
+            </section>
+        </div>    
+        
+            
+            
+        <div class="catalog__main-block">
+            <section>
+                <p>Цена, ₽</p>
+                <input type="0">
+                <p>-</p>
+                <input type="85000">
+                <input type="range" min="0" max="6999999" value="0">
+                <input type="range" min="0" max="6999999" value="6999999">
+                <p>Диагональ экрана</p>
+                <div><select name="diagonal" id="1">
+                    <option value="1">От 6”</option>
+                    <option value="2">От 9”</option>
+                    <option value="3">От 12”</option>
+                </select> </div>
+                <p>Бренд</p>
+                <ul class="brand__list">
+                    <ul><input type="checkbox"> APPLE </input></ul>
+                    <ul><input type="checkbox"> BLACKVIEW </input></ul>
+                    <ul><input type="checkbox"> NOKIA </input></ul>
+                    <ul><input type="checkbox"> CLEVERCEL </input></ul>
+                    <ul><input type="checkbox"> XIAOMI </input></ul>
+                    <ul><input type="checkbox"> ZTE </input></ul>
+                </ul>
+                <p>Количество SIM-карт</p>
+                <ul class="radiobutton__list">
+                    <ul><input type="radio" name="SIMradio" id="0"> 1SIM</input></ul>
+                    <ul><input type="radio" name="SIMradio" id="1"> 2SIM</input></ul>
+                </ul>
+            </section>
+            <section>
+                <h2>Хиты продаж </h2>
+                <a href="#">Смотреть всё</a>
+                <ul class="main-hits__slider slider">
+                    <li><button class="button__favorites"></button><a href="#"><img src="images/products/Image1.jpg" alt="HUNDAI"><h3>Мультиварка Redmond</h3></a><p1 class="old_price">5333</p1><p class="new_price">6990</p></li>
+                    <li><button class="button__favorites"></button><a href="#"><img src="images/products/Image2.jpg" alt="HUNDAI"><h3>Смартфон Huawei</h3></a><p1 class="old_price"></p1><p class="new_price">36990</p></li>
+                    <li><button class="button__favorites"></button><a href="#"><img src="images/products/Image3.jpg" alt="HUNDAI"><h3>Электрочайник Moulinex</h3></a><p1 class="old_price">3990</p1><p class="new_price">1990</p></li>
+                </ul>
+            </section>
+        </div>    
+                
+            </div>
+            
+        </div>
+        
         <section>
-            <p class="number of products">656 товаров</p>
-            <p class="sort">Сортировать:</p>
-            <ul class="sort__list">
-                <li><button class="">По цене</button><a href="#"></a></li>
-                <li><button class="">По популярности</button><a href="#"></a></li>
-                <li><button class="">По новизне</button><a href="#"></a></li>
-            </ul>
-        </section>
-        <section>
-            <p>Цена, ₽</p>
-            <input type="0">
-            <p>-</p>
-            <input type="85000">
-            <input type="range" min="0" max="6999999" value="0">
-            <input type="range" min="0" max="6999999" value="6999999">
-            <p>Диагональ экрана</p>
-            <div><select name="diagonal" id="1">
-                <option value="1">От 6”</option>
-                <option value="2">От 9”</option>
-                <option value="3">От 12”</option>
-            </select> </div>
-            <p>Бренд</p>
-            <ul class="brand__list">
-                <ul><input type="checkbox"> APPLE </input></ul>
-                <ul><input type="checkbox"> BLACKVIEW </input></ul>
-                <ul><input type="checkbox"> NOKIA </input></ul>
-                <ul><input type="checkbox"> CLEVERCEL </input></ul>
-                <ul><input type="checkbox"> XIAOMI </input></ul>
-                <ul><input type="checkbox"> ZTE </input></ul>
-            </ul>
-            <p>Количество SIM-карт</p>
-            <ul class="radiobutton__list">
-                <ul><input type="radio" name="SIMradio" id="0"> 1SIM</input></ul>
-                <ul><input type="radio" name="SIMradio" id="1"> 2SIM</input></ul>
-            </ul>
-        </section>
-        <section>
-            <h2>Хиты продаж </h2>
-            <a href="#">Смотреть всё</a>
-            <ul class="main-hits__slider slider">
-                <li><button class="button__favorites"></button><a href="#"><img src="images/products/Image1.jpg" alt="HUNDAI"><h3>Мультиварка Redmond</h3></a><p1 class="old_price">5333</p1><p class="new_price">6990</p></li>
-                <li><button class="button__favorites"></button><a href="#"><img src="images/products/Image2.jpg" alt="HUNDAI"><h3>Смартфон Huawei</h3></a><p1 class="old_price"></p1><p class="new_price">36990</p></li>
-                <li><button class="button__favorites"></button><a href="#"><img src="images/products/Image3.jpg" alt="HUNDAI"><h3>Электрочайник Moulinex</h3></a><p1 class="old_price">3990</p1><p class="new_price">1990</p></li>
-            </ul>
-        </section>
-        <section>
-            <h3>Получайте самые интересные предложения первыми!</h3>
-            <input type="Введите ваш e-mail" class="main__input-email">
-            <a href="">Подписаться</a>
+            <div class="mailing">
+                <div class="">
+                    <div class="mailing-block">
+                        <h3 class="mailing-block-text">Получайте самые интересные предложения первыми!</h3>
+                        <div>
+                            <input type="Введите ваш e-mail" class="main__input-email">
+                            <a href="" class="mailing-block-button">Подписаться</a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
@@ -96,47 +141,64 @@
 
 
     <footer class="footer">
-        <img src="images/Logo1.svg" alt="logo" class="footer__logo">
-        <p class="footer__addres">7-я Кожуховская ул., 9, Москва (этаж 1)</p>
-        <ul class="footer__nav-list">
-            <li class="footer__nav-list-item">
-                <a href="#" class="footer__nav-list-link">Скидки</a>
-            </li>
-            <li class="footer__nav-list-item">
-                <a href="#" class="footer__nav-list-link">Акции</a>
-            </li>
-            <li class="footer__nav-list-item">
-                <a href="#" class="footer__nav-list-link">Покупателям</a>
-            </li>
-            <li class="footer__nav-list-item">
-                <a href="#" class="footer__nav-list-link">Информация</a>
-            </li>
-            <li class="footer__nav-list-item">
-                <a href="#" class="footer__nav-list-link">Гарантия</a>
-            </li>
-            <li class="footer__nav-list-item">
-                <a href="#" class="footer__nav-list-link">Кредит и рассрочка</a>
-            </li>
-            <li class="footer__nav-list-item">
-                <a href="#" class="footer__nav-list-link">Новости</a>
-            </li>
-            <li class="footer__nav-list-item">
-                <a href="#" class="footer__nav-list-link">Вакансии</a>
-            </li>
-        </ul>
-        <ul class="footer__social-list social-list">
-            <li class="social-list__item"><a href="#" class="social-list__desc"><span
-                        class="social-list__alt">FaceBook</span></a></li>
-            <li class="social-list__item"><a href="#" class="social-list__desc"><span
-                        class="social-list__alt">instagram</span></a></li>
-            <li class="social-list__item"><a href="#" class="social-list__desc"><span
-                        class="social-list__alt">VK</span></a></li>
-            <li class="social-list__item"><a href="#" class="social-list__desc"><span
-                        class="social-list__alt">Youtube</span></a></li>
-        </ul>
-        <p class="footer__bottom-txt">© Electro place, 2003–2021</p>
-        <a href="#" class="footer__bottom-link">Политика обработки персональных данных</a>
-        <p class="footer__developer">Разработка сайта: <img src="images/footer/Garpix logo.png" alt="logo"></p>
+        <div class="content">
+            <div class="footer__conteiner">
+                <div class="footer__conteiner-1">
+                    <img src="images/Logo1.svg" alt="logo" class="footer__logo">
+                    <p class="footer__addres">7-я Кожуховская ул., 9, Москва (этаж 1)</p>
+                </div>
+                <div class="footer__conteiner-2">
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-list-item">
+                            <a href="#" class="footer__nav-list-link">Скидки</a>
+                        </li>
+                        <li class="footer__nav-list-item">
+                            <a href="#" class="footer__nav-list-link">Акции</a>
+                        </li>
+                        <li class="footer__nav-list-item">
+                            <a href="#" class="footer__nav-list-link">Покупателям</a>
+                        </li>
+                        <li class="footer__nav-list-item">
+                            <a href="#" class="footer__nav-list-link">Информация</a>
+                        </li>
+                        <li class="footer__nav-list-item">
+                            <a href="#" class="footer__nav-list-link">Гарантия</a>
+                        </li>
+                        <li class="footer__nav-list-item">
+                            <a href="#" class="footer__nav-list-link">Кредит и рассрочка</a>
+                        </li>
+                        <li class="footer__nav-list-item">
+                            <a href="#" class="footer__nav-list-link">Новости</a>
+                        </li>
+                        <li class="footer__nav-list-item">
+                            <a href="#" class="footer__nav-list-link">Вакансии</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__conteiner-3">
+                    <ul class="footer__social-list">
+                        <li class="social-list__item"><a href="#" class="social-list__desc"><img src="images/footer/facebook-logo 1.png" alt=""></a></li>
+                        <li class="social-list__item"><a href="#" class="social-list__desc"><img src="images/footer/instagram (2) 1.png" alt=""></a></li>
+                        <li class="social-list__item"><a href="#" class="social-list__desc"><img src="images/footer/vk 1.png" alt=""></a></li>
+                        <li class="social-list__item"><a href="#" class="social-list__desc"><img src="images/footer/youtube 1.png" alt=""></a></li>
+                    </ul>
+                </div>
+                
+            </div>
+            
+        </div>
+        <div class="line"></div>
+        <div class="content">
+            <div class="footer__bottom">
+                <div class="footer__bottom-first">
+                    <p class="footer__bottom-text">© Electro place, 2003–2021</p>
+                    <a href="#" class="footer__bottom-link">Политика обработки персональных данных</a>
+                </div>
+                <p class="footer__developer">Разработка сайта: <img src="images/footer/Garpix logo.png" alt="logo"></p>
+            </div>
+            
+        </div>
+        
     </footer>
 
 </body>
