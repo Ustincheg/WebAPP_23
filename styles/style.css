@@ -30,7 +30,8 @@
 
 
 .container {
-    padding: 30px 375px;
+    max-width: 1170px;
+    margin: 30px auto;
 }
 
 a {
@@ -41,6 +42,8 @@ a {
 ul {
     list-style-type: none;
     padding-inline-start: 0px;
+    margin: 0px;
+    padding: 0;
 }
 
 .visually-hidden

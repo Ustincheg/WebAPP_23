@@ -1,13 +1,15 @@
+.header .container
+{
+    background-color: #363636;
+}
+
 .header__upp-panel
 {
-    padding: 17px 375px;
-    
     display: flex;
     align-items: center;
     justify-content: space-between;
     
     color: white;
-    background-color: #363636;
 }
 
 .header__upp-list
