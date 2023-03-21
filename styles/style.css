@@ -6,7 +6,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 30px;
+    /*gap: 30px;*/
 }
 
 .reflex-container {
@@ -16,50 +16,6 @@
 
     flex-direction: column;
 }
-
-.blue-button
-{
-    border: none;
-
-    padding: 15px 55px;
-    border-radius: 8px;
-
-    background: #005AAB;
-    color: white;
-}
-
-
-.container {
-    max-width: 1170px;
-    margin: 30px auto;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-ul {
-    list-style-type: none;
-    padding-inline-start: 0px;
-    margin: 0px;
-    padding: 0;
-}
-
-.visually-hidden
-{
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
-
 
 .hori-list__item
 {

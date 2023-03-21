@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>ELECTRO PLACE</title>
         <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/general.css">
         <link rel="stylesheet" href="styles/header.css">
         <link rel="stylesheet" href="styles/index.css">
         <link rel="stylesheet" href="styles/opensans.css">
@@ -13,38 +14,31 @@
     </head>
     <body class="body">
         <iframe src="components/header.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
-        <main>
+        <main class="main">
             <h1 class="visually-hidden">
                 Интернет магазин бытовой электроники
             </h1>
-            <section class="main-banner">
-                <h2 class="visually-hidden">
-                    Главный баннер
-                </h2>
+            <section class="main-banner container flex-container">
+                <h2 class="visually-hidden">Главный банер</h2>
+                <ul class="main-banner__slider slider">
+                    <li class="banner__slider__item item">
+                        <img src="data/images/banners/banner-1.jpg" alt="Микроволновка">
+                    </li>
+                    <!--<li class="banner__slider__item item">
+                        <img src="#" alt="Фото">
+                    </li>
+                    <li class="banner__slider__item item">
+                        <img src="#" alt="Фото">
+                    </li>-->
+                </ul>
+                <div class="banner">
+                    <figure class="figure-banner">
+                        <figcaption class="banner-text">Новая линейка телевизоров samsung </figcaption>
+                        <img src="data/images/banners/banner-2.png" alt="Телевизор">
+                    </figure>
+                    <a class="menu-button-banner button-text" href="#">Смотреть каталог</a>
+                </div>
             </section>
-            <div class="container">
-                <section class="banner flex-container">
-                    <h2 class="visually-hidden">Главный банер</h2>
-                    <ul class="banner__slider slider">
-                        <li class="banner__slider__item item">
-                            <img src="data/images/banners/banner-1.jpg" alt="Фото">
-                        </li>
-                        <!--<li class="banner__slider__item item">
-                            <img src="#" alt="Фото">
-                        </li>
-                        <li class="banner__slider__item item">
-                            <img src="#" alt="Фото">
-                        </li>-->
-                    </ul>
-                    <div class="new-lin-samsung">
-                        <figure>
-                            <figcaption>Новая линейка телевизоров samsung </figcaption>
-                            <img src="data/images/samsung_tv.png" alt="Телевизор">
-                        </figure>
-                        <a class="menu-button-samsung button-text" href="#">Смотреть каталог</a>
-                    </div>
-                </section>
-            </div>
             <section class="sales-hits container">
                 <h2 class="visually-hidden">
                     Хиты продаж
@@ -55,67 +49,84 @@
                     </p>
                     <a href="#" class="sales-hits__link-btn link-btn button-text">Смотреть все</a>
                 </div>
-                <ul class="sales-hits__list flex-container">
+                <ul class="sales-hits__list container flex-container">
                     <li class="sales-hits__list-item hit-card link-card">
-                        <a href="#" class="hit-card__link">                        
-                            <figure class="hit-card__figure">
-                                <img src="data/images/hit-cards/hit-card-1.jpg" alt="Фото техники" class="hit-card__img" loading="lazy">
-                                <figcaption class="hit-card__desc">
-
-                                </figcaption>
-                            </figure>
-                            <p class="hit-card__price hit-card__price--cross-out">6 990 ₽</p>
-                            <p class="hit-card__price">5 533 ₽</p>
+                        <a href="#" class="hit-card__link">
+                            <div class="goods-card">
+                                <figure class="hit-card__figure">
+                                    <img src="data/images/hit-cards/hit-card-1.jpg" alt="Фото техники" class="hit-card__img" loading="lazy">
+                                    <figcaption class="hit-card__desc">
+                                        Мультиварка Redmond
+                                    </figcaption>
+                                </figure>
+                                <div class="price-container">
+                                    <p class="hit-card__price--cross-out">6 990 ₽</p>
+                                    <p class="hit-card__price">5 533 ₽</p>
+                                </div>
+                            </div>
                         </a>
                     </li>
                     <li class="sales-hits__list-item hit-card link-card">
-                        <a href="#" class="hit-card__link">                        
-                            <figure class="hit-card__figure">
-                                <img src="data/images/hit-cards/hit-card-2.jpg" alt="Фото техники" class="hit-card__img" loading="lazy">
-                                <figcaption class="hit-card__desc">
-
-                                </figcaption>
-                            </figure>
-                            <p class="hit-card__price">36 990 ₽</p>
+                        <a href="#" class="hit-card__link">
+                            <div class="goods-card">
+                                <figure class="hit-card__figure">
+                                    <img src="data/images/hit-cards/hit-card-2.jpg" alt="Фото техники" class="hit-card__img" loading="lazy">
+                                    <figcaption class="hit-card__desc">
+                                        Смартфон Huawei Mate 40 Pro Mystic Silver
+                                    </figcaption>
+                                </figure>
+                                <div class="price-container">
+                                    <p class="hit-card__price--cross-out"></p>
+                                    <p class="hit-card__price">36 990 ₽</p>
+                                </div>
+                            </div>
                         </a>
                     </li>
                     <li class="sales-hits__list-item hit-card link-card">
-                        <a href="#" class="hit-card__link">                        
-                            <figure class="hit-card__figure">
-                                <img src="data/images/hit-cards/hit-card-3.jpg" alt="Фото техники" class="hit-card__img" loading="lazy">
-                                <figcaption class="hit-card__desc">
-
-                                </figcaption>
-                            </figure>
-                            <p class="hit-card__price hit-card__price--cross-out">3 990 ₽</p>
-                            <p class="hit-card__price">1 990 ₽</p>
+                        <a href="#" class="hit-card__link">
+                            <div class="goods-card">
+                                <figure class="hit-card__figure">
+                                    <img src="data/images/hit-cards/hit-card-3.jpg" alt="Фото техники" class="hit-card__img" loading="lazy">
+                                    <figcaption class="hit-card__desc">
+                                        Электрочайник Moulinex
+                                    </figcaption>
+                                </figure>
+                                <div class="price-container">
+                                    <p class="hit-card__price--cross-out">3 990 ₽</p>
+                                    <p class="hit-card__price">1 990 ₽</p>
+                                </div>
+                            </div>
                         </a>
                     </li>
                     <li class="sales-hits__list-item hit-card link-card">
-                        <a href="#" class="hit-card__link">                        
-                            <figure class="hit-card__figure">
-                                <img src="data/images/hit-cards/hit-card-4.jpg" alt="Фото техники" class="hit-card__img" loading="lazy">
-                                <figcaption class="hit-card__desc">
-
-                                </figcaption>
-                            </figure>
-                            <p class="hit-card__price hit-card__price--cross-out">16 990 ₽</p>
-                            <p class="hit-card__price">14 990 ₽</p>
+                        <a href="#" class="hit-card__link">
+                            <div class="goods-card">
+                                <figure class="hit-card__figure">
+                                    <img src="data/images/hit-cards/hit-card-4.jpg" alt="Фото техники" class="hit-card__img" loading="lazy">
+                                    <figcaption class="hit-card__desc">
+                                        Пылесос с контейнером для пыли Tefal City Space
+                                    </figcaption>
+                                </figure>
+                                <div class="price-container">
+                                    <p class="hit-card__price--cross-out">16 990 ₽</p>
+                                    <p class="hit-card__price">14 990 ₽</p>
+                                </div>
+                            </div>
                         </a>
                     </li>
                 </ul>
             </section>
-            <section class="popular-brands container">
-                <div class="flex-container">
-                    <h2 class="visually-hidden">
-                        Популярные бренды
-                    </h2>
+            <section class="popular-brands">
+                <h2 class="visually-hidden">
+                    Популярные бренды
+                </h2>
+                <div class="container flex-container">
                     <p class="popular-brands__title title titles-text">
                         Популярные бренды
                     </p>
                     <a href="#" class="popular-brands__link-btn link-btn button-text">Смотреть все</a>
                 </div>
-                <ul class="popular-brands__list flex-container">
+                <ul class="popular-brands__list container flex-container">
                     <li class="popular-brands__list-item link-card">
                         <a href="#" class="brand__link link_card">
                             <img class="brand-image" src="data/images/brands/brand-card-1.svg" alt="Лого бренда" loading="lazy">
@@ -136,8 +147,6 @@
                             <img class="brand-image" src="data/images/brands/brand-card-4.svg" alt="Лого бренда" loading="lazy">
                         </a>
                     </li>
-                </ul>
-                <ul class="popular-brands__list flex-container">
                     <li class="popular-brands__list-item link-card">
                         <a href="#" class="brand__link link_card">
                             <img class="brand-image" src="data/images/brands/brand-card-5.svg" alt="Лого бренда" loading="lazy">

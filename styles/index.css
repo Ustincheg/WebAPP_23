@@ -1,61 +1,135 @@
-.new-lin-samsung
-{
-    width: 270px;
-    height: 360px;
-    border-radius: 8px;
+/* Настройка баннеров (микроволновка и телевизор) */
 
-    background: #363636;
-    color: white;
-}
-
-.banner__slider__item
-{
+.main-banner__slider__item {
     width: 870px;
     height: 360px;
     border-radius: 8px;
 }
 
-
-.menu-button-samsung
-{
-    padding: 14px 42px;
+.banner {
+    width: 270px;
+    height: 360px;
     border-radius: 8px;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+
+    flex-direction: column;
+    
+    background: #363636;
+    color: white;
+}
+
+.figure-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+
+    margin: 0;
+
+    flex-direction: column;
+}
+
+.banner-text {
+    width: 210px;
+    height: 79px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.menu-button-banner {
+    padding: 14px 42px;
+    border-radius: 8px;
+    
     background: white;
     color: black;
 }
 
-.popular-brands__list-item
-{
-    width: 270px;
-    height: 150px;
-}
+/* Настройка карточек с товарами */
 
-.hit-card
-{
-    width: 270px;
+.hit-card {
+    width: 268px;
     height: 443px;
-}
 
-.brand-image
-{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.link-btn
-{
-    padding: 13px 25px;
-    border-radius: 8px;
+.hit-card__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 
-    color: #005AAB;
-    background: white;
-    border: 1px solid #005AAB;
+    margin: 0;
+
+    flex-direction: column;
 }
 
-.link-card
-{
-    border: 1px solid #DEDEE2;
-    border-radius: 8px;
+.hit-card__figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.hit-card__desc {
+    width: 210px;
+    height: 44px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.price-container {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.hit-card__price--cross-out {
+    width: 64px;
+    height: 22px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #7D868F;
+}
+
+/* Настройка брендов */
+
+.popular-brands__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.popular-brands__list-item {
+    width: 268px;
+    height: 148px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
