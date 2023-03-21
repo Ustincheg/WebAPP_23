@@ -4,11 +4,48 @@
     font-weight: 400; */
 }
 
+.header_container {
+  max-width: 1170;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
+}
 
+.header__background{
+  background: black;
+}
+
+.header_flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topnav-list__link {
+  text-decoration: 0;
+  color: #fff;
+}
+
+.header__topnav-list {
+  display: flex;
+  list-style-type: none;
+  gap: 0 30px;
+  padding-left: 10;
+  align-items: center;
+}
+
+.header__tel {
+  display: flex;
+  list-style-type: none;
+  justify-content: right;
+  color: #FFFFFF;
+}
 
 body {
-  background: #695e5e; /* Цвет фона */
+  background: #695e5e;
+  /* Цвет фона */
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
 }
