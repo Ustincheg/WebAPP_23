@@ -54,22 +54,14 @@
 
 /* Настройка карточек с товарами */
 
-.hit-card {
+.hit-card__link {
     width: 268px;
     height: 443px;
 
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.hit-card__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 20px;
-
-    margin: 0;
 
     flex-direction: column;
 }
@@ -119,7 +111,7 @@
     gap: 30px;
 }
 
-.popular-brands__list-item {
+.popular-brands .brand__link {
     width: 268px;
     height: 148px;
 
@@ -132,4 +124,64 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* Настройка "Новости и акции" */
+
+.news_and_promotions__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 26px 30px; /* Почему не 30 на 30... */
+}
+
+.news_and_promotions__list-item:first-child {
+    grid-area: 1 / 1 / 3 / 3;
+}
+
+/* Настройка "Преимущества" */
+
+.advantages__list {
+    display: flex;
+    gap: 30px;
+}
+
+.advantages__list__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/* Настройка "Контакты" */
+
+.contacts-container {
+    display: flex;
+    gap: 70px;
+}
+
+.contacts__information {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.contacts__list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contacts__list .list__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.contacts-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
 }

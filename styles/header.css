@@ -22,6 +22,18 @@
     padding: 17px 0;
 }
 
+.header__upp-list__link {
+    padding: 17px 0;
+}
+
+.header__upp-list__link:hover {
+    background-color: #5980A3;
+}
+
+.header__upp-list__link:active {
+    background-color: #284864;
+}
+
 .header__search__input {
     width: 621px;
     height: 48px;
@@ -58,6 +70,13 @@
     color: white;
 }
 
+.header__button-menu:hover {
+    background-color: #198AF0;
+}
+
+.header__button-menu:active {
+    background-color: #003769;
+}
 
 .header__nav-list {
     padding: 13px 25px;
@@ -69,4 +88,16 @@
     gap: 25px;
 
     background: #F1F5F7;
+}
+
+.header__nav-list .link {
+    padding: 13px 0;
+}
+
+.header__nav-list .link:hover {
+    background-color: #DBEAF8;
+}
+
+.header__nav-list .link:active {
+    background-color: #99B0C5;
 }

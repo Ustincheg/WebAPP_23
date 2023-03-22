@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -17,6 +21,10 @@ ul {
 figure {
     margin-inline-start: 0;
     margin-inline-end: 0;
+}
+
+hr {
+    margin: 0;
 }
 
 .container {
@@ -46,6 +54,10 @@ figure {
 .link-card {
     border: 1px solid #DEDEE2;
     border-radius: 8px;
+}
+
+.link-card:hover {
+    border: 1px solid #005AAB;
 }
 
 .visually-hidden {

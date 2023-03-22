@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="styles/general.css">
         <link rel="stylesheet" href="styles/header.css">
         <link rel="stylesheet" href="styles/index.css">
+        <link rel="stylesheet" href="styles/footer.css">
         <link rel="stylesheet" href="styles/opensans.css">
         <link rel="stylesheet" href="styles/roboto.css">
     </head>
@@ -169,54 +170,83 @@
                     </li>
                 </ul>
             </section>
-            <section class="news_and_promotions container">
+            <section class="news_and_promotions">
                 <h2 class="visually-hidden">
                     Новости и акции
                 </h2>
-                <div class="flex-container">
-                <p class="news_and_promotions__title title titles-text">
-                    Новости и акции
-                </p>
-                <a class="news_and_promotions__link link button-text link-btn" href="#">
-                    Смотреть все
-                </a>
+                <div class="container flex-container">
+                    <p class="news_and_promotions__title title titles-text">
+                        Новости и акции
+                    </p>
+                    <a class="news_and_promotions__button button-text link-btn" href="#">
+                        Смотреть все
+                    </a>
                 </div>
+                <ul class="news_and_promotions__list container">
+                    <li class="news_and_promotions__list-item">
+                        <a href="#" class="news_and_promotions__link">
+                            <img class="news_and_promotions-image" src="data/images/news-and-promotions-cards/card-1.jpg" alt="Акция" loading="lazy">
+                        </a>
+                    </li>
+                    <li class="news_and_promotions__list-item">
+                        <a href="#" class="news_and_promotions__link">
+                            <img class="news_and_promotions-image" src="data/images/news-and-promotions-cards/card-2.jpg" alt="Акция" loading="lazy">
+                        </a>
+                    </li>
+                    <li class="news_and_promotions__list-item">
+                        <a href="#" class="news_and_promotions__link">
+                            <img class="news_and_promotions-image" src="data/images/news-and-promotions-cards/card-3.jpg" alt="Акция" loading="lazy">
+                        </a>
+                    </li>
+                    <li class="news_and_promotions__list-item">
+                        <a href="#" class="news_and_promotions__link">
+                            <img class="news_and_promotions-image" src="data/images/news-and-promotions-cards/card-4.jpg" alt="Акция" loading="lazy">
+                        </a>
+                    </li>
+                    <li class="news_and_promotions__list-item">
+                        <a href="#" class="news_and_promotions__link">
+                            <img class="news_and_promotions-image" src="data/images/news-and-promotions-cards/card-5.jpg" alt="Акция" loading="lazy">
+                        </a>
+                    </li>
+                    <li class="news_and_promotions__list-item">
+                        <a href="#" class="news_and_promotions__link">
+                            <img class="news_and_promotions-image" src="data/images/news-and-promotions-cards/card-6.jpg" alt="Акция" loading="lazy">
+                        </a>
+                    </li>
+                </ul>
             </section>
-            <section class="advantages container">
+            <section class="advantages">
                 <h2 class="visually-hidden">
                     Преимущества
                 </h2>
-                <p class="advantages__title title titles-text">
+                <p class="advantages__title container title titles-text">
                     Преимущества
                 </p>
-                <ul class="advantages__list flex-container">
-                    <li class="list__item hori-list__item">
+                <ul class="advantages__list container">
+                    <li class="advantages__list__item">
                         <img class="item__logo" src="data/images/advantages/advantages-1.png" alt="advantages-1"  loading="lazy" />
                         <p class="advantages-text">
                             <b class="advantages-title">Простая и удобная система заказа товара</b>
-                            <br />
                             <p class="advantages-context">
                                 Мы знаем, как важна простая система регистрации и оформления заказа,
                                 поэтому делаем всё для того, чтобы оформить заказ было удобно (и быстро!).
                             </p>
                         </p>
                     </li>
-                    <li class="list__item hori-list__item">
+                    <li class="advantages__list__item">
                         <img class="item__logo" src="data/images/advantages/advantages-2.png" alt="advantages-2"  loading="lazy" />
                         <p class="advantages-text">
                             <b class="advantages-title">Оповещаем о состоянии заказа по SMS</b>
-                            <br />
                             <p class="advantages-context">
                                 Для тех, кто всегда хочет быть в курсе: вы сами можете контролировать свой заказ
                                 получая статус о его формировании посредством sms-сообщений.
                             </p>
                         </p>
                     </li>
-                    <li class="list__item hori-list__item">
+                    <li class="advantages__list__item">
                         <img class="item__logo" src="data/images/advantages/advantages-3.png" alt="advantages-3"  loading="lazy" />
                         <p class="advantages-text">
                             <b class="advantages-title">Оперативная доставка</b>
-                            <br />
                             <p class="advantages-context">
                                 Мы привыкли работать с большими объёмами заказов, поэтому вам не стоит беспокоиться
                                 о том, что ваш заказ будет обработан не вовремя.
@@ -225,49 +255,48 @@
                     </li>
                 </ul>
             </section>
-            <section class="contacts container">
+            <section class="contacts">
                 <h2 class="visually-hidden">
                     Контакты
                 </h2>
-                <p class="contacts__title title titles-text">
+                <p class="contacts__title container title titles-text">
                     Контакты
                 </p>
-                <div class="flex-container">
-                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6b66280b83cdf1611d547ce5796e33a51a5b5e1228da0a1fe5beb70106635ee7&width=759&height=543&lang=ru_RU&scroll=true"></script>
-                    <ul class="contacts__list">
-                        <li class="list__item">
-                            <img class="item__logo" src="data/images/contacts/contacts-1.jpg" alt="Адрес" />
-                            <p class="contacts-text">
-                                <b class="contacts-title">Адрес</b>
-                                <br />
-                                <p class="contacts-context">
-                                    7-ая Кожуховская улица, 9, Москва (1 этаж)
-                                </p>
-                            </p>
-                        </li>
-                        <li class="list__item">
-                            <img class="item__logo" src="data/images/contacts/contacts-2.jpg" alt="Телефон" />
-                            <p class="contacts-text">
-                                <b class="contacts-title">Телефон</b>
-                                <br />
-                                <a class="contacts__telephone contacts-context" href="tel:+79804444444">+7 (980) 444 44-44</a>
-                            </p>
-                        </li>
-                        <li class="list__item">
-                            <img class="item__logo" src="data/images/contacts/contacts-3.jpg" alt="График" />
-                            <p class="contacts-text">
-                                <b class="contacts-title">График работы</b>
-                                <br />
-                                <p class="contacts-context">
-                                    Пн–Пт 9:00 до 20:00
-                                </p>
-                            </p>
-                        </li>
-                    </ul>
+                <div class="contacts-container container">
+                    <iframe src="https://yandex.ru/map-widget/v1/?lang=ru_RU&amp;scroll=true&amp;um=constructor%3A4947d1feda5e6e955883417cf3a2120d91bd0fd4aa386b7b7cc0b93e6e125c71" frameborder="0" allowfullscreen="true" width="670px" height="400px" style="display: block;border-radius: 8px;"></iframe>
+                    <div class="contacts__information">
+                        <ul class="contacts__list">
+                            <li class="list__item">
+                                <img class="item__logo" src="data/images/contacts/contacts-1.jpg" alt="Адрес" />
+                                <div class="contacts-text">
+                                    <b class="contacts-title">Адрес</b>
+                                    <p class="contacts-context">
+                                        7-ая Кожуховская улица, 9, Москва (1 этаж)
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="list__item">
+                                <img class="item__logo" src="data/images/contacts/contacts-2.jpg" alt="Телефон" />
+                                <div class="contacts-text">
+                                    <b class="contacts-title">Телефон</b>
+                                    <a class="contacts__telephone contacts-context" href="tel:+79804444444">+7 (980) 444 44-44</a>
+                                </div>
+                            </li>
+                            <li class="list__item">
+                                <img class="item__logo" src="data/images/contacts/contacts-3.jpg" alt="График" />
+                                <div class="contacts-text">
+                                    <b class="contacts-title">График работы</b>
+                                    <p class="contacts-context">
+                                        Пн–Пт 9:00 до 20:00
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                        <a class="button-text blue-button" href="#">
+                            Написать нам
+                        </a>
+                    </div>
                 </div>
-                <a class="button-text blue-button" href="#">
-                    Написать нам
-                </a>
             </section>
         </main>
         <iframe src="components/footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
