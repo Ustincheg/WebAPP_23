@@ -58,69 +58,104 @@
        
     </header>
     <main class="main">
-        <div class="content">
-            <h1 class="catalog__main-footer-heading">Смартфоны</h1>
-        </div>
-        
-        <div class="catalog__main-footer-block">
-                
-            <section>
-                <p class="number of products">656 товаров</p>
-                <p class="sort">Сортировать:</p>
-                <ul class="sort__list">
-                    <li><button class="">По цене</button><a href="#"></a></li>
-                    <li><button class="">По популярности</button><a href="#"></a></li>
-                    <li><button class="">По новизне</button><a href="#"></a></li>
-                </ul>
-            </section>
-        </div>    
-        
+        <section>
+            <div class="content">
+                <div class="main__block-top">
+                    <h1 class="catalog__main-footer-heading">Смартфоны</h1>
+                    
+                </div>
+            </div>    
+        </section>
             
-            
-        <div class="catalog__main-block">
-            <section>
-                <p>Цена, ₽</p>
-                <input type="0">
-                <p>-</p>
-                <input type="85000">
-                <input type="range" min="0" max="6999999" value="0">
-                <input type="range" min="0" max="6999999" value="6999999">
-                <p>Диагональ экрана</p>
-                <div><select name="diagonal" id="1">
-                    <option value="1">От 6”</option>
-                    <option value="2">От 9”</option>
-                    <option value="3">От 12”</option>
-                </select> </div>
-                <p>Бренд</p>
-                <ul class="brand__list">
-                    <ul><input type="checkbox"> APPLE </input></ul>
-                    <ul><input type="checkbox"> BLACKVIEW </input></ul>
-                    <ul><input type="checkbox"> NOKIA </input></ul>
-                    <ul><input type="checkbox"> CLEVERCEL </input></ul>
-                    <ul><input type="checkbox"> XIAOMI </input></ul>
-                    <ul><input type="checkbox"> ZTE </input></ul>
-                </ul>
-                <p>Количество SIM-карт</p>
-                <ul class="radiobutton__list">
-                    <ul><input type="radio" name="SIMradio" id="0"> 1SIM</input></ul>
-                    <ul><input type="radio" name="SIMradio" id="1"> 2SIM</input></ul>
-                </ul>
-            </section>
-            <section>
-                <h2>Хиты продаж </h2>
-                <a href="#">Смотреть всё</a>
-                <ul class="main-hits__slider slider">
-                    <li><button class="button__favorites"></button><a href="#"><img src="images/products/Image1.jpg" alt="HUNDAI"><h3>Мультиварка Redmond</h3></a><p1 class="old_price">5333</p1><p class="new_price">6990</p></li>
-                    <li><button class="button__favorites"></button><a href="#"><img src="images/products/Image2.jpg" alt="HUNDAI"><h3>Смартфон Huawei</h3></a><p1 class="old_price"></p1><p class="new_price">36990</p></li>
-                    <li><button class="button__favorites"></button><a href="#"><img src="images/products/Image3.jpg" alt="HUNDAI"><h3>Электрочайник Moulinex</h3></a><p1 class="old_price">3990</p1><p class="new_price">1990</p></li>
-                </ul>
-            </section>
-        </div>    
+        <section>
+            <div class="content">
+                <div class="main__block-sort">
+                    <div class="main__block-sort-first">
+                        <p class="main__block-sort-first-number">656 товаров</p>
+                    </div>
+                    <div class="main__block-sort-second">
+                        
+                        <ul class="main__block-sort-second-list">
+                            <p class="main__block-sort-second-list-text">Сортировать:</p>
+                            <li><input type="radio" name="main__block-sort-second-list" checked="true" class="custom-radio-and-check"><input type="checkbox"><label for="">По цене</label></li>
+                            <li><input type="radio" name="main__block-sort-second-list" class="custom-radio-and-check"><input type="checkbox"><label for="">По популярности</label></li>
+                            <li><input type="radio" name="main__block-sort-second-list" class="custom-radio-and-check"><input type="checkbox"><label for="">По новизне</label></li>
+
+                        </ul>
+                    </div>
+                    <div class="main__block-sort-line"></div>
+                </div>
                 
+
             </div>
             
-        </div>
+        </section>
+
         
+            
+        
+            
+        <section>
+            <div class="content">
+                <div class="main__body">
+                    <div class="main__body-left">
+                        <div class="main__body-left-price">
+                            <p class="main__body-left-price-text">Цена, ₽</p>
+                            <div class="main__body-left-price-input">
+                                <input type="0">
+                                <div></div>
+                                <input type="85000">
+                            </div>  
+                            <div>
+                                <div class="main__body-left-price-range">
+                                    <input class="main__body-left-price-range-left" type="range" min="0" max="6999999" value="0" >
+                                    <input class="main__body-left-price-range-right" type="range" min="0" max="6999999" value="6999999">
+                                </div>
+                            </div>
+                        </div>
+                            
+                        <div class="main__body-left-diagonal">
+                            <p>Диагональ экрана</p>
+                            <div>
+                                <select class="main__body-left-diagonal-select" name="diagonal" id="1">
+                                    <option value="1">От 6”</option>
+                                    <option value="2">От 9”</option>
+                                    <option value="3">От 12”</option>
+                                </select>
+                             </div>
+                        </div>
+                        <div class="main__body-left-brands">
+                            <p>Бренд</p>
+                            <ul class="main__body-left-brands-list">
+                                <li><input type="checkbox" class="custom-checkbox" checked="true"><label for="cb1">APPLE</label></input></li>
+                                <li><input type="checkbox" class="custom-checkbox"><label for="cb1">BLACKVIEW</label></input></li>
+                                <li><input type="checkbox" class="custom-checkbox"><label for="cb1">NOKIA</label></input></li>
+                                <li><input type="checkbox" class="custom-checkbox"><label for="cb1">CLEVERCEL </label></input></li>
+                                <li><input type="checkbox" class="custom-checkbox"><label for="cb1">XIAOMI</label></input></li>
+                                <li><input type="checkbox" class="custom-checkbox"><label for="cb1"> ZTE </label></input></li>
+                            </ul>
+                        </div>
+                        <div class="main__body-left-SIM">
+                            <p>Количество SIM-карт</p>
+                            <ul class="main__body-left-SIM-radiobutton-list">
+                                <li><input type="radio" name="SIMradio" id="0" class="custom-radio" checked="true"><label for="rb1"> 1SIM</label></input></li>
+                                <li><input type="radio" name="SIMradio" id="1" class="custom-radio"><label for="rb1"> 2SIM</label></input></li>
+                            </ul> 
+                        </div>
+                                
+                    </div>
+                    <div>
+                        <ul class="main-hits__list">
+                            <li><div class="main-hits__list-checkbox"><input type="checkbox" class="like-checkbox"><label for=""></label></div><a href="#" class="main-hits__list-child-link"><img src="images/products/Image1.jpg" alt="HUNDAI"><h3 class="main-hits__list-child-text">Мультиварка Redmond</h3></a><p1 class="old_price">5333</p1><p class="new_price">6990</p></li>
+                            <li><div class="main-hits__list-checkbox"><input type="checkbox" class="like-checkbox"><label for=""></label></div><a href="#" class="main-hits__list-child-link"><img src="images/products/Image2.jpg" alt="HUNDAI"><h3 class="main-hits__list-child-text">Смартфон Huawei</h3></a><p1 class="old_price"></p1><p class="new_price">36990</p></li>
+                            <li><div class="main-hits__list-checkbox"><input type="checkbox" class="like-checkbox"><label for=""></label></div><a href="#" class="main-hits__list-child-link"><img src="images/products/Image3.jpg" alt="HUNDAI"><h3 class="main-hits__list-child-text">Электрочайник Moulinex</h3></a><p1 class="old_price">3990</p1><p class="new_price">1990</p></li>
+                         
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>    
+        </section>   
         <section>
             <div class="mailing">
                 <div class="">
@@ -135,6 +170,7 @@
                 </div>
             </div>
         </section>
+        
     </main>
 
 
