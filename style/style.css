@@ -138,6 +138,9 @@ input[type="text"]{
     list-style: none;
     
 }
+.footer__nav-list{
+    list-style: none;
+}
 .visually-hidden{
     display: none;
 }
@@ -213,6 +216,7 @@ input[type="text"]{
     list-style: none;
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 .sales-hits__list-item.hit-card{
     box-sizing: border-box;
@@ -524,4 +528,117 @@ p.list-news__item-title{
     display: flex;
     align-items: center;
     color: #000000;
+}
+.contacts__list-title{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    list-style: none;
+}
+.contacts__list{
+    list-style: none;
+}
+.contacts__list-desc{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+}
+.teleph{
+    text-decoration: none;
+    list-style: none;
+    color: #000000;
+}
+.content-adress-full{
+    display: flex;
+    gap: 100px;
+}
+.contacts__button{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    height: 48px;
+    width: 210px;
+    margin: 20px;
+    background: #005AAB;
+    border-radius: 8px;
+}
+.subscription__title{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    align-items: center;
+    color: #000000;
+}
+.content-subscribe{
+    display: flex;
+    gap: 130px;
+    padding: 30px 0px;
+}
+.subscription__form{
+    margin-top: 25px;
+    display: flex;
+    gap: 10px;
+}
+.subscription__form-button{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    height: 48px;
+    width: 210px;
+    margin: 5px;
+    background: #005AAB;
+    border-radius: 8px;
+}
+.subscription__form-input{
+    height: 38px;
+    width: 440px;
+
+}
+.content-down{
+    display: flex;
+    gap: 150px;
+    padding: 40px 0px;
+}
+.footer__nav-list{
+    display: flex;
+    gap: 130px;
+}
+.footer__nav-list-item{
+    margin-top: 10px;
+}
+.footer__social-list.social-list{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+}
+.footer__bottom-link{
+    text-decoration: none;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+.content-footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
 }
