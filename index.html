@@ -19,25 +19,26 @@
             <h1 class="visually-hidden">
                 Интернет магазин бытовой электроники
             </h1>
-            <section class="main-banner container flex-container">
+            <section class="banners container">
                 <h2 class="visually-hidden">Главный банер</h2>
-                <ul class="main-banner__slider slider">
-                    <li class="banner__slider__item item">
-                        <img src="data/images/banners/banner-1.jpg" alt="Микроволновка">
+                <ul class="left-banner__slider">
+                    <li class="left-banner__slider__item">
+                        <div class="left-banner__slider__content">
+                            <p class="left-banner__title">
+                                Микроволновая печь HUNDAI
+                            </p>
+                            <p class="left-banner__context">
+                                Готовь вкусно и быстро
+                            </p>
+                        </div>
                     </li>
-                    <!--<li class="banner__slider__item item">
-                        <img src="#" alt="Фото">
-                    </li>
-                    <li class="banner__slider__item item">
-                        <img src="#" alt="Фото">
-                    </li>-->
                 </ul>
-                <div class="banner">
-                    <figure class="figure-banner">
-                        <figcaption class="banner-text">Новая линейка телевизоров samsung </figcaption>
-                        <img src="data/images/banners/banner-2.png" alt="Телевизор">
+                <div class="right-banner">
+                    <figure class="right-banner__figure">
+                        <figcaption class="right-banner__text">Новая линейка телевизоров samsung </figcaption>
+                        <img class="right-banner__image" src="data/images/banners/banner-2.png" alt="Правый баннер">
                     </figure>
-                    <a class="menu-button-banner button-text" href="#">Смотреть каталог</a>
+                    <a class="right-banner__button button big-button white-button" href="#">Смотреть каталог</a>
                 </div>
             </section>
             <section class="sales-hits container">
@@ -48,7 +49,7 @@
                     <p class="sales-hits__title title titles-text">
                         Хиты продаж
                     </p>
-                    <a href="#" class="sales-hits__link-btn link-btn button-text">Смотреть все</a>
+                    <a href="#" class="sales-hits__link-btn link-btn button">Смотреть все</a>
                 </div>
                 <ul class="sales-hits__list container flex-container">
                     <li class="sales-hits__list-item hit-card link-card">
@@ -125,7 +126,7 @@
                     <p class="popular-brands__title title titles-text">
                         Популярные бренды
                     </p>
-                    <a href="#" class="popular-brands__link-btn link-btn button-text">Смотреть все</a>
+                    <a href="#" class="popular-brands__link-btn link-btn button">Смотреть все</a>
                 </div>
                 <ul class="popular-brands__list container flex-container">
                     <li class="popular-brands__list-item link-card">
@@ -175,42 +176,65 @@
                     Новости и акции
                 </h2>
                 <div class="container flex-container">
-                    <p class="news_and_promotions__title title titles-text">
+                    <p class="title-section title titles-text">
                         Новости и акции
                     </p>
-                    <a class="news_and_promotions__button button-text link-btn" href="#">
+                    <a class="news_and_promotions__button button link-btn" href="#">
                         Смотреть все
                     </a>
                 </div>
                 <ul class="news_and_promotions__list container">
-                    <li class="news_and_promotions__list-item">
-                        <a href="#" class="news_and_promotions__link">
-                            <img class="news_and_promotions-image" src="data/images/news-and-promotions-cards/card-1.jpg" alt="Акция" loading="lazy">
+                    <li class="news_and_promotions__list-item-1">
+                        <div class="news_and_promotions__list-item-1__title-and-context">
+                            <p class="news_and_promotions__title">
+                                Бренд BLOODY представил мышь W60 Pro
+                            </p>
+                            <p class="news_and_promotions__context">
+                                Популярный бренд компьютерных аксессуаров
+                            </p>
+                        </div>
+                        <a href="#" class="news_and_promotions__link button big-button white-button">
+                            Подробнее
                         </a>
                     </li>
-                    <li class="news_and_promotions__list-item">
-                        <a href="#" class="news_and_promotions__link">
-                            <img class="news_and_promotions-image" src="data/images/news-and-promotions-cards/card-2.jpg" alt="Акция" loading="lazy">
+                    <li class="news_and_promotions__list-item-2">
+                        <p class="news_and_promotions__title">
+                            Плата asus
+                        </p>
+                        <a href="#" class="news_and_promotions__link button big-button white-button">
+                            Подробнее
                         </a>
                     </li>
-                    <li class="news_and_promotions__list-item">
-                        <a href="#" class="news_and_promotions__link">
-                            <img class="news_and_promotions-image" src="data/images/news-and-promotions-cards/card-3.jpg" alt="Акция" loading="lazy">
+                    <li class="news_and_promotions__list-item-3">
+                        <p class="news_and_promotions__title">
+                            Системный блок acer
+                        </p>
+                        <a href="#" class="news_and_promotions__link button big-button white-button">
+                            Подробнее
                         </a>
                     </li>
-                    <li class="news_and_promotions__list-item">
-                        <a href="#" class="news_and_promotions__link">
-                            <img class="news_and_promotions-image" src="data/images/news-and-promotions-cards/card-4.jpg" alt="Акция" loading="lazy">
+                    <li class="news_and_promotions__list-item-4">
+                        <p class="news_and_promotions__title">
+                            Планшет samsung
+                        </p>
+                        <a href="#" class="news_and_promotions__link button big-button white-button">
+                            Подробнее
                         </a>
                     </li>
-                    <li class="news_and_promotions__list-item">
-                        <a href="#" class="news_and_promotions__link">
-                            <img class="news_and_promotions-image" src="data/images/news-and-promotions-cards/card-5.jpg" alt="Акция" loading="lazy">
+                    <li class="news_and_promotions__list-item-5">
+                        <p class="news_and_promotions__title">
+                            Новые наушники Razer
+                        </p>
+                        <a href="#" class="news_and_promotions__link button big-button white-button">
+                            Подробнее
                         </a>
                     </li>
-                    <li class="news_and_promotions__list-item">
-                        <a href="#" class="news_and_promotions__link">
-                            <img class="news_and_promotions-image" src="data/images/news-and-promotions-cards/card-6.jpg" alt="Акция" loading="lazy">
+                    <li class="news_and_promotions__list-item-6">
+                        <p class="news_and_promotions__title">
+                            Мультипекарь Redmond плюс
+                        </p>
+                        <a href="#" class="news_and_promotions__link button big-button white-button">
+                            Подробнее
                         </a>
                     </li>
                 </ul>
@@ -292,7 +316,7 @@
                                 </div>
                             </li>
                         </ul>
-                        <a class="button-text blue-button" href="#">
+                        <a class="button big-button blue-button" href="#">
                             Написать нам
                         </a>
                     </div>

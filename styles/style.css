@@ -71,15 +71,6 @@
     line-height: 22px;
 }
 
-.button-text
-{
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 19px;
-}
-
 .hit-card__price--cross-out
 {
     text-decoration-line: line-through;

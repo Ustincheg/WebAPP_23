@@ -1,12 +1,46 @@
 /* Настройка баннеров (микроволновка и телевизор) */
 
-.main-banner__slider__item {
+.banners {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.left-banner__slider__item {
     width: 870px;
     height: 360px;
     border-radius: 8px;
+
+    background-image: url("../data/images/banners/banner-1.jpg");
 }
 
-.banner {
+.left-banner__slider__content {
+    padding: 30px 0 0 30px;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.left-banner__title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 41px;
+    color: white;
+}
+
+.left-banner__context {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: white;
+}
+
+.right-banner {
     width: 270px;
     height: 360px;
     border-radius: 8px;
@@ -22,18 +56,15 @@
     color: white;
 }
 
-.figure-banner {
+.right-banner__figure {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 13px;
-
-    margin: 0;
-
-    flex-direction: column;
 }
 
-.banner-text {
+.right-banner__text {
     width: 210px;
     height: 79px;
 
@@ -42,14 +73,6 @@
     font-weight: 700;
     font-size: 22px;
     line-height: 26px;
-}
-
-.menu-button-banner {
-    padding: 14px 42px;
-    border-radius: 8px;
-    
-    background: white;
-    color: black;
 }
 
 /* Настройка карточек с товарами */
@@ -131,11 +154,77 @@
 .news_and_promotions__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 26px 30px; /* Почему не 30 на 30... */
+    grid-template-rows: repeat(3, 170px);
+    gap: 30px 30px;
 }
 
-.news_and_promotions__list-item:first-child {
+.news_and_promotions__list li {
+    padding: 30px 0 0 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 36px;
+}
+
+.news_and_promotions__list-item-1 {
     grid-area: 1 / 1 / 3 / 3;
+    background-image: url("../data/images/news-and-promotions-cards/card-1.jpg");
+    gap: 30px;
+}
+
+.news_and_promotions__list-item-2 {
+    background-image: url("../data/images/news-and-promotions-cards/card-2.jpg");
+}
+
+.news_and_promotions__list-item-3 {
+    background-image: url("../data/images/news-and-promotions-cards/card-3.jpg");
+}
+
+.news_and_promotions__list-item-4 {
+    background-image: url("../data/images/news-and-promotions-cards/card-4.jpg");
+}
+
+.news_and_promotions__list-item-5 {
+    background-image: url("../data/images/news-and-promotions-cards/card-5.jpg");
+}
+
+.news_and_promotions__list-item-6 {
+    background-image: url("../data/images/news-and-promotions-cards/card-6.jpg");
+}
+
+.news_and_promotions__title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: white;
+}
+
+.news_and_promotions__context {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: white;
+}
+
+.news_and_promotions__list-item-1 .news_and_promotions__title {
+    width: 296px;
+    height: 52px;
+}
+
+.news_and_promotions__list-item-1 .news_and_promotions__context {
+    width: 296px;
+    height: 44px;
+}
+
+.news_and_promotions__list-item-1__title-and-context {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 /* Настройка "Преимущества" */

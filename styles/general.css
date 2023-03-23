@@ -27,17 +27,40 @@ hr {
     margin: 0;
 }
 
+button {
+    border: none;
+}
+
 .container {
     max-width: 1170px;
     margin: 30px auto;
 }
 
-.blue-button {
-    border: none;
+.button
+{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+}
 
-    padding: 15px 55px;
+.big-button {
+    width: 210px;
+    height: 48px;
     border-radius: 8px;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.white-button {
+    background: white;
+    color: black;
+}
+
+.blue-button {
     background: #005AAB;
     color: white;
 }
