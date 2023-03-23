@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -30,12 +29,13 @@
             <div class="header__content">
                 <a class="header__logo-link" href="#"> <img src="image/Logo.svg" alt="logo"></a>
                 <input class="header__search-lick" type="text" placeholder="Поиск" name="search">
-                <a class="OS400_14_19_b" href="#">Избранное</a>
-                <a class="OS400_14_19_b" href="#">Корзина</a>
+                <img src="image/like.svg" alt="like"><a class="OS400_14_19_b" href="#">Избранное</a>
+                <img src="image/shopping-cart-icon.svg" alt="shopping-cart"><a class="OS400_14_19_b"
+                    href="#">Корзина</a>
             </div>
             <nav>
                 <div class="header__navigation">
-                    <button class="header_catalog">Каталог</button>
+                    <button class="my_button_katalog"><img src="image/Menu-icon.svg" alt="menu">Каталог</button>
                     <ul class="header__navigation-list">
                         <li class="navigationlist__list-item"><a href="#" class="OS400_14_19_b">СКИДКИ</a></li>
                         <li class="navigationlist__list-item"><a href="#" class="OS400_14_19_b">СМАРТФОНЫ</a></li>
@@ -49,6 +49,7 @@
                     </ul>
                 </div>
             </nav>
+        </div>
     </header>
     <main class="main">
         <div class="content">
@@ -66,96 +67,100 @@
             </section>
             <hr color="#DEDEE2">
         </div>
-        <aside>
-            <div class="content">
-                <form action="get">
-                    <fieldset>
-                        <legend class="OS400_16_22_b">
-                            Цена, ₽
-                        </legend>
-                        <input type="text" placeholder="от" class="txt">
-                        <input type="text" placeholder="до" class="txt">
-                    </fieldset>
-                    <fieldset>
-                        <legend class="OS400_16_22_b">
-                            Диагональ экрана
-                        </legend>
-                        <p><select name="list1" class="txt">
-                                <option class="txt">Выберите из списка</option>
-                                <option class="txt"> От 5”</option>
-                                <option class="txt">От 6”</option>
-                                <option class="txt">От 7”</option>
-                                <option class="txt">От 8”</option>
-                            </select></p>
-                    </fieldset>
-                    <fieldset>
-                        <legend class="OS400_16_22_b">
-                            Бренд
-                        </legend>
-                        <input class="" type="checkbox" id="APPLE"><label class="txt" for="APPLE">APPLE</label><br>
-                        <input type="checkbox" id="BLACKVIEW"><label class="txt" for="BLACKVIEW">BLACKVIEW</label><br>
-                        <input type="checkbox" id="CLEVERCEL"><label class="txt" for="CLEVERCEL">CLEVERCEL</label><br>
-                        <input type="checkbox" id="NOKIA"><label class="txt" for="NOKIA">NOKIA</label><br>
-                        <input type="checkbox" id="XIAOMI"><label class="txt" for="XIAOMI">XIAOMI</label><br>
-                        <input type="checkbox" id="ZTE"><label class="txt" for="ZTE">ZTE</label><br>
-                    </fieldset>
-                    <fieldset>
-                        <legend class="OS400_16_22_b">
-                            Количество SIM-карт
-                        </legend>
-                        <input type="radio" id="1SIM" name="SIM"><label class="txt" for="1SIM">1SIM</label>
-                        <input type="radio" id="2SIM" name="SIM"><label class="txt" for="2SIM">2SIM</label>
-                    </fieldset>
-                </form>
-            </div>
-        </aside>
+
         <section>
             <div class="content">
-                <ul class="smart__list">
+                <ul class="smart__list" style="position: relative; top: 45px;">
+                    <aside class="filtr">
+                        <form action="get">
+                            <fieldset>
+                                <legend class="OS400_16_22_b">
+                                    Цена, ₽
+                                </legend>
+                                <ul class="filtr_price">
+                                    <input type="text" placeholder="от" class="filtr_price_txt">
+                                    <input type="text" placeholder="до" class="filtr_price_txt">
+                                </ul>
+                            </fieldset>
+                            <fieldset>
+                                <legend class="OS400_16_22_b">
+                                    Диагональ экрана
+                                </legend>
+                                <p><select name="list1" class="filter_list">
+                                        <option class="txt">Выберите из списка</option>
+                                        <option class="txt">От 5”</option>
+                                        <option class="txt">От 6”</option>
+                                        <option class="txt">От 7”</option>
+                                        <option class="txt">От 8”</option>
+                                    </select></p>
+                            </fieldset>
+                            <fieldset>
+                                <legend class="OS400_16_22_b">
+                                    Бренд
+                                </legend>
+                                <input class="" type="checkbox" id="APPLE"><label class="txt"
+                                    for="APPLE">APPLE</label><br>
+                                <input type="checkbox" id="BLACKVIEW"><label class="txt"
+                                    for="BLACKVIEW">BLACKVIEW</label><br>
+                                <input type="checkbox" id="CLEVERCEL"><label class="txt"
+                                    for="CLEVERCEL">CLEVERCEL</label><br>
+                                <input type="checkbox" id="NOKIA"><label class="txt" for="NOKIA">NOKIA</label><br>
+                                <input type="checkbox" id="XIAOMI"><label class="txt" for="XIAOMI">XIAOMI</label><br>
+                                <input type="checkbox" id="ZTE"><label class="txt" for="ZTE">ZTE</label><br>
+                            </fieldset>
+                            <fieldset>
+                                <legend class="OS400_16_22_b">
+                                    Количество SIM-карт
+                                </legend>
+                                <input type="radio" id="1SIM" name="SIM"><label class="txt" for="1SIM">1SIM</label>
+                                <input type="radio" id="2SIM" name="SIM"><label class="txt" for="2SIM">2SIM</label>
+                            </fieldset>
+                        </form>
+                    </aside>
                     <li class="smart__list-item"><a class="smart__list-item-link"> <img src="image/k1.png" alt="smart1"
                                 class="smart_image"></a>
-                        <a href="#" class="smart_info"><br>Смартфон Samsung Galaxy S21 128GB Phantom Violet</a>
-                        <p class="smart_price"><br>54 440 ₽</p>
+                        <a href="#" class="smart_info">Смартфон Samsung Galaxy S21 128GB Phantom Violet</a>
+                        <p class="smart_price">54 440 ₽</p>
                     </li>
                     <li class="smart__list-item"><a class="smart__list-item-link"> <img src="image/k2.png" alt="smart2"
                                 class="smart_image"></a>
-                        <a href="#" class="smart_info"><br>Смартфон Apple iPhone 11 128GB White</a>
-                        <p class="smart_price"><br>59 990 ₽</p>
+                        <a href="#" class="smart_info">Смартфон Apple iPhone 11 128GB White</a>
+                        <p class="smart_price">59 990 ₽</p>
                     </li>
                     <li class="smart__list-item"><a class="smart__list-item-link"> <img src="image/k3.png" alt="smart3"
                                 class="smart_image"></a>
-                        <a href="#" class="smart_info"><br>Смартфон Samsung Galaxy A52 128GB Awesome Black </a>
-                        <p class="smart_price"><br>26 790 ₽</p>
+                        <a href="#" class="smart_info">Смартфон Samsung Galaxy A52 128GB Awesome Black </a>
+                        <p class="smart_price">26 790 ₽</p>
                     </li>
                     <li class="smart__list-item"><a class="smart__list-item-link"> <img src="image/k4.png" alt="smart4"
                                 class="smart_image"></a>
-                        <a href="#" class="smart_info"><br>Смартфон Samsung Galaxy S21 128GB Phantom Gray</a>
-                        <p class="smart_price"><br>61 990 ₽</p>
+                        <a href="#" class="smart_info">Смартфон Samsung Galaxy S21 128GB Phantom Gray</a>
+                        <p class="smart_price">61 990 ₽</p>
                     </li>
                     <li class="smart__list-item"><a class="smart__list-item-link"> <img src="image/k5.png" alt="smart5"
                                 class="smart_image"></a>
-                        <a href="#" class="smart_info"><br>Смартфон Huawei Mate 40 Pro Mystic Silver (NOH-NX9)</a>
-                        <p class="smart_price"><br>36 990 ₽</p>
+                        <a href="#" class="smart_info">Смартфон Huawei Mate 40 Pro Mystic Silver (NOH-NX9)</a>
+                        <p class="smart_price">36 990 ₽</p>
                     </li>
                     <li class="smart__list-item"><a class="smart__list-item-link"> <img src="image/k6.png" alt="smart6"
                                 class="smart_image"></a>
-                        <a href="#" class="smart_info"><br>Смартфон Honor 10X Lite 4+128GB Icelandic Frost</a>
-                        <p class="smart_price"><br>15 990 ₽</p>
+                        <a href="#" class="smart_info">Смартфон Honor 10X Lite 4+128GB Icelandic Frost</a>
+                        <p class="smart_price">15 990 ₽</p>
                     </li>
                     <li class="smart__list-item"><a class="smart__list-item-link"> <img src="image/k7.png" alt="smart7"
                                 class="smart_image"></a>
-                        <a href="#" class="smart_info"><br>Смартфон Huawei P40 Pro Silver Frost</a>
-                        <p class="smart_price"><br>65 990 ₽</p>
+                        <a href="#" class="smart_info">Смартфон Huawei P40 Pro Silver Frost</a>
+                        <p class="smart_price">65 990 ₽</p>
                     </li>
                     <li class="smart__list-item"><a class="smart__list-item-link"> <img src="image/k8.png" alt="smart8"
                                 class="smart_image"></a>
-                        <a href="#" class="smart_info"><br>Смартфон Honor 9X 4+128GB Sapphire Blue</a>
-                        <p class="smart_price"><br>15 000 ₽</p>
+                        <a href="#" class="smart_info">Смартфон Honor 9X 4+128GB Sapphire Blue</a>
+                        <p class="smart_price">15 000 ₽</p>
                     </li>
                     <li class="smart__list-item"><a href="#" class="smart__list-item-link"> <img src="image/k9.png"
                                 alt="smart9" class="smart_image"></a>
-                        <a href="#" class="smart_info"><br>Смартфон Apple iPhone SE 64GB Black</a>
-                        <p class="smart_price"><br>39 990 ₽</p>
+                        <a href="#" class="smart_info">Смартфон Apple iPhone SE 64GB Black</a>
+                        <p class="smart_price">39 990 ₽</p>
                     </li>
                 </ul>
             </div>
@@ -164,10 +169,10 @@
             <div class="subscription__content">
                 <div class="content">
                     <ul class="subscription__setings">
-                        <h2 class="R700_22_26_b">Получайте самые интересные предложения первыми!</h2>
+                        <h2 class="subscription__text">Получайте самые интересные предложения первыми!</h2>
                         <form action="#" method="get" class="subscription__form">
                             <input type="text" placeholder="Введите ваш e-mail" class="subscription__form-input">
-                            <input type="button" value="Подписаться" class="OS600_14_19_b">
+                            <input type="button" value="Подписаться" class="my_button_write_us">
                         </form>
                     </ul>
                 </div>
@@ -178,7 +183,7 @@
         <div class="content">
             <div class="footer__info" style="position: relative; top: 50px;">
                 <ul>
-                    <img src="image/Logo.svg" alt="logo" class="footer__logo">
+                    <img src="image/Logo1.svg" alt="logo" class="footer__logo">
                     <p class="OS400_14_19_w">7-я Кожуховская ул., 9, Москва (этаж 1)</p>
                 </ul>
                 <ul class="footer__nav-list">
@@ -228,11 +233,10 @@
         <div class="content">
             <div class="footer__end" style="position: relative; top: -10px;">
                 <ul>
-                    <p class="OS400_14_19_w">© Electro place, 2003–2021<br>
-                        <a href="#" class="OS400_14_19_w">Политика обработки персональных данных</a>
-                    </p>
+                    <p class="OS400_14_19_w">© Electro place, 2003–2021</p>
+                    <a href="#" class="OS400_14_19_w">Политика обработки персональных данных</a>
                 </ul>
-                <p class="OS400_14_19_w">Разработка сайта: <img src="image/Garpix logo.svg" alt="logo"></p>
+                <p class="OS400_14_19_w">Разработка сайта: <img src="image/Garpix_logo.svg" alt="logo"></p>
             </div>
         </div>
     </footer>
