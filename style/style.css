@@ -97,6 +97,7 @@
     font-family: 'Open Sans';
     font-style: normal;
     padding: 15px;
+    height: 45px;
     font-weight: 600;
     font-size: 14px;
     color: white;
@@ -107,6 +108,13 @@
     background: #005AAB;
     border-radius: 8px;
     border: 1px;
+    cursor: pointer;
+  }
+  .main__catalog:hover{
+    background: #198AF0;
+  }
+  .main__catalog:active{
+    background: #003769;
   }
   .header__bottom-second{
     display: flex;
@@ -116,15 +124,43 @@
     display: flex;
     background: #F1F5F7;
     border-radius: 8px;
+    width: 1039px;
+    height: 45px;
     border: 1px;
-    width: auto;
     align-items: center;
     justify-content: center;
-    gap: 25px;
     list-style-type: none;
+    padding-left: 25px;
+    padding-right: 25px ;
   }
-  .header__navlist li a{
-    text-decoration: none;
+  .header__navlist-list{
+    display: flex;
+    background: #F1F5F7;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    gap: 24px;
+    width: 100%;
+    height: 100%;
+  }
+  .header__navlist-list li{
+    height: 100%;
+    display: flex;
+    width: 100%;
+  }
+  .header__navlist-list li button{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    border: 0px;
+    background-color:#F1F5F7 ;
+  }
+  .header__navlist-list li button:hover{
+    background: #DBEAF8;
+  }
+  .header__navlist-list li button:active{
+    background: #99B0C5;
   }
 
 
@@ -207,7 +243,10 @@
   .main-banner__news-block{
     padding: 30px;
     display: grid;
+    height: 100%;
     gap: 13px;
+    align-content: space-between;
+    grid-row: 79px auto 48px;
   }
   .main-banner__news-text{
     -moz-hyphens: auto;
@@ -221,6 +260,14 @@
     height: 48px;
     background: #FFFFFF;
     border-radius: 8px;
+    border: 1px;
+    cursor: pointer;
+  }
+  .header__catalog:hover{
+    background-color: #A4D4FF;
+  }
+  .header__catalog:active{
+    background: #3086D5;
   }
   
 
@@ -244,6 +291,9 @@
     grid-template-rows: 20px auto 16px 56px;
 
   
+  }
+  .main-hits__list li:hover{
+    border: 1px solid #005AAB;
   }
   .main-hits__list li a{
     
@@ -273,10 +323,15 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 18px;
-    background-image: url(../images/header/Like.png);
+    z-index: -1;
+    background-image: url(../images/Vector1.svg);
+  }
+  .like-checkbox:hover+label::before{
+    background-image: url(../images/Vector.svg);
   }
   .like-checkbox:checked+label::before{
-    background-color: red;
+
+    background-image: url(../images/Vector2.svg);
   }
 
 
@@ -361,6 +416,12 @@
     margin: 0 auto;
   }
 
+  .main__brands-list li:hover{
+    border-color: #A4D4FF;
+  }
+  .main__brands-list li:active{
+    border-color: #3086D5;
+  }
 
 
 
