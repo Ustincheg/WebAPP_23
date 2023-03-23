@@ -31,7 +31,8 @@
                 <div class="header__l-s-f-c">
                     <a class="header__logo-link" href="#"><img class="header__logo-img" src="img/Logo.svg"
                             alt="logo"></a>
-                    <form class="header__l-s-f-c-search" action=""><input class="header__search-text" type="text" placeholder="Поиск.." name="search">
+                    <form class="header__l-s-f-c-search" action=""><input class="header__search-text" type="text"
+                            placeholder="Поиск...." name="search">
                     </form>
                     <a class="header__favorite-link" href="#">Избранное (0)</a>
                     <a class="header__cart-link" href="#">Корзина (0)</a>
@@ -68,13 +69,13 @@
             <h2 class="banner__tittle visually-hidden">Главный баннер</h2>
             <div class="container">
                 <div class="banner__d-slider">
-                <ul class="banner__slider slider">
-                    <li class="slider__item">
-                        <p class="slider__text">Микроволновая печь HUNDAI</p>
-                        <p class="slider__txt">Готовьте вкусно и быстро</p>
-                        <img class="slider__img" src="img/index/banner/Nuke.jpg" alt="picture-one">
-                    </li>
-                    <li class="slider__item">
+                    <ul class="banner__slider slider">
+                        <li class="slider__item">
+                            <p class="slider__text">Микроволновая печь HUNDAI</p>
+                            <p class="slider__txt">Готовьте вкусно и быстро</p>
+                            <img class="slider__img" src="img/index/banner/Nuke.jpg" alt="picture-one">
+                        </li>
+                        <!-- <li class="slider__item">
                         <p class="slider__text">TWO</p>
                         <p class="slider__txt">Two</p>
                         <img class="slider__img" src="#" alt="picture-two" loading="lazy">
@@ -94,66 +95,72 @@
                         <p class="slider__txt">five</p>
                         <img class="slider__img" src="#" alt="picture-five" loading="lazy">
                     </li> -->
-                </ul>
-            </div>
-                <div class="banner__mini mini">
-                    <p class="mini__text">Новая линейка телевизоров samsung</p>
-                    <img class="mini__img" src="img/index/banner/TV.jpg" alt="picture-TV">
-                    <a class="mini__catalog-link" href="#">Смотреть каталог</a>
+                    </ul>
+                    <div class="banner__mini mini">
+                        <p class="mini__text">Новая линейка телевизоров samsung</p>
+                        <img class="mini__img" src="img/index/banner/TV.png" alt="picture-TV">
+                        <a class="mini__catalog-link" href="#">Смотреть каталог</a>
+                    </div>
                 </div>
             </div>
         </section>
         <section class="main__hits hits">
             <h2 class="hits__title visually-hidden">Наиболее часто продаваемые товары</h2>
             <div class="container">
-                <p class="index__section-heading">Хиты продаж</p>
-                <a class="hits__link-btn link-btn" href="#">Смотреть все</a>
-                <ul class="hits__card-list card-list">
-                    <li class="card-list__item">
-                        <a class="card-list__link" href="#">
-                            <figure class="card-list__figure">
-                                <img class="card-list__img" src="img/index/hits/Multicooker.jpg"
-                                    alt="picture-multicooker">
-                                <figcaption class="card-list__txt">Мультиварка Redmond</figcaption>
-                            </figure>
-                            <strike class="card-list___old-price">6 990 ₽</strike>
-                            <p class="card-list__price">5 533 ₽</p>
-                        </a>
-                    </li>
-                    <li class="card-list__item">
-                        <a class="card-list__link" href="#">
-                            <figure class="card-list__figure">
-                                <img class="card-list__img" src="img/index/hits/Smartphone.jpg"
-                                    alt="picture-smartphone">
-                                <figcaption class="card-list__txt">Смартфон Huawei Mate 40 Pro Mystic Silver
-                                </figcaption>
-                            </figure>
-                            <p class="card-list__price">36 990 ₽</p>
-                        </a>
-                    </li>
-                    <li class="card-list__item">
-                        <a class="card-list__link" href="#">
-                            <figure class="card-list__figure">
-                                <img class="card-list__img" src="img/index/hits/Teapot.jpg"
-                                    alt="picture-electric kettle">
-                                <figcaption class="card-list__txt">Электрочайник Moulinex</figcaption>
-                            </figure>
-                            <strike class="card-list___old-price">3 990 ₽</strike>
-                            <p class="card-list__price">1 990 ₽</p>
-                        </a>
-                    </li>
-                    <li class="card-list__item">
-                        <a class="card-list__link" href="#">
-                            <figure class="card-list__figure">
-                                <img class="card-list__img" src="img/index/hits/Cleaner.jpg" alt="picture-cleaner">
-                                <figcaption class="card-list__txt">Пылесос с контейнером для пыли Tefal City Space
-                                </figcaption>
-                            </figure>
-                            <strike class="card-list___old-price">16 990 ₽</strike>
-                            <p class="card-list__price">14 990 ₽</p>
-                        </a>
-                    </li>
-                </ul>
+                <div class="hits__heading">
+                    <p class="index__section-heading">Хиты продаж</p>
+                    <a class="hits__link-btn link-btn" href="#">Смотреть все</a>
+                </div>
+                <div class="hits__products">
+                    <ul class="hits__card-list card-list">
+                        <li class="card-list__item">
+                            <a class="card-list__link" href="#">
+                                <figure class="card-list__figure">
+                                    <img class="card-list__img" src="img/index/hits/Multicooker.jpg"
+                                        alt="picture-multicooker">
+                                    <figcaption class="card-list__txt">Мультиварка Redmond</figcaption>
+                                </figure>
+                                <div class="card-list__o-n-price">
+                                <p class="card-list___old-price">6 990 ₽</p>
+                                <p class="card-list__price">5 533 ₽</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="card-list__item">
+                            <a class="card-list__link" href="#">
+                                <figure class="card-list__figure">
+                                    <img class="card-list__img" src="img/index/hits/Smartphone.jpg"
+                                        alt="picture-smartphone">
+                                    <figcaption class="card-list__txt">Смартфон Huawei Mate 40 Pro Mystic Silver
+                                    </figcaption>
+                                </figure>
+                                <p class="card-list__price">36 990 ₽</p>
+                            </a>
+                        </li>
+                        <li class="card-list__item">
+                            <a class="card-list__link" href="#">
+                                <figure class="card-list__figure">
+                                    <img class="card-list__img" src="img/index/hits/Teapot.jpg"
+                                        alt="picture-electric kettle">
+                                    <figcaption class="card-list__txt">Электрочайник Moulinex</figcaption>
+                                </figure>
+                                <p class="card-list___old-price">3 990 ₽</p>
+                                <p class="card-list__price">1 990 ₽</p>
+                            </a>
+                        </li>
+                        <li class="card-list__item">
+                            <a class="card-list__link" href="#">
+                                <figure class="card-list__figure">
+                                    <img class="card-list__img" src="img/index/hits/Cleaner.jpg" alt="picture-cleaner">
+                                    <figcaption class="card-list__txt">Пылесос с контейнером для пыли Tefal City Space
+                                    </figcaption>
+                                </figure>
+                                <p class="card-list___old-price">16 990 ₽</p>
+                                <p class="card-list__price">14 990 ₽</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
         <section class="main__brands brands">
