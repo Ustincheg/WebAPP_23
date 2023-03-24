@@ -2,7 +2,7 @@
     background-color: #F1F5F7;
 }
 
-.subscribe {
+.footer__upp-part__container {
     max-width: 1170px;
     margin: 0 auto;
     padding: 50px 0;
@@ -17,13 +17,13 @@
     height: 52px;
 }
 
-.subscribe__form {
+.footer__upp-part__form {
     display: flex;
     align-items: center;
     gap: 15px;
 }
 
-.footer__email-form {
+.footer__upp-part__email-form {
     height: 48px;
     width: 440px;
     border: 1px solid #DEDEE2;

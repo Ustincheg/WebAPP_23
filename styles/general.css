@@ -60,18 +60,49 @@ button {
     color: black;
 }
 
+.white-button:hover {
+    background-color: #A4D4FF;
+}
+
+.white-button:active {
+    background-color: #3086D4;
+}
+
 .blue-button {
     background: #005AAB;
     color: white;
 }
 
+.blue-button:hover {
+    background: #198AF0;
+}
+
+.blue-button:active {
+    background: #003769;
+}
+
 .link-btn {
-    padding: 13px 25px;
+    height: 45px;
+    width: 146px;
     border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     color: #005AAB;
     background: white;
     border: 1px solid #005AAB;
+}
+
+.link-btn:hover {
+    color: #198AF0;
+    border: 1px solid #198AF0;
+}
+
+.link-btn:active {
+    color: #00305A;
+    border: 1px solid #00305A;
 }
 
 .link-card {
@@ -101,4 +132,64 @@ button {
     align-items: center;
     justify-content: center;
     gap: 10px;
+}
+
+/* Карточка товара */
+
+.goods-card__link {
+    width: 268px;
+    height: 441px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    flex-direction: column;
+}
+
+.goods-card__figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.goods-card__desc {
+    width: 210px;
+    height: 44px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.goods-card__price-container {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.goods-card__price--cross-out {
+    width: 64px;
+    height: 22px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+
+    text-decoration: line-through;
+    color: #7D868F;
+}
+
+.goods-card__price {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
 }

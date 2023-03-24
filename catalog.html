@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="styles/style.css">
         <link rel="stylesheet" href="styles/header.css">
         <link rel="stylesheet" href="styles/general.css">
+        <link rel="stylesheet" href="styles/catalog.css">
         <link rel="stylesheet" href="styles/footer.css">
         <link rel="stylesheet" href="styles/opensans.css">
         <link rel="stylesheet" href="styles/roboto.css">
@@ -15,60 +16,72 @@
     <body class="body">
         <iframe src="components/header.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
         <main class="main container">
-            <div class="breadcrumb container flex-container">
+            <div class="breadcrumb container">
                 <a class="breadcrumb__main-link" href="#">
                     ГЛАВНАЯ
                 </a>
-                <ul class="breadcrumb__list flex-container">
+                <ul class="breadcrumb__list">
                     <li class="breadcrumb__item">
-                        <a class="breadcrumb__link link" href="#">
-                            > КАТАЛОГ
+                        <p class="breadcrumb__triangle">
+                            >
+                        </p>
+                        <a class="breadcrumb__link" href="#">
+                            КАТАЛОГ
                         </a>
                     </li>
                     <li class="breadcrumb__item">
-                        > СМАРТФОНЫ
+                        <p class="breadcrumb__triangle">
+                            >
+                        </p>
+                        <p class="breadcrumb__text">
+                            СМАРТФОНЫ
+                        </p>
                     </li>
                 </ul>
             </div>
             <h1 class="visually-hidden">
                 Смартфоны
             </h1>
-            <p class="titles-text">
+            <p class="title titles-text">
                 Смартфоны
             </p>
-            <div class="flex-container">
+            <div class="upp-part">
                 <p class="goods-text">
                     656 товаров
                 </p>
-                <p class="text-open-sans">
-                    Сортировать:
-                </p>
-                <ul class="sort-list flex-container">
-                    <li class="sort-list__item">
-                        <a class="sort-list__link" href="#">
-                            По цене
-                        </a>
-                    </li>
-                    <li class="sort-list__item">
-                        <a class="sort-list__link" href="#">
-                            По популярности
-                        </a>
-                    </li>
-                    <li class="sort-list__item">
-                        <a class="sort-list__link" href="#">
-                            По новизне
-                        </a>
-                    </li>
-                </ul>
+                <div class="upp-part__sort">
+                    <p class="text-open-sans">
+                        Сортировать:
+                    </p>
+                    <ul class="upp-part__sort-list">
+                        <li class="upp-part__sort-list__item">
+                            <a class="upp-part__sort-list__link" href="#">
+                                По цене
+                            </a>
+                        </li>
+                        <li class="upp-part__sort-list__item">
+                            <a class="upp-part__sort-list__link" href="#">
+                                По популярности
+                            </a>
+                        </li>
+                        <li class="upp-part__sort-list__item">
+                            <a class="upp-part__sort-list__link" href="#">
+                                По новизне
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <hr>
-            <div class="flex-container">
-                <aside class="left-goods-form reflex-container">
-                    <form class="goods-form" action="form.php" method="post">
+            <div class="content">
+                <aside class="filters">
+                    <form class="goods-filters" action="form.php" method="post">
                         <fieldset class="goods-form__price price">
                             <legend class="goods-form__price__legend legend">Цена, ₽</legend>
-                            <input class="input-min-price" type="text" id="min-price" name="min-price">
-                            <input class="input-max-price" type="text" id="max-price" name="max-price"><br>
+                            <div class="text-forms">
+                                <input class="input-min-price text-form" type="text" id="min-price" name="min-price">
+                                <input class="input-max-price text-form" type="text" id="max-price" name="max-price">
+                            </div>
                             <input class="input-price-range" type="range" id="price=range" name="range">
                         </fieldset>
                         <fieldset class="goods-form__diagonal diagonal">
@@ -79,128 +92,185 @@
                             </select>
                         </fieldset>
                         <fieldset class="goods-form__brand brand">
-                            <legend class="goods-form__brand__legend legend">Бренд</legend><br>
-                            <input class="brand-checkbox" type="checkbox" id="apple" value="apple" name="brand"><label class="light" for="apple">apple</label><br>
-                            <input class="brand-checkbox" type="checkbox" id="blackview" value="blackview" name="brand"><label class="light" for="blackview">blackview</label><br>
-                            <input class="brand-checkbox" type="checkbox" id="clevercel" value="clevercel" name="brand"><label class="light" for="clevercel">clevercel</label><br>
-                            <input class="brand-checkbox" type="checkbox" id="nokia" value="nokia" name="brand"><label class="light" for="nokia">nokia</label><br>
-                            <input class="brand-checkbox" type="checkbox" id="xiaomi" value="xiaomi" name="brand"><label class="light" for="xiaomi">xiaomi</label><br>
-                            <input class="brand-checkbox" type="checkbox" id="zte" value="zte" name="brand"><label class="light" for="zte">zte</label>
+                            <legend class="goods-form__brand__legend legend">Бренд</legend>
+                            <ul class="brands-list">
+                                <li class="brands-list__item">
+                                    <input class="brand-checkbox" type="checkbox" id="apple" value="apple" name="brand"><label class="light" for="apple">APPLE</label>
+                                </li>
+                                <li class="brands-list__item">
+                                    <input class="brand-checkbox" type="checkbox" id="blackview" value="blackview" name="brand"><label class="light" for="blackview">BLACKVIEV</label>
+                                </li>
+                                <li class="brands-list__item">
+                                    <input class="brand-checkbox" type="checkbox" id="clevercel" value="clevercel" name="brand"><label class="light" for="clevercel">CLEVERCEL</label>
+                                </li>
+                                <li class="brands-list__item">
+                                    <input class="brand-checkbox" type="checkbox" id="nokia" value="nokia" name="brand"><label class="light" for="nokia">NOKIA</label>
+                                </li>
+                                <li class="brands-list__item">
+                                    <input class="brand-checkbox" type="checkbox" id="xiaomi" value="xiaomi" name="brand"><label class="light" for="xiaomi">XIAOMI</label>
+                                </li>
+                                <li class="brands-list__item">
+                                    <input class="brand-checkbox" type="checkbox" id="zte" value="zte" name="brand"><label class="light" for="zte">ZTE</label>
+                                </li>
+                            </ul>
                         </fieldset>
                         <fieldset class="goods-form__sim-amount">
                             <legend class="goost-form__sim-amount__legend legend">Количество SIM-карт</legend>
-                            <input class="sim-amount-radio" type="radio" id="1SIM" value="1SIM" name="SIM"><label for="1SIM" class="light">1SIM</label><br>
-                            <input class="sim-amount-radio" type="radio" id="2SIM" value="2SIM" name="SIM"><label for="2SIM" class="light">2SIM</label>
+                            <ul class="sim-amount-list">
+                                <li class="sim-amount-list__item">
+                                    <input class="sim-amount-radio" type="radio" id="1SIM" value="1SIM" name="SIM"><label for="1SIM" class="light">1SIM</label>
+                                </li>
+                                <li class="sim-amount-list__item">
+                                    <input class="sim-amount-radio" type="radio" id="2SIM" value="2SIM" name="SIM"><label for="2SIM" class="light">2SIM</label>
+                                </li>
+                            </ul>
                         </fieldset>
                     </form>
                 </aside>
-                <section class="goods reflex-container">
-                    <ul class="goods__cards-list flex-container">
-                        <li class="goods__cards-list__list__item card item">
-                            <a href="#" class="goods__cards-list__link link">                        
-                                <figure class="card__figure">
-                                    <img src="data/images/goods/cards/card-1.jpg" alt="Фото техники" class="card__img" loading="lazy">
-                                    <figcaption class="card__desc">
-
-                                    </figcaption>
-                                </figure>
-                                <p class="card__price">54 440 ₽</p>
+                <section class="goods">
+                    <ul class="goods__cards-list">
+                        <li class="goods__cards-list__item link-card">
+                            <a href="#" class="goods-card__link">
+                                <div class="goods-card">
+                                    <figure class="goods-card__figure">
+                                        <img src="data/images/goods/cards/card-1.jpg" alt="Фото техники" class="goods-image" loading="lazy">
+                                        <figcaption class="goods-card__desc">
+                                            Смартфон Samsung Galaxy S21 128GB Phantom Violet
+                                        </figcaption>
+                                    </figure>
+                                    <div class="goods-card__price-container">
+                                        <p class="goods-card__price--cross-out"></p>
+                                        <p class="goods-card__price">54 440 ₽</p>
+                                    </div>
+                                </div>
                             </a>
                         </li>
-                        <li class="goods__cards-list__list__item card item">
-                            <a href="#" class="goods__cards-list__link link">                        
-                                <figure class="card__figure">
-                                    <img src="data/images/goods/cards/card-2.jpg" alt="Фото техники" class="card__img" loading="lazy">
-                                    <figcaption class="card__desc">
-
-                                    </figcaption>
-                                </figure>
-                                <p class="card__price card__price--cross-out">62 990 ₽</p>
-                                <p class="card__price">59 990 ₽</p>
+                        <li class="goods__cards-list__item link-card">
+                            <a href="#" class="goods-card__link">
+                                <div class="goods-card">
+                                    <figure class="goods-card__figure">
+                                        <img src="data/images/goods/cards/card-2.jpg" alt="Фото техники" class="goods-image" loading="lazy">
+                                        <figcaption class="goods-card__desc">
+                                            Смартфон Apple iPhone 11 128GB White
+                                        </figcaption>
+                                    </figure>
+                                    <div class="goods-card__price-container">
+                                        <p class="goods-card__price--cross-out">62 990 ₽</p>
+                                        <p class="goods-card__price">59 990 ₽</p>
+                                    </div>
+                                </div>
                             </a>
                         </li>
-                        <li class="goods__cards-list__list__item card item">
-                            <a href="#" class="goods__cards-list__link link">                        
-                                <figure class="card__figure">
-                                    <img src="data/images/goods/cards/card-3.jpg" alt="Фото техники" class="card__img" loading="lazy">
-                                    <figcaption class="card__desc">
-
-                                    </figcaption>
-                                </figure>
-                                <p class="card__price card__price--cross-out">32 990 ₽</p>
-                                <p class="card__price">26 790 ₽</p>
+                        <li class="goods__cards-list__item link-card">
+                            <a href="#" class="goods-card__link">
+                                <div class="goods-card">
+                                    <figure class="goods-card__figure">
+                                        <img src="data/images/goods/cards/card-3.jpg" alt="Фото техники" class="goods-image" loading="lazy">
+                                        <figcaption class="goods-card__desc">
+                                            Смартфон Samsung Galaxy A52 128GB Awesome Black 
+                                        </figcaption>
+                                    </figure>
+                                    <div class="goods-card__price-container">
+                                        <p class="goods-card__price--cross-out">32 990 ₽</p>
+                                        <p class="goods-card__price">26 790 ₽</p>
+                                    </div>
+                                </div>
                             </a>
                         </li>
-                    </ul>
-                    <ul class="goods__cards-list flex-container">
-                        <li class="goods__cards-list__list__item card item">
-                            <a href="#" class="goods__cards-list__link link">                        
-                                <figure class="card__figure">
-                                    <img src="data/images/goods/cards/card-4.jpg" alt="Фото техники" class="card__img" loading="lazy">
-                                    <figcaption class="card__desc">
-
-                                    </figcaption>
-                                </figure>
-                                <p class="card__price card__price--cross-out">65 990 ₽</p>
-                                <p class="card__price">61 990 ₽</p>
+                        <li class="goods__cards-list__item link-card">
+                            <a href="#" class="goods-card__link">
+                                <div class="goods-card">
+                                    <figure class="goods-card__figure">
+                                        <img src="data/images/goods/cards/card-4.jpg" alt="Фото техники" class="goods-image" loading="lazy">
+                                        <figcaption class="goods-card__desc">
+                                            Смартфон Samsung Galaxy S21 128GB Phantom Gray
+                                        </figcaption>
+                                    </figure>
+                                    <div class="goods-card__price-container">
+                                        <p class="goods-card__price--cross-out">65 990 ₽</p>
+                                        <p class="goods-card__price">61 990 ₽</p>
+                                    </div>
+                                </div>
                             </a>
                         </li>
-                        <li class="goods__cards-list__list__item card item">
-                            <a href="#" class="goods__cards-list__link link">                        
-                                <figure class="card__figure">
-                                    <img src="data/images/goods/cards/card-5.jpg" alt="Фото техники" class="card__img" loading="lazy">
-                                    <figcaption class="card__desc">
-
-                                    </figcaption>
-                                </figure>
-                                <p class="card__price">36 990 ₽</p>
+                        <li class="goods__cards-list__item link-card">
+                            <a href="#" class="goods-card__link">
+                                <div class="goods-card">
+                                    <figure class="goods-card__figure">
+                                        <img src="data/images/goods/cards/card-5.jpg" alt="Фото техники" class="goods-image" loading="lazy">
+                                        <figcaption class="goods-card__desc">
+                                            Смартфон Huawei Mate 40 Pro Mystic Silver (NOH-NX9)
+                                        </figcaption>
+                                    </figure>
+                                    <div class="goods-card__price-container">
+                                        <p class="goods-card__price--cross-out"></p>
+                                        <p class="goods-card__price">36 990 ₽</p>
+                                    </div>
+                                </div>
                             </a>
                         </li>
-                        <li class="goods__cards-list__list__item card item">
-                            <a href="#" class="goods__cards-list__link link">                        
-                                <figure class="card__figure">
-                                    <img src="data/images/goods/cards/card-6.jpg" alt="Фото техники" class="card__img" loading="lazy">
-                                    <figcaption class="card__desc">
-
-                                    </figcaption>
-                                </figure>
-                                <p class="card__price">15  990 ₽</p>
+                        <li class="goods__cards-list__item link-card">
+                            <a href="#" class="goods-card__link">
+                                <div class="goods-card">
+                                    <figure class="goods-card__figure">
+                                        <img src="data/images/goods/cards/card-6.jpg" alt="Фото техники" class="goods-image" loading="lazy">
+                                        <figcaption class="goods-card__desc">
+                                            Смартфон Honor 10X Lite 4+128GB Icelandic Frost
+                                        </figcaption>
+                                    </figure>
+                                    <div class="goods-card__price-container">
+                                        <p class="goods-card__price--cross-out"></p>
+                                        <p class="goods-card__price">15 990 ₽</p>
+                                    </div>
+                                </div>
                             </a>
                         </li>
-                    </ul>
-                    <ul class="goods__cards-list flex-container">
-                        <li class="goods__cards-list__list__item card item">
-                            <a href="#" class="goods__cards-list__link link">                        
-                                <figure class="card__figure">
-                                    <img src="data/images/goods/cards/card-7.jpg" alt="Фото техники" class="card__img" loading="lazy">
-                                    <figcaption class="card__desc">
-
-                                    </figcaption>
-                                </figure>
-                                <p class="card__price card__price--cross-out">70 990 ₽</p>
-                                <p class="card__price">65 990 ₽</p>
+                        <li class="goods__cards-list__item link-card">
+                            <a href="#" class="goods-card__link">
+                                <div class="goods-card">
+                                    <figure class="goods-card__figure">
+                                        <img src="data/images/goods/cards/card-7.jpg" alt="Фото техники" class="goods-image" loading="lazy">
+                                        <figcaption class="goods-card__desc">
+                                            Смартфон Huawei P40 Pro Silver Frost
+                                        </figcaption>
+                                    </figure>
+                                    <div class="goods-card__price-container">
+                                        <p class="goods-card__price--cross-out">70 990 ₽</p>
+                                        <p class="goods-card__price">65 990 ₽</p>
+                                    </div>
+                                </div>
                             </a>
                         </li>
-                        <li class="goods__cards-list__list__item card item">
-                            <a href="#" class="goods__cards-list__link link">                        
-                                <figure class="card__figure">
-                                    <img src="data/images/goods/cards/card-8.jpg" alt="Фото техники" class="card__img" loading="lazy">
-                                    <figcaption class="card__desc">
-
-                                    </figcaption>
-                                </figure>
-                                <p class="card__price">15 000 ₽</p>
+                        <li class="goods__cards-list__item link-card">
+                            <a href="#" class="goods-card__link">
+                                <div class="goods-card">
+                                    <figure class="goods-card__figure">
+                                        <img src="data/images/goods/cards/card-8.jpg" alt="Фото техники" class="goods-image" loading="lazy">
+                                        <figcaption class="goods-card__desc">
+                                            Смартфон Honor 9X 4+128GB Sapphire Blue
+                                        </figcaption>
+                                    </figure>
+                                    <div class="goods-card__price-container">
+                                        <p class="goods-card__price--cross-out"></p>
+                                        <p class="goods-card__price">15 000 ₽</p>
+                                    </div>
+                                </div>
                             </a>
                         </li>
-                        <li class="goods__cards-list__list__item card item">
-                            <a href="#" class="goods__cards-list__link link">                        
-                                <figure class="card__figure">
-                                    <img src="data/images/goods/cards/card-9.jpg" alt="Фото техники" class="card__img" loading="lazy">
-                                    <figcaption class="card__desc">
-
-                                    </figcaption>
-                                </figure>
-                                <p class="card__price">39 990 ₽</p>
+                        <li class="goods__cards-list__item link-card">
+                            <a href="#" class="goods-card__link">
+                                <div class="goods-card">
+                                    <figure class="goods-card__figure">
+                                        <img src="data/images/goods/cards/card-9.jpg" alt="Фото техники" class="goods-image" loading="lazy">
+                                        <figcaption class="goods-card__desc">
+                                            Смартфон Apple iPhone SE 64GB Black
+                                        </figcaption>
+                                    </figure>
+                                    <div class="goods-card__price-container">
+                                        <p class="goods-card__price--cross-out"></p>
+                                        <p class="goods-card__price">39 990 ₽</p>
+                                    </div>
+                                </div>
                             </a>
                         </li>
                     </ul>   

@@ -64,7 +64,7 @@
     gap: 13px;
 }
 
-.right-banner__text {
+.right-banner__title {
     width: 210px;
     height: 79px;
 
@@ -77,53 +77,10 @@
 
 /* Настройка карточек с товарами */
 
-.hit-card__link {
-    width: 268px;
-    height: 443px;
-
+.sales-hits__list {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-
-    flex-direction: column;
-}
-
-.hit-card__figure {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-}
-
-.hit-card__desc {
-    width: 210px;
-    height: 44px;
-
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
-}
-
-.price-container {
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
-}
-
-.hit-card__price--cross-out {
-    width: 64px;
-    height: 22px;
-
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
-
-    color: #7D868F;
+    justify-content: space-between;
+    gap: 30px;
 }
 
 /* Настройка брендов */
