@@ -3,6 +3,15 @@
     font-family: 'Open Sans', sans-serif;
 } */
 
+input[type="text"] {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #7D868F;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -24,9 +33,19 @@
     line-height: 19px;
 
     color: #FFFFFF;
-    background: #363636;
   }
 
+  .header__top-nav-list {
+    margin: 0px;
+    padding: 0px;
+    gap: 30px;
+    display: flex;
+    height: 53px;
+    align-items: center;
+
+    background: #363636;
+    list-style: none
+  }
 
   .header__phone-link {
     /* Телефон (сверху) */
@@ -37,8 +56,25 @@
 
     color: #FFFFFF;
     background: #363636;
+
+    display: flex;
+    justify-content: flex-end;
   }
 
+  .header__list-link-item {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+
+    color: #000000;
+  }
+
+  .header__list-link {
+    display: flex;
+    list-style: none;
+      justify-content: flex-end;
+  }
 
   .header__button.button {
     /* Каталог */
@@ -46,6 +82,11 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 19px;
+
+    list-style: none;
+    height: 45px;
+    width: 116px;
+    border-radius: 8px;
 
     color: #FFFFFF;
     background: #005AAB;
@@ -60,6 +101,22 @@
     
     color: #000000;
   }
+
+  .main-nav__list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: #F1F5F7;
+    border-radius: 8px;
+    height: 45px;
+    width: 1039px;
+    left: 131px;
+}
 /* ------------------------------------------------------- Главная страница интернет магазина бытовой электроники------------------------------------------------------------- */
 
 /* -------------------------------------------------------- Главный банер ------------------------------------------------------------ */
