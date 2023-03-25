@@ -6,214 +6,370 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hospital_catalog</title>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-     <header class="header">
-        <ul class="header__top-nav-list top-nav-list">
-            <li class="top-nav-list__item">
-                <a href="#" class="top-nav-list__link">Вопрос-ответ</a>
-            </li>
-            <li class="top-nav-list__item">
-                <a href="#" class="top-nav-list__link">Обратный звонок</a>
-            </li>
-            <li class="top-nav-list__item">
-                <a href="#" class="top-nav-list__link">Личный кабинет</a>
-            </li>
-        </ul>
-        <a href="tel +79631502804" class="header__phone-link">8 (963) 150-28-05</a>
-        <a href="#" class="header__logo"><img src="#" alt="Логотип"></a>
-        <form action=""><input type="text" placeholder="Поиск...."></form>
-        <ul class="header__list-link">
-            <li class="header__list-link-item"><a href="#" class="header__link"></a></li>
-            <li class="header__list-link-item"><a href="#" class="header__link"></a></li>
-        </ul>
-        <a class="header__price" href="">Цены</a>
-        <a class="header__about" href=""> О клинике</a>
-        <button class="header__button button">Каталог</button>
-        <nav class="header__main-nav main-nav">
-            <ul class="main-nav__list">
-                <li class="main-nav__list-item">
-                    <a href="#" class="main-nav__list-item-link">РАСПИСАНИЕ</a>
-                </li>
-                <li class="main-nav__list-item">
-                    <a href="#" class="main-nav__list-item-link">СПЕЦИАЛИСТЫ</a>
-                </li>
-                <li class="main-nav__list-item">
-                    <a href="#" class="main-nav__list-item-link">УСЛУГИ</a>
-                </li>
-                <li class="main-nav__list-item">
-                    <a href="#" class="main-nav__list-item-link">ТРАВМПУНКТ</a>
-                </li>
-                <li class="main-nav__list-item">
-                    <a href="#" class="main-nav__list-item-link">ОТЗЫВЫ</a>
-            </ul>
-        </nav>
+    <header class="header">
+        <div class="header__top top">
+            <div class="header__content content">                
+                <ul class="header__top-nav top-nav">
+                    <li class="top-nav__item">
+                        <a class="top-nav__item-link" href="#">Магазины</a>
+                    </li>
+                    <li class="top-nav__item">
+                        <a class="top-nav__item-link" href="#">Доставка и оплата</a>
+                    </li>
+                    <li class="top-nav__item">
+                        <a class="top-nav__item-link" href="#">Кредиты и рассрочка</a>
+                    </li>
+                </ul>
+                <a class="header__teleph" href="tel +79631502804">8 (963) 150-28-04</a>
+            </div>
+        </div>
+        <div class="header__down">
+            <div class="header__down-content content">
+                <div class="header__down-content-up">
+                    <a href="#" class="header__logo"><img src="images/Logo.svg" alt="Логотип"></a>
+                    <form action="find"><img src="images/find.jpg" alt="Поиск"><input type="text" placeholder="Поиск...."></form>
+                    <div class="header__dop">
+                        <a class="header__price" href=""><img src="images/heart.svg" alt="Избранное">Избранное(2)</a>
+                        <a class="header__about" href=""><img src="images/busket.jpg" alt="Корзина">Корзина(14)</a>
+                    </div>
+                </div>
+                <button class="header__catalog"><img src="images/Menu icon.svg" alt="Каталог">Каталог</button>
+                <nav class="header__main-nav main-nav">
+                    <ul class="main-nav__list">
+                         <li class="main-nav__list-item">
+                            <a class="main-nav__list-item-link" href="#">СКИДКИ</a>
+                        </li>
+                        <li class="main-nav__list-item">
+                            <a class="main-nav__list-item-link" href="#">СМАРТФОНЫ</a>
+                        </li>
+                        <li class="main-nav__list-item">
+                            <a class="main-nav__list-item-link" href="#">ТЕЛЕВИЗОРЫ</a>
+                        </li>
+                        <li class="main-nav__list-item">
+                            <a class="main-nav__list-item-link" href="#">НОУТБУКИ</a>
+                        </li>
+                        <li class="main-nav__list-item">
+                            <a class="main-nav__list-item-link" href="#">СТИРАЛЬНЫЕ МАШИНЫ</a>
+                        </li>
+                        <li class="main-nav__list-item">
+                            <a class="main-nav__list-item-link" href="#">ХОЛОДИЛЬНИКИ</a>
+                        </li>
+                        <li class="main-nav__list-item">
+                            <a class="main-nav__list-item-link" href="#">ПЫЛЕСОСЫ</a>
+                        </li>
+                        <li class="main-nav__list-item">
+                            <a class="main-nav__list-item-link" href="#">МИКРОВОЛНОВКИ</a>
+                        </li>
+                            
+                    </ul>
+                </nav>
+            </div>            
+        </div>        
     </header>
     <main class="main">
-
-        <h1 class="main-title">Каталог</h1>
-
-        <section class="smartphone">
-            <h2 class="">Смартфоны</h2>
-            <a class="catalog_title">Смартфоны</a>
-            <a class="catalog_main-item">656 Товаров</a>
-            <a class="sort-item">Сортировать:</a>
-            <nav class="header-main-cat main-cat">
-                <ul class="main-cat__list">
-                    <li class="main-cat__list-item">
-                        <button class="main-cat__list-item-button">По цене</button>
-                    </li>
-                </ul>
-                <ul class="main-cat__list">
-                    <li class="main-cat__list-item">
-                        <button class="main-cat__list-item-button">По популярности</button>
-                    </li>
-                </ul>
-                <ul class="main-cat__list">
-                    <li class="main-cat__list-item">
-                        <button class="main-cat__list-item-button">По новизне</button>
-                    </li>
-                </ul>
-            </nav>
+        <div class="content">
+            <div class="content-main-catalog">
+                <h1 class="visually-hidden">Каталог</h1>
+                <a class="main-catalog">Главная</a>
+                <a>></a>
+                <a class="main-catalog">Каталог</a>
+                <a>></a>
+                <a class="main-catalog">Смартфоны</a>
+            </div>
+        </div>
+        <div class="content">
+            <section class="smartphone">
+                <h2 class="catalog_title">Смартфоны</h2>
+                <a class="visually-hidden">Смартфоны</a>
+                <div class="catalog-up">
+                    <a class="catalog_main-item">656 Товаров</a>
+                    <div class="catalog-sort-item">
+                        <a class="sort-item">Сортировать:</a>
+                        <nav class="header-main-cat main-cat">
+                            <ul class="main-cat__list">
+                                <li class="main-cat__list-item">
+                                    <a class="main-cat__list-item-button">По цене</a>
+                                </li>
+                                <li class="main-cat__list-item">
+                                    <a class="main-cat__list-item-button">По популярности</a>
+                                </li>
+                                <li class="main-cat__list-item">
+                                    <a class="main-cat__list-item-button">По новизне</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="content">
+            <aside class="filter">
+                <form class="filter-form  form">
+                        <div class="content-filter">
+                            <div class="content-filter-right">
+                                <fieldset class="form__field">
+                                    <legend class="form__field-name">Цена, ₽</legend>
+                                    <div class="content-number">
+                                        <input class="first-number" type="number">
+                                        <input class="second-number" type="number">
+                                    </div>
+                                    <input class="range-price" type="range">
+                                </fieldset>
+                                <fieldset class="form__field">
+                                    <div class="form-dianogal">
+                                        <legend class="form__field-name">Диагональ экрана</legend>
+                                        <select class="form_fild-dume">
+                                            <option>От 6"</option>
+                                            <option>От 7"</option>
+                                            <option>От 8"</option>
+                                            <option>От 8.2"</option>
+                                            <option>От 9"</option>
+                                            <option>От 10"</option>
+                                        </select>
+                                    </div>
+                
+                                </fieldset>
+                                <fieldset class="form__field">
+                                    <div class="form-brand">
+                                        <legend class="form__field-name">Бренд</legend>
+                                        <div class="lable-field">
+                                            <label class="form__field-lable  lable"><input class="box" type="checkbox" class="label_input">Apple</label>
+                                            <label class="form__field-lable  lable"><input class="box" type="checkbox" class="label_input">Blackview</label>
+                                            <label class="form__field-lable  lable"><input class="box" type="checkbox" class="label_input">CLEVERCEL</label>
+                                            <label class="form__field-lable  lable"><input class="box" type="checkbox" class="label_input">Nokia</label>
+                                            <label class="form__field-lable  lable"><input class="box" type="checkbox" class="label_input">Xiaomi</label>
+                                            <label class="form__field-lable  lable"><input class="box" type="checkbox" class="label_input">ZTE</label>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <fieldset class="form__field">
+                                    <div class="form-count-sims">
+                                        <legend class="form__field-name">Количество симок</legend>
+                                        <div class="count-sim">
+                                            <label class="form__field-lable  lable">
+                                                <span class="form-lable-radio"></span>
+                                                <input class="sircle-box" type="radio" name="name-radio" class="label_input">
+                                                1SIM
+                                            </label>
+                                            <label class="form__field-lable  lable"><input class="sircle-box" type="radio" name="name-radio" class="label_input">2SIM</label>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <fieldset class="catalog-consist">
+                                <section class="consist-hits">
+                                    <ul class="consist-hits__list">
+                                        <li class="consist-hits__list-item hit-card">
+                                            <a href="#" class="hit-card__link">
+                                                <figure class="hit-card__figure">
+                                                    <img src="images/like.png" alt="Лайк" class="hit-card-like">
+                                                    <img src="images/smartphone1.svg" alt="Фото техники" class="hit-card__img">
+                                                    <figcaption class="hit-card__desc">Смартфон Samsung Galaxy S21 128GB Phantom Violet</figcaption>
+                                                </figure>
+                                                
+                                                <p class="hit-card__price">54 440 ₽</p>
+                                            </a>
+                                            <button class=""></button>
+                                        </li>
+                                        <li class="consist-hits__list-item hit-card">
+                                            <button class="button-like"><img src="images/like.png" alt="Лайк" class="hit-card-like"></button>
+                                            <a href="#" class="hit-card__link">
+                                                <figure class="hit-card__figure">
+                                                    <img src="images/smartphone2.svg" alt="Фото техники" class="hit-card__img">
+                                                    <figcaption class="hit-card__desc">Смартфон Apple iPhone 11 128GB White</figcaption>
+                                                </figure>
+                                                <p class="hit-card__price hit-card__price--cross-out">62 990 ₽</p>
+                                                <p class="hit-card__price">59 990 ₽</p>
+                                            </a>
+                                            <button class=""></button>
+                                        </li>
+                                        <li class="consist-hits__list-item hit-card">
+                                            <a href="#" class="hit-card__link">
+                                                <figure class="hit-card__figure">
+                                                    <img src="images/like.png" alt="Лайк" class="hit-card-like">
+                                                    <img src="images/smartphone3.svg" alt="Фото техники" class="hit-card__img">
+                                                    <figcaption class="hit-card__desc">Смартфон Samsung Galaxy A52 128GB Awesome Black</figcaption>
+                                                </figure>
+                                                <p class="hit-card__price hit-card__price--cross-out">32 990 ₽</p>
+                                                <p class="hit-card__price">26 790 ₽</p>
+                                            </a>
+                                            <button class=""></button>
+                                        </li>
+                                        <li class="consist-hits__list-item hit-card">
+                                            <a href="#" class="hit-card__link">
+                                                <figure class="hit-card__figure">
+                                                    <img src="images/like.png" alt="Лайк" class="hit-card-like">
+                                                    <img src="images/smartphone4.svg" alt="Фото техники" class="hit-card__img">
+                                                    <figcaption class="hit-card__desc">Смартфон Samsung Galaxy S21 128GB Phantom Gray</figcaption>
+                                                </figure>
+                                                <p class="hit-card__price hit-card__price--cross-out">65 990 ₽</p>
+                                                <p class="hit-card__price">61 990 ₽</p>
+                                            </a>
+                                            <button class=""></button>
+                                        </li>
+                                        <li class="consist-hits__list-item hit-card">
+                                            <a href="#" class="hit-card__link">
+                                                <figure class="hit-card__figure">
+                                                    <img src="images/like.png" alt="Лайк" class="hit-card-like">
+                                                    <img src="images/smartphone5.svg" alt="Фото техники" class="hit-card__img">
+                                                    <figcaption class="hit-card__desc">Смартфон Huawei Mate 40 Pro Mystic Silver (NOH-NX9)</figcaption>
+                                                </figure>
+                                                
+                                                <p class="hit-card__price">36 990 ₽</p>
+                                            </a>
+                                            <button class=""></button>
+                                        </li>
+                                        <li class="consist-hits__list-item hit-card">
+                                            <a href="#" class="hit-card__link">
+                                                <figure class="hit-card__figure">
+                                                    <img src="images/like.png" alt="Лайк" class="hit-card-like">
+                                                    <img src="images/smartphone6.svg" alt="Фото техники" class="hit-card__img">
+                                                    <figcaption class="hit-card__desc">Смартфон Honor 10X Lite 4+128GB Icelandic Frost</figcaption>
+                                                </figure>
+                                                
+                                                <p class="hit-card__price">15 990 ₽</p>
+                                            </a>
+                                            <button class=""></button>
+                                        </li>
+                                        <li class="consist-hits__list-item hit-card">
+                                            <a href="#" class="hit-card__link">
+                                                <figure class="hit-card__figure">
+                                                    <img src="images/like.png" alt="Лайк" class="hit-card-like">
+                                                    <img src="images/smartphone7.svg" alt="Фото техники" class="hit-card__img">
+                                                    <figcaption class="hit-card__desc">Смартфон Huawei P40 Pro Silver Frost</figcaption>
+                                                </figure>
+                                                <p class="hit-card__price hit-card__price--cross-out">70 990 ₽</p>
+                                                <p class="hit-card__price">65 990 ₽</p>
+                                            </a>
+                                            <button class=""></button>
+                                        </li>
+                                        <li class="consist-hits__list-item hit-card">
+                                            <a href="#" class="hit-card__link">
+                                                <figure class="hit-card__figure">
+                                                    <img src="images/like.png" alt="Лайк" class="hit-card-like">
+                                                    <img src="images/smartphone8.svg" alt="Фото техники" class="hit-card__img">
+                                                    <figcaption class="hit-card__desc">Смартфон Honor 9X 4+128GB Sapphire Blue</figcaption>
+                                                </figure>
+                                                
+                                                <p class="hit-card__price">15 000 ₽</p>
+                                            </a>
+                                            <button class=""></button>
+                                        </li>
+                                        <li class="consist-hits__list-item hit-card">
+                                            <a href="#" class="hit-card__link">
+                                                <figure class="hit-card__figure">
+                                                    <img src="images/like.png" alt="Лайк" class="hit-card-like">
+                                                    <img src="images/smartphone9.svg" alt="Фото техники" class="hit-card__img">
+                                                    <figcaption class="hit-card__desc">Смартфон Apple iPhone SE 64GB Black</figcaption>
+                                                </figure>
+                                                
+                                                <p class="hit-card__price">39 990 ₽</p>
+                                            </a>
+                                            <button class=""></button>
+                                        </li>
+                                    </ul>
+                                    <div class="buttoms">
+                                        <button></button>
+                                        <button class="button-form-1">1</button>
+                                        <button class="button-form">2</button>
+                                        <button class="button-form">3</button>
+                                        <button></button>
+                                    </div>
+                                </section>
+                            </fieldset>
+                    </div>
+                    </form>
+            </aside>
+        </div>
+        <section class="subscription">
+            <div class="content">
+                <h2 class="visually-hidden">Подписка на новости и акции</h2>
+                <div class="content-subscribe">
+                    <p class="subscription__title">Получайте самые интересные предложения и новости первыми!</p>
+                    <form action="#" method="get" class="subscription__form">
+                        <input type="text" placeholder="Введите ваш e-mail" class="subscription__form-input">
+                        <input type="button" value="Подписаться" class="subscription__form-button">
+                    </form>
+                </div>
+            </div>
         </section>
-        <aside class="filter">
-            <form class="filter-form  form">
-                <fieldset class="form__field">
-                    <legend class="form__field-price">Цена</legend>
-                    <input type="number">
-                    <input type="number">
-                    <input type="range">
-                </fieldset>
-                <fieldset class="form__field">
-                    <legend class="form__field-price">Диагональ экрана</legend>
-                    <select>
-                        <option>6"</option>
-                        <option>7"</option>
-                        <option>8"</option>
-                        <option>8.2"</option>
-                        <option>9"</option>
-                        <option>10"</option>
-                    </select>
-
-                </fieldset>
-                <fieldset class="form__field">
-                    <legend class="form__field-price">Бренд</legend>
-                    <label class="form__field-lable  lable"><input type="checkbox" class="label_input">Apple</label>
-                    <label class="form__field-lable  lable"><input type="checkbox" class="label_input">Blackview</label>
-                    <label class="form__field-lable  lable"><input type="checkbox" class="label_input">CLEVERCEL</label>
-                    <label class="form__field-lable  lable"><input type="checkbox" class="label_input">Nokia</label>
-                    <label class="form__field-lable  lable"><input type="checkbox" class="label_input">Xiaomi</label>
-                    <label class="form__field-lable  lable"><input type="checkbox" class="label_input">ZTE</label>
-                </fieldset>
-                <fieldset class="form__field">
-                    <legend class="form__field-price">Количество симок</legend>
-                    <label class="form__field-lable  lable"><input type="checkbox" class="label_input">1SIM</label>
-                    <label class="form__field-lable  lable"><input type="checkbox" class="label_input">2SIM</label>
-                </fieldset>
-                <fieldset class="">
-                    <section class="sales-hits">
-                        <ul class="sales-hits__list">
-                            <li class="sales-hits__list-item hit-card">
-                                <a href="#" class="hit-card__link">
-                                    <figure class="hit-card__figure">
-                                        <img src="#" alt="Фото техники" class="hit-card__img">
-                                        <figcaption class="hit-card__desc"></figcaption>
-                                    </figure>
-                                    <p class="hit-card__price hit-card__price--cross-out">6 990 ₽</p>
-                                    <p class="hit-card__price">5 533 ₽</p>
-                                </a>
-                                <button class=""></button>
-                            </li>
-                            <li class="sales-hits__list-item hit-card">
-                                <a href="#" class="hit-card__link">
-                                    <figure class="hit-card__figure">
-                                        <img src="#" alt="Фото техники" class="hit-card__img">
-                                        <figcaption class="hit-card__desc"></figcaption>
-                                    </figure>
-                                    <p class="hit-card__price hit-card__price--cross-out">6 990 ₽</p>
-                                    <p class="hit-card__price">5 533 ₽</p>
-                                </a>
-                                <button class=""></button>
-                            </li>
-                            <li class="sales-hits__list-item hit-card">
-                                <a href="#" class="hit-card__link">
-                                    <figure class="hit-card__figure">
-                                        <img src="#" alt="Фото техники" class="hit-card__img">
-                                        <figcaption class="hit-card__desc"></figcaption>
-                                    </figure>
-                                    <p class="hit-card__price hit-card__price--cross-out">6 990 ₽</p>
-                                    <p class="hit-card__price">5 533 ₽</p>
-                                </a>
-                                <button class=""></button>
-                            </li>
-                            <li class="sales-hits__list-item hit-card">
-                                <a href="#" class="hit-card__link">
-                                    <figure class="hit-card__figure">
-                                        <img src="#" alt="Фото техники" class="hit-card__img">
-                                        <figcaption class="hit-card__desc"></figcaption>
-                                    </figure>
-                                    <p class="hit-card__price hit-card__price--cross-out">6 990 ₽</p>
-                                    <p class="hit-card__price">5 533 ₽</p>
-                                </a>
-                                <button class=""></button>
-                            </li>
-                        </ul>
-                        <button></button>
-                        <button>1</button>
-                        <button>2</button>
-                        <button>3</button>
-                        <button>...</button>
-                        <button></button>
-                    </section>
-                </fieldset>
-            </form>
-        </aside>
-        
 
     </main>
 
     <footer class="footer">
-        <img src="#" alt="logo" class="footer__logo">
-        <p class="footer__addres">7-я Кожуховская ул., 9, Москва (этаж 1)</p>
-        <ul class="footer__nav-list">
-            <li class="footer__nav-list-item">
-                <a href="#" class="footer__nav-list-link">Главная</a>
-            </li>
-            <li class="footer__nav-list-item">
-                <a href="#" class="footer__nav-list-link">Расписание</a>
-            </li>
-            <li class="footer__nav-list-item">
-                <a href="#" class="footer__nav-list-link">Специалисты</a>
-            </li>
-            <li class="footer__nav-list-item">
-                <a href="#" class="footer__nav-list-link">Услуги</a>
-            </li>
-            <li class="footer__nav-list-item">
-                <a href="#" class="footer__nav-list-link">Круглосуточный травмпункт</a>
-            </li>
-            <li class="footer__nav-list-item">
-                <a href="#" class="footer__nav-list-link">Программы</a>
-            </li>
-            <li class="footer__nav-list-item">
-                <a href="#" class="footer__nav-list-link">Цены</a>
-            </li>
-            <li class="footer__nav-list-item">
-                <a href="#" class="footer__nav-list-link">Отзывы</a>
-            </li>
-            <li class="footer__nav-list-item">
-                <a href="#" class="footer__nav-list-link">О клинике</a>
-            </li>
-        </ul>
-        <ul class="footer__social-list social-list">
-            <li class="social-list__item"><a href="#" class="social-list__desc"><span class="social-list__alt">FaceBook</span></a></li>
-            <li class="social-list__item"><a href="#" class="social-list__desc"><span class="social-list__alt">instagram</span></a></li>
-            <li class="social-list__item"><a href="#" class="social-list__desc"><span class="social-list__alt">VK</span></a></li>
-            <li class="social-list__item"><a href="#" class="social-list__desc"><span class="social-list__alt">Youtube</span></a></li>
-        </ul>
-        <p class="footer__bottom-txt">© Electro place, 2003–2023</p>
-        <a href="#" class="footer__bottom-link">Политика обработки персональных данных</a>
-        <p class="footer__developer">Разработка сайта: <img src="#" alt="logo"></p>
-        
+        <div class="content">
+            <div class="content-down">
+                <div class="content-logo">
+                    <img src="images/Logo.svg" alt="logo" class="footer__logo">
+                    <p class="footer__addres">7-я Кожуховская ул.,д.9, Москва(этаж 1)</p>
+                </div>
+                <ul class="footer__nav-list">
+                    <div class="content-menu-down1">
+                        <li class="footer__nav-list-item">
+                            <a href="#" class="footer__nav-list-link">Скидки</a>
+                        </li>
+                        <li class="footer__nav-list-item">
+                            <a href="#" class="footer__nav-list-link">Акции</a>
+                        </li>
+                        <li class="footer__nav-list-item">
+                            <a href="#" class="footer__nav-list-link">Информация</a>
+                        </li>
+                        <li class="footer__nav-list-item">
+                            <a href="#" class="footer__nav-list-link">Доставка</a>
+                        </li>
+                        <li class="footer__nav-list-item">
+                            <a href="#" class="footer__nav-list-link">Гарантия</a>
+                        </li>
+                    </div>
+                    <div class="content-menu-down2">
+                        <li class="footer__nav-list-item">
+                            <a href="#" class="footer__nav-list-link">Кредит и рассрочка</a>
+                        </li>
+                        <li class="footer__nav-list-item">
+                            <a href="#" class="footer__nav-list-link">Новости</a>
+                        </li>
+                        <li class="footer__nav-list-item">
+                            <a href="#" class="footer__nav-list-link">Вакансии</a>
+                        </li>
+                    </div>
+                </ul>
+                <ul class="footer__social-list social-list">
+                    <li class="social-list__item">
+                        <a href="#" class="social-list__desc">
+                            <img class="social-list__img" src="images/fasebook.png" alt="FaceBook">
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a href="#" class="social-list__desc">
+                            <img class="social-list__img" src="images/instagram.png" alt="instagram">
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a href="#" class="social-list__desc">
+                            <img class="social-list__img" src="images/VK.png" alt="VK">
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a href="#" class="social-list__desc">
+                            <img class="social-list__img" src="images/YouTube.png" alt="YouTube">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="content-footer">
+                <div class="content-footer-bottom">
+                    <p class="footer__bottom-txt">© Electro place, 2003–2023</p>
+                    <a href="#" class="footer__bottom-link">Политика обработки персональных данных</a>
+                </div>
+                <p class="footer__developer">Разработка сайта: <img src="images/Garpix logo.svg" alt="logo"></p>
+            </div>
+        </div>
+
     </footer>
 </body>
 </html>
