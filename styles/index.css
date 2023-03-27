@@ -1,3 +1,20 @@
+/* отступы */
+
+.main {
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+.main section {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.section-title {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 /* Настройка баннеров (микроволновка и телевизор) */
 
 .banners {
@@ -185,6 +202,13 @@
 }
 
 /* Настройка "Преимущества" */
+
+.advantages
+{
+    background-color: #F1F5F7;
+    padding: 77px 0;
+}
+
 
 .advantages__list {
     display: flex;
