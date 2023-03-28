@@ -40,3 +40,25 @@ body {
     gap: 30px;
     list-style: none;
 }
+
+.header-second__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    height: 46px;
+    left: 375px;
+    top: 30px;
+}
+
+.header__search {
+    border: 1px solid #DEDEE2;
+    border-radius: 8px;
+    box-sizing: border-box;
+    width: 621px;
+    height: 48px;
+    top: 29px;
+    left: 624px;
+}
