@@ -21,7 +21,7 @@
     <title>Document</title>
 </head>
 
-<body>
+<body class="body">
     <header class="header">
         <div class="head_back"></div>
         <ul class="header__topnav-list topnav-list">
@@ -120,64 +120,63 @@
         <aside class="main-cat__filter">
             <form>
                 <fieldset>
-                    <legend>
+                    <legend class="main-cat__filter-name">
                         Цена
                     </legend>
-                    <input type="range" id="price">
-                    <input type="number" id="price">
-                    <label for="price"></label>
+                    <input type="range" id="price1">
+                    <input type="number" id="price2">
+                    <label for="price2"></label>
                 </fieldset>
                 <fieldset>
-                    <legend>
+                    <legend class="main-cat__filter-name">
                         Диагональ экрана
                     </legend>
                     <select>
                         <option>От 6"</option>
                     </select>
-                    <label for="dio"></label>
+                    <!-- <label for="dio"></label> -->
                 </fieldset>
                 <fieldset>
-                    <legend>
+                    <legend class="main-cat__filter-name">
                         Бренд
                     </legend>
-                    <ul>
-                        <li>
+                    <ul class="main-cat__filter-brand">
+                        <li class="main-cat__filter-item">
                             <input type="checkbox" id="APPLE" name="brand" value="APPLE">
                             <label for="APPLE">APPLE</label>
                         </li>
-                        <li>
+                        <li class="main-cat__filter-item">
                             <input type="checkbox" id="BLACKVIEW" name="brand" value="BLACKVIEW">
                             <label for="BLACKVIEW">BLACKVIEW</label>
                         </li>
-                        <li>
+                        <li class="main-cat__filter-item">
                             <input type="checkbox" id="CLEVERCEL" name="brand" value="CLEVERCEL">
                             <label for="CLEVERCEL">CLEVERCEL</label>
                         </li>
-                        <li>
+                        <li class="main-cat__filter-item">
                             <input type="checkbox" id="NOKIA" name="brand" value="NOKIA">
                             <label for="NOKIA">NOKIA</label>
                         </li>
-                        <li>
+                        <li class="main-cat__filter-item">
                             <input type="checkbox" id="XIAOMI" name="brand" value="XIAOMI">
                             <label for="XIAOMI">XIAOMI</label>
                         </li>
-                        <li>
+                        <li class="main-cat__filter-item">
                             <input type="checkbox" id="ZTE" name="brand" value="ZTE">
                             <label for="ZTE">ZTE</label>
                         </li>
                     </ul>
                 </fieldset>
                 <fieldset>
-                    <legend>Количество SIM-карт</legend>
+                    <legend class="main-cat__filter-name">Количество SIM-карт</legend>
                     <input type="radio" id="1" name="SIM" value="1">
-                    <label for="1">1</label><br>
+                    <label for="1">1SIM</label><br>
                     <input type="radio" id="2" name="SIM" value="2">
-                    <label for="2">2</label><br>
+                    <label for="2">2SIM</label><br>
                 </fieldset>
             </form>
         </aside>
     </main>
-</body>
 <footer class="footer">
     <section class="footer-main">
         <nav class="footer-main__nav footer-nav">
@@ -255,5 +254,5 @@
         </p>
     </section>
 </footer>
-
+</body>
 </html>
