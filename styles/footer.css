@@ -13,8 +13,8 @@
 }
 
 .footer__upp-part__title {
-    width: 370px;
-    height: 52px;
+    min-width: 370px;
+    min-height: 52px;
 }
 
 .footer__upp-part__form {
@@ -24,8 +24,8 @@
 }
 
 .footer__upp-part__email-form {
-    height: 48px;
-    width: 440px;
+    min-height: 48px;
+    min-width: 440px;
     border: 1px solid #DEDEE2;
     border-radius: 8px;
 }
@@ -51,12 +51,18 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
+
+    min-width: 270px;
 }
 
 .footer__links-list {
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+.footer__links-list__second {
+    min-width: 135px;
 }
 
 .footer__social-networks-list {
