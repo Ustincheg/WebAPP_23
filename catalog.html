@@ -18,45 +18,46 @@
     <!--Блок заголовка страницы-->
     <header class="header">
         <!--Первый блок заголовка-->
-        <section class="header__first">
-            <ul class="header__topnav-list topnav-list">
-                <li class="topnav-list__item">
-                    <a class="topnav-list__link" href="#">
-                        Магазины
-                    </a>
-                </li>
-                <li class="topnav-list__item">
-                    <a class="topnav-list__link" href="#">
-                        Доставка и оплата
-                    </a>
-                </li>
-                <li class="topnav-list__item">
-                    <a class="topnav-list__link" href="#">
-                        Кредиты и рассрочка
-                    </a>
-                </li>
-            </ul>
-            <a class="header__tel" href="tel:+74954448885">8 (495) 444-888-5</a>
-            <div class="header__first__background"></div>
-        </section>
+        <div class="header__first">
+            <div class="container header__flex">
+                <ul class="header__topnav-list topnav-list">
+                    <li class="topnav-list__item">
+                        <a class="topnav-list__link" href="#">
+                            Магазины
+                        </a>
+                    </li>
+                    <li class="topnav-list__item">
+                        <a class="topnav-list__link" href="#">
+                            Доставка и оплата
+                        </a>
+                    </li>
+                    <li class="topnav-list__item">
+                        <a class="topnav-list__link" href="#">
+                            Кредиты и рассрочка
+                        </a>
+                    </li>
+                </ul>
+                <a class="header__tel" href="tel:+74954448885">8 (495) 444-888-5</a>
+            </div>
+        </div>
 
         <!-- Второй блок заголовка -->
         <a class="header__logo logo" href="#">
-            <img class="logo__image" src="static\images\Header\Logo-header.png" style="height: 46" alt="Логотип">
+            <img class="logo__image" src="static/images/Header/Logo-header.png" style="height: 46px" alt="Логотип">
         </a>
         <input type="text" name="Search" class="header__search" placeholder="Поиск">
         <ul class="header__list-link list-link">
 
             <li class="list-link__item">
                 <a class="list-link__link" href="#">
-                    <img class="list-link__img" src="static\images\Header\heart.png" alt="">
+                    <img class="list-link__img" src="static/images/Header/heart.png" alt="">
                     Избранное
                 </a>
             </li>
 
             <li class="list-link__item">
                 <a class="list-link__link" href="#">
-                    <img class="list-link__img" src="static\images\Header\shopping-cart.png" alt="">
+                    <img class="list-link__img" src="static/images/Header/shopping-cart.png" alt="">
                     Корзина
                 </a>
             </li>
@@ -64,7 +65,7 @@
 
         <!-- Третий блок заголовка -->
         <button class="header__button button">
-            <img class="button__img" src="static\images\Menu icon.png" alt="">
+            <img class="button__img" src="static/images/Menu-icon.png" alt="">
             Каталог
         </button>
         <nav class="header__main-nav main-nav">
@@ -136,7 +137,7 @@
         </ul>
 
         <aside class="main__filter">
-            <form class="main__form" action="">
+            <form class="main__form" action="get">
                 <fieldset class="fieldset__first">
                     <legend class="fieldset-legend">Цена, ₽</legend>
                     <input class="lower-price" type="text" id="lower-price" value="0" />
@@ -201,110 +202,110 @@
 
         <ul class="catalog__list list">
             <li class="list__item item">
-                <img class="item__new-image" src="static\images\Hits\new.png" alt="new">
+                <img class="item__new-image" src="static/images/Hits/new.png" alt="new">
                 <button class="item__button-fav button-fav">
-                    <img class="button-fav__fav" src="static\images\Hits\addfav.png" alt="favourite">
+                    <img class="button-fav__fav" src="static/images/Hits/addfav.png" alt="favourite">
                 </button>
                 <p class="item__old-price">Старая цена</p>
                 <p class="item__actual-price">Актуальная цена</p>
                 <a class="item__product product" href="#">
-                    <img class="product__image" src="static\images\Hits\Image1.png" alt="Фото товара">
+                    <img class="product__image" src="static/images/Hits/Image1.png" alt="Фото товара">
                 </a>
             </li>
 
             <li class="list__item item">
-                <img class="item__new-image" src="static\images\Hits\new.png" alt="new">
+                <img class="item__new-image" src="static/images/Hits/new.png" alt="new">
                 <button class="item__button-fav button-fav">
-                    <img class="button-fav__fav" src="static\images\Hits\addfav.png" alt="favourite">
+                    <img class="button-fav__fav" src="static/images/Hits/addfav.png" alt="favourite">
                 </button>
                 <p class="item__old-price">Старая цена</p>
                 <p class="item__actual-price">Актуальная цена</p>
                 <a class="item__product product" href="#">
-                    <img class="product__image" src="static\images\Hits\Image1.png" alt="Фото товара">
+                    <img class="product__image" src="static/images/Hits/Image1.png" alt="Фото товара">
                 </a>
             </li>
 
             <li class="list__item item">
-                <img class="item__new-image" src="static\images\Hits\new.png" alt="new">
+                <img class="item__new-image" src="static/images/Hits/new.png" alt="new">
                 <button class="item__button-fav button-fav">
-                    <img class="button-fav__fav" src="static\images\Hits\addfav.png" alt="favourite">
+                    <img class="button-fav__fav" src="static/images/Hits/addfav.png" alt="favourite">
                 </button>
                 <p class="item__old-price">Старая цена</p>
                 <p class="item__actual-price">Актуальная цена</p>
                 <a class="item__product product" href="#">
-                    <img class="product__image" src="static\images\Hits\Image1.png" alt="Фото товара">
+                    <img class="product__image" src="static/images/Hits/Image1.png" alt="Фото товара">
                 </a>
             </li>
 
             <li class="list__item item">
-                <img class="item__new-image" src="static\images\Hits\new.png" alt="new">
+                <img class="item__new-image" src="static/images/Hits/new.png" alt="new">
                 <button class="item__button-fav button-fav">
-                    <img class="button-fav__fav" src="static\images\Hits\addfav.png" alt="favourite">
+                    <img class="button-fav__fav" src="static/images/Hits/addfav.png" alt="favourite">
                 </button>
                 <p class="item__old-price">Старая цена</p>
                 <p class="item__actual-price">Актуальная цена</p>
                 <a class="item__product product" href="#">
-                    <img class="product__image" src="static\images\Hits\Image1.png" alt="Фото товара">
+                    <img class="product__image" src="static/images/Hits/Image1.png" alt="Фото товара">
                 </a>
             </li>
 
             <li class="list__item item">
-                <img class="item__new-image" src="static\images\Hits\new.png" alt="new">
+                <img class="item__new-image" src="static/images/Hits/new.png" alt="new">
                 <button class="item__button-fav button-fav">
-                    <img class="button-fav__fav" src="static\images\Hits\addfav.png" alt="favourite">
+                    <img class="button-fav__fav" src="static/images/Hits/addfav.png" alt="favourite">
                 </button>
                 <p class="item__old-price">Старая цена</p>
                 <p class="item__actual-price">Актуальная цена</p>
                 <a class="item__product product" href="#">
-                    <img class="product__image" src="static\images\Hits\Image1.png" alt="Фото товара">
+                    <img class="product__image" src="static/images/Hits/Image1.png" alt="Фото товара">
                 </a>
             </li>
 
             <li class="list__item item">
-                <img class="item__new-image" src="static\images\Hits\new.png" alt="new">
+                <img class="item__new-image" src="static/images/Hits/new.png" alt="new">
                 <button class="item__button-fav button-fav">
-                    <img class="button-fav__fav" src="static\images\Hits\addfav.png" alt="favourite">
+                    <img class="button-fav__fav" src="static/images/Hits/addfav.png" alt="favourite">
                 </button>
                 <p class="item__old-price">Старая цена</p>
                 <p class="item__actual-price">Актуальная цена</p>
                 <a class="item__product product" href="#">
-                    <img class="product__image" src="static\images\Hits\Image1.png" alt="Фото товара">
+                    <img class="product__image" src="static/images/Hits/Image1.png" alt="Фото товара">
                 </a>
             </li>
 
             <li class="list__item item">
-                <img class="item__new-image" src="static\images\Hits\new.png" alt="new">
+                <img class="item__new-image" src="static/images/Hits/new.png" alt="new">
                 <button class="item__button-fav button-fav">
-                    <img class="button-fav__fav" src="static\images\Hits\addfav.png" alt="favourite">
+                    <img class="button-fav__fav" src="static/images/Hits/addfav.png" alt="favourite">
                 </button>
                 <p class="item__old-price">Старая цена</p>
                 <p class="item__actual-price">Актуальная цена</p>
                 <a class="item__product product" href="#">
-                    <img class="product__image" src="static\images\Hits\Image1.png" alt="Фото товара">
+                    <img class="product__image" src="static/images/Hits/Image1.png" alt="Фото товара">
                 </a>
             </li>
 
             <li class="list__item item">
-                <img class="item__new-image" src="static\images\Hits\new.png" alt="new">
+                <img class="item__new-image" src="static/images/Hits/new.png" alt="new">
                 <button class="item__button-fav button-fav">
-                    <img class="button-fav__fav" src="static\images\Hits\addfav.png" alt="favourite">
+                    <img class="button-fav__fav" src="static/images/Hits/addfav.png" alt="favourite">
                 </button>
                 <p class="item__old-price">Старая цена</p>
                 <p class="item__actual-price">Актуальная цена</p>
                 <a class="item__product product" href="#">
-                    <img class="product__image" src="static\images\Hits\Image1.png" alt="Фото товара">
+                    <img class="product__image" src="static/images/Hits/Image1.png" alt="Фото товара">
                 </a>
             </li>
 
             <li class="list__item item">
-                <img class="item__new-image" src="static\images\Hits\new.png" alt="new">
+                <img class="item__new-image" src="static/images/Hits/new.png" alt="new">
                 <button class="item__button-fav button-fav">
-                    <img class="button-fav__fav" src="static\images\Hits\addfav.png" alt="favourite">
+                    <img class="button-fav__fav" src="static/images/Hits/addfav.png" alt="favourite">
                 </button>
                 <p class="item__old-price">Старая цена</p>
                 <p class="item__actual-price">Актуальная цена</p>
                 <a class="item__product product" href="#">
-                    <img class="product__image" src="static\images\Hits\Image1.png" alt="Фото товара">
+                    <img class="product__image" src="static/images/Hits/Image1.png" alt="Фото товара">
                 </a>
             </li>
         </ul>
@@ -338,7 +339,8 @@
     <!-- Футер -->
     <footer class="footer">
         <section class="footer__info">
-            <img class="footer__logo" src="static\images\Footer\Logo-footer.png" alt="Elecro Place">
+            <h2 class="visually-hidden">Информация</h2>
+            <img class="footer__logo" src="static/images/Footer/Logo-footer.png" alt="Elecro Place">
             <p class="footer__adress-text">7-я Кожуховская ул., 9, Москва (этаж 1)</p>
             <ul class="footer_list-first list-first">
                 <li class="list-first__item item">
@@ -383,36 +385,37 @@
             <ul class="footer__icon-container icon-container">
                 <li class="icon-container__element element">
                     <a class="element__link" href="#">
-                        <img class="element__img" src="static\images\Footer\Facebook-ico.png" alt="Facebook">
+                        <img class="element__img" src="static/images/Footer/Facebook-ico.png" alt="Facebook">
                     </a>
                 </li>
 
                 <li class="icon-container__element element">
                     <a class="element__link" href="#">
-                        <img class="element__img" src="static\images\Footer\Instagram-ico.png" alt="Instagram">
+                        <img class="element__img" src="static/images/Footer/Instagram-ico.png" alt="Instagram">
                     </a>
                 </li>
 
                 <li class="icon-container__element element">
                     <a class="element__link" href="#">
-                        <img class="element__img" src="static\images\Footer\VK-ico.png" alt="VK">
+                        <img class="element__img" src="static/images/Footer/VK-ico.png" alt="VK">
                     </a>
                 </li>
 
                 <li class="icon-container__element element">
                     <a class="element__link" href="#">
-                        <img class="element__img" src="static\images\Footer\Youtube-ico.png" alt="YouTube">
+                        <img class="element__img" src="static/images/Footer/Youtube-ico.png" alt="YouTube">
                     </a>
                 </li>
             </ul>
         </section>
 
         <section class="footer__dev-info dev-info">
+            <h2 class="visually-hidden">Разработка</h2>
             <p class="dev-info__1text">© Electro place, 2003–2021</p>
             <p class="dev-info__2text">Политика обработки персональных данных</p>
             <p class="dev-info__developer">
                 Разработка сайта:
-                <img class="dev-info__img" src="static\images\Footer\garpix-logo.png" alt="Garpix">
+                <img class="dev-info__img" src="static/images/Footer/garpix-logo.png" alt="Garpix">
             </p>
         </section>
     </footer>
