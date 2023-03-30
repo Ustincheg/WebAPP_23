@@ -57,14 +57,14 @@
 
                 <li class="list-link__item">
                     <a class="list-link__link" href="#">
-                        <img class="list-link__img" src="static/images/Header/heart.png" style="height: 18px" alt="">
+                        <img class="list-link__img" src="static/images/Header/heart.png" alt="">
                         Избранное (0)
                     </a>
                 </li>
 
                 <li class="list-link__item">
                     <a class="list-link__link" href="#">
-                        <img class="list-link__img" src="static/images/Header/shopping-cart.png" style="height: 18px" alt="">
+                        <img class="list-link__img" src="static/images/Header/shopping-cart.png" alt="">
                         Корзина (0)
                     </a>
                 </li>
@@ -95,7 +95,7 @@
                         <a class="list__link" href="">Стиральные машины</a>
                     </li>
                     <li class="list__item">
-                        <a class="list__link" href="">Холодильник</a>
+                        <a class="list__link" href="">Холодильники</a>
                     </li>
                     <li class="list__item">
                         <a class="list__link" href="">Пылесосы</a>
@@ -114,20 +114,20 @@
 
         <!-- Основной баннер -->
         <section class="main-banner">
-            <div class="container">
+            <div class="container main-ban-cont">
 
                 <h2 class="visually-hidden">Главный баннер</h2>
 
-
                 <ul class="main-banner__list list">
-                    <li class="list__item item">
+
+                    <li class="list__big big-banner">
                         <!-- Элемент со слайдером -->
-                        <a class="item__link-img" href="#">
-                            <p class="item__header">Микроволновая печь HUNDAI</p>
-                            <p class="item__text">Готовьте вкусно и быстро</p>
-                            <button class="item__left-button">Left</button>
-                            <button class="item__right-button">Right</button>
-                            <ul class="item__selected selected">
+                        <a class="big-banner__link-img" href="#">
+                            <p class="big-banner__header">Микроволновая печь HUNDAI</p>
+                            <p class="big-banner__text">Готовьте вкусно и быстро</p>
+                            <button class="big-banner__left-button">Left</button>
+                            <button class="big-banner__right-button">Right</button>
+                            <ul class="big-banner__selected selected">
                                 <li class="selecter__circle">
                                     <div class="circle"></div>
                                 </li>
@@ -148,76 +148,107 @@
                                     <div class="circle"></div>
                                 </li>
                             </ul>
-                            <img class="item__imagemain" src="static/images/Main-banner/Image-1.png"
+                            <img class="big-banner__imagemain" src="static/images/Main-banner/Image-1.png"
                                 alt="Микроволновая печь HUNDAI">
                         </a>
                     </li>
 
-                    <li class="list__item item">
-                        <p class="item__text-second">Новая линейка телевизоров samsung</p>
-                        <img class="item__img" src="static/images/Main-banner/Image-2.png" alt="">
-                        <a class="item__link" href="#">Смотреть каталог</a>
-                        <div class="item__background"></div>
+                    <li class="list__small small-banner">
+                        <p class="small-banner__text-second">Новая линейка телевизоров samsung</p>
+                        <img class="small-banner__img" src="static/images/Main-banner/Image-2.png" alt="">
+                        <a class="small-banner__link" href="#">Смотреть каталог</a>
                     </li>
                 </ul>
+
             </div>
         </section>
 
         <!-- Хиты продаж -->
         <section class="top-selling">
-            <div class="container">
+            <div class="container top-selling-cont">
 
                 <h2 class="visually-hidden">Хиты продаж</h2>
-                <p class="top-selling__header">Хиты продаж</p>
-                <a class="top-selling__view-button view-button" href="#">Смотреть все</a>
+                <div class="head-and-button">
+                    <p class="top-selling__header">Хиты продаж</p>
+                    <a class="top-selling__view-button view-button" href="#">Смотреть все</a>
+                </div>
 
                 <ul class="top-selling__list list">
                     <li class="list__item item">
-                        <img class="item__new-image" src="static/images/Hits/new.png" alt="new">
-                        <button class="item__button-fav button-fav">
-                            <img class="button-fav__fav" src="static/images/Hits/addfav.png" alt="favourite">
-                        </button>
-                        <p class="item__old-price">Старая цена</p>
-                        <p class="item__actual-price">Актуальная цена</p>
-                        <a class="item__product product" href="#">
-                            <img class="product__image" src="static/images/Hits/Image1.png" alt="Фото товара">
-                        </a>
+                        <div class="some-little-buttons-top">
+                            <img class="item__new-image" src="static/images/Hits/new.png" alt="new">
+                            <button class="item__button-fav button-fav">
+                                <img class="button-fav__fav" src="static/images/Hits/addfav.png" alt="favourite">
+                            </button>
+                        </div>
+                        <div class="top-selling__item-container">
+                            <a class="item__product product" href="#">
+                                <div class="product__image-container">
+                                    <img class="product__image" src="static/images/Hits/Image1.png" alt="Фото товара">
+                                </div>
+                                <p class="item__name">Мультиварка Redmond</p>
+                                <p class="item__old-price">6 990 ₽</p>
+                                <p class="item__actual-price">5 533 ₽</p>
+                            </a>
+                        </div>
                     </li>
 
                     <li class="list__item item">
-                        <img class="item__new-image" src="static/images/Hits/new.png" alt="new">
-                        <button class="item__button-fav button-fav">
-                            <img class="button-fav__fav" src="static/images/Hits/addfav.png" alt="favourite">
-                        </button>
-                        <p class="item__old-price">Старая цена</p>
-                        <p class="item__actual-price">Актуальная цена</p>
-                        <a class="item__product product" href="#">
-                            <img class="product__image" src="static/images/Hits/Image2.png" alt="Фото товара">
-                        </a>
+                        <div class="some-little-buttons-top">
+                            <img class="item__new-image" src="static/images/Hits/new.png" alt="new">
+                            <button class="item__button-fav button-fav">
+                                <img class="button-fav__fav" src="static/images/Hits/addfav.png" alt="favourite">
+                            </button>
+                        </div>
+                        <div class="top-selling__item-container">
+                            <a class="item__product product" href="#">
+                                <div class="product__image-container">
+                                    <img class="product__image" src="static/images/Hits/Image2.png" alt="Фото товара">
+                                </div>
+                                <p class="item__name">Смартфон Huawei Mate 40 Pro Mystic Silver</p>
+                                <p class="item__old-price">6 990 ₽</p>
+                                <p class="item__actual-price">5 533 ₽</p>
+                            </a>
+                        </div>
                     </li>
 
                     <li class="list__item item">
-                        <img class="item__new-image" src="static/images/Hits/new.png" alt="new">
-                        <button class="item__button-fav button-fav">
-                            <img class="button-fav__fav" src="static/images/Hits/addfav.png" alt="favourite">
-                        </button>
-                        <p class="item__old-price">Старая цена</p>
-                        <p class="item__actual-price">Актуальная цена</p>
-                        <a class="item__product product" href="#">
-                            <img class="product__image" src="static/images/Hits/Image3.png" alt="Фото товара">
-                        </a>
+                        <div class="some-little-buttons-top">
+                            <img class="item__new-image" src="static/images/Hits/new.png" alt="new">
+                            <button class="item__button-fav button-fav">
+                                <img class="button-fav__fav" src="static/images/Hits/addfav.png" alt="favourite">
+                            </button>
+                        </div>
+                        <div class="top-selling__item-container">
+                            <a class="item__product product" href="#">
+                                <div class="product__image-container">
+                                    <img class="product__image" src="static/images/Hits/Image3.png" alt="Фото товара">
+                                </div>
+                                <p class="item__name">Электрочайник Moulinex</p>
+                                <p class="item__old-price">6 990 ₽</p>
+                                <p class="item__actual-price">5 533 ₽</p>
+                            </a>
+                        </div>
                     </li>
 
                     <li class="list__item item">
-                        <img class="item__new-image" src="static/images/Hits/new.png" alt="new">
-                        <button class="item__button-fav button-fav">
-                            <img class="button-fav__fav" src="static/images/Hits/addfav.png" alt="favourite">
-                        </button>
-                        <p class="item__old-price">Старая цена</p>
-                        <p class="item__actual-price">Актуальная цена</p>
-                        <a class="item__product product" href="#">
-                            <img class="product__image" src="static/images/Hits/Image4.png" alt="Фото товара">
-                        </a>
+                        <div class="some-little-buttons-top">
+                            <img class="item__new-image" src="static/images/Hits/new.png" alt="new">
+                            <button class="item__button-fav button-fav">
+                                <img class="button-fav__fav" src="static/images/Hits/addfav.png" alt="favourite">
+                            </button>
+                        </div>
+                        <div class="top-selling__item-container">
+                            <a class="item__product product" href="#">
+                                <div class="product__image-container">
+                                    <img class="product__image" src="static/images/Hits/Image4.png" alt="Фото товара">
+                                
+                                </div>
+                                <p class="item__name">Пылесос с контейнером для пыли Tefal City Space</p>
+                                <p class="item__old-price">6 990 ₽</p>
+                                <p class="item__actual-price">5 533 ₽</p>
+                            </a>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -228,8 +259,10 @@
             <div class="container">
 
                 <h2 class="visually-hidden">Популярные бренды</h2>
-                <p class="popular-brands__header">Популярные бренды</p>
-                <a class="popular-brands__view-button view-button" href="#">Смотреть все</a>
+                <div class="head-and-button">
+                    <p class="popular-brands__header">Популярные бренды</p>
+                    <a class="popular-brands__view-button view-button" href="#">Смотреть все</a>
+                </div>
 
                 <ul class="popular-brands__list list">
                     <li class="list__item item">

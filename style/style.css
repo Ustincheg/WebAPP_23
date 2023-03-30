@@ -94,7 +94,12 @@ ul {
 .list-link__link {
     display: flex;
     align-items: center;
-    gap: 11px;
+    gap: 10px;
+
+}
+
+.header__search {
+    display: flex;
 
 }
 
@@ -106,7 +111,7 @@ ul {
 
 /* Третий блок заголовка */
 
-.third-head{
+.third-head {
     align-items: center;
     display: flex;
     justify-content: space-between;
@@ -127,10 +132,9 @@ ul {
     font-weight: 600;
     text-decoration: none;
     color: #ffffff;
-
 }
 
-.main-nav__list{
+.main-nav__list {
     margin: 0;
     display: flex;
     list-style-type: none;
@@ -138,9 +142,194 @@ ul {
     background: #F1F5F7;
     border-radius: 8px;
     padding: 13px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
     text-transform: uppercase;
+}
+
+
+/* Основной баннер */
+
+.main-ban-cont {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0px;
+    padding-top: 50px;
+}
+
+.main-banner__list {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0px;
+    gap: 30px;
+}
+
+.big-banner {
+    display: flex;
+    justify-content: center;
+}
+
+.big-banner__header {
+    position: absolute;
+}
+
+.big-banner__text {
+    position: absolute;
+}
+
+.big-banner__imagemain {}
+
+
+.list__small {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #363636;
+    border-radius: 8px;
+    padding: 30px 30px 30px 30px;
+}
+
+.small-banner__text-second {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    margin: 0;
+    color: #ffffff;
+}
+
+.small-banner__img {
+    height: auto;
+}
+
+.small-banner__link {
+    display: flex;
+    justify-content: center;
+    color: #000000;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 15px 41px 15px 41px;
+    background: #FFFFFF;
+    border-radius: 8px;
+}
+
+
+/* Top selling */
+.top-selling-cont {
+    margin-top: 70px;
+}
+
+.head-and-button {
+    display: flex;
+    justify-content: space-between;
+}
+
+.head-and-button p {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    margin: 0;
+}
+
+.head-and-button a {
+    display: flex;
+    align-items: center;
+    border: 1px solid #005AAB;
+    border-radius: 8px;
+    padding: 13px 25px 13px 25px;
+    text-decoration: none;
+    color: #005AAB;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.top-selling__list.list {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin-top: 30px;
+    padding-left: 0px;
+    gap: 30px;
+}
+
+.top-selling__list.list .list__item.item {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #DEDEE2;
+    border-radius: 8px;
+}
+
+.some-little-buttons-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.some-little-buttons-top button {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    padding: 8px 22px 0px 0px;
+}
+
+.top-selling__item-container {
+    padding: 20px 30px 20px 30px;
+}
+
+.item__product {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    line-height: 22px;
+    text-align: left;
+    width: 210px;
+
+}
+
+.product__image-container {
+    width: 200px;
+    height: 200px;
+}
+
+.item__product img {
+    display: flex;
+    width: auto;
+    height: 200px;
+    padding-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.item__name {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 36px;
+}
+
+.item__old-price {
+    display: flex;
+    align-items: bottom;
+    color: #7D868F;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration-line: line-through;
+    margin: 0px;
+}
+
+.item__actual-price {
+    display: flex;
+    align-items: end;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    margin: 0px;
+    font-size: 22px;
 }
 
 .visually-hidden {
