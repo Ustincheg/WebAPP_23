@@ -1,6 +1,7 @@
 * {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
+    font-size: 14px;
 }
 
 body {
@@ -81,8 +82,6 @@ ul {
     align-items: center;
     display: flex;
     justify-content: space-between;
-    font-family: 'Open Sans';
-    font-size: 14px;
     margin-top: 29px;
 }
 
@@ -92,7 +91,7 @@ ul {
     color: #000000;
 }
 
-.list-link__link{
+.list-link__link {
     display: flex;
     align-items: center;
     gap: 11px;
@@ -103,6 +102,45 @@ ul {
     display: flex;
     list-style-type: none;
     gap: 0 30px;
+}
+
+/* Третий блок заголовка */
+
+.third-head{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.header__button {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: #005AAB;
+    border: none;
+    border-radius: 8px;
+    padding: 11px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    color: #ffffff;
+
+}
+
+.main-nav__list{
+    margin: 0;
+    display: flex;
+    list-style-type: none;
+    gap: 25px;
+    background: #F1F5F7;
+    border-radius: 8px;
+    padding: 13px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-transform: uppercase;
 }
 
 .visually-hidden {
