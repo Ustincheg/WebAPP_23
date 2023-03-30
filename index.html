@@ -21,6 +21,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <title>Document</title>
 </head>
 
@@ -123,40 +127,88 @@
             Интернет магазин бытовой электроники
         </h1>
         <div class="container">
-        <section class="main-banner">
-            <h2 class="visually-hidden">
-                Главный баннер
-            </h2>
-            <p class="main-banner__text">
-            </p>
-            <a><img class="main-banner__image" src="img/Main-banner/Image-1.png" alt="" width="870"></a>
-            <a><img class="main-banner__image" src="img/Main-banner/Image-2.png" alt="" width="196"></a>
-        </section>
+            <section class="main-banner">
+                <h2 class="visually-hidden">
+                    Главный баннер
+                </h2>
+                <p class="main-banner__text">
+                </p>
+                <a><img class="main-banner__image" src="img/Main-banner/Image-1.png" alt="" width="870"></a>
+                <a><img class="main-banner__image" src="img/Main-banner/Image-2.png" alt="" width="196"></a>
+            </section>
         </div>
         <div class="container">
-        <section class="hits-banner">
-            <h2 class="visually-hidden">
-                Хиты продаж
-            </h2>
-            <p class="hits-banner__text">
-                Хиты продаж
-            </p>
-            <ul class="hits-banner__list">
-                <li class="hits-banner__item">
-                    <img class="like-ikon" src="img/Header/heart.png" alt="" width="20">
-                    <a><img class="hits-banner__image" src="img/Hits/Image1.png" alt="" width="200"></a>
-                </li>
-                <li class="hits-banner__item">
-                    <a><img class="hits-banner__image" src="img/Hits/Image2.png" alt="" width="200"></a>
-                </li>
-                <li class="hits-banner__item">
-                    <a><img class="hits-banner__image" src="img/Hits/Image3.png" alt="" width="200"></a>
-                </li>
-                <li class="hits-banner__item">
-                    <a><img class="hits-banner__image" src="img/Hits/Image4.png" alt="" width="200"></a>
-                </li>
-            </ul>
-        </section>
+            <section class="hits-banner">
+                <h2 class="visually-hidden">
+                    Хиты продаж
+                </h2>
+                <div class="hits-banner__nav">
+                    <p class="hits-banner__text">
+                        Хиты продаж
+                    </p>
+                    <a class="hits-banner__link link" href="#">
+                        Смотреть всё
+                    </a>
+                </div>
+                <ul class="hits-banner__list">
+                    <li class="hits-banner__item product-card">
+                        <div class="product-card__banefits">
+                            <img class="product-card__new-img" src="img/Hits/new.png" alt="">
+                            <button class="product-card__like-button"><img class="" src="img/Header/heart.png" alt=""></button>
+                        </div>
+                        <div class="product-card__main-information">
+                            <a><img class="product-card__image" src="img/Hits/Image1.png" alt="" width="200"></a>
+                            <p class="productcard-text-name">Мультиварка Redmond</p>
+                        </div>
+                        <div class="product-card__price-information">
+                            <p class="product-card__old-price">6 990 ₽</p>
+                            <p class="product-card__current-price">5 533 ₽</p>
+                        </div>
+                    </li>
+                    <li class="hits-banner__item product-card">
+                        <div class="product-card__banefits">
+                            <img class="product-card__new-img" src="img/Hits/new.png" alt="">
+                            <button class="product-card__like-button"><img class="" src="img/Header/heart.png" alt=""></button>
+                        </div>
+                        <div class="product-card__main-information">
+                            <a><img class="product-card__image" src="img/Hits/Image2.png" alt="" width="200"></a>
+                            <p class="productcard-text-name">Смартфон Huawei Mate 40 Pro Mystic Silver</p>
+                        </div>
+                        <div class="product-card__price-information">
+                            <p class="product-card__old-price"></p>
+                            <p class="product-card__current-price">36 990 ₽</p>
+                        </div>
+                    </li>
+                    <li class="hits-banner__item product-card">
+                        <div class="product-card__banefits">
+                            <img class="product-card__new-img" src="img/Hits/new.png" alt="">
+                            <button class="product-card__like-button"><img class="" src="img/Header/heart.png" alt=""></button>
+                        </div>
+                        <div class="product-card__main-information">
+                            <a><img class="product-card__image" src="img/Hits/Image3.png" alt="" width="200"></a>
+                            <p class="productcard-text-name">Электрочайник Moulinex</p>
+                        </div>
+                        <div class="product-card__price-information">
+                            <p class="product-card__old-price">3 990 ₽</p>
+                            <p class="product-card__current-price">1 990 ₽</p>
+                        </div>
+                    </li>
+                    <li class="hits-banner__item product-card">
+                        <div class="product-card__banefits">
+                            <img class="product-card__new-img" src="img/Hits/new.png" alt="">
+                            <button class="product-card__like-button"><img class="" src="img/Header/heart.png" alt=""></button>
+                        </div>
+                        <div class="product-card__main-information">
+                            <a><img class="product-card__image" src="img/Hits/Image4.png" alt="" width="200"></a>
+                            <p class="productcard-text-name">Пылесос с контейнером для пыли Tefal City Space</p>
+                        </div>
+                        <div class="product-card__price-information">
+                            <p class="product-card__old-price">16 990 ₽</p>
+                            <p class="product-card__current-price">13 990 ₽</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
         </div>
         <section class="brands-banner">
             <h2 class="visually-hidden">
