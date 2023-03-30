@@ -1,5 +1,5 @@
 * {
-    color: rgb(38, 0, 255);
+    color: rgb(0, 0, 0);
     /* background-color: #FFFFFF; */
 }
 
@@ -34,6 +34,19 @@ body {
     margin: auto;
     width: auto;
     background: #363636;
+}
+
+.list-link__item-link {
+    text-decoration: none;
+    font-family: 'opensans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .topnav-list__navigation {
@@ -78,7 +91,7 @@ body {
     border: none;
     border-radius: 8px;
     background-color: #005AAB;
-    padding: 11px;
+    padding: 9px;
     padding-left: 15px;
     padding-right: 15px;
     gap: 6px;
@@ -87,6 +100,8 @@ body {
     font-weight: 600;
     font-size: 14px;
     line-height: 19px;
+    display: flex;
+    justify-content: center;
 }
 
 .main-nav__list {
@@ -98,10 +113,13 @@ body {
     align-items: center;
     justify-content: space-between;
     padding-left: 0;
+    gap: 25px;
+    padding: 13px 25px 13px 25px;
+    margin: 0px;
 }
 
 .main-nav__list-item {
-    margin: 13px 25px 13px 25px;
+    text-transform: uppercase;
 }
 
 .list-item__link {
@@ -142,30 +160,26 @@ body {
 .header__search {
     width: 620px;
     height: 48px;
+    border-radius: 8px;
+    border-color: #DEDEE2;
 }
 
 .hits-banner__list {
+    margin: 0px;
     padding-left: 0px;
     align-items: center;
     display: flex;
     justify-content: start;
     list-style: none;
     gap: 30px;
+    margin-top: 26px;
 }
 
 .product-card__image {
     padding-left: 35px;
-    max-width: 200px;
     max-height: 200px;
-}
-
-
-.hits-banner__text {
-    font-family: 'Roboto';
-    font-weight: 700;
-    font-size: 32px;
-    color: #000000;
-    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .productcard-text-name {
@@ -180,7 +194,7 @@ body {
 
 .product-card__like-button {
     background: rgba(255, 255, 255, 0);
-    border: none; 
+    border: none;
     outline: none;
     padding-top: 11px;
     padding-right: 11px;
@@ -229,7 +243,7 @@ body {
     padding-bottom: 30px;
 }
 
-.link{
+.link {
     border: 1px solid #005AAB;
     border-radius: 8px;
     font-family: 'opensans', sans-serif;
@@ -244,18 +258,398 @@ body {
     padding-right: 25px;
 }
 
-.hits-banner__nav{
+.hits-banner__nav {
     padding-top: 70px;
     display: flex;
     justify-content: space-between;
 }
 
-.product-card__banefits{
+.product-card__banefits {
     display: flex;
     justify-content: space-between;
 }
 
-.product-card__new-img{
+.product-card__new-img {
     padding-top: 15px;
     max-height: 30px;
+}
+
+.main-banner__main-container {
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.main-banner__main-container__second-container {
+    width: 270px;
+    height: 360px;
+    background: #363636;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.main-banner__main-container__second-container__text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: #FFFFFF;
+    padding: 30px;
+    padding-bottom: 0px;
+    margin: 0px;
+}
+
+.main-banner__main-container__second-container__img {
+    padding: 13px 37px 13px 37px;
+}
+
+.main-banner__main-container__second-container__link {
+    width: 210px;
+    background: #FFFFFF;
+    font-family: 'opensans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    border-radius: 8px;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: 30px;
+}
+
+.main-banner__main-container__first-container__first-text {
+    position: absolute;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 41px;
+    color: #FFFFFF;
+    margin: 30px 0px 0px 30px;
+}
+
+.main-banner__main-container__first-container__second-text {
+    position: absolute;
+    font-family: 'opensans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+    margin: 81px 0px 0px 30px;
+}
+
+.main-banner__main-container__first-container__1button {
+    position: absolute;
+    background: #FFFFFF;
+    width: 46px;
+    height: 46px;
+    border-radius: 23px;
+    border-color: #005AAB;
+    margin: 157px 0px 0px 20px;
+}
+
+.main-banner__main-container__first-container__2button {
+    position: absolute;
+    background: #FFFFFF;
+    width: 46px;
+    height: 46px;
+    border-radius: 23px;
+    border-color: #005AAB;
+    margin: 157px 0px 0px 804px;
+}
+
+.brands__banner-list {
+    margin: 0;
+    padding: 0;
+    row-gap: 19px;
+    column-gap: 30px;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 272px 272px 272px 272px;
+    grid-template-rows: 50% 50%;
+    margin-top: 26px;
+}
+
+.brands__banner-list__brand-card {
+    width: 270px;
+    height: 150px;
+    border-radius: 8px;
+    border: 1px solid #DEDEE2;
+    margin-right: 30px;
+}
+
+.brands__banner-list__brand-card__link {
+    padding-top: 32px;
+    display: flex;
+    justify-content: center;
+}
+
+.brands__banner-list__brand-card__img {
+    max-height: 85px;
+}
+
+.banner-text {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 32px;
+    color: #000000;
+    margin: 0px;
+}
+
+.brands-banner__nav {
+    padding-top: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.news-banner__nav {
+    padding-top: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.news-banner__list {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    padding-top: 26px;
+}
+
+.news-list__main-img {
+    border-radius: 8px;
+    max-height: 370px;
+}
+
+.news-list__semi-img {
+    border-radius: 8px;
+    max-height: 170px;
+}
+
+.news-list__side-block {
+    display: flex;
+    flex-direction: column;
+    row-gap: 26px;
+}
+
+.news-list__main-block {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 26px;
+}
+
+.news-list__text {
+    position: absolute;
+    margin: 30px 0px 0px 30px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    width: 300px;
+    color: #FFFFFF;
+}
+
+.news-list__semi-text {
+    position: absolute;
+    margin: 92px 0px 0px 30px;
+    font-family: 'opensans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    width: 300px;
+    color: #FFFFFF;
+}
+
+.news-list__link {
+    position: absolute;
+    margin: 92px 0px 0px 30px;
+    padding: 15px 65px 15px 65px;
+    background-color: #ffffff;
+    font-family: 'opensans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    border-radius: 8px;
+}
+
+.news-list__main-link {
+    position: absolute;
+    margin: 166px 0px 0px 30px;
+    padding: 15px 65px 15px 65px;
+    background-color: #ffffff;
+    font-family: 'opensans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    border-radius: 8px;
+}
+
+.advantage-banner-list {
+    list-style-type: none;
+    padding: 0px;
+    padding-top: 50px;
+    margin: 0px;
+    column-gap: 30px;
+    display: flex;
+}
+
+.advantage__container {
+    margin-top: 80px;
+    background: #F1F5F7;
+}
+
+.advantage-banner {
+    padding-top: 77px;
+}
+
+.advantage-banner-list__item {
+    display: grid;
+    grid-row: 100%;
+    grid-column: 45px 20px 88px;
+}
+
+.advantage-banner-list__ico {
+    max-width: 45px;
+    max-height: 45px;
+}
+
+.advantage-banner-list__item-text {
+    font-family: 'opensans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    max-width: 370px;
+    margin: 0px;
+    padding-top: 20px;
+    padding-right: 30px;
+    margin-bottom: 77px;
+}
+
+.advantage-banner-list__item-text-bold {
+    font-family: 'opensans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0px;
+}
+
+.contacts-container {
+    padding-top: 30px;
+    display: flex;
+}
+
+.advantage-banner-list {
+    margin: 0px;
+    padding: 0px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts-banner-list__item {
+    display: grid;
+    grid-template-columns: 22px 300px;
+    grid-template-rows: 22px 22px;
+    gap: 10px;
+    padding-bottom: 30px;
+}
+
+.contacts-banner-list__item-name {
+    font-family: 'opensans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0px;
+}
+
+.contacts-banner-list__item-text {
+    font-family: 'opensans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0px;
+}
+
+.contact-banner__contact-button {
+    border: 1px solid #005AAB;
+    background-color: #005AAB;
+    border-radius: 8px;
+    font-family: 'opensans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 15px;
+    padding-left: 55px;
+    padding-right: 55px;
+    max-width: 210px;
+}
+
+.contacts-banner {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.mailing__container {
+    margin-top: 70px;
+    background: #F1F5F7;
+}
+
+.mailing-banner-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    max-width: 370px;
+}
+
+.mailing-banner__main-container{
+    display: flex;
+    align-content: center;
+
+}
+
+.mailing-banner-text-input{
+    width: 480px;
+    height: 48px;
+    margin-top: 52px;
+    margin-bottom: 52px;
+    border-radius: 8px;
+}
+
+.mailing-banner__button{
+    text-decoration: none;
+    list-style-type: none;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    background-color: #005AAB;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    padding: 15px 59px 15px 59px;
 }
