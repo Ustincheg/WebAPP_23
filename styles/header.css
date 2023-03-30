@@ -62,8 +62,8 @@
 .header__button-menu {
     border: none;
 
-    width: 116px;
-    height: 45px;
+    min-width: 116px;
+    min-height: 45px;
     border-radius: 8px;
 
     display: flex;

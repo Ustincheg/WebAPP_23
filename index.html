@@ -53,10 +53,11 @@
                 </div>
                 <ul class="sales-hits__list container">
                     <li class="sales-hits__list-item hit-card link-card">
+                        <img class="new-label" src="data/images/user-list/new-label.svg" alt="Новый" loading="lazy">
                         <a href="#" class="goods-card__link">
                             <div class="goods-card">
                                 <figure class="goods-card__figure">
-                                    <img src="data/images/hit-cards/hit-card-1.jpg" alt="Фото техники" class="hit-card__img" loading="lazy">
+                                    <img class="hit-card__img" src="data/images/hit-cards/hit-card-1.jpg" alt="Фото техники" loading="lazy">
                                     <figcaption class="goods-card__desc">
                                         Мультиварка Redmond
                                     </figcaption>
@@ -72,7 +73,7 @@
                         <a href="#" class="goods-card__link">
                             <div class="goods-card">
                                 <figure class="goods-card__figure">
-                                    <img src="data/images/hit-cards/hit-card-2.jpg" alt="Фото техники" class="hit-card__img" loading="lazy">
+                                    <img class="hit-card__img" src="data/images/hit-cards/hit-card-2.jpg" alt="Фото техники" loading="lazy">
                                     <figcaption class="goods-card__desc">
                                         Смартфон Huawei Mate 40 Pro Mystic Silver
                                     </figcaption>
@@ -88,7 +89,7 @@
                         <a href="#" class="goods-card__link">
                             <div class="goods-card">
                                 <figure class="goods-card__figure">
-                                    <img src="data/images/hit-cards/hit-card-3.jpg" alt="Фото техники" class="hit-card__img" loading="lazy">
+                                    <img class="hit-card__img" src="data/images/hit-cards/hit-card-3.jpg" alt="Фото техники" loading="lazy">
                                     <figcaption class="goods-card__desc">
                                         Электрочайник Moulinex
                                     </figcaption>
@@ -104,7 +105,7 @@
                         <a href="#" class="goods-card__link">
                             <div class="goods-card">
                                 <figure class="goods-card__figure">
-                                    <img src="data/images/hit-cards/hit-card-4.jpg" alt="Фото техники" class="hit-card__img" loading="lazy">
+                                    <img class="hit-card__img" src="data/images/hit-cards/hit-card-4.jpg" alt="Фото техники" loading="lazy">
                                     <figcaption class="goods-card__desc">
                                         Пылесос с контейнером для пыли Tefal City Space
                                     </figcaption>
@@ -184,8 +185,8 @@
                     </a>
                 </div>
                 <ul class="news_and_promotions__list">
-                    <li class="news_and_promotions__list-item-1">
-                        <div class="news_and_promotions__list-item-1__title-and-context">
+                    <li class="news_and_promotions__list-item" style="background-image: url(data/images/news-and-promotions-cards/card-1.jpg);">
+                        <div class="news_and_promotions__list-item__title-and-context">
                             <p class="news_and_promotions__title">
                                 Бренд BLOODY представил мышь W60 Pro
                             </p>
@@ -197,7 +198,7 @@
                             Подробнее
                         </a>
                     </li>
-                    <li class="news_and_promotions__list-item-2">
+                    <li class="news_and_promotions__list-item" style="background-image: url(data/images/news-and-promotions-cards/card-2.jpg);">
                         <p class="news_and_promotions__title">
                             Плата asus
                         </p>
@@ -205,7 +206,7 @@
                             Подробнее
                         </a>
                     </li>
-                    <li class="news_and_promotions__list-item-3">
+                    <li class="news_and_promotions__list-item" style="background-image: url(data/images/news-and-promotions-cards/card-3.jpg);">
                         <p class="news_and_promotions__title">
                             Системный блок acer
                         </p>
@@ -213,7 +214,7 @@
                             Подробнее
                         </a>
                     </li>
-                    <li class="news_and_promotions__list-item-4">
+                    <li class="news_and_promotions__list-item" style="background-image: url(data/images/news-and-promotions-cards/card-4.jpg);">
                         <p class="news_and_promotions__title">
                             Планшет samsung
                         </p>
@@ -221,7 +222,7 @@
                             Подробнее
                         </a>
                     </li>
-                    <li class="news_and_promotions__list-item-5">
+                    <li class="news_and_promotions__list-item" style="background-image: url(data/images/news-and-promotions-cards/card-5.jpg);">
                         <p class="news_and_promotions__title">
                             Новые наушники Razer
                         </p>
@@ -229,7 +230,7 @@
                             Подробнее
                         </a>
                     </li>
-                    <li class="news_and_promotions__list-item-6">
+                    <li class="news_and_promotions__list-item" style="background-image: url(data/images/news-and-promotions-cards/card-6.jpg);">
                         <p class="news_and_promotions__title">
                             Мультипекарь Redmond плюс
                         </p>
@@ -243,39 +244,36 @@
                 <h2 class="visually-hidden">
                     Преимущества
                 </h2>
-                <p class="advantages__title section-title   container title titles-text">
+                <p class="advantages__title section-title container title titles-text">
                     Преимущества
                 </p>
                 <ul class="advantages__list container">
                     <li class="advantages__list__item">
-                        <img class="item__logo" src="data/images/advantages/advantages-1.png" alt="advantages-1"  loading="lazy" />
-                        <p class="advantages-text">
+                        <img class="item__logo" src="data/images/advantages/advantages-1.svg" alt="advantages-1"  loading="lazy" />
+                        <div class="advantages-text">
                             <b class="advantages-title">Простая и удобная система заказа товара</b>
                             <p class="advantages-context">
-                                Мы знаем, как важна простая система регистрации и оформления заказа,
-                                поэтому делаем всё для того, чтобы оформить заказ было удобно (и быстро!).
+                                Мы знаем, как важна простая система регистрации и оформления заказа, поэтому делаем все для того, чтобы оформить заказ было удобно (и быстро!).
                             </p>
-                        </p>
+                        </div>
                     </li>
                     <li class="advantages__list__item">
-                        <img class="item__logo" src="data/images/advantages/advantages-2.png" alt="advantages-2"  loading="lazy" />
-                        <p class="advantages-text">
+                        <img class="item__logo" src="data/images/advantages/advantages-2.svg" alt="advantages-2"  loading="lazy" />
+                        <div class="advantages-text">
                             <b class="advantages-title">Оповещаем о состоянии заказа по SMS</b>
                             <p class="advantages-context">
-                                Для тех, кто всегда хочет быть в курсе: вы сами можете контролировать свой заказ
-                                получая статус о его формировании посредством sms-сообщений.
+                                Для тех, кто всегда хочет быть в курсе: вы сами можете контролировать свой заказ, получая статус о его формировании посредством sms-сообщений.
                             </p>
-                        </p>
+                        </div>
                     </li>
                     <li class="advantages__list__item">
-                        <img class="item__logo" src="data/images/advantages/advantages-3.png" alt="advantages-3"  loading="lazy" />
-                        <p class="advantages-text">
+                        <img class="item__logo" src="data/images/advantages/advantages-3.svg" alt="advantages-3"  loading="lazy" />
+                        <div class="advantages-text">
                             <b class="advantages-title">Оперативная доставка</b>
                             <p class="advantages-context">
-                                Мы привыкли работать с большими объёмами заказов, поэтому вам не стоит беспокоиться
-                                о том, что ваш заказ будет обработан не вовремя.
+                                Мы привыкли работать с большими объемами заказов, поэтому вам не стоит беспокоиться о том, что ваш заказ будет обработан не вовремя.
                             </p>
-                        </p>
+                        </div>
                     </li>
                 </ul>
             </section>
@@ -291,7 +289,7 @@
                     <div class="contacts__information">
                         <ul class="contacts__list">
                             <li class="list__item">
-                                <img class="item__logo" src="data/images/contacts/contacts-1.jpg" alt="Адрес" />
+                                <img class="item__logo" src="data/images/contacts/contacts-1.svg" alt="Адрес" />
                                 <div class="contacts-text">
                                     <b class="contacts-title">Адрес</b>
                                     <p class="contacts-context">
@@ -300,14 +298,14 @@
                                 </div>
                             </li>
                             <li class="list__item">
-                                <img class="item__logo" src="data/images/contacts/contacts-2.jpg" alt="Телефон" />
+                                <img class="item__logo" src="data/images/contacts/contacts-2.svg" alt="Телефон" />
                                 <div class="contacts-text">
                                     <b class="contacts-title">Телефон</b>
                                     <a class="contacts__telephone contacts-context" href="tel:+79804444444">+7 (980) 444 44-44</a>
                                 </div>
                             </li>
                             <li class="list__item">
-                                <img class="item__logo" src="data/images/contacts/contacts-3.jpg" alt="График" />
+                                <img class="item__logo" src="data/images/contacts/contacts-3.svg" alt="График" />
                                 <div class="contacts-text">
                                     <b class="contacts-title">График работы</b>
                                     <p class="contacts-context">

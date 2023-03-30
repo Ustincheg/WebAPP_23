@@ -8,13 +8,8 @@ a {
     color: inherit;
 }
 
-p {
-    margin: 0;
-}
-
 ul {
     list-style-type: none;
-    margin: 0;
     padding: 0;
     padding-inline-start: 0;
 }
@@ -22,10 +17,6 @@ ul {
 figure {
     margin-inline-start: 0;
     margin-inline-end: 0;
-}
-
-hr {
-    margin: 0;
 }
 
 button {
@@ -47,8 +38,8 @@ button {
 }
 
 .big-button {
-    width: 210px;
-    height: 48px;
+    min-width: 210px;
+    min-height: 48px;
     border-radius: 8px;
 
     display: flex;
@@ -83,8 +74,8 @@ button {
 }
 
 .link-btn {
-    height: 45px;
-    width: 146px;
+    min-height: 43px;
+    min-width: 144px;
     border-radius: 8px;
 
     display: flex;
@@ -137,10 +128,17 @@ button {
 
 /* Карточка товара */
 
-.goods-card__link {
-    width: 268px;
-    height: 441px;
+.new-label {
+    position: relative;
+    top: 15px;
+}
 
+.hit-card {
+    min-width: 268px;
+    min-height: 441px;
+}
+
+.goods-card__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -163,8 +161,8 @@ button {
 }
 
 .goods-card__desc {
-    width: 210px;
-    height: 44px;
+    max-width: 210px;
+    max-height: 44px;
 
     font-family: 'Open Sans';
     font-style: normal;
@@ -180,8 +178,8 @@ button {
 }
 
 .goods-card__price--cross-out {
-    width: 64px;
-    height: 22px;
+    min-width: 64px;
+    min-height: 22px;
 
     font-family: 'Open Sans';
     font-style: normal;
