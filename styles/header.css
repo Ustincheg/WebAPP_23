@@ -40,8 +40,8 @@
 }
 
 .header__search__input {
-    width: 621px;
-    height: 48px;
+    width: 619px;
+    height: 46px;
     
     border: 1px solid #DEDEE2;
     border-radius: 8px;
@@ -84,16 +84,19 @@
 }
 
 .header__nav-list {
-    padding: 13px 12px;
+    min-width: 1039px;
+    min-height: 45px;
     border-radius: 8px;
 
     display: flex;
+    align-items: center;
+    justify-content: center;
 
     background: #F1F5F7;
 }
 
 .header__nav-list__link {
-    padding: 13px 12px;
+    padding: 13px 12.5px;
 }
 
 .header__nav-list__link:hover {

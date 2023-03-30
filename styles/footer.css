@@ -2,17 +2,22 @@
     background-color: #F1F5F7;
 }
 
-.footer__upp-part__container {
-    max-width: 1170px;
-    margin: 0 auto;
+.footer__upp-part__section {
     padding: 50px 0;
 
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 135px;
 }
 
 .footer__upp-part__title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+
     min-width: 370px;
     min-height: 52px;
 }
@@ -24,13 +29,20 @@
 }
 
 .footer__upp-part__email-form {
-    min-height: 48px;
-    min-width: 440px;
+    min-height: 46px;
+    min-width: 434px;
     border: 1px solid #DEDEE2;
     border-radius: 8px;
 }
 
 .footer__down-part {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: white;
+
     background-color: #333333;
 }
 
@@ -50,7 +62,7 @@
 .footer__left-information {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 24px;
 
     min-width: 270px;
 }
@@ -59,10 +71,6 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-}
-
-.footer__links-list__second {
-    min-width: 135px;
 }
 
 .footer__social-networks-list {

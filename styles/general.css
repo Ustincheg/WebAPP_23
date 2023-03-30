@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    transition-duration: .2s;
 }
 
 a {
@@ -146,6 +147,12 @@ button {
     gap: 20px;
 
     flex-direction: column;
+}
+
+.goods-card {
+    display: flex;
+    flex-direction: column;
+    gap: 58px;
 }
 
 .goods-card__figure {
