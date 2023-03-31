@@ -14,49 +14,56 @@
 
 <body>
     <header class="header">
-        
-        <div class="header__top">
-            <div class="content">
-                <div class="header__top-content">
-                    <div class="header__top-navigation">
-                        <ul class="header__navigation">
-                            <li class="header__navigation_element"><a href="#" class="header__navigation_text">Магазины</a></li>
-                            <li class="header__navigation_element"><a href="#" class="header__navigation_text">Доставка и оплата</a></li>
-                            <li class="header__navigation_element"><a href="#" class="header__navigation_text">Кредиты и рассрочка</a></li>
-                        </ul>
+        <section class="section">
+            <div class="header__top">
+                <div class="content">
+                    <div class="header__top-content">
+                        <div class="header__top-navigation">
+                            <ul class="header__navigation">
+                                <li class="header__navigation_element"><a href="#" class="header__navigation_text">Магазины</a></li>
+                                <li class="header__navigation_element"><a href="#" class="header__navigation_text">Доставка и оплата</a></li>
+                                <li class="header__navigation_element"><a href="#" class="header__navigation_text">Кредиты и рассрочка</a></li>
+                            </ul>
+                        </div>
+                        <a class="telephone-number" href="tel:+71111111111" >+71111111111</a>
                     </div>
-                    <a class="telephone-number" href="tel:+71111111111" >+71111111111</a>
+                    
                 </div>
                 
             </div>
+        </section>
+        <section class="section">
+            <div class="content">
+                <div class="header__bottom-first section">
+                    <div class="header__bottom-first-box-1"><a class="header__logo" href="header__logo"><img src="images/Logo.svg" alt="header__logo"></a></div>
+                    <div class="header__bottom-first-box-2"><input class="header__search search"  type="search" placeholder="Поиск...."></div>
+                    <div class="header__bottom-first-box-3"><a class="header__favorites" href="#">Избранное</a></div>
+                    <div class="header__bottom-first-box-4"><a class="header__basket" href="#">Корзина</a></div>  
+                </div>
+                <div class="header__bottom-second">
+                    <button class="main__catalog"><img src="images/Menu icon.png" alt="HUNDAI">Каталог</button>
+                    <div class="header__navlist">
+                        <ul class="header__navlist-list">
+                        
+                            <li><button>Скидки</li>
+                            <li><button>Смартфоны</li>
+                            <li><button>Телефизоры</li>
+                            <li><button>Ноутбуки</li>
+                            <li><button>Стиральные машины</li>
+                            <li><button>Холодильники</li>
+                            <li><button>Пылесосы</li>
+                            <li><button>Микроволновки</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <h2 class="header__path">Главная > Каталог > Смартфоны</h2>
+            </div>
             
-        </div>
-        <div class="content">
-            <div class="header__bottom-first">
-                <div class="header__bottom-first-box-1"><a class="header__logo" href="header__logo"><img src="images/Logo.svg" alt="header__logo"></a></div>
-                <div class="header__bottom-first-box-2"><input class="header__search" type="text"></div>
-                <div class="header__bottom-first-box-3"><a class="header__favorites" href="#">Избранное</a></div>
-                <div class="header__bottom-first-box-4"><a class="header__basket" href="#">Корзина</a></div>  
-            </div>
-            <div class="header__bottom-second">
-                <button class="main__catalog"><img src="images/Menu icon.png" alt="HUNDAI">Каталог</button>
-                <ul class="header__navlist">
-                    <li><a href="#"></a></li>
-                    <li><a href="#">Скидки</a></li>
-                    <li><a href="#">Смартфоны</a></li>
-                    <li><a href="#">Телефизоры</a></li>
-                    <li><a href="#">Ноутбуки</a></li>
-                    <li><a href="#">Стиральные машины</a></li>
-                    <li><a href="#">Холодильники</a></li>
-                    <li><a href="#">Пылесосы</a></li>
-                    <li><a href="#">Микроволновки</a></li>
-                    <li><a href="#"></a></li>
-                </ul>
-            </div>
-            <h2 class="header__path">Главная > Каталог > Смартфоны</h2>
-        </div>
-       
+        </section>
+        
     </header>
+   
     <main class="main">
         <section>
             <div class="content">
@@ -77,9 +84,9 @@
                         
                         <ul class="main__block-sort-second-list">
                             <p class="main__block-sort-second-list-text">Сортировать:</p>
-                            <li><input type="radio" name="main__block-sort-second-list" checked="true" class="custom-radio-and-check"><input type="checkbox"><label for="">По цене</label></li>
-                            <li><input type="radio" name="main__block-sort-second-list" class="custom-radio-and-check"><input type="checkbox"><label for="">По популярности</label></li>
-                            <li><input type="radio" name="main__block-sort-second-list" class="custom-radio-and-check"><input type="checkbox"><label for="">По новизне</label></li>
+                            <li><input type="radio" name="main__block-sort-second-list" checked="true" class="custom-radio-and-check pointer" ><input type="checkbox"><label class="pointer" for="">По цене</label></li>
+                            <li><input type="radio" name="main__block-sort-second-list" class="custom-radio-and-check pointer"><input type="checkbox"><label class="pointer" for="">По популярности</label></li>
+                            <li><input type="radio" name="main__block-sort-second-list" class="custom-radio-and-check pointer"><input type="checkbox"><label class="pointer" for="">По новизне</label></li>
 
                         </ul>
                     </div>
@@ -162,8 +169,8 @@
                     <div class="mailing-block">
                         <h3 class="mailing-block-text">Получайте самые интересные предложения первыми!</h3>
                         <div>
-                            <input type="Введите ваш e-mail" class="main__input-email">
-                            <a href="" class="mailing-block-button">Подписаться</a>
+                            <input type="Введите ваш e-mail" class="main__input-email search" placeholder="Введите ваш e-mail">
+                            <button class="blue-button">Написать нам</button>
                         </div>
                         
                     </div>
@@ -177,63 +184,69 @@
 
 
     <footer class="footer">
-        <div class="content">
-            <div class="footer__conteiner">
-                <div class="footer__conteiner-1">
-                    <img src="images/Logo1.svg" alt="logo" class="footer__logo">
-                    <p class="footer__addres">7-я Кожуховская ул., 9, Москва (этаж 1)</p>
-                </div>
-                <div class="footer__conteiner-2">
-                    <ul class="footer__nav-list">
-                        <li class="footer__nav-list-item">
-                            <a href="#" class="footer__nav-list-link">Скидки</a>
-                        </li>
-                        <li class="footer__nav-list-item">
-                            <a href="#" class="footer__nav-list-link">Акции</a>
-                        </li>
-                        <li class="footer__nav-list-item">
-                            <a href="#" class="footer__nav-list-link">Покупателям</a>
-                        </li>
-                        <li class="footer__nav-list-item">
-                            <a href="#" class="footer__nav-list-link">Информация</a>
-                        </li>
-                        <li class="footer__nav-list-item">
-                            <a href="#" class="footer__nav-list-link">Гарантия</a>
-                        </li>
-                        <li class="footer__nav-list-item">
-                            <a href="#" class="footer__nav-list-link">Кредит и рассрочка</a>
-                        </li>
-                        <li class="footer__nav-list-item">
-                            <a href="#" class="footer__nav-list-link">Новости</a>
-                        </li>
-                        <li class="footer__nav-list-item">
-                            <a href="#" class="footer__nav-list-link">Вакансии</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer__conteiner-3">
-                    <ul class="footer__social-list">
-                        <li class="social-list__item"><a href="#" class="social-list__desc"><img src="images/footer/facebook-logo 1.png" alt=""></a></li>
-                        <li class="social-list__item"><a href="#" class="social-list__desc"><img src="images/footer/instagram (2) 1.png" alt=""></a></li>
-                        <li class="social-list__item"><a href="#" class="social-list__desc"><img src="images/footer/vk 1.png" alt=""></a></li>
-                        <li class="social-list__item"><a href="#" class="social-list__desc"><img src="images/footer/youtube 1.png" alt=""></a></li>
-                    </ul>
+        <section class="section">
+            <div class="content">
+                <div class="footer__conteiner">
+                    <div class="footer__conteiner-1">
+                        <img src="images/Logo1.svg" alt="logo" class="footer__logo">
+                        <p class="footer__addres">7-я Кожуховская ул., 9, Москва (этаж 1)</p>
+                    </div>
+                    <div class="footer__conteiner-2">
+                        <ul class="footer__nav-list">
+                            <li class="footer__nav-list-item">
+                                <a href="#" class="footer__nav-list-link">Скидки</a>
+                            </li>
+                            <li class="footer__nav-list-item">
+                                <a href="#" class="footer__nav-list-link">Акции</a>
+                            </li>
+                            <li class="footer__nav-list-item">
+                                <a href="#" class="footer__nav-list-link">Покупателям</a>
+                            </li>
+                            <li class="footer__nav-list-item">
+                                <a href="#" class="footer__nav-list-link">Информация</a>
+                            </li>
+                            <li class="footer__nav-list-item">
+                                <a href="#" class="footer__nav-list-link">Гарантия</a>
+                            </li>
+                            <li class="footer__nav-list-item">
+                                <a href="#" class="footer__nav-list-link">Кредит и рассрочка</a>
+                            </li>
+                            <li class="footer__nav-list-item">
+                                <a href="#" class="footer__nav-list-link">Новости</a>
+                            </li>
+                            <li class="footer__nav-list-item">
+                                <a href="#" class="footer__nav-list-link">Вакансии</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__conteiner-3">
+                        <ul class="footer__social-list">
+                            <li class="social-list__item"><button class="social-list__desc"><img src="images/footer/1.svg" alt=""  class="social-list__desc-img" ></button></li>
+                            <li class="social-list__item"><button class="social-list__desc"><img class="social-list__desc-img" src="images/footer/2.svg" alt=""></button></li>
+                            <li class="social-list__item"><button class="social-list__desc"><img class="social-list__desc-img" src="images/footer/3.svg" alt=""></button></li>
+                            <li class="social-list__item"><button class="social-list__desc"><img class="social-list__desc-img" src="images/footer/4.svg" alt=""></button></li>
+                        </ul>
+                    </div>
+                    
                 </div>
                 
             </div>
-            
-        </div>
+        </section>
         <div class="line"></div>
-        <div class="content">
-            <div class="footer__bottom">
-                <div class="footer__bottom-first">
-                    <p class="footer__bottom-text">© Electro place, 2003–2021</p>
-                    <a href="#" class="footer__bottom-link">Политика обработки персональных данных</a>
-                </div>
-                <p class="footer__developer">Разработка сайта: <img src="images/footer/Garpix logo.png" alt="logo"></p>
-            </div>
+        <section class="small-section">
             
-        </div>
+            <div class="content">
+                <div class="footer__bottom">
+                    <div class="footer__bottom-first">
+                        <p class="footer__bottom-text">© Electro place, 2003–2021</p>
+                        <a href="#" class="footer__bottom-link">Политика обработки персональных данных</a>
+                    </div>
+                    <p class="footer__developer">Разработка сайта: <img src="images/footer/Garpix logo.png" alt="logo"></p>
+                </div>
+                
+            </div>
+        </section>
+        
         
     </footer>
 
