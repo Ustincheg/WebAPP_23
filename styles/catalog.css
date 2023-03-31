@@ -113,15 +113,79 @@ fieldset {
     line-height: 22px;
 }
 
+.brands-list {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.brand-checkbox {
+    position: absolute;
+    display: none;
+}
+
+.brand-checkbox + label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+.brand-checkbox + label:before {
+    content: '';
+    display: inline-block;
+
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+
+    border: 1px solid #DEDEE2;
+    border-radius: 2px;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+}
+
+.brand-checkbox:not(:disabled):not(:checked) + label:hover::before {
+    border-color: #005AAB;
+}
+
+.brand-checkbox:not(:disabled):active + label::before {
+    background-color: #b3d7ff;
+    border-color: #b3d7ff;
+}
+
+.brand-checkbox:focus + label::before {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.brand-checkbox:focus:not(:checked)+label::before {
+    border-color: #80bdff;
+}
+
+.brand-checkbox:checked + label::before {
+    background-color: #005AAB;
+    background-image: url("../data/images/filters/checkbox.svg");
+}
+
+.brand-checkbox:disabled + label::before {
+    background-color: #e9ecef;
+}
+
 /* Стилизация форм ввода */
+
+.sim-amount-list {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
 
 .sim-amount-radio {
     position: absolute;
-    z-index: -1;
-    opacity: 0;
+    display: none;
 }
 
-.sim-amount-radio+label {
+.sim-amount-radio + label {
     display: inline-flex;
     align-items: center;
     user-select: none;
@@ -131,44 +195,40 @@ fieldset {
     content: '';
     display: inline-block;
 
-    width: 22px;
-    height: 22px;
-
-    flex-shrink: 0;
-    flex-grow: 0;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
 
     border: 1px solid #DEDEE2;
     border-radius: 50%;
-    margin-right: 10px;
 
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 50% 50%;
 }
 
-.sim-amount-radio:not(:disabled):not(:checked)+label:hover::before {
+.sim-amount-radio:not(:disabled):not(:checked) + label:hover::before {
     border-color: #005AAB;
 }
 
-.sim-amount-radio:not(:disabled):active+label::before {
+.sim-amount-radio:not(:disabled):active + label::before {
     background-color: #b3d7ff;
     border-color: #b3d7ff;
 }
 
-.sim-amount-radio:focus+label::before {
+.sim-amount-radio:focus + label::before {
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
-.sim-amount-radio:focus:not(:checked)+label::before {
+.sim-amount-radio:focus:not(:checked) + label::before {
     border-color: #80bdff;
 }
 
-.sim-amount-radio:checked+label::before {
-    border-color: #0b76ef;
-    background-color: #0b76ef;
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+.sim-amount-radio:checked + label::before {
+    border-color: #005AAB;
+    background-image: url("../data/images/filters/radio.svg");
 }
 
-.sim-amount-radio:disabled+label::before {
+.sim-amount-radio:disabled + label::before {
     background-color: #e9ecef;
 }

@@ -29,6 +29,8 @@
 }
 
 .footer__upp-part__email-form {
+    padding-left: 13px;
+
     min-height: 46px;
     min-width: 434px;
     border: 1px solid #DEDEE2;
@@ -73,6 +75,10 @@
     gap: 10px;
 }
 
+.footer__links-list__item:hover {
+    color: #005AAB;
+}
+
 .footer__social-networks-list {
     display: flex;
     justify-content: space-between;
@@ -83,4 +89,8 @@
     max-width: 1170px;
     margin: 0 auto;
     padding: 10px 0;
+}
+
+.footer__politics-link:hover {
+    color: #005AAB;
 }

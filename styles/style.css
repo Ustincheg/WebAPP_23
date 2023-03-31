@@ -71,6 +71,10 @@
     text-decoration-line: line-through;
 }
 
+.advantages-text {
+    letter-spacing: 0.05px;
+}
+
 .advantages-title
 {
     font-family: 'Open Sans';
