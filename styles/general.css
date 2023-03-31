@@ -1,6 +1,7 @@
 * {
     margin: 0;
     transition-duration: .2s;
+    letter-spacing: 0.05px;
 }
 
 a {
@@ -128,14 +129,24 @@ button {
 
 /* Карточка товара */
 
+.hit-card__upp-information {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
 .new-label {
-    position: relative;
-    top: 15px;
+    
+}
+
+.hit-card__heart {
+    margin-right: 20px;
 }
 
 .hit-card {
     min-width: 268px;
     min-height: 441px;
+    position: relative;
 }
 
 .goods-card__link {

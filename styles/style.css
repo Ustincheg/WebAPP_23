@@ -208,13 +208,13 @@
     line-height: 22px;
 }
 
-input[type=radio]:checked + label:before {
+/* input[type=radio]:checked + label:before {
     content: "\2022";
     color: #f3f3f3;
     font-size: 30px;
     text-align: center;
     line-height: 18px;
-}
+} */
 
 @media (max-width: 1110px) {
     .sales-hits {display: none;}
