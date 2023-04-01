@@ -105,9 +105,9 @@
         <section>
             <div class="content">
                 <div class="main__body">
-                    <div class="main__body-left">
-                        <div class="main__body-left-price">
-                            <p class="main__body-left-price-text">Цена, ₽</p>
+                    <form  class="main__body-left" action="URL">
+                        <fieldset class="main__body-left-price">
+                            <legend class="main__body-left-price-text">Цена, ₽</legend>
                             <div class="main__body-left-price-input">
                                 <input type="0">
                                 <div></div>
@@ -119,10 +119,10 @@
                                     <input class="main__body-left-price-range-right" type="range" min="0" max="6999999" value="6999999">
                                 </div>
                             </div>
-                        </div>
-                            
-                        <div class="main__body-left-diagonal">
-                            <p>Диагональ экрана</p>
+                        </fieldset>
+                          
+                        <fieldset class="main__body-left-diagonal">
+                            <legend>Диагональ экрана</legend>
                             <div>
                                 <select class="main__body-left-diagonal-select" name="diagonal" id="1">
                                     <option value="1">От 6”</option>
@@ -130,9 +130,9 @@
                                     <option value="3">От 12”</option>
                                 </select>
                              </div>
-                        </div>
-                        <div class="main__body-left-brands">
-                            <p>Бренд</p>
+                        </fieldset>
+                        <fieldset class="main__body-left-brands">
+                            <legend>Бренд</legend>
                             <ul class="main__body-left-brands-list">
                                 <li><input type="checkbox" class="custom-checkbox" checked="true"><label for="cb1">APPLE</label></input></li>
                                 <li><input type="checkbox" class="custom-checkbox"><label for="cb1">BLACKVIEW</label></input></li>
@@ -141,16 +141,16 @@
                                 <li><input type="checkbox" class="custom-checkbox"><label for="cb1">XIAOMI</label></input></li>
                                 <li><input type="checkbox" class="custom-checkbox"><label for="cb1"> ZTE </label></input></li>
                             </ul>
-                        </div>
-                        <div class="main__body-left-SIM">
-                            <p>Количество SIM-карт</p>
+                        </fieldset>
+                        <fieldset  class="main__body-left-SIM">
+                            <legend>Количество SIM-карт</legend>
                             <ul class="main__body-left-SIM-radiobutton-list">
                                 <li><input type="radio" name="SIMradio" id="0" class="custom-radio" checked="true"><label for="rb1"> 1SIM</label></input></li>
                                 <li><input type="radio" name="SIMradio" id="1" class="custom-radio"><label for="rb1"> 2SIM</label></input></li>
                             </ul> 
-                        </div>
-                                
-                    </div>
+                        </fieldset>
+                    </form>
+
                     <div>
                         <ul class="main-hits__list">
                             <li><div class="main-hits__list-checkbox"><input type="checkbox" class="like-checkbox"><label for=""></label></div><a href="#" class="main-hits__list-child-link"><img src="images/products/Image1.jpg" alt="HUNDAI"><h3 class="main-hits__list-child-text">Мультиварка Redmond</h3></a><p1 class="old_price">5333</p1><p class="new_price">6990</p></li>
