@@ -19,115 +19,155 @@
 
 <body>
     <header class="header">
-        <ul class="header__topnav-list topnav-list">
-            <li class="topnav-list__item">
-                <a class="topnav-list__item-link" href="#">
-                    Магазины
-                </a>
-            </li>
-            <li class="topnav-list__item">
-                <a class="topnav-list__item-link" href="#">
-                    Доставка и оплата
-                </a>
-            </li>
-            <li class="topnav-list__item">
-                <a class="topnav-list__item-link" href="#">
-                    Кредиты и рассрочка
-                </a>
-            </li>
-        </ul>
+        <div class="head1">
+            <div class="container topnav-list__navigation">
+                <ul class="header__topnav-list">
+                    <li class="topnav-list__item">
+                        <a class="topnav-list__item-link" href="#">
+                            Магазины
+                        </a>
+                    </li>
+                    <li class="topnav-list__item">
+                        <a class="topnav-list__item-link" href="#">
+                            Доставка и оплата
+                        </a>
+                    </li>
+                    <li class="topnav-list__item">
+                        <a class="topnav-list__item-link" href="#">
+                            Кредиты и рассрочка
+                        </a>
+                    </li>
+                </ul>
+                <a class="header__telephone" href="tel:+76544565687">8 (654) 456-56-87</a>
+            </div>
+        </div>
 
-        <a class="header__tel" href="tel:+74954448885">8 (495) 444-888-5</a>
         <div class="header__background"></div>
-        <a class="header__logo logo">
-            <img class="logo__image" src="img/Logo.svg" width="215" alt="Логотип">
-        </a>
 
-        <input class="header__search" placeholder="Поиск" type="text" name="Searchbar">
+        <div class="head2">
+            <div class="head2_navigation">
 
-        <ul class="header__list-link list-link">
-            <li class="list-link__item">
-                <a class="list-link__link" href="">
-                    Избранное
+                <a class="head2_logo">
+                    <img class="logo__image" src="img/Logo.svg" width="215" alt="Логотип">
                 </a>
-                <button class="list-link__button-fav button-fav">
-                    <img class="button-fav__fav" src="img/Header/heart.png" width="20" alt="Избранное">
-                </button>
-            </li>
-            <li class="list-link__item">
-                <a class="list-link__link" href="">
-                    Корзина
-                </a>
-                <button class="list-link__button-cart button-cart">
-                    <img class="button-fav__fav" src="img/Header/shopping-cart.png" width="20" alt="Избранное">
-                </button>
-            </li>
-        </ul>
 
-        <button class="header__button">
-            <img class="header__button-catalog" src="img/Menu icon.png" width="24" alt="Избранное">
-            Каталог
-        </button>
+                <input class="head2_search" placeholder="Поиск" type="text" name="Searchbar">
 
-        <nav class="header__main-nav main-nav">
-            <ul class="main-nav__list list">
-                <li class="list__item">
-                    <a class="list__link" href="#">
-                        СКИДКИ
-                    </a>
-                </li>
-            </ul>
-            <ul class="main-nav__list list">
-                <li class="list__item">
-                    <a class="list__link" href="#">
-                        СМАРТФОНЫ
-                    </a>
-                </li>
-            </ul>
-            <ul class="main-nav__list list">
-                <li class="list__item">
-                    <a class="list__link" href="#">
-                        ТЕЛЕВИЗОРЫ
-                    </a>
-                </li>
-            </ul>
-            <ul class="main-nav__list list">
-                <li class="list__item">
-                    <a class="list__link" href="#">
-                        НОУТБУКИ
-                    </a>
-                </li>
-            </ul>
-            <ul class="main-nav__list list">
-                <li class="list__item">
-                    <a class="list__link" href="#">
-                        СТИРАЛЬНЫЕ МАШИНЫ
-                    </a>
-                </li>
-            </ul>
-            <ul class="main-nav__list list">
-                <li class="list__item">
-                    <a class="list__link" href="#">
-                        ХОЛОДИЛЬНИКИ
-                    </a>
-                </li>
-            </ul>
-            <ul class="main-nav__list list">
-                <li class="list__item">
-                    <a class="list__link" href="#">
-                        ПЫЛЕСОСЫ
-                    </a>
-                </li>
-            </ul>
-            <ul class="main-nav__list list">
-                <li class="list__item">
-                    <a class="list__link" href="#">
-                        МИКРОВОЛНОВКИ
-                    </a>
-                </li>
-            </ul>
-        </nav>
+                <ul class="head2_link">
+                    <li class="head2_link_item">
+
+                        <button class="head2_button">
+                            <img class="head2_button_img" src="img/Header/heart.png" width="20" alt="Избранное">
+                        </button>
+
+                        <a class="head2_link_link" href="">
+                            Избранное
+                        </a>
+
+                    </li>
+                    <li class="list-link__item">
+
+                        <button class="head2_button">
+                            <img class="head2_button_img" src="img/Header/shopping-cart.png" width="20" alt="Избранное">
+                        </button>
+
+                        <a class="head2_link_link" href="">
+                            Корзина
+                        </a>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="head3">
+
+            <button class="head3_button">
+                <img class="header__button-catalog" src="img/Menu icon.png" width="24" alt="Избранное">
+                Каталог
+            </button>
+
+            <nav class="container head3_nav">
+
+                <ul class="head3_nav_list">
+                    <li class="head3_list_item">
+                        <a class="head3_list_link" href="#">
+                            СКИДКИ
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="head3_nav_list">
+                    <li class="head3_list_item">
+                        <a class="head3_list_link" href="#">
+                            СМАРТФОНЫ
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="head3_nav_list">
+                    <li class="head3_list_item">
+                        <a class="head3_list_link" href="#">
+                            ТЕЛЕВИЗОРЫ
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="head3_nav_list">
+                    <li class="head3_list_item">
+                        <a class="head3_list_link" href="#">
+                            НОУТБУКИ
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="head3_nav_list">
+                    <li class="head3_list_item">
+                        <a class="head3_list_link" href="#">
+                            СТИРАЛЬНЫЕ МАШИНЫ
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="head3_nav_list">
+                    <li class="head3_list_item">
+                        <a class="head3_list_link" href="#">
+                            ХОЛОДИЛЬНИКИ
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="head3_nav_list">
+                    <li class="head3_list_item">
+                        <a class="head3_list_link" href="#">
+                            ПЫЛЕСОСЫ
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="head3_nav_list">
+                    <li class="head3_list_item">
+                        <a class="head3_list_link" href="#">
+                            МИКРОВОЛНОВКИ
+                        </a>
+                    </li>
+                </ul>
+
+            </nav>
+        </div>
     </header>
+
+
+
+
+
+
+
+
 
     <main class="main">
 
