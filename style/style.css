@@ -1,443 +1,574 @@
+/* * {
+    color: red;
+} */
+
 .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
-.nav-list__link {
-  font-family: 'Open Sans';
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 19px;
-  color: #FFFFFF;
+* {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.header__button button {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    max-width: 116px;
+    max-height: 45px;
+    background: #005AAB;
+    border-radius: 8px;
+    padding: 13px 45px 13px 45px;
+    margin: 31px 15px 0 0;
+    display: flex;
+    border-color: white;
+    align-items: center;
+}
+
+.side_block{
+    background: #363636;
+    width: 270px;
+    height: 360px;
+    border-radius: 8px;
+    margin: 50px 0 0 0;
+    display: flex;
+    
+}
+
+.side_block__text{
+    margin:30px 30px 251px 30px;
+    position: absolute;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    color:#FFFFFF;
+    width: 210px;
+    height: 79px;
+
+}
+
+.tv_samsung-logo{
+    position: absolute;
+    width: 196px;
+    height: 147px;
+    margin: 122px 37px 91px 37px;
+    display: flex;
+}
+
+.watch-menu{
+    background: white;
+    border-radius: 8px;
+    margin: 282px 30px 30px 30px;
+    display: flex;
+    padding: 14px 41px 15px 42px;
+}
+
+.shift-images{
+    display: flex;
+    margin: 51px 30px 0 0;
+}
+
+.banner-nuke{
+    width: 870px;
+    height:360px;
+    border-radius: 8px;
+}
+
+.main-banner{
+    display: flex;
+    gap:30px;
+    justify-content: space-between;
+}
+
+h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color:#7D868F;
+}
+
+h3 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.top-nav-list__link {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
 }
 
 .header__phone-link {
-  font-family: 'Open Sans';
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 19px;
-  color: #FFFFFF;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
 }
 
-.header__search-text {
-  font-family: 'Open Sans';
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  color: #7D868F;
+.header__link{
+    font-family: 'OpenSans';
+    font-size:14px;
+    font-weight: 400;
 }
 
-.header__favorite-link {
-  font-family: 'Open Sans';
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 19px;
-  color: #000000;
+.header-button{
+    margin: 29px 0 0 34px;
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
 }
 
-.header__cart-link {
-  font-family: 'Open Sans';
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 19px;
-  color: #000000;
+
+.header__list-link{
+    margin:0;
+    display: flex;
+    justify-content: space-between;
+    gap: 21px;
 }
 
-.button-catalog {
-  font-family: 'Open Sans';
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 19px;
-  color: #FFFFFF;
-}
-.navig-list__link {
-  font-family: 'Open Sans';
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 19px;
-  color: #000000;
+.search_form{
+    margin: 29px 0 0 0;
 }
 
-.slider__text {
-  font-family: 'Roboto';
-  font-weight: 900;
-  font-size: 35px;
-  line-height: 41px;
-  color: #FFFFFF;
+.header__logo{
+    margin: 15px 0 0 0;
+
 }
 
-.slider__txt {
-  font-family: 'Open Sans';
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  color: #FFFFFF;
+.header_like{
+    margin: 41px 0 0 0;
 }
 
-.mini__text {
-  font-family: 'Roboto';
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 26px;
-  color: #FFFFFF;
+.header_cart{
+    margin: 41px 0 0 0;
 }
 
-.mini__catalog-link {
-  font-family: 'Open Sans';
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 19px;
-  color: #000000;
+.header_search-logo{
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    margin: 15px 13px 15px 15px;
+
 }
 
-.hits__heading {
-  font-family: 'Roboto';
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 38px;
-  color: #000000;
+input[type="text"]{
+    padding: 13px 390px 13px 46px;
+    border-radius: 8px;
+    border: 1px solid #DEDEE2;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    
+}
+
+.header-button{
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.content{
+    margin: 0 auto;
+    max-width: 1170px;
+}
+
+.subscribe{
+    background: #F1F5F7;
+}
+
+
+.title-all{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 26px 0;
+}
+
+
+.header__top-nav-list{
+    display: flex;
+    gap: 20px;
+}
+
+.header__top .content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__top{
+    padding: 17px 0;
+}
+
+.advantages {
+    background: #F1F5F7;
+    display: block;
+    padding: 7px 0px;
+}
+
+
+.advantages__list{
+    display: flex;
+}
+.header__top {
+    background: #363636;
+}
+
+.header__button {
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+.menu-logo{
+    position: absolute;
+    margin: 41px 0 0 10px;
+}
+
+.main-nav__list{
+    background: #F1F5F7;
+    margin: 30px 0 0 0;
+    width:1039px;
+    height:45px;
+    display: flex;
+    justify-content: space-between;
+    gap:25px;
+    border-radius: 8px;
+    align-items: center;
+    padding: 0 25px 0 25px;
+}
+
+.catalog-menu{
+    display: flex;
+
+}
+
+.banner__slider{
+    margin: 51px 0 0 0;
+}
+
+.main-nav__list-item-link {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+/* .banner__slider-item.active {
+    display: block;
+} */
+
+/* .banner__slider-item {
+    display: none;
+} */
+
+.banner__card-desc {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+.banner__card-link {
+    background: #FFFFFF;
+    border-radius: 8px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #000000;
+}
+
+.banner__card {
+    background: #363636;
+    border-radius: 8px;
+}
+
+.footer {
+    background: #333333;
+}
+
+.title {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #000000;
+    display: flex;
 }
 
 .link-btn {
-  font-family: 'Open Sans';
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 19px;
-  color: #005AAB;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #005AAB;
+    box-sizing: border-box;
+    border: 1px solid #005AAB;
+    border-radius: 8px;
+    padding: 13px 25px 13px 25px;
+    float: right;
+    display: inline-flex;
 }
 
-.card-list__txt {
-  font-family: 'Open Sans';
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  color: #000000;
+.sales-hits__list{
+    display: flex;
+    justify-content: space-between;
+    gap:30px;
+
 }
 
-.card-list___old-price {
-  font-family: 'Open Sans';
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  color: #7D868F;
+.hit-card__price{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    padding:0 163px 30px 30px;
 }
 
-.card-list__price {
-  font-family: 'Roboto';
-  font-weight: 500;
-  font-size: 22px;
-  line-height: 26px;
-  color: #000000;
+.hit-card__price--cross-out{
+    text-decoration: line-through;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color:#7D868F;
+
 }
 
-.brands__heading {
-  font-family: 'Roboto';
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 38px;
-  color: #000000;
+.hit-card{
+    border: 1px solid #DEDEE2;
+    border-radius: 8px;
+    padding: 0;
 }
 
-.news-stocks__headingt {
-  font-family: 'Roboto';
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 38px;
-  color: #000000;
+.hit-card-img{
+    margin: 65px 0 0 0;
+    padding: 0;
 }
 
-.products-list__text {
-  font-family: 'Roboto';
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 26px;
-  color: #FFFFFF;
+.hit-card__desc{
+    margin: 20px 0 0 0;
+    padding: 0;
 }
 
-.products-list__txt {
-  font-family: 'Open Sans';
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  color: #FFFFFF;
+.hit-card__price{
+    margin: 0 0 30px 0;
 }
 
-.products-list__link {
-  font-family: 'Open Sans';
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 19px;
-  color: #000000;
+.hit-card__desc {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
 }
 
-.advantages__headingt {
-  font-family: 'Roboto';
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 38px;
-  color: #000000;
+.popular-brands__list{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap:30px;
+
 }
 
-.top-list__text {
-  font-family: 'Open Sans';
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 22px;
-  color: #000000;
+.popular-brands__list-item{
+    width: 270px;
+    height: 150px;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid #DEDEE2;
 }
 
-.top-list__txt {
-  font-family: 'Open Sans';
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  color: #000000;
+.brands-img{
+    margin:32px 0;
 }
 
-.contacts__headingt {
-  font-family: 'Roboto';
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 38px;
-  color: #000000;
+.list-news{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap:30px;
 }
 
-.addr-list__text {
-  font-family: 'Open Sans';
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 22px;
-  color: #000000;
+.list-news__item-img1{
+    width: 770px;
+    height: 370px;
 }
 
-.addr-list__txt {
-  font-family: 'Open Sans';
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  color: #000000;
+.list-news__item-img{
+    width: 370px;
+    height: 170px;
 }
 
-.contacts__button {
-  font-family: 'Open Sans';
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 19px;
-  color: #FFFFFF;
+.list-news__item-link{
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color:#000000;
+    text-align: center;
+    border-radius: 8px;
+    background: white;
+    padding: 14px 65px 15px 66px;
+    position: absolute;
+    
 }
 
-.subscription__headingt {
-  font-family: 'Roboto';
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 26px;
-  color: #000000;
+.list-news__item-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: #FFFFFF;
 }
 
-.subscription__form-text {
-  font-family: 'Open Sans';
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  color: #7D868F;
+.list-news__item-desc {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
 }
 
-.subscription__form-button {
-  font-family: 'Open Sans';
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 19px;
-  color: #FFFFFF;
+
+
+
+.list-news__item-link {
+    background: #FFFFFF;
+    border-radius: 8px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #000000;
 }
 
-.footer__addres {
-  font-family: 'Open Sans';
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 19px;
-  color: #FFFFFF;
+.advantages__list-title {
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
 }
 
-.navigat-list__link {
-  font-family: 'Open Sans';
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 19px;
-  color: #FFFFFF;
+.advantages__list-desc {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
 }
 
-.footer__text {
-  font-family: 'Open Sans';
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 19px;
-  color: #FFFFFF;
+.contacts__list-title {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
 }
 
-.footer__link {
-  font-family: 'Open Sans';
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 19px;
-  color: #FFFFFF;
+.contacts__list-desc,
+.contacts__list-desc a {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
 }
 
-.footer__developer {
-  font-family: 'Open Sans';
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 19px;
-  color: #FFFFFF;
+.blue__button {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+    background: #005AAB;
+    border-radius: 8px;
+    border: none;
 }
 
-.mini-list__link {
-  font-family: 'Open Sans';
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 19px;
-  color: #7D868F;
-}
-
-.main__heading {
-  font-family: 'Roboto';
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 38px;
-  color: #000000;
-}
-
-.sort__text {
-  font-family: 'Roboto';
-  font-weight: 500;
-  font-size: 22px;
-  line-height: 26px;
-  color: #000000;
-}
-
-.sort__txt {
-  font-family: 'Open Sans';
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 19px;
-  color: #7D868F;
-}
-
-.sorting__button {
-  font-family: 'Open Sans';
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 19px;
-  color: #000000;
-}
-
-.price__title {
-  font-family: 'Open Sans';
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 22px;
-  color: #000000;
-}
-
-.connection-min-max__min-text {
-  font-family: 'Open Sans';
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  color: #000000;
-}
-
-.connection-min-max__max-text {
-  font-family: 'Open Sans';
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  color: #000000;
-}
-
-.diagonal__title {
-  font-family: 'Open Sans';
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 22px;
-  color: #000000;
-}
-
-.size__item {
-  font-family: 'Open Sans';
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  color: #000000;
-}
-
-.branding__title {
-  font-family: 'Open Sans';
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 22px;
-  color: #000000;
-}
-
-.connection {
-  font-family: 'Open Sans';
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  color: #000000;
-}
-
-.SIM-card__title {
-  font-family: 'Open Sans';
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 22px;
-  color: #000000;
-}
-
-.quantity {
-  font-family: 'Open Sans';
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  color: #000000;
-}
-
-.smart-list__txt {
-  font-family: 'Open Sans';
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  color: #000000;
-}
-
-.smart-list__price {
-  font-family: 'Roboto';
-  font-weight: 500;
-  font-size: 22px;
-  line-height: 26px;
-  color: #000000;
-}
-
-.smart-list___old-price {
-  font-family: 'Open Sans';
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  color: #7D868F;
-}
-
-.number-list__link {
-  font-family: 'Open Sans';
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 19px;
-  color: #FFFFFF;
+.top-nav-list__link {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
 }
