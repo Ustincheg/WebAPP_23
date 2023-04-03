@@ -686,6 +686,10 @@ body {
     color: #FFFFFF;
 }
 
+.footer-main{
+    margin-bottom: 30px;
+}
+
 .footer-main__nav{
     padding-top: 50px;
     display: flex;
@@ -708,7 +712,8 @@ body {
 }
 
 .footer-nav__logo-and-adress{
-    margin-right: 105px;
+    margin-right: 135px;
+    width: 330px;
 }
 
 .footer-logo{
