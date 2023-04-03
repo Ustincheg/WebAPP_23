@@ -1,0 +1,105 @@
+body {
+    background: #252222;
+}
+
+.Main-banner__travel {
+    color: #0B972A;
+    background: #252222;
+    border: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    width: 145px;
+    height: 40px;
+    margin-top: 20px;
+}
+
+* {
+
+    /* color: red; */
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    color: aliceblue;
+
+}
+button{
+    color:#0B972A
+}
+.navlist {
+    display: flex;
+    justify-content: end;
+    gap: 30px;
+}
+
+.header__navigation-list {
+    display: flex;
+    gap: 60px;
+}
+
+.Main-banner-slide {
+    display: flex;
+
+}
+
+.R900_35_41_w {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    color: aliceblue;
+}
+.TV-show-title{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    color: aliceblue;
+}
+.txt_w {
+    padding-top: 20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    color: aliceblue;
+}
+
+.content {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.TV-show__list {
+    display: flex;
+    gap: 30px;
+    width: 300;
+    height: 425px;
+}
+
+.TV-show__list-item-link{
+    width: 300;
+    height: 425px;
+}
+.news__items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap:30px;
+}
+.item__Holly{
+    grid-area: 1/1/3/3;
+}
+.news__list-item-detailed{
+    background: #252222;
+}
+.news__item__info{
+    background: #181717;
+}
+.slider__item__info{
+    background: #181717;
+    height: 438px;
+}
+.main-banner__read{
+    color: #FFFFFF;
+    width: 190px;
+    height: 60px;
+    background: #0B972A;
+}
