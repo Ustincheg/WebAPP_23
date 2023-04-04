@@ -182,7 +182,7 @@ body {
     margin-right: auto;
 }
 
-.productcard-text-name {
+.product-card-text-name {
     padding-left: 30px;
     padding-right: 30px;
     font-family: 'opensans', sans-serif;
@@ -193,12 +193,13 @@ body {
 }
 
 .product-card__like-button {
+    position: absolute;
     background: rgba(255, 255, 255, 0);
     border: none;
     outline: none;
     padding-top: 11px;
-    padding-right: 11px;
     padding-bottom: 12px;
+    padding-left: 135px;
 }
 
 .product-card__old-price {
@@ -223,14 +224,10 @@ body {
 }
 
 .product-card {
-    padding-left: 0px;
+    border: 1px;
+    border-color: #005AAB;
     width: 270px;
     height: 443px;
-    border: 1px solid #DEDEE2;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 .product-card__main-information {
@@ -553,7 +550,7 @@ body {
     display: flex;
 }
 
-.advantage-banner-list {
+.contacts-banner-list {
     margin: 0px;
     padding: 0px;
     margin-left: 50px;
@@ -625,13 +622,13 @@ body {
     max-width: 370px;
 }
 
-.mailing-banner__main-container{
+.mailing-banner__main-container {
     display: flex;
     align-content: center;
 
 }
 
-.mailing-banner-text-input{
+.mailing-banner-text-input {
     width: 480px;
     height: 48px;
     margin-top: 52px;
@@ -639,7 +636,7 @@ body {
     border-radius: 8px;
 }
 
-.mailing-banner__button{
+.mailing-banner__button {
     text-decoration: none;
     list-style-type: none;
     color: #FFFFFF;

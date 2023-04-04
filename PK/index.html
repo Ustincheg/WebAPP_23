@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://api-maps.yandex.ru/1.1/index.xml" type="text/javascript"></script>
+    <script type="text/javascript">
+        // Создает обработчик события window.onLoad
+        YMaps.jQuery(function () {
+            // Создает экземпляр карты и привязывает его к созданному контейнеру
+            var map = new YMaps.Map(YMaps.jQuery("#YMapsID")[0]);
+
+            // Устанавливает начальные параметры отображения карты: центр карты и коэффициент масштабирования
+            map.setCenter(new YMaps.GeoPoint(37.64, 55.76), 10);
+        })
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header container">
+        <div class="header-nav">
+            <ul class="header-list1">
+                <img src="IMG/logo.svg" alt="" class="header__logo">
+                <li class="header-list1__item"><a href="#" class="header-list1__link">Главная</a></li>
+                <li class="header-list1__item"><a href="#" class="header-list1__link">О Седоне</a></li>
+                <li class="header-list1__item"><a href="#" class="header-list1__link">Гостиницы</a></li>
+            </ul>
+            <ul class="header-list2">
+                <li class="header-list2__item"><a href="#" class="header-list2__link"> <img src="IMG/search.svg"
+                            alt=""></a></li>
+                <li class="header-list2__item"><a href="#" class="header-list2__link"></a><img src="img/heart.svg"
+                        alt=""></li>
+                <li class="header-list2__item"><a href="#" class="header-list2__link"></a>ХОЧУ СЮДА!</li>
+            </ul>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main-banner container">
+            <img src="IMG/index-background.jpg" alt="" class="main-banner__img">
+            <img src="img/welcome.svg" alt="" class="main-banner__img-text">
+            <div class="main-banner__text-container">
+                <h2 class="main-banner__h-text">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+                <p class="main-banner__text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+            </div>
+        </div>
+        <div class="banefits container">
+            <div class="banefits-first">
+                <div class="banefits-first-container">
+                    <p class="banefits-first__h-text">Настоящий городок</p>
+                    <p class="banefits-first__text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+                </div>
+                <img src="IMG/photo-1.jpg" alt="" class="banefits-first-container__img">
+            </div>
+            <div class="banefits-second">
+                <ul class="banefits-second__list">
+                    <li class="banefits-second__list-item bgc1">
+                        <p class="banefits-second__h-text">Небольшая площадь</p>
+                        <p class="banefits-second__text">Все достопримечательности находятся очень близко</p>
+                    </li>
+                    <li class="banefits-second__list-item bgc2">
+                        <p class="banefits-second__h-text">Красивая дорога</p>
+                        <p class="banefits-second__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                    </li>
+                    <li class="banefits-second__list-item bgc1">
+                        <p class="banefits-second__h-text">Мало туристов</p>
+                        <p class="banefits-second__text">Большинство едет в Гранд Каньон и толпится там</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="banefits-third">
+                <img src="IMG/photo-2.jpg" alt="" class="banefits-third-container__img">
+                <div class="banefits-third-container">
+                    <p class="banefits-third__h-text">Настоящий городок</p>
+                    <p class="banefits-third__text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+                </div>
+            </div>
+        </div>
+        <div class="service container">
+            <div class="service-agitation">
+                <p class="service-agitation__h-text">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
+                <p class="service-agitation__text">Опытный персонал и качественное обслуживание!</p>
+            </div>
+            <ul class="service-list">
+                <li class="service-list-item bgc1">
+                    <img src="IMG/motel.svg" alt="" class="service-list-item__img">
+                    <p class="service-list-item__h-text">Жильё</p>
+                    <p class="service-list-item__text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                </li>
+                <li class="service-list-item bgc2">
+                    <img src="IMG/food.svg" alt="" class="service-list-item__img">
+                    <p class="service-list-item__h-text">Еда</p>
+                    <p class="service-list-item__text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
+                    </p>
+                </li>
+                <li class="service-list-item bgc1">
+                    <img src="IMG/suvs.svg" alt="" class="service-list-item__img">
+                    <p class="service-list-item__h-text">Сувениры</p>
+                    <p class="service-list-item__text">Не только китайского, но и настоящего местного производства!</p>
+                </li>
+            </ul>
+        </div>
+    </main>
+</body>
+<footer class="footer">
+    <div class="intrested">
+        <p class="intrested__h-text">Заинтересовались?</p>
+        <p class="intrested__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
+            Седоне</p>
+        <img src="IMG/Subscribe.jpg" alt="" class="mailing-bg__img">
+
+        <input class="intrested-mail__input" type="text" name="Search" placeholder="Ваш e-mail">
+        <button class="intrested-mail__button">ПОДПИСАТЬСЯ</button>
+    </div>
+    <div class="developer container">
+        <ul class="developer-sm-list">
+            <li><img src="#" alt=""></li>
+            <li><img src="#" alt=""></li>
+            <li><img src="#" alt=""></li>
+        </ul>
+        <p class="developer-number">+7 (812) 812-12-12</p>
+        <img src="#" alt="" class="developer-logo">
+    </div>
+</footer>
+
+</html>
