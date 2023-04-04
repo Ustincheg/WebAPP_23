@@ -1,7 +1,9 @@
 * {
     margin: 0;
     font-family: 'PT Sans', sans-serif;
+    font-stretch: condensed;
     text-decoration: none;
+    transition: 0.2s;
  
 }
 body{
@@ -38,7 +40,7 @@ body{
     list-style-type: none;
     gap: 32px;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .item_link {
@@ -131,7 +133,7 @@ body{
     flex-direction: column;
     align-items: center;
     background: #ffffff;
-    padding: 59px 0;
+    padding: 59px 274.5px;
     gap: 25px;
 }
 .first_text{
@@ -142,7 +144,7 @@ body{
     font-weight: 700;
     color: #000000;
     text-transform:uppercase;
-    max-width: 630px;
+    /* max-width: 630px; */
     text-align: center;
 
 }
