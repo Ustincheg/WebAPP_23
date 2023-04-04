@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head class="head">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SEDONA</title>
+        <link rel="stylesheet" href="styles/general.css">
+        <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/index.css">
+        <link rel="stylesheet" href="styles/ptsans.css">
+    </head>
+    <body class="body">
+        <iframe src="components/header.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+        <main class="main">
+            <section class="intro container">
+                <div class="intro-container">
+                    <img class="intro__background" src="data/images/index/intro/background.jpg" alt="background">
+                    <img class="intro__title" src="data/images/index/intro/title.svg" alt="title">
+                    <img class="intro__white-mask" src="data/images/index/intro/white-mask.svg" alt="white-mask">
+                </div>
+            </section>
+            <section class="descryption container">
+                <p class="descryption__title">
+                    Седона — небольшой городок в Аризоне, заслуживающий большего!
+                </p>
+                <p class="descryption__context">
+                    Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
+                </p>
+            </section>
+            <section class="titles container">
+                <ul class="titles__list">
+                    <li class="titles__list__item">
+                        <p class="titles__title">
+                            Настоящий городок
+                        </p>
+                        <p class="titles__context">
+                            Седона — не аттракцион для туристов, там течёт своя жизнь
+                        </p>
+                    </li>
+                    <li class="titles__list__item title-image">
+                        <img class="titles__image" src="data/images/index/titles/photo-1.jpg">
+                    </li>
+                    <li class="titles__list__item">
+                        <p class="titles__title">
+                            Небольшая площадь
+                        </p>
+                        <p class="titles__context">
+                            Все достопримечательности находятся очень близко
+                        </p>
+                    </li>
+                    <li class="titles__list__item">
+                        <p class="titles__title">
+                            Красивая дорога
+                        </p>
+                        <p class="titles__context">
+                            Ехать в Седону из Лас-Вегаса совсем не скучно!
+                        </p>
+                    </li>
+                    <li class="titles__list__item">
+                        <p class="titles__title">
+                            Мало туристов
+                        </p>
+                        <p class="titles__context">
+                            Большинство едет в Гранд Каньон и толпится там
+                        </p>
+                    </li>
+                    <li class="titles__list__item title-image">
+                        <img class="titles__image" src="data/images/index/titles/photo-2.jpg">
+                    </li>
+                    <li class="titles__list__item">
+                        <p class="titles__title">
+                            Там есть мост дьявола
+                        </p>
+                        <p class="titles__context">
+                            Да, по нему можно пройти! Если вы осмелитесь, разумеется
+                        </p>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <iframe src="components/footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+    </body>
+</html>

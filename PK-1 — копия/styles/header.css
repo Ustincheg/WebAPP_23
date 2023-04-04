@@ -1,0 +1,33 @@
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav-list {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+
+    padding: 20px 0;
+
+    display: flex;
+    gap: 32px;
+}
+
+.header__button {
+    padding: 8px 34px;
+    background: #756157;
+    border-radius: 4px;
+}
+
+.header__button__text {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: white;
+}
