@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=PT+Sans:wght@400;700&display=swap');
+
+* {
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+}
+
+.header {
+    width: 1200px;
+    height: 64px;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header__container-nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header__container-menu {
+    padding: 0px;
+    align-items: center;
+    list-style: none;
+    gap: 33px;
+}
+
+.list-link {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 25.5px;
+    list-style: none;
+}
+
+.list-link__button {
+    width: 160px;
+    height: 36px;
+    background-color: #756157;
+    border-radius: 4px;
+}
+
+.header__topnav-list {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.topnav-list__item {
+    width: 68px;
+    height: 24px;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #000000;
+    text-decoration: none
+}
+
+.hero__background {
+    width: 1200px;
+    height: 485px;
+}
+
+.hero__text {
+    text-align: center;
+    color: #000000;
+    font-family: 'PT Sans';
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 69px 0px;
+    gap: 25px;
+
+    position: absolute;
+    width: 1200px;
+    height: 261px;
+    left: 0px;
+    top: 485px;
+}
+
+.hero__text-first {
+    width: 620px;
+    height: 72px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.hero__text-second {
+    width: 651px;
+    height: 26px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+}
