@@ -71,20 +71,7 @@
   .search:focus{
     border-color: #005AAB;
   }
-  @media (max-width:768px) {
-    *{
-      border: 1px solid rgb(255, 0, 0);
-    }
-    .content{
-      margin-left: 30px;
-      margin-right: 30px;
-    }
-    .header__search{
-
-      max-width: 435px;
-    }
-
-  } 
+  
 
 
 
@@ -123,11 +110,11 @@
     display: grid;
     gap: 20px;
     grid-template-columns: 215px auto 130px 111px;
+    grid-auto-flow: row;
   }
  
 
   [class^="header__bottom-first-box-"] {
-    display: grid;
     place-items: center;
   }
   .header__favorites,.header__basket{
@@ -263,6 +250,10 @@
     height: 360px;
     display: none;
   }
+  .main-banner-slider-img{
+    width: 870px;
+    height: 360px;
+  }
   .main-banner-slider-child-1{
     display: grid;
   }
@@ -327,6 +318,7 @@
     list-style-type: none;
     flex-wrap: wrap;
     justify-content: start;
+    justify-content: center;
   }
   .main-hits__list li{
     display: grid;
@@ -453,13 +445,13 @@
     color: #00305A;
   }
   .main__brands-list{
-    height: 330px;
     justify-content: space-between;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
     align-content:space-between;
+    row-gap: 30px;
   }
   .main__brands-list li{
 
@@ -468,7 +460,7 @@
     border-radius:8px;
     width: 270px;
     height: 150px;
-  
+    display: grid;
   }
   .main__brands-list-foto{
     display: block;
@@ -1243,3 +1235,64 @@
   legend{
     margin-bottom: 25px;
   }
+
+
+
+  @media (max-width:768px) {
+    *{
+      border: 1px solid rgb(255, 0, 0);
+      max-width: 736px;
+    }
+    .content{
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+    .header__search{
+
+      max-width: 435px;
+    }
+    .section{
+      max-width: 736px;
+      width: 100%;
+    }
+    .header__bottom-first {
+      grid-template-columns: 246px auto 130px 111px;
+    }
+    [class^="header__bottom-first-box-"]{
+
+    }
+    .header__bottom-first-box-1{
+      grid-row: 1;
+      grid-column: 1;
+    }
+    .header__bottom-first-box-2{
+      grid-row: 2;
+      grid-column: 2/5;
+    }
+    .header__bottom-first-box-3{
+      grid-row: 1;
+      grid-column: 3;
+    }
+    .header__bottom-first-box-4{
+      grid-row: 1;
+      grid-column: 4;
+    }
+    .header__bottom-first-box-5{
+      grid-row: 2;
+      grid-column: 1;
+    }
+    .header__bottom-first-box-6{
+      grid-row: 3;
+    }
+    .main-banner__news{
+      display: none;
+    }
+    [class^="main-banner-slider-child-"] {
+      max-width: 670px;
+      height: 290px;
+    }
+    .main-banner-slider-img{
+      max-width: 670px;
+      height: 290px;
+    }
+  } 
