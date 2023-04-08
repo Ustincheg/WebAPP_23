@@ -1,0 +1,11 @@
+body{
+    margin: 0;
+    background-color: #252222;
+}
+p.{
+    list-style: none;
+    text-decoration: none;
+}
+.visually-hidden{
+    display: none;
+}

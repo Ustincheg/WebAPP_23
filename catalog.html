@@ -13,7 +13,7 @@
 <body>
     <header class="header">
         <div class="header__top top">
-            <div class="header__content content">                
+            <div class="header__content content">
                 <ul class="header__top-nav top-nav">
                     <li class="top-nav__item">
                         <a class="top-nav__item-link" href="#">Магазины</a>
@@ -32,43 +32,47 @@
             <div class="header__down-content content">
                 <div class="header__down-content-up">
                     <a href="#" class="header__logo"><img src="images/Logo.svg" alt="Логотип"></a>
-                    <form action="find"><img src="images/find.jpg" alt="Поиск"><input type="text" placeholder="Поиск...."></form>
+                    <form class="find" action="find"><img class="im-find" src="images/find.jpg" alt="Поиск"><input
+                            type="text" placeholder="Поиск...."></form>
                     <div class="header__dop">
-                        <a class="header__price" href=""><img src="images/heart.svg" alt="Избранное">Избранное(2)</a>
-                        <a class="header__about" href=""><img src="images/busket.jpg" alt="Корзина">Корзина(14)</a>
+                        <a class="header__price" href=""><img src="images/heart.svg" alt="Избранное">Избранное(0)</a>
+                        <a class="header__about" href=""><img src="images/busket.jpg" alt="Корзина">Корзина(0)</a>
                     </div>
                 </div>
-                <button class="header__catalog"><img src="images/Menu icon.svg" alt="Каталог">Каталог</button>
-                <nav class="header__main-nav main-nav">
-                    <ul class="main-nav__list">
-                         <li class="main-nav__list-item">
-                            <a class="main-nav__list-item-link" href="#">СКИДКИ</a>
-                        </li>
-                        <li class="main-nav__list-item">
-                            <a class="main-nav__list-item-link" href="#">СМАРТФОНЫ</a>
-                        </li>
-                        <li class="main-nav__list-item">
-                            <a class="main-nav__list-item-link" href="#">ТЕЛЕВИЗОРЫ</a>
-                        </li>
-                        <li class="main-nav__list-item">
-                            <a class="main-nav__list-item-link" href="#">НОУТБУКИ</a>
-                        </li>
-                        <li class="main-nav__list-item">
-                            <a class="main-nav__list-item-link" href="#">СТИРАЛЬНЫЕ МАШИНЫ</a>
-                        </li>
-                        <li class="main-nav__list-item">
-                            <a class="main-nav__list-item-link" href="#">ХОЛОДИЛЬНИКИ</a>
-                        </li>
-                        <li class="main-nav__list-item">
-                            <a class="main-nav__list-item-link" href="#">ПЫЛЕСОСЫ</a>
-                        </li>
-                        <li class="main-nav__list-item">
-                            <a class="main-nav__list-item-link" href="#">МИКРОВОЛНОВКИ</a>
-                        </li>
-                            
-                    </ul>
-                </nav>
-            </div>            
+                <div class="content-header-catalog">
+                    <button class="header__catalog"><img class="im" src="images/Menu icon.svg"
+                            alt="Каталог">Каталог</button>
+                    <nav class="header__main-nav main-nav">
+                        <ul class="main-nav__list">
+                            <li class="main-nav__list-item">
+                                <a class="main-nav__list-item-link" href="#">СКИДКИ</a>
+                            </li>
+                            <li class="main-nav__list-item">
+                                <a class="main-nav__list-item-link" href="#">СМАРТФОНЫ</a>
+                            </li>
+                            <li class="main-nav__list-item">
+                                <a class="main-nav__list-item-link" href="#">ТЕЛЕВИЗОРЫ</a>
+                            </li>
+                            <li class="main-nav__list-item">
+                                <a class="main-nav__list-item-link" href="#">НОУТБУКИ</a>
+                            </li>
+                            <li class="main-nav__list-item">
+                                <a class="main-nav__list-item-link" href="#">СТИРАЛЬНЫЕ МАШИНЫ</a>
+                            </li>
+                            <li class="main-nav__list-item">
+                                <a class="main-nav__list-item-link" href="#">ХОЛОДИЛЬНИКИ</a>
+                            </li>
+                            <li class="main-nav__list-item">
+                                <a class="main-nav__list-item-link" href="#">ПЫЛЕСОСЫ</a>
+                            </li>
+                            <li class="main-nav__list-item">
+                                <a class="main-nav__list-item-link" href="#">МИКРОВОЛНОВКИ</a>
+                            </li>
+
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </div>        
     </header>
     <main class="main">
@@ -152,11 +156,13 @@
                                         <legend class="form__field-name">Количество симок</legend>
                                         <div class="count-sim">
                                             <label class="form__field-lable  lable">
-                                                <span class="form-lable-radio"></span>
-                                                <input class="sircle-box" type="radio" name="name-radio" class="label_input">
-                                                1SIM
+                                                <input class="sircle-box  visually-hidden"  type="radio" name="name-radio" class="label_input">
+                                                <span class="form-lable-radio"></span>1SIM
                                             </label>
-                                            <label class="form__field-lable  lable"><input class="sircle-box" type="radio" name="name-radio" class="label_input">2SIM</label>
+                                            <label class="form__field-lable  lable">
+                                                <input class="sircle-box  visually-hidden" type="radio" name="name-radio" class="label_input">
+                                                <span class="form-lable-radio"></span>2SIM
+                                            </label>
                                         </div>
                                     </div>
                                 </fieldset>
@@ -165,14 +171,15 @@
                                 <section class="consist-hits">
                                     <ul class="consist-hits__list">
                                         <li class="consist-hits__list-item hit-card">
+                                            <button class="button-like"><img src="images/like.png" alt="Лайк" class="hit-card-like"></button>
                                             <a href="#" class="hit-card__link">
                                                 <figure class="hit-card__figure">
-                                                    <img src="images/like.png" alt="Лайк" class="hit-card-like">
                                                     <img src="images/smartphone1.svg" alt="Фото техники" class="hit-card__img">
                                                     <figcaption class="hit-card__desc">Смартфон Samsung Galaxy S21 128GB Phantom Violet</figcaption>
                                                 </figure>
-                                                
-                                                <p class="hit-card__price">54 440 ₽</p>
+                                                <div class="price">
+                                                    <p class="hit-card__price">54 440 ₽</p>
+                                                </div>
                                             </a>
                                             <button class=""></button>
                                         </li>
@@ -183,92 +190,104 @@
                                                     <img src="images/smartphone2.svg" alt="Фото техники" class="hit-card__img">
                                                     <figcaption class="hit-card__desc">Смартфон Apple iPhone 11 128GB White</figcaption>
                                                 </figure>
-                                                <p class="hit-card__price hit-card__price--cross-out">62 990 ₽</p>
-                                                <p class="hit-card__price">59 990 ₽</p>
+                                                <div class="price">
+                                                    <p class="hit-card__price hit-card__price--cross-out">62 990 ₽</p>
+                                                    <p class="hit-card__price">59 990 ₽</p>
+                                                </div>
                                             </a>
                                             <button class=""></button>
                                         </li>
                                         <li class="consist-hits__list-item hit-card">
+                                            <button class="button-like"><img src="images/like.png" alt="Лайк" class="hit-card-like"></button>
                                             <a href="#" class="hit-card__link">
                                                 <figure class="hit-card__figure">
-                                                    <img src="images/like.png" alt="Лайк" class="hit-card-like">
                                                     <img src="images/smartphone3.svg" alt="Фото техники" class="hit-card__img">
                                                     <figcaption class="hit-card__desc">Смартфон Samsung Galaxy A52 128GB Awesome Black</figcaption>
                                                 </figure>
-                                                <p class="hit-card__price hit-card__price--cross-out">32 990 ₽</p>
-                                                <p class="hit-card__price">26 790 ₽</p>
+                                                <div class="price">
+                                                    <p class="hit-card__price hit-card__price--cross-out">32 990 ₽</p>
+                                                    <p class="hit-card__price">26 790 ₽</p>
+                                                </div>
                                             </a>
                                             <button class=""></button>
                                         </li>
                                         <li class="consist-hits__list-item hit-card">
+                                            <button class="button-like"><img src="images/like.png" alt="Лайк" class="hit-card-like"></button>
                                             <a href="#" class="hit-card__link">
                                                 <figure class="hit-card__figure">
-                                                    <img src="images/like.png" alt="Лайк" class="hit-card-like">
                                                     <img src="images/smartphone4.svg" alt="Фото техники" class="hit-card__img">
                                                     <figcaption class="hit-card__desc">Смартфон Samsung Galaxy S21 128GB Phantom Gray</figcaption>
                                                 </figure>
-                                                <p class="hit-card__price hit-card__price--cross-out">65 990 ₽</p>
-                                                <p class="hit-card__price">61 990 ₽</p>
+                                                <div class="price">
+                                                    <p class="hit-card__price hit-card__price--cross-out">65 990 ₽</p>
+                                                    <p class="hit-card__price">61 990 ₽</p>
+                                                </div>
                                             </a>
                                             <button class=""></button>
                                         </li>
                                         <li class="consist-hits__list-item hit-card">
+                                            <button class="button-like"><img src="images/like.png" alt="Лайк" class="hit-card-like"></button>
                                             <a href="#" class="hit-card__link">
                                                 <figure class="hit-card__figure">
-                                                    <img src="images/like.png" alt="Лайк" class="hit-card-like">
                                                     <img src="images/smartphone5.svg" alt="Фото техники" class="hit-card__img">
                                                     <figcaption class="hit-card__desc">Смартфон Huawei Mate 40 Pro Mystic Silver (NOH-NX9)</figcaption>
                                                 </figure>
-                                                
-                                                <p class="hit-card__price">36 990 ₽</p>
+                                                <div class="price">
+                                                    <p class="hit-card__price">36 990 ₽</p>
+                                                </div>
                                             </a>
                                             <button class=""></button>
                                         </li>
                                         <li class="consist-hits__list-item hit-card">
+                                            <button class="button-like"><img src="images/like.png" alt="Лайк" class="hit-card-like"></button>
                                             <a href="#" class="hit-card__link">
                                                 <figure class="hit-card__figure">
-                                                    <img src="images/like.png" alt="Лайк" class="hit-card-like">
                                                     <img src="images/smartphone6.svg" alt="Фото техники" class="hit-card__img">
                                                     <figcaption class="hit-card__desc">Смартфон Honor 10X Lite 4+128GB Icelandic Frost</figcaption>
                                                 </figure>
-                                                
-                                                <p class="hit-card__price">15 990 ₽</p>
+                                                <div class="price">
+                                                    <p class="hit-card__price">15 990 ₽</p>
+                                                </div>
                                             </a>
                                             <button class=""></button>
                                         </li>
                                         <li class="consist-hits__list-item hit-card">
+                                            <button class="button-like"><img src="images/like.png" alt="Лайк" class="hit-card-like"></button>
                                             <a href="#" class="hit-card__link">
                                                 <figure class="hit-card__figure">
-                                                    <img src="images/like.png" alt="Лайк" class="hit-card-like">
                                                     <img src="images/smartphone7.svg" alt="Фото техники" class="hit-card__img">
                                                     <figcaption class="hit-card__desc">Смартфон Huawei P40 Pro Silver Frost</figcaption>
                                                 </figure>
-                                                <p class="hit-card__price hit-card__price--cross-out">70 990 ₽</p>
-                                                <p class="hit-card__price">65 990 ₽</p>
+                                                <div class="price">
+                                                    <p class="hit-card__price hit-card__price--cross-out">70 990 ₽</p>
+                                                    <p class="hit-card__price">65 990 ₽</p>
+                                                </div>
                                             </a>
                                             <button class=""></button>
                                         </li>
                                         <li class="consist-hits__list-item hit-card">
+                                            <button class="button-like"><img src="images/like.png" alt="Лайк" class="hit-card-like"></button>
                                             <a href="#" class="hit-card__link">
                                                 <figure class="hit-card__figure">
-                                                    <img src="images/like.png" alt="Лайк" class="hit-card-like">
                                                     <img src="images/smartphone8.svg" alt="Фото техники" class="hit-card__img">
                                                     <figcaption class="hit-card__desc">Смартфон Honor 9X 4+128GB Sapphire Blue</figcaption>
                                                 </figure>
-                                                
-                                                <p class="hit-card__price">15 000 ₽</p>
+                                                <div class="price">
+                                                    <p class="hit-card__price">15 000 ₽</p>
+                                                </div>
                                             </a>
                                             <button class=""></button>
                                         </li>
                                         <li class="consist-hits__list-item hit-card">
+                                            <button class="button-like"><img src="images/like.png" alt="Лайк" class="hit-card-like"></button>
                                             <a href="#" class="hit-card__link">
                                                 <figure class="hit-card__figure">
-                                                    <img src="images/like.png" alt="Лайк" class="hit-card-like">
                                                     <img src="images/smartphone9.svg" alt="Фото техники" class="hit-card__img">
                                                     <figcaption class="hit-card__desc">Смартфон Apple iPhone SE 64GB Black</figcaption>
                                                 </figure>
-                                                
-                                                <p class="hit-card__price">39 990 ₽</p>
+                                                <div class="price">
+                                                    <p class="hit-card__price">39 990 ₽</p>
+                                                </div>
                                             </a>
                                             <button class=""></button>
                                         </li>
@@ -302,11 +321,11 @@
     </main>
 
     <footer class="footer">
-        <div class="content">
+        <div class="content-top  content">
             <div class="content-down">
                 <div class="content-logo">
                     <img src="images/Logo.svg" alt="logo" class="footer__logo">
-                    <p class="footer__addres">7-я Кожуховская ул.,д.9, Москва(этаж 1)</p>
+                    <p class="footer__addres">7-я Кожуховская ул.,9, Москва (этаж 1)</p>
                 </div>
                 <ul class="footer__nav-list">
                     <div class="content-menu-down1">
@@ -317,16 +336,19 @@
                             <a href="#" class="footer__nav-list-link">Акции</a>
                         </li>
                         <li class="footer__nav-list-item">
+                            <a href="#" class="footer__nav-list-link">Покупателям</a>
+                        </li>
+                        <li class="footer__nav-list-item">
                             <a href="#" class="footer__nav-list-link">Информация</a>
                         </li>
                         <li class="footer__nav-list-item">
                             <a href="#" class="footer__nav-list-link">Доставка</a>
                         </li>
+                    </div>
+                    <div class="content-menu-down2">
                         <li class="footer__nav-list-item">
                             <a href="#" class="footer__nav-list-link">Гарантия</a>
                         </li>
-                    </div>
-                    <div class="content-menu-down2">
                         <li class="footer__nav-list-item">
                             <a href="#" class="footer__nav-list-link">Кредит и рассрочка</a>
                         </li>
@@ -361,6 +383,9 @@
                     </li>
                 </ul>
             </div>
+        </div>
+        <div class="none-conteiner" style="margin: 0px;"></div>
+        <div class="content-down-1  content">
             <div class="content-footer">
                 <div class="content-footer-bottom">
                     <p class="footer__bottom-txt">© Electro place, 2003–2023</p>
@@ -369,7 +394,6 @@
                 <p class="footer__developer">Разработка сайта: <img src="images/Garpix logo.svg" alt="logo"></p>
             </div>
         </div>
-
     </footer>
 </body>
 </html>
