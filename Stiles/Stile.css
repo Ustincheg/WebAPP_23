@@ -1,0 +1,42 @@
+*{
+    list-style-type: none; 
+}
+.header__top-nav
+{ 
+  background-color:  #363636;
+  
+  
+}
+.top-nav__item-link  {
+font-family: 'Open Sans';
+font-weight: 400;
+font-size: 14px;
+line-height: 19px;
+color: #FFFFFF;
+}
+.header__main-nav-list{
+    width: 57px;
+height: 19px;
+    font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+gap: 25px;
+}
+.slider__item.active{
+    display: block;
+
+}
+.slider__item{
+ display: none;
+    
+}
+.content{
+    max-width: 1170px;
+    margin: 0 auto;
+}

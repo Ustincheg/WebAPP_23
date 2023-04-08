@@ -5,40 +5,275 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="Stiles/Stile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="body">
     <header class="header">
-        <ul class="header__top-nav" top-nav>
-            <li class="top-nav__item">
-                <a href="#">Вопрос-ответ</a>
+        <ul class="header__top-nav top-nav">
+            <li class = "top-nav__item">
+                <a class="top-nav__item-link" href="#">Магазин</a>
             </li>
             <li class="top-nav__item">
-                <a href="#">Обратный звонок</a>
+                <a class="top-nav__item-link" href="#">Доставка и оплата</a>
             </li>
-            <li class="top-nav__item">
-                <a href="#">Личный кабинет</a>
+            <li class = "top-nav__item">
+                <a class="top-nav__item-link" href="#">Кредиты и рассрочка</a>
             </li>
         </ul>
-        <a class="header__telephone" href="tel +79631502804">8 (963) 150-28-04</a>
-        <a class="header__logo" href="#"> <img src="" alt="Логотип"></a>
-        <input type="text">
-        <a class="header__prise" href="">Цены</a>
-        <a class="header__about" href=""> О клинике</a>
-        <button>Каталог</button>
-        <nav>
-            <ul class="">
-                <li class="header__top-nav__link"><a href="#">РАСПИСАНИЕ</a></li>
-                <li class="header__top-nav__link"><a href="#">СПЕЦИАЛИСТЫ</a></li>
-                <li class="header__top-nav__link"><a href="#">УСЛУГИ</a></li>
-                <li class="header__top-nav__link"><a href="#">ТРАВМПУНКТ</a></li>
-                <li class="header__top-nav__link"><a href="#">ОТЗЫВЫ</a></li>
-                
+        <a class="header__tel" href="8 (495) 444-888-5">8 (495) 444-888-5</a>
+        <a class="header__logo" href="#"> <img class="header__logo-img" src="IMG/Header lvl 2/Logo.svg" alt="Логотип"></a>
+        <input class="header__search" type="text">
+        <a class="header__like" href="#">Избранное</a>
+        <a class="header__cart" href="#">Корзина</a>
+        <button class="header__catalog">Каталог</button>
+        <nav class="header__main-nav">
+            <ul class="header__main-nav-list list">
+                <li class="list__item"><a href="#">СКИДКИ</a></li>
+                <li class="list__item"><a href="#">СМАРТФОНЫ</a></li>
+                <li class="list__item"><a href="#"></a>ТЕЛЕВИЗОРЫ</li>
+                <li class="list__item"><a href="#"></a>НОУТБУКИ</li>
+                <li class="list__item"><a href="#"></a>СТИРАЛЬНЫЕ МАШИНЫ</li>
+                <li class="list__item"><a href="#"></a>ХОЛОДИЛЬНИКИ</li>
+                <li class="list__item"><a href="#"></a>ПЫЛЕСОСЫ</li>
+                <li class="list__item"><a href="#"></a>МИКРОВОЛНОВКИ</li>
             </ul>
         </nav>
         
     </header>
+    <main class="main">
+        <h1 class="main-title">Главная страница интернет магазина бытовой электроники</h1>
+        <section class="banner">
+            <div class="content">
+                <h2 class="">Главный банер</h2>
+                <ul class="banner__slider">
+                    <li class="slider__item active">
+                        <img src="IMG/Header lvl 2/mikrovolnovka.jpg" alt="Фото">
+                    </li>
+                    <li class="slider__item">
+                        <img src="#" alt="Фото">
+                    </li>
+                    <li class="slider__item">
+                        <img src="#" alt="Фото">
+                    </li>
+                    <li class="slider__item">
+                        <img src="#" alt="Фото">
+                    </li>
+                    <li class="slider__item">
+                        <img src="#" alt="Фото">
+                    </li>
+                </ul>
+                
+                <figure class="slider__item__mini">
+                
+                    <figcaption>Новая линейка телевизоров</figcaption>
+                    <img src="IMG/Header lvl 2/telik.jpg" alt="Телевизор">
+                
+                </figure>
+                <a href="#">Смотреть каталог</a>
+            </div>
+        </section>
+        <section class="hits">
+            <p class="hits__title title">Хиты продаж</p>
+            <a href="#" class="hits__link link">Смотреть все</a>
+            <ul class="hits__list-items list-items">
+                <li class="list-items__item-card item-card">
+                    <a href="#" class="item-card__link">
+                        <figure class="item-card__fig">
+                            <img src="IMG/Header lvl 2/myltivarka.jpg" alt="Фото товара" class="item-card__img">
+                            <figcaption class="item-card__fig-title"></figcaption>
+                        </figure>
+                        <p class="item-card__price item-card__price--cross-out">6990 ₽</p>
+                        <p class="item-card__price">5533 ₽</p>
+                    </a>
+                </li>
+                <li class="list-items__item-card item-card">
+                    <a href="#" class="item-card__link">
+                        <figure class="item-card__fig">
+                            <img src="#" alt="Фото товара" class="item-card__img">
+                            <figcaption class="item-card__fig-title"></figcaption>
+                        </figure>
+                        <p class="item-card__price">36990 ₽</p>
+                    </a>
+                </li>
+                <li class="list-items__item-card item-card">
+                    <a href="#" class="item-card__link">
+                        <figure class="item-card__fig">
+                            <img src="#" alt="Фото товара" class="item-card__img">
+                            <figcaption class="item-card__fig-title"></figcaption>
+                        </figure>
+                        <p class="item-card__price item-card__price--cross-out">3990 ₽</p>
+                        <p class="item-card__price">1990 ₽</p>
+                    </a>
+                </li>
+                <li class="list-items__item-card item-card">
+                    <a href="#" class="item-card__link">
+                        <figure class="item-card__fig">
+                            <img src="#" alt="Фото товара" class="item-card__img">
+                            <figcaption class="item-card__fig-title"></figcaption>
+                        </figure>
+                        <p class="item-card__price item-card__price--cross-out">16990 ₽</p>
+                        <p class="item-card__price">14990 ₽</p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section class="popular-brands pb">
+            <p class="pb__title">Популярные бренды</p>
+            <a href="#" class="pb__link">Смотреть все</a>
+            <ul class="pb__list-of-brands list-brands">
+                <li class="list-brands__brand brand"><img src="#" alt="Логотип бренда"></li>
+                <li class="list-brands__brand brand"><img src="#" alt="Логотип бренда"></li>
+                <li class="list-brands__brand brand"><img src="#" alt="Логотип бренда"></li>
+                <li class="list-brands__brand brand"><img src="#" alt="Логотип бренда"></li>
+                <li class="list-brands__brand brand"><img src="#" alt="Логотип бренда"></li>
+                <li class="list-brands__brand brand"><img src="#" alt="Логотип бренда"></li>
+                <li class="list-brands__brand brand"><img src="#" alt="Логотип бренда"></li>
+                <li class="list-brands__brand brand"><img src="#" alt="Логотип бренда"></li>
+            </ul>
+        </section>
+        <section class="news-and-sales nas">
+            <h2 class="">Новости и акции</h2>
+            <p class="nas__title">Новости и акции</p>
+            <a href="#" class="nas__link">Смотреть все</a>
+            <ul class="nas__list-news list-news">
+                <li class="list-news__item-news item-news">
+                    <p class="item-news__title">Бренд BLOODy представил мышь W60 Pro</p>
+                    <p class="item-news__desc">Популярный бренд компьютерных аксессуаров</p>
+                    <a class="item-news__link" href="#">Подробнее</a>
+                    <img src="#" alt="Новость" class="item-news__img">
+                </li>
+                <li class="list-news__item-news item-news">
+                    <p class="item-news__title">Плата asus</p>
+                    <a class="item-news__link" href="#">Подробнее</a>
+                    <img src="#" alt="Новость" class="item-news__img">
+                </li>
+                <li class="list-news__item-news item-news">
+                    <p class="item-news__title">Планшет samsung</p>
+                    <a class="item-news__link" href="#">Подробнее</a>
+                    <img src="#" alt="Новость" class="item-news__img">
+                </li>
+                <li class="list-news__item-news item-news">
+                    <p class="item-news__title">Новые наушники Razer</p>
+                    <a class="item-news__link" href="#">Подробнее</a>
+                    <img src="#" alt="Новость" class="item-news__img">
+                </li>
+                <li class="list-news__item-news item-news">
+                    <p class="item-news__title">Мультипекарь Redmond плюс</p>
+                    <a class="item-news__link" href="#">Подробнее</a>
+                    <img src="#" alt="Новость" class="item-news__img">
+                </li>
+                <li class="list-news__item-news item-news">
+                    <p class="item-news__title">Системный блок acer</p>
+                    <a class="item-news__link" href="#">Подробнее</a>
+                    <img src="#" alt="Новость" class="item-news__img">
+                </li>
+            </ul>
+        </section>
+        <section class="advantages adv">
+            <h2 class="">Преимущества</h2>
+            <p class="adv__title">Преимущества</p>
+            <ul class="adv__list-item list-item">
+                <li class="list-item__item item">
+                    <img src="#" alt="Иконка" class="item__img">
+                    <p class="item__title">Простая и удобная система заказа товара</p>
+                    <p class="item__text">Мы знаем, как важна простая система регистрации и оформления заказа, поэтому делаем все для того, чтобы оформить заказ было удобно (и быстро!).</p>
+                </li>
+                <li class="list-item__item item">
+                    <img src="#" alt="Иконка" class="item__img">
+                    <p class="item__title">Оповещаем о состоянии заказа по SMS</p>
+                    <p class="item__text">Для тех, кто всегда хочет быть в курсе: вы сами можете контролировать свой заказ, получая статус о его формировании посредством sms-сообщений.</p>
+                </li>
+                <li class="list-item__item item">
+                    <img src="#" alt="Иконка" class="item__img">
+                    <p class="item__title">Оперативная доставка</p>
+                    <p class="item__text">Мы привыкли работать с большими объемами заказов, поэтому вам не стоит беспокоиться о том, что ваш заказ будет обработан не вовремя.</p>
+                </li>
+            </ul>
+        </section>  
+        <section class="contacts">
+            <h2 class="">Контакты</h2>
+            <p class="contacts__title">Контакты</p>
+            <img src="#" alt="Карта" class="contacts__map">
+            <address>
+                <ul class="contacts__list-item list-item">
+                    <li class="list-item__contact contact">
+                        <img src="#" alt="Иконка" class="contact__img">
+                        <p class="contact__mame-data">Адрес</p>
+                         <p class="contact__data">7-я Кожуховская ул., 9, Москва (этаж 1)</p>
+                    </li>
+                    <li class="list-item__contact contact">
+                        <img src="#" alt="Иконка" class="contact__img">
+                        <p class="contact__mame-data">Телефон</p>
+                        <p class="contact__data">8 (495) 444-888-5</p>
+                    </li>
+                    <li class="list-item__contact contact">
+                        <img src="#" alt="Иконка" class="contact__img">
+                        <p class="contact__mame-data">График работы</p>
+                        <p class="contact__data">Пн-Пт 9:00 до 20:00</p>
+                    </li>
+                </ul>
+            </address>
+            <button class="contact__button">Написать нам</button>
+        </section>
+        <section class="sub">
+            <h2 class="">Подписка на рассылку</h2>
+            <p class="sub__title">Получайте самые интересные предложения первыми!</p>
+            <form action="#" method="get" class="sub__form">
+                <input type="text" placeholder="Введите e-mail" class="sub__form-input">
+                <input type="button" value="Подписаться" class="sub__form-button">
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <img src="#" alt="logo" class="footer__logo">
+        <p class="footer__addres">7-я Кожуховская ул., 9, Москва (этаж 1)</p>
+        <ul class="footer__nav-list">
+            <li class="footer__nav-list-item">
+                <a href="#" class="footer__nav-list-link">Скидки</a>
+            </li>
+            <li class="footer__nav-list-item">
+                <a href="#" class="footer__nav-list-link">Акции</a>
+            </li>
+            <li class="footer__nav-list-item">
+                <a href="#" class="footer__nav-list-link">Покупателям</a>
+            </li>
+            <li class="footer__nav-list-item">
+                <a href="#" class="footer__nav-list-link">Информация</a>
+            </li>
+            <li class="footer__nav-list-item">
+                <a href="#" class="footer__nav-list-link">Гарантия</a>
+            </li>
+            <li class="footer__nav-list-item">
+                <a href="#" class="footer__nav-list-link">Кредит и рассрочка</a>
+            </li>
+            <li class="footer__nav-list-item">
+                <a href="#" class="footer__nav-list-link">Новости</a>
+            </li>
+            <li class="footer__nav-list-item">
+                <a href="#" class="footer__nav-list-link">Вакансии</a>
+            </li>
+        </ul>
+        <ul class="footer__social-list social-list">
+            <li class="social-list__item"><a href="#" class="social-list__desc"><span
+                        class="social-list__alt">FaceBook</span></a></li>
+            <li class="social-list__item"><a href="#" class="social-list__desc"><span
+                        class="social-list__alt">instagram</span></a></li>
+            <li class="social-list__item"><a href="#" class="social-list__desc"><span
+                        class="social-list__alt">VK</span></a></li>
+            <li class="social-list__item"><a href="#" class="social-list__desc"><span
+                        class="social-list__alt">Youtube</span></a></li>
+        </ul>
+        <p class="footer__bottom-txt">© Electro place, 2003–2021</p>
+        <a href="#" class="footer__bottom-link">Политика обработки персональных данных</a>
+        <p class="footer__developer">Разработка сайта: <img src="#" alt="logo"></p>
+    </footer>
 
-
-    <h1>hospital</h1>
+    <h1>electroplace</h1>
 </body>
 </html>

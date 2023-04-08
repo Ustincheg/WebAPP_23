@@ -1,0 +1,8 @@
+.header__left{
+   background-color: blue;
+    font-family: 'Open Sans';
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
