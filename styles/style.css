@@ -2,12 +2,23 @@
     font-family: "Roboto";
 }
 
+.header__top{
+
+    background: #333333;
+}
+.header__inner{
+    display: flex;
+    padding: 17px 0px;
+    
+}
+
+
 .header {
     font-family: OpenSans;
 }
 
 .header__top-nav {
-    background: #363636;
+    background: #333333;
 }
 
 .body {
@@ -47,4 +58,24 @@ font-weight: 700;
 font-size: 32px;
 line-height: 38px;
 color: #000000;
+}
+
+body{
+    margin: 0;
+}
+
+input[type="text"]{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #7D868F;
+    
+}
+input[type="text"]{
+    padding: 10px;
+    width: 520px;
+    border-radius: 8px;
+    border: 1px solid #DEDEE2 ;
 }
