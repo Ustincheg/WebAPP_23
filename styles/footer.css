@@ -85,6 +85,12 @@
     gap: 10px;
 }
 
+.footer__social-networks-list__image:hover {
+    filter: opacity(0);
+    border-radius: 8px;
+    background-color: red;
+}
+
 .footer__super-down-part__container {
     max-width: 1170px;
     margin: 0 auto;
