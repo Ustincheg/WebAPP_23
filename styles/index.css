@@ -18,24 +18,56 @@
 /* Настройка баннеров (микроволновка и телевизор) */
 
 .banners {
+    position: relative;
+
     display: flex;
     justify-content: space-between;
     gap: 30px;
 }
 
+.left-banner__buttons {
+    position: absolute;
+    margin: 156px 20px;
+    display: flex;
+    gap: 738px;
+}
+
+.left-banner__button {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+}
+
+.left-banner__control-list {
+    top: 330px;
+    left: 390px;
+
+    position: absolute;
+    display: flex;
+    gap: 10px;
+}
+
+.left-banner__control-list__item {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #9B9B9B;
+}
+
 .left-banner__slider__item {
-    display: "none";
+    display: none;
 
     width: 870px;
     height: 360px;
     border-radius: 8px;
-
-
-    background-image: url("../data/images/banners/banner-1.jpg");
 }
 
 .left-banner__slider__item:nth-child(1) {
-    display: "block";
+    display: block;
+}
+
+.left-banner__control-list__item:nth-child(1) {
+    background-color: white;
 }
 
 .left-banner__slider__content {
