@@ -24,11 +24,18 @@
 }
 
 .left-banner__slider__item {
+    display: "none";
+
     width: 870px;
     height: 360px;
     border-radius: 8px;
 
+
     background-image: url("../data/images/banners/banner-1.jpg");
+}
+
+.left-banner__slider__item:nth-child(1) {
+    display: "block";
 }
 
 .left-banner__slider__content {

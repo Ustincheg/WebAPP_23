@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="styles/footer.css">
         <link rel="stylesheet" href="styles/opensans.css">
         <link rel="stylesheet" href="styles/roboto.css">
+        <script src="slider/slider.js"></script>
     </head>
     <body class="body">
         <iframe src="components/header.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
@@ -21,11 +22,33 @@
             </h1>
             <section class="banners container">
                 <h2 class="visually-hidden">Главный банер</h2>
+                <button onclick="prec()"><</button>
+                <button onclick="succ()">></button>
                 <ul class="left-banner__slider">
                     <li class="left-banner__slider__item">
                         <div class="left-banner__slider__content">
                             <p class="left-banner__title">
-                                Микроволновая печь HUNDAI
+                                1 Микроволновая печь HUNDAI
+                            </p>
+                            <p class="left-banner__context">
+                                Готовь вкусно и быстро
+                            </p>
+                        </div>
+                    </li>
+                    <li class="left-banner__slider__item">
+                        <div class="left-banner__slider__content">
+                            <p class="left-banner__title">
+                                2 Микроволновая печь HUNDAI
+                            </p>
+                            <p class="left-banner__context">
+                                Готовь вкусно и быстро
+                            </p>
+                        </div>
+                    </li>
+                    <li class="left-banner__slider__item">
+                        <div class="left-banner__slider__content">
+                            <p class="left-banner__title">
+                                3 Микроволновая печь HUNDAI
                             </p>
                             <p class="left-banner__context">
                                 Готовь вкусно и быстро
