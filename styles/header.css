@@ -39,11 +39,16 @@
     align-items: center;
 }
 
+.header__search-form {
+    width: 100%;
+    padding-right: 46px;
+}
+
 .header__search__input {
     padding-left: 46px;
 
     height: 46px;
-    width: 573px;
+    width: 100%;
 
     border: 1px solid #DEDEE2;
     border-radius: 8px;
