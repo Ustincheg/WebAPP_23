@@ -37,6 +37,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 30px;
 }
 
 .header__search-form {
@@ -75,6 +76,14 @@
 
 .header__user-list__item {
     position: relative;
+}
+
+.header__user-list__item:first-child {
+    min-width: 97px;
+}
+
+.header__user-list__item:last-child {
+    min-width: 78px;
 }
 
 .header__user-list__item:first-child:before {

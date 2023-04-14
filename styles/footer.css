@@ -108,7 +108,7 @@
     min-height: 58px;
 }
 
-.footer__social-networks-list__image:hover {
+.footer__social-networks-list__link:hover .footer__social-networks-list__image {
     fill: #005AAB;
 }
 

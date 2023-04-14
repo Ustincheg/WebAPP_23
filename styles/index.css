@@ -134,7 +134,8 @@
 /* Настройка карточек с товарами */
 
 .sales-hits__list {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     justify-content: space-between;
     gap: 30px;
 }
@@ -237,7 +238,8 @@
 }
 
 .advantages__list {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
 
@@ -293,4 +295,56 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 710px;
+    }
+
+    .right-banner {
+        display: none;
+    }
+
+    .sales-hits__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .popular-brands__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .news_and_promotions__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .advantages__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 360px) {
+    .container {
+        max-width: 330px;
+    }
+
+    .sales-hits__list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .popular-brands__list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .news_and_promotions__list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .news_and_promotions__list-item:first-child {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .advantages__list {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
