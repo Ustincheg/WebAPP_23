@@ -1,0 +1,62 @@
+ul {
+   list-style-type: none;
+   padding-inline-start: 0px;
+}
+
+.header__list-item{
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.reg_text{
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__left{
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+.header__list{
+    display: flex;
+    gap: 32px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main__banner{
+    display: flex;
+    justify-content: center;
+}
+
+.text1{
+    display: flex;
+    justify-content: center;
+}
+
+.advantages__list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.advantages{
+    display: flex;
+    justify-content: space-between;
+}

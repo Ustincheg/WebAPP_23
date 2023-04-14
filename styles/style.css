@@ -1,0 +1,367 @@
+ul {
+   list-style-type: none;
+   padding-inline-start: 0px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+
+.flex-div {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+
+.hits {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+}
+
+.hit-card__price hit-card__price--cross-out{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.hit-card__price{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+ }
+
+ .news{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+ }
+
+ .popular{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+ }
+
+ .advantages_text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+ }
+
+ .reg_text{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+ }
+
+ .sms_text{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+ }
+ 
+ .delivery_text{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+ }
+
+ .contacts_text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+ }
+
+ .adress_text{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+ }
+
+ .phone_text{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+ }
+
+ .time_work{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+ }
+
+ .subscribe_text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+ }
+
+ .subscribe_text1{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+ }
+
+ 
+ .politics{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+ }
+
+ .goods-card__price{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+ }
+
+ .goods-card__price goods-card__price--cross-out{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+ }
+
+ .count_sim{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+ }
+
+ .brend{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+ }
+
+ .display{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+ }
+
+ .count{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+ }
+
+ .smartphone{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+ }
+
+ .count_goods{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+ }
+
+ .sort{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+ }
+
+ .by_count{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+ }
+
+ .by_popular{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+ }
+
+ .by_new{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+ }
+
+.sales-hits__list{
+   display: flex;
+   gap: 30px;
+   justify-content: space-between;
+}
+
+ .title-and-ref{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+
+ .popular-brends__list{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   gap: 30px;
+ }
+
+ .news__list{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: 30px;
+ }
+
+ .news__list-item:first-child {
+   grid-area: 1/1/3/3;
+ }
+
+ .advantages__body{
+   display: flex;
+   gap: 30px;
+ }
+
+.contacts__body{
+   display: flex;
+   flex-direction: row;
+   gap: 30px;
+}
+
+.contacts__block{
+   display: flex;
+   flex-direction: column;
+}
+.subscribe{
+   display: flex;
+   gap: 30px;
+}
+
+.footer__logo{
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+.footer__links{
+   display: flex;
+   gap: 135px;
+}
+
+.name__count{
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+}
+
+.sort{
+   display: flex;
+   flex-direction: row;
+   gap: 30px;
+   justify-content: center;
+}
+
+.body__catalog{
+   display: flex;
+   justify-content: space-between;
+}
+
+.sort__by{
+   display: flex;
+   justify-content: center;
+   gap: 30px;
+}
+
+.sales-hits__upp-part{
+   margin: 30px auto 50px auto
+}
+
+.goods__list{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: 30px;
+}
+
+.count__sort{
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+}
+
+.display__sort{
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+}
+
+.brend__sort{
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+}
+
+.count_sim__sort{
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+}
