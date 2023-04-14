@@ -31,25 +31,39 @@
     background-color: #284864;
 }
 
-.upp-container {
-    margin: 30px auto;
+.header__telephone {
+    padding-right: 10px;
+}
+
+.header__mid-part {
+    margin: 29px auto;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 30px;
+    gap: 34px;
+}
+
+.header__down-part {
+    margin: 28px auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
 }
 
 .header__search-form {
     width: 100%;
+    height: 100%;
     padding-right: 46px;
 }
 
 .header__search__input {
     padding-left: 46px;
 
-    height: 46px;
     width: 100%;
+    height: 46px;
 
     border: 1px solid #DEDEE2;
     border-radius: 8px;

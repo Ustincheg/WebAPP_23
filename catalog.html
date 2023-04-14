@@ -12,9 +12,11 @@
         <link rel="stylesheet" href="styles/footer.css">
         <link rel="stylesheet" href="styles/opensans.css">
         <link rel="stylesheet" href="styles/roboto.css">
+        <script type="module" src="components/header.js"></script>
+        <script type="module" src="components/footer.js"></script>
     </head>
     <body class="body">
-        <iframe src="components/header.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+        <electro-place-header></electro-place-header>
         <main class="main container">
             <div class="breadcrumb container">
                 <a class="breadcrumb__main-link" href="#">
@@ -307,6 +309,6 @@
                 </section>
             </div>
         </main>
-        <iframe src="components/footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+        <electro-place-footer></electro-place-footer>
     </body>
 </html>
