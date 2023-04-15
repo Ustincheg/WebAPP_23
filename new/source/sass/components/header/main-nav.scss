@@ -1,0 +1,29 @@
+.main-nav {
+
+    // display: flex;
+    &__list {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+        background: #F1F5F7;
+        border-radius: 8px;
+        padding: 0 12px;
+        text-transform: uppercase;
+    }
+
+    &__list li {
+        display: flex;
+        padding: 13px 12.5px;
+
+    }
+
+    &__list li a{
+        color: #000000;
+
+    }
+    &__list li:hover {
+        background-color: #DBEAF8;
+    }
+}

@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@500;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!--Блок заголовка страницы-->
+    <header class="header">
+        <!--Первый блок заголовка-->
+        <div class="header__first">
+            <div class="container header__flex">
+                <ul class="header__topnav-list topnav-list">
+                    <li class="topnav-list__item">
+                        <a class="topnav-list__link" href="#">
+                            Магазины
+                        </a>
+                    </li>
+                    <li class="topnav-list__item">
+                        <a class="topnav-list__link" href="#">
+                            Доставка и оплата
+                        </a>
+                    </li>
+                    <li class="topnav-list__item">
+                        <a class="topnav-list__link" href="#">
+                            Кредиты и рассрочка
+                        </a>
+                    </li>
+                </ul>
+                <a class="header__tel" href="tel:+74954448885">8 (495) 444-888-5</a>
+            </div>
+        </div>
+
+        <!-- Второй блок заголовка -->
+        <a class="header__logo logo" href="#">
+            <img class="logo__image" src="static/images/Header/Logo-header.png" style="height: 46px" alt="Логотип">
+        </a>
+        <input type="text" name="Search" class="header__search" placeholder="Поиск">
+        <ul class="header__list-link list-link">
+
+            <li class="list-link__item">
+                <a class="list-link__link" href="#">
+                    <img class="list-link__img" src="static/images/Header/heart.png" alt="">
+                    Избранное
+                </a>
+            </li>
+
+            <li class="list-link__item">
+                <a class="list-link__link" href="#">
+                    <img class="list-link__img" src="static/images/Header/shopping-cart.png" alt="">
+                    Корзина
+                </a>
+            </li>
+        </ul>
+
+        <!-- Третий блок заголовка -->
+        <button class="header__button button">
+            <img class="button__img" src="static/images/Menu-icon.png" alt="">
+            Каталог
+        </button>
+        <nav class="header__main-nav main-nav">
+            <ul class="main-nav__list list">
+                <li class="list__item">
+                    <a class="list__link" href="">Скидки</a>
+                </li>
+                <li class="list__item">
+                    <a class="list__link" href="">Смартфоны</a>
+                </li>
+                <li class="list__item">
+                    <a class="list__link" href="">Телевизоры</a>
+                </li>
+                <li class="list__item">
+                    <a class="list__link" href="">Ноутбуки</a>
+                </li>
+                <li class="list__item">
+                    <a class="list__link" href="">Стиральные машины</a>
+                </li>
+                <li class="list__item">
+                    <a class="list__link" href="">Холодильник</a>
+                </li>
+                <li class="list__item">
+                    <a class="list__link" href="">Пылесосы</a>
+                </li>
+                <li class="list__item">
+                    <a class="list__link" href="">Микроволновки</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Тело -->
+    <main class="main">
+
+        <!-- Навигация -->
+        <ul class="main__nav-cat-list">
+            <li class="nav-cat-list__item">
+                <a class="nav-cat-list__link" href="#">Главная</a>
+            </li>
+
+            <li class="nav-cat-list__item">
+                <a class="nav-cat-list__link" href="#">Каталог</a>
+            </li>
+
+            <li class="nav-cat-list__item">
+                <a class="nav-cat-list__link" href="#">Смартфоны</a>
+            </li>
+        </ul>
+
+        <h1 class="visually-hidden">Смартфоны</h1>
+        <p class="main__header">Смартфоны</p>
+        <p class="main__counter">658 <span class="main__counter-span">товаров</span></p>
+
+        <!-- Сортировка -->
+        <p class="main__sort-text">Сортировать:</p>
+        <ul class="main__sort-list">
+            <li class="sotr-list__item">
+                <button class="sort-list__button">По цене</button>
+            </li>
+
+            <li class="sotr-list__item">
+                <button class="sort-list__button">По популярности</button>
+            </li>
+
+            <li class="sotr-list__item">
+                <button class="sort-list__button">По новизне</button>
+            </li>
+        </ul>
+
+        <aside class="main__filter">
+            <form class="main__form" action="get">
+                <fieldset class="fieldset__first">
+                    <legend class="fieldset-legend">Цена, ₽</legend>
+                    <input class="lower-price" type="text" id="lower-price" value="0" />
+                    <input class="highest-price" type="text" id="pwd" value="85000" />
+                    <input class="rande-input" type="range" value="0" min="0" max="85000">
+                </fieldset>
+
+                <fieldset class="diagonal">
+                    <legend class="fieldset-legend">Диагональ экрана</legend>
+                    <select class="selector" id="selectvalue">
+                        <option class="selector-option">От 6”</option>
+                    </select>
+                </fieldset>
+
+                <fieldset class="brand">
+                    <legend class="fieldset-legend">Бренд</legend>
+                    <ul class="brand-check">
+                        <li class="brand-check__item">
+                            <input class="brand-check__checkbox" type="checkbox" id="APPLE" name="brand" value="APPLE">
+                            <label class="brand-check__name" for="APPLE">APPLE</label>
+                        </li>
+
+                        <li class="brand-check">
+                            <input class="brand-check__checkbox" type="checkbox" id="BLACKVIEW" name="brand"
+                                value="BLACKVIEW">
+                            <label class="brand-check__name" for="BLACKVIEW">BLACKVIEW</label>
+                        </li>
+
+                        <li class="brand-check">
+                            <input class="brand-check__checkbox" type="checkbox" id="CLEVERCEL" name="brand"
+                                value="CLEVERCEL">
+                            <label class="brand-check__name" for="CLEVERCEL">CLEVERCEL</label>
+                        </li>
+
+                        <li class="brand-check">
+                            <input class="brand-check__checkbox" type="checkbox" id="NOKIA" name="brand" value="NOKIA">
+                            <label class="brand-check__name" for="NOKIA">NOKIA</label>
+                        </li>
+
+                        <li class="brand-check">
+                            <input class="brand-check__checkbox" type="checkbox" id="XIAOMI" name="brand"
+                                value="XIAOMI">
+                            <label class="brand-check__name" for="XIAOMI">XIAOMI</label>
+                        </li>
+
+                        <li class="brand-check">
+                            <input class="brand-check__checkbox" type="checkbox" id="ZTE" name="brand" value="ZTE">
+                            <label class="brand-check__name" for="ZTE">ZTE</label>
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <fieldset class="sims">
+                    <legend>Количество SIM-карт</legend>
+                    <input type="radio" id="1" name="SIM" value="1">
+                    <label for="1">1SIM</label><br>
+                    <input type="radio" id="2" name="SIM" value="2">
+                    <label for="2">2SIM</label><br>
+                </fieldset>
+            </form>
+        </aside>
+
+        <ul class="catalog__list list">
+            <li class="list__item item">
+                <img class="item__new-image" src="static/images/Hits/new.png" alt="new">
+                <button class="item__button-fav button-fav">
+                    <img class="button-fav__fav" src="static/images/Hits/addfav.png" alt="favourite">
+                </button>
+                <p class="item__old-price">Старая цена</p>
+                <p class="item__actual-price">Актуальная цена</p>
+                <a class="item__product product" href="#">
+                    <img class="product__image" src="static/images/Hits/Image1.png" alt="Фото товара">
+                </a>
+            </li>
+
+            <li class="list__item item">
+                <img class="item__new-image" src="static/images/Hits/new.png" alt="new">
+                <button class="item__button-fav button-fav">
+                    <img class="button-fav__fav" src="static/images/Hits/addfav.png" alt="favourite">
+                </button>
+                <p class="item__old-price">Старая цена</p>
+                <p class="item__actual-price">Актуальная цена</p>
+                <a class="item__product product" href="#">
+                    <img class="product__image" src="static/images/Hits/Image1.png" alt="Фото товара">
+                </a>
+            </li>
+
+            <li class="list__item item">
+                <img class="item__new-image" src="static/images/Hits/new.png" alt="new">
+                <button class="item__button-fav button-fav">
+                    <img class="button-fav__fav" src="static/images/Hits/addfav.png" alt="favourite">
+                </button>
+                <p class="item__old-price">Старая цена</p>
+                <p class="item__actual-price">Актуальная цена</p>
+                <a class="item__product product" href="#">
+                    <img class="product__image" src="static/images/Hits/Image1.png" alt="Фото товара">
+                </a>
+            </li>
+
+            <li class="list__item item">
+                <img class="item__new-image" src="static/images/Hits/new.png" alt="new">
+                <button class="item__button-fav button-fav">
+                    <img class="button-fav__fav" src="static/images/Hits/addfav.png" alt="favourite">
+                </button>
+                <p class="item__old-price">Старая цена</p>
+                <p class="item__actual-price">Актуальная цена</p>
+                <a class="item__product product" href="#">
+                    <img class="product__image" src="static/images/Hits/Image1.png" alt="Фото товара">
+                </a>
+            </li>
+
+            <li class="list__item item">
+                <img class="item__new-image" src="static/images/Hits/new.png" alt="new">
+                <button class="item__button-fav button-fav">
+                    <img class="button-fav__fav" src="static/images/Hits/addfav.png" alt="favourite">
+                </button>
+                <p class="item__old-price">Старая цена</p>
+                <p class="item__actual-price">Актуальная цена</p>
+                <a class="item__product product" href="#">
+                    <img class="product__image" src="static/images/Hits/Image1.png" alt="Фото товара">
+                </a>
+            </li>
+
+            <li class="list__item item">
+                <img class="item__new-image" src="static/images/Hits/new.png" alt="new">
+                <button class="item__button-fav button-fav">
+                    <img class="button-fav__fav" src="static/images/Hits/addfav.png" alt="favourite">
+                </button>
+                <p class="item__old-price">Старая цена</p>
+                <p class="item__actual-price">Актуальная цена</p>
+                <a class="item__product product" href="#">
+                    <img class="product__image" src="static/images/Hits/Image1.png" alt="Фото товара">
+                </a>
+            </li>
+
+            <li class="list__item item">
+                <img class="item__new-image" src="static/images/Hits/new.png" alt="new">
+                <button class="item__button-fav button-fav">
+                    <img class="button-fav__fav" src="static/images/Hits/addfav.png" alt="favourite">
+                </button>
+                <p class="item__old-price">Старая цена</p>
+                <p class="item__actual-price">Актуальная цена</p>
+                <a class="item__product product" href="#">
+                    <img class="product__image" src="static/images/Hits/Image1.png" alt="Фото товара">
+                </a>
+            </li>
+
+            <li class="list__item item">
+                <img class="item__new-image" src="static/images/Hits/new.png" alt="new">
+                <button class="item__button-fav button-fav">
+                    <img class="button-fav__fav" src="static/images/Hits/addfav.png" alt="favourite">
+                </button>
+                <p class="item__old-price">Старая цена</p>
+                <p class="item__actual-price">Актуальная цена</p>
+                <a class="item__product product" href="#">
+                    <img class="product__image" src="static/images/Hits/Image1.png" alt="Фото товара">
+                </a>
+            </li>
+
+            <li class="list__item item">
+                <img class="item__new-image" src="static/images/Hits/new.png" alt="new">
+                <button class="item__button-fav button-fav">
+                    <img class="button-fav__fav" src="static/images/Hits/addfav.png" alt="favourite">
+                </button>
+                <p class="item__old-price">Старая цена</p>
+                <p class="item__actual-price">Актуальная цена</p>
+                <a class="item__product product" href="#">
+                    <img class="product__image" src="static/images/Hits/Image1.png" alt="Фото товара">
+                </a>
+            </li>
+        </ul>
+
+        <ul class="catalog-pages__list list">
+            <li class="list__prev">
+                <a class="prev__link" href="#">
+                    <!-- img -->
+                </a>
+            </li>
+
+            <li class="list__page-num">
+                <a class="page-num__link" href="#">1</a>
+            </li>
+
+            <li class="list__page-num">
+                <a class="page-num__link" href="#">2</a>
+            </li>
+
+            <li class="list__page-num">
+                <a class="page-num__link" href="#">3</a>
+            </li>
+
+            <li class="list__next">
+                <a class="next__link" href="#"></a>
+                <!-- img -->
+            </li>
+        </ul>
+    </main>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <section class="footer__info">
+            <h2 class="visually-hidden">Информация</h2>
+            <img class="footer__logo" src="static/images/Footer/Logo-footer.png" alt="Elecro Place">
+            <p class="footer__adress-text">7-я Кожуховская ул., 9, Москва (этаж 1)</p>
+            <ul class="footer_list-first list-first">
+                <li class="list-first__item item">
+                    <a class="item__link" href="#">Скидки</a>
+                </li>
+
+                <li class="list-first__item item">
+                    <a class="item__link" href="#">Акции</a>
+                </li>
+
+                <li class="list-first__item item">
+                    <a class="item__link" href="#">Покупателям</a>
+                </li>
+
+                <li class="list-first__item item">
+                    <a class="item__link" href="#">Информация</a>
+                </li>
+
+                <li class="list-first__item item">
+                    <a class="item__link" href="#">Доставка</a>
+                </li>
+            </ul>
+
+            <ul class="footer_list-second list-second">
+                <li class="list-second__item item">
+                    <a class="item__link" href="#">Гарантия</a>
+                </li>
+
+                <li class="list-second__item item">
+                    <a class="item__link" href="#">Кредит и рассрочка</a>
+                </li>
+
+                <li class="list-second__item item">
+                    <a class="item__link" href="#">Новости</a>
+                </li>
+
+                <li class="list-second__item item">
+                    <a class="item__link" href="#">Вакансии</a>
+                </li>
+            </ul>
+
+            <ul class="footer__icon-container icon-container">
+                <li class="icon-container__element element">
+                    <a class="element__link" href="#">
+                        <img class="element__img" src="static/images/Footer/Facebook-ico.png" alt="Facebook">
+                    </a>
+                </li>
+
+                <li class="icon-container__element element">
+                    <a class="element__link" href="#">
+                        <img class="element__img" src="static/images/Footer/Instagram-ico.png" alt="Instagram">
+                    </a>
+                </li>
+
+                <li class="icon-container__element element">
+                    <a class="element__link" href="#">
+                        <img class="element__img" src="static/images/Footer/VK-ico.png" alt="VK">
+                    </a>
+                </li>
+
+                <li class="icon-container__element element">
+                    <a class="element__link" href="#">
+                        <img class="element__img" src="static/images/Footer/Youtube-ico.png" alt="YouTube">
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="footer__dev-info dev-info">
+            <h2 class="visually-hidden">Разработка</h2>
+            <p class="dev-info__1text">© Electro place, 2003–2021</p>
+            <p class="dev-info__2text">Политика обработки персональных данных</p>
+            <p class="dev-info__developer">
+                Разработка сайта:
+                <img class="dev-info__img" src="static/images/Footer/garpix-logo.png" alt="Garpix">
+            </p>
+        </section>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+@import './components/header/header.scss'; 
+@import './components/header/main-nav.scss';
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    transition: 0.75s cubic-bezier(0, .71, .19, .94);
+
+}
+
+body {
+    margin: 0;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+
+}
