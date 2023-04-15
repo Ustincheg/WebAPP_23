@@ -15,6 +15,8 @@
     overflow: hidden;
 }
 
+
+
 * {
     color: black;
     font-family: 'Roboto', sans-serif;
@@ -252,8 +254,23 @@ a {
 
 }
 
-input[type="text"] {
+.text1 {
     padding: 13px 390px 11px 40px;
+    border-radius: 8px;
+    border: 1px solid #DEDEE2;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-left: -13px;
+
+}
+
+
+input[type="text"] {
+    padding: 13px 210px 11px 40px;
     border-radius: 8px;
     border: 1px solid #DEDEE2;
     box-sizing: border-box;
@@ -374,7 +391,7 @@ input[type="text"] {
 
 .main__nav-list {
     display: flex;
-    gap: 46px;
+    gap: 15px;
     padding-top: 35px;
 }
 
@@ -406,6 +423,27 @@ input[type="text"] {
     color: #000000;
 }
 
+.filters__title {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.txt1 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #7D868F;
+    padding: 0;
+    margin-top: 30px;
+
+}
+
 .main-title-info {
     list-style: none;
     display: flex;
@@ -413,7 +451,8 @@ input[type="text"] {
     margin: 0;
     padding: 0;
     gap: 171px;
-  }
+    align-items: center;
+}
 
 .main-title-sort {
     display: flex;
@@ -472,9 +511,9 @@ input[type="text"] {
     display: block;
 }
 
-.banner__slider-item {
+/* .banner__slider-item {
     display: none;
-}
+} */
 
 .banner__card-desc {
     font-family: 'Roboto';
@@ -944,6 +983,27 @@ input[type="text"] {
     height: 52px;
 }
 
+.card-list__top-two {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 20px 20px 0;
+    align-items: flex-end;
+    gap: 161px;
+}
+
+.card-list__favorite {
+    border: none;
+    padding: 0;
+    background-color: #FFFFFF;
+    max-height: 24px;
+}
+
+.subscription__form {
+    display: flex;
+    gap: 15px;
+
+}
+
 .subscription__form-input {
     box-sizing: border-box;
     width: 440px;
@@ -1142,9 +1202,9 @@ input[type="text"] {
     color: #000000;
     padding: 0;
     margin-top: 30px;
-  }
+}
 
-  .main-title-sort-txt {
+.main-title-sort-txt {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
@@ -1154,8 +1214,8 @@ input[type="text"] {
     text-decoration: none;
     padding: 0;
     margin-top: 30px;
-  }
-  
-  .main-title-sort-txt:hover {
+}
+
+.main-title-sort-txt:hover {
     color: #005AAB;
-  }
+}

@@ -39,7 +39,7 @@
                     <a href="#" class="header__logo"><img class="header__logo" src="images/little-img/Logo.svg"
                             alt="Логотип"></a>
                     <form class="search_form" action=""><img class="header_search-logo"
-                            src="images/little-img/Search-icon.svg" alt="search"><input type="text"
+                            src="images/little-img/Search-icon.svg" alt="search"><input type="#" class="text1"
                             placeholder="Поиск...."></form>
                     <ul class="header__list-link">
                         <li class="header__list-link-item"><a href="#" class="header__link"> <img class="header_like"
@@ -92,9 +92,15 @@
                     </a>
                 </li>
                 <li class="nav-list__item">
+                    <img src="images/catalog/str.svg" alt="strelka">
+                </li>
+                <li class="nav-list__item">
                     <a class="nav-list__link" href="#">
                         КАТАЛОГ
                     </a>
+                </li>
+                <li class="nav-list__item">
+                    <img src="images/catalog/str.svg" alt="strelka">
                 </li>
                 <li class="nav-list__item">
                     <a class="nav-list__link" href="#">
@@ -115,7 +121,7 @@
                 <ul class="main-title-info">
                     <p class="label-title2"><b class="label-title2_2">656</b> товаров </p>
                     <ul class="main-title-sort">
-                        <li class="txt">Сортировать:</li>
+                        <li class="txt1">Сортировать:</li>
                         <li class="txt"><a href="#" class="main-title-sort-txt">По цене</a></li>
                         <li class="txt"><a href="#" class="main-title-sort-txt">По популярности</a></li>
                         <li class="txt"><a href="#" class="main-title-sort-txt">По новизне</a></li>
@@ -127,14 +133,14 @@
             <div class="content">
                 <form action="#">
                     <fieldset class="filters__price">
-                        <legend class="filters__price title">Цена, ₽</legend>
+                        <legend class="filters__title">Цена, ₽</legend>
                         <input type="text" id="min_price" name="min_price" value="0" data-min="0"
                             placeholder="Минимальная цена">
                         <input type="text" id="max_price" name="max_price" value="85000" data-min="85000"
                             placeholder="Максимальная цена">
                     </fieldset>
                     <fieldset class="filters__screen">
-                        <legend class="filters__screen title">Диагональ экрана</legend>
+                        <legend class="filters__title">Диагональ экрана</legend>
                         <select name="screen diagonal" id="">
                             <option value="one_opt">От 6''</option>
                             <option value="one_opt"></option>
@@ -142,7 +148,7 @@
                         </select>
                     </fieldset>
                     <fieldset class="filters__brands">
-                        <legend class="filters__brands title">Бренд</legend>
+                        <legend class="filters__title">Бренд</legend>
                         <ul>
                             <li> <input type="checkbox" id="checkbox1" />
                                 <label for="checkbox1">APPLE</label>
@@ -165,7 +171,7 @@
                         </ul>
                     </fieldset>
                     <fieldset class="filters__sim">
-                        <legend class="filters__sim title">Количество сим-карт</legend>
+                        <legend class="filters__title">Количество сим-карт</legend>
                         <ul>
                             <li><input type="radio" id="radio1" name="sim" value="0" />
                                 <label for="radio1">1SIM</label>
