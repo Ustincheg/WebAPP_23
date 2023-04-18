@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="styles/roboto.css">
         <script type="module" src="components/header.js"></script>
         <script type="module" src="components/footer.js"></script>
+        <script type="module" src="slider/range.js"></script>
     </head>
     <body class="body">
         <electro-place-header></electro-place-header>
@@ -84,7 +85,19 @@
                                 <input class="input-min-price text-form" type="text" id="min-price" name="min-price">
                                 <input class="input-max-price text-form" type="text" id="max-price" name="max-price">
                             </div>
-                            <input class="input-price-range" type="range" id="price=range" name="range">
+                            <div class="double_range_slider_box">
+                                <div class="double_range_slider">
+                                  <span class="range_track" id="range_track"></span>
+                            
+                                  <input type="range" class="price-range min" min="0" max="100" value="0" step="0">
+                                  <input type="range" class="price-range max" min="0" max="100" value="20" step="0">
+                            
+                                  <div class="minvalue"></div>
+                                  <div class="maxvalue"></div>
+                                </div>
+                            </div>
+                            <!-- <input class="input-price-range min" type="range" id="price=range" name="range" min="0" max="100000">
+                            <input class="input-price-range max" type="range" id="price=range" name="range" min="0" max="100000"> -->
                         </fieldset>
                         <fieldset class="goods-form__diagonal diagonal">
                             <legend class="goods-form__diagonal__legend legend">Диагональ экрана</legend>
