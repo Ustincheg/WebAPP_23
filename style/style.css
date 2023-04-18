@@ -35,8 +35,11 @@ body {
     align-items: center;
 }
 
+
 .header__background {
     background: #363636;
+    width: auto;
+    margin: auto;
 }
 
 .header__topnav-list {
@@ -65,6 +68,11 @@ body {
     box-sizing: border-box;
     width: 50%;
     height: 48px;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
 }
 
 .header__list-link {
