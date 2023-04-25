@@ -9,39 +9,43 @@ body {
 }
 
 .range {
-  width:400px;
-  height:10px;
+  width: 270px;
+  height: 1px;
 
-  border-radius: 4px;
-  background-color: #ddd;
+  background-color: #B6BCC2;
 }
 
-.range__button_1, .range__button_2 {
+.range__button-1, .range__button-2 {
   position: absolute;
   top: 50%;
 
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
 
-  cursor: move;
+  cursor: grab;
   transform: translateY(-50%);
 
   border: none;
   border-radius: 50%;
-  background-color: #999;
+  background-color: #005AAB;
 }
+
+.range__button-1:active, .range__button-2:active {
+  cursor: grabbing;
+}
+
 .range__between
 {
   position: absolute;
-  height: 5px;
-  width:0px;
-  margin-top:3px;
+  height: 1px;
+  width: 0px;
+  /*margin-top: 3px;*/
   border: none;
-  background-color: #559933;
+  background-color: #005AAB;
 
 }
-.range_inpt1, .range_inpt2
+.range_input-1, .range_input-2
 {
-  margin-top:20px;
+  margin-top: 20px;
   width: 50px;
 }
