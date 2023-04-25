@@ -50,7 +50,8 @@
         <div class="container search__flex">
 
             <a class="header__logo logo" href="#">
-                <img class="logo__image" src="static/images/Header/Logo-header.png" style="height: 46px; padding:0;" alt="Логотип">
+                <img class="logo__image" src="static/images/Header/Logo-header.png" style="height: 46px; padding:0;"
+                    alt="Логотип">
             </a>
             <input type="text" name="Search" class="header__search" placeholder=" Поиск...">
             <ul class="header__list-link list-link">
@@ -126,11 +127,24 @@
                             <p class="big-banner__header">Микроволновая печь HUNDAI</p>
                             <p class="big-banner__text">Готовьте вкусно и быстро</p>
                         </div>
-                        <button class="big-banner__left-button">Left</button>
-                        <button class="big-banner__right-button">Right</button>
+                        <button class="big-banner__left-button">
+                            <svg class="left-arrow" width="10" height="20" viewBox="0 0 10 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 19L0.999999 10L9 1" stroke="#005AAB" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <button class="big-banner__right-button">
+                            <svg class="right-arrow" width="10" height="20" viewBox="0 0 10 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 19L9 10L1 1" stroke="#005AAB" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+
+                        </button>
                         <ul class="big-banner__selected selected">
                             <li class="selecter__circle">
-                                <div class="circle"></div>
+                                <div class="circle first-circle"></div>
                             </li>
 
                             <li class="selecter__circle">
@@ -178,7 +192,8 @@
                 <ul class="top-selling__list list">
                     <li class="list__item item">
                         <div class="new-ico-placeholder">
-                            <img class="item__new-image" src="static/images/Hits/new.png" style="display: none;" alt="new">
+                            <img class="item__new-image" src="static/images/Hits/new.png" style="display: none;"
+                                alt="new">
                         </div>
                         <button class="item__button-fav button-fav">
                             <img class="button-fav__fav" src="static/images/Hits/addfav.png" alt="favourite">
@@ -220,7 +235,8 @@
 
                     <li class="list__item item">
                         <div class="new-ico-placeholder">
-                            <img class="item__new-image" src="static/images/Hits/new.png" style="display: none;" alt="new">
+                            <img class="item__new-image" src="static/images/Hits/new.png" style="display: none;"
+                                alt="new">
                         </div>
                         <button class="item__button-fav button-fav">
                             <img class="button-fav__fav" src="static/images/Hits/addfav.png" alt="favourite">
@@ -330,44 +346,58 @@
             <div class="container">
 
                 <h2 class="visually-hidden">Новости и акции</h2>
-                <p class="news-stocks__header">Новости и акции</p>
-                <a class="news-stocks__view-button view-button" href="#">Смотреть все</a>
+                <div class="head-and-button">
+                    <p class="news-stocks__header">Новости и акции</p>
+                    <a class="news-stocks__view-button view-button" href="#">Смотреть все</a>
+                </div>
 
                 <ul class="news-stocks__list list">
-                    <li class="list__main main">
-                        <p class="main__header">Бренд BLOODY представил мышь W60 Pro</p>
-                        <p class="main__text">Популярный бренд компьютерных аксессуаров</p>
-                        <a class="main__button">Подробнее</a>
+                    <li class="list__item item">
+                        <div class="text-container">
+                            <p class="main__header">Бренд BLOODY представил мышь W60 Pro</p>
+                            <p class="main__text">Популярный бренд компьютерных аксессуаров</p>
+                            <a class="main__button">Подробнее</a>
+                        </div>
                         <img class="main__img" src="static/images/News/Image1.png" alt="">
                     </li>
 
                     <li class="list__item item">
-                        <p class="item__header">Плата asus</p>
-                        <a class="item__button">Подробнее</a>
+                        <div class="text-container">
+                            <p class="item__header">Плата asus</p>
+                            <a class="main__button">Подробнее</a>
+                        </div>
                         <img class="item__img" src="static/images/News/Image2.png" alt="">
                     </li>
 
                     <li class="list__item item">
-                        <p class="item__header">Системный блок acer</p>
-                        <a class="item__button">Подробнее</a>
+                        <div class="text-container">
+                            <p class="item__header">Плата asus</p>
+                            <a class="main__button">Подробнее</a>
+                        </div>
                         <img class="item__img" src="static/images/News/Image3.png" alt="">
                     </li>
 
                     <li class="list__item item">
-                        <p class="item__header">Планшет samsung</p>
-                        <a class="item__button">Подробнее</a>
+                        <div class="text-container">
+                            <p class="item__header">Плата asus</p>
+                            <a class="main__button">Подробнее</a>
+                        </div>
                         <img class="item__img" src="static/images/News/Image4.png" alt="">
                     </li>
 
                     <li class="list__item item">
-                        <p class="item__header">Новые наушники Razer</p>
-                        <a class="item__button">Подробнее</a>
+                        <div class="text-container">
+                            <p class="item__header">Плата asus</p>
+                            <a class="main__button">Подробнее</a>
+                        </div>
                         <img class="item__img" src="static/images/News/Image5.png" alt="">
                     </li>
 
                     <li class="list__item item">
-                        <p class="item__header">Мультипекарь Redmond плюс</p>
-                        <a class="item__button">Подробнее</a>
+                        <div class="text-container">
+                            <p class="item__header">Плата asus</p>
+                            <a class="main__button">Подробнее</a>
+                        </div>
                         <img class="item__img" src="static/images/News/Image6.png" alt="">
                     </li>
                 </ul>
@@ -416,33 +446,42 @@
         </section>
 
         <!-- Контакты -->
-        <section class="contacts">
-            <div class="container">
+        <section class="container contacts">
+            <h2 class="visually-hidden">Контактная информация</h2>
+            <p class="contacts-header">Контакты</p>
+            <div class=" contacts-container">
+                
 
-                <h2 class="visually-hidden">Контактная информация</h2>
                 <div class="contacts__map map" style="position:relative;overflow:hidden;">
-                    <iframe
+                    <iframe class="interactive-map" 
                         src="https://yandex.ru/map-widget/v1/?ll=37.675109%2C55.710692&mode=whatshere&whatshere%5Bpoint%5D=37.675109%2C55.710692&whatshere%5Bzoom%5D=17&z=16"
-                        width="560" height="400" style="position:relative;"></iframe>
+                        width="670" height="400" style="position:relative;"></iframe>
                 </div>
 
                 <ul class="contacts__list list">
                     <li class="list__item item">
                         <img class="item__img" src="static/images/Contacts/location.png" alt="">
-                        <p class="item__header">Адрес</p>
-                        <p class="item__text">7-я Кожуховская ул., 9, Москва (этаж 1)</p>
+                        <div class="item-container">
+                            <p class="item__header">Адрес</p>
+                            <p class="item__text">7-я Кожуховская ул., 9, Москва (этаж 1)</p>
+                        </div>
                     </li>
 
                     <li class="list__item item">
                         <img class="item__img" src="static/images/Contacts/phone.png" alt="">
-                        <p class="item__header">Телефон</p>
-                        <p class="item__text">8 (495) 444-888-5</p>
+                        <div class="item-container">
+
+                            <p class="item__header">Телефон</p>
+                            <p class="item__text">8 (495) 444-888-5</p>
+                        </div>
                     </li>
 
                     <li class="list__item item">
                         <img class="item__img" src="static/images/Contacts/time.png" alt="">
+                        <div class="item-container">
                         <p class="item__header">График работы</p>
                         <p class="item__text">Пн-Пт 9:00 до 20:00</p>
+                        </div>
                     </li>
 
                     <li class="list">
