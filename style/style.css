@@ -6,7 +6,7 @@
   font-family: 'opensans', sans-serif;
   font-weight: 400;
   font-size: 14px;
-  margin: auto;
+  margin: 0px 0px 0px 0px;
   width: auto;
   background: #333333;
 }
@@ -34,6 +34,20 @@
   list-style-type: none;
   gap: 0 30px;
   padding-left: 0;
+}
+
+.header__search {
+  font-family: 'opensans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  width: 50% !important;
+  border-radius: 8px;
+  color: currentColor !important;
+  border: 1px solid #DEDEE2;
+  box-sizing: border-box;
+  height: 48px;
+  margin-right: 15px;
+  margin-left: 15px;
 }
 
 .topnav-list__item-link {
@@ -101,6 +115,28 @@
   align-items: center;
 }
 
+.boxer2 {
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #DEDEE2;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boxer_showall {
+  box-sizing: border-box;
+  width: 146px;
+  height: 45px;
+  border: 1px solid #005AAB;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .brandsmarge {
   margin-top: 30px;
 }
@@ -127,6 +163,8 @@
   justify-content: center;
   max-width: 1170px;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .head3_list_link {
@@ -273,6 +311,8 @@
   text-decoration-line: line-through;
   color: #7D868F;
   margin: 0%;
+  padding-left: 10px;
+  margin-top: 50px;
 }
 
 .list__new-price {
@@ -283,6 +323,7 @@
   line-height: 26px;
   color: #000000;
   margin: 0px;
+  padding-left: 10px;
 }
 
 .button-fav {
@@ -348,6 +389,16 @@
   align-items: center;
   display: flex;
   gap: 0 30px;
+  margin-bottom: 30px;
+}
+
+.contacts__button {
+  width: 210px;
+  height: 48px;
+  border: 1px solid #005AAB;
+  border-radius: 8px;
+  color: #ffffff;
+  background-color: #005AAB;
 }
 
 .info__header {
@@ -357,6 +408,7 @@
   font-size: 16px;
   line-height: 22px;
   color: #000000;
+  margin: 0px 0px 0px 0px;
 }
 
 .info__text {
@@ -366,6 +418,8 @@
   font-size: 16px;
   line-height: 22px;
   color: #000000;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .subscription__header {
@@ -376,6 +430,15 @@
   line-height: 26px;
   display: flex;
   align-items: center;
+}
+
+.subscription__button {
+  width: 210px;
+  height: 48px;
+  border: 1px solid #005AAB;
+  border-radius: 8px;
+  color: #ffffff;
+  background-color: #005AAB;
 }
 
 .flex_bottom {
@@ -427,6 +490,7 @@
   font-size: 14px;
   line-height: 19px;
   color: #FFFFFF;
+  margin: 0px 0px 0px 0px;
 }
 
 .dev-info__2text {
@@ -436,6 +500,7 @@
   font-size: 14px;
   line-height: 19px;
   color: #FFFFFF;
+  margin: 0px 0px 0px 0px;
 }
 
 .news-sales__description {
