@@ -168,3 +168,24 @@ body {
     justify-content: center;
     color: #005AAB;
 }
+
+.main__list__top-selling {
+  display: flex;
+  gap: 30px;
+  padding: 0;
+}
+
+.box__top-selling {
+  box-sizing: border-box;
+  border: 1px solid #DEDEE2;
+  border-radius: 8px;
+}
+
+.list__top-selling {
+  
+}
+
+.list__button-fav {
+  display: flex;
+  justify-content: flex-end;
+}
