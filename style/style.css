@@ -75,7 +75,6 @@
   align-items: center;
   gap: 0 30px;
   list-style-type: none;
-
 }
 
 .head2_link_link {
@@ -552,13 +551,9 @@
   margin: 30px 0px 0px 0px;
 }
 
-
-
-
-
-
-
-
+.list-link__item {
+  align-items: center;
+}
 
 .list-link__item-link {
   text-decoration: none;
