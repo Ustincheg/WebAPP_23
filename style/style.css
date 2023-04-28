@@ -1,5 +1,5 @@
 * {
-    color:#000000;
+    color: #000000;
     list-style: none;
     text-decoration: none;
     /* font-family: 'Open Sans', sans-serif;
@@ -139,7 +139,7 @@ body {
     justify-content: space-evenly;
 }
 
-.top-selling__header {
+.header-name {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -170,22 +170,103 @@ body {
 }
 
 .main__list__top-selling {
-  display: flex;
-  gap: 30px;
-  padding: 0;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 43px;
 }
 
 .box__top-selling {
-  box-sizing: border-box;
-  border: 1px solid #DEDEE2;
-  border-radius: 8px;
+    box-sizing: border-box;
+    border: 1px solid #DEDEE2;
+    border-radius: 8px;
+    width: 270px;
+    height: 443px;
 }
 
-.list__top-selling {
-  
+.list__top-selling__product {
+    display: flex;
+    padding: 0px 35px 20px 0px;
+}
+
+.list__top-selling__product-1 {
+    display: flex;
+    padding: 0px 0px 20px 35px;
+}
+
+.list__imgs {
+    display: flex;
+    justify-content: space-between;
+    padding: 21px 22px 20px 0px;
+    align-items: center;
+    height: 30px;
 }
 
 .list__button-fav {
-  display: flex;
-  justify-content: flex-end;
+    margin-inline-start: auto;
+}
+
+.list__top-selling__link {
+    display: flex;
+    flex-direction: column;
+    line-height: 22px;
+    display: block;
+    margin-bottom: 36px;
+    text-align: left;
+}
+
+.list__namings {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 30px 0px 30px;
+    height: 300px;
+}
+
+.price {
+    display: flex;
+    padding: 0px 0px 30px 30px;
+    height: 48px;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 36px;
+}
+
+
+.list__old-price {
+    margin: 0;
+    font-size: 16px;
+    line-height: 22px;
+    text-decoration-line: line-through;
+    color: #7D868F;
+}
+
+.list__new-price {
+    margin: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+.brand__image-box {
+    box-sizing: border-box;
+    width: 270px;
+    height: 150px;
+    border: 1px solid #DEDEE2;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand__container {
+    display: grid;
+    grid-template-columns: 270px 270px 270px 270px;
+    column-gap: 30px;
+    row-gap: 30px;
+    padding-bottom: 43px;
 }
