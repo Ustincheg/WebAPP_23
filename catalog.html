@@ -80,10 +80,8 @@
       <ul class="smart__list" style="position: relative; top: 45px;">
         <aside class="Viborka">
           <form action="get">
-            <fieldset>
-              <legend>
-                Цена, ₽
-              </legend>
+            <fieldset class="goods-form__price price">
+              <legend class="legend-form">Цена, ₽</legend>
               <div class="price-input">
                 <div class="field">
                   <input type="number" class="input-min" value="0">
@@ -101,8 +99,8 @@
                 <input type="range" class="range-max" min="0" max="300000" value="85000" step="100">
               </div>
             </fieldset>
-            <fieldset>
-              <legend>Диагональ экрана</legend>
+            <fieldset class="goods-form__diagonal diagonal">
+              <legend class="legend-form">Диагональ экрана</legend>
               <select name="diagonal" id="diagonal-select">
                 <option value="">Все</option>
                 <option value="3,9">До 3,9"</option>
@@ -112,45 +110,47 @@
                 <option value="6">От 6”</option>
               </select>
             </fieldset>
-            <fieldset>
-              <legend>Бренд</legend>
+            <fieldset class="goods-form__brand brand">
+              <legend class="legend-form">Бренд</legend>
               <ul>
                 <li>
-                  <input type="checkbox" name="Apple" id="Apple" checked>
-                  <label for="Apple">Apple</label>
+                  <input class="brand-checkbox" type="checkbox" name="Apple" id="Apple" checked>
+                  <label class="light" for="Apple">Apple</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="Blackview" id="Blackview">
-                  <label for="Blackview">Blackview</label>
+                  <input class="brand-checkbox" type="checkbox" name="Blackview" id="Blackview">
+                  <label class="light" for="Blackview">Blackview</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="Clevercel" id="Clevercel">
-                  <label for="Clevercel">Clevercel</label>
+                  <input class="brand-checkbox" type="checkbox" name="Clevercel" id="Clevercel">
+                  <label class="light" for="Clevercel">Clevercel</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="CNokia" id="Nokia">
-                  <label for="Nokia">Nokia</label>
+                  <input class="brand-checkbox" type="checkbox" name="CNokia" id="Nokia">
+                  <label class="light" for="Nokia">Nokia</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="XIAOMI" id="XIAOMI">
-                  <label for="XIAOMI">XIAOMI</label>
+                  <input class="brand-checkbox" type="checkbox" name="XIAOMI" id="XIAOMI">
+                  <label class="light" for="XIAOMI">XIAOMI</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="ZTE" id="ZTE">
-                  <label for="ZTE">ZTE</label>
+                  <input class="brand-checkbox" type="checkbox" name="ZTE" id="ZTE">
+                  <label class="light" for="ZTE">ZTE</label>
                 </li>
               </ul>
             </fieldset>
-            <fieldset>
+            <fieldset class="goods-form__sim-amount">
               <legend>Количество sim-карт</legend>
-              <label>
-                <input type="radio" name="level">
-                1SIM
-              </label>
-              <label>
-                <input type="radio" name="level" checked>
-                2SIM
-              </label>
+              <ul class="sim-amount-list">
+                <li class="sim-amount-list__item">
+                    <input class="sim-amount-radio" type="radio" id="1SIM" value="1SIM" name="SIM">
+                    <label for="1SIM" class="light">1SIM</label>
+                </li>
+                <li class="sim-amount-list__item">
+                    <input class="sim-amount-radio" type="radio" id="2SIM" value="2SIM" name="SIM">
+                    <label for="2SIM" class="light">2SIM</label>
+                </li>
+            </ul>
             </fieldset>
           </form>
         </aside>
@@ -160,18 +160,24 @@
           <img src="image/S21.jpg" alt="S21" loading="lazy" class="smart_image">
           <p class="Smartphone__list-item-name">Смартфон Samsung Galaxy S21 128GB Phantom Violet </p>
           <p class="Smartphone__list-item-price">54 440 ₽</p>
+          <button class="button-korz"><img src="/image/shopping-cart .svg" alt="shop_icon" loading="lazy"
+            class="shop__icon"></button>
         </li>
         <li class="Smartphone__list-item">
           <button class="serd-button"></button>
           <img src="image/iph11.jpg" alt="iph11" loading="lazy" class="smart_image">
           <p class="Smartphone__list-item-name">Смартфон Apple iPhone 11 128GB White</p>
           <p class="Smartphone__list-item-price">59 990 ₽</p>
+          <button class="button-korz"><img src="/image/shopping-cart .svg" alt="shop_icon" loading="lazy"
+            class="shop__icon"></button>
         </li>
         <li class="Smartphone__list-item">
           <button class="serd-button"></button>
           <img src="image/A52.jpg" alt="A52" loading="lazy" class="smart_image">
           <p class="Smartphone__list-item-name">Смартфон Samsung Galaxy A52 128GB Awesome Black </p>
           <p class="Smartphone__list-item-price">26 790 ₽</p>
+          <button class="button-korz"><img src="/image/shopping-cart .svg" alt="shop_icon" loading="lazy"
+            class="shop__icon"></button>
         </li>
         <li class="Smartphone__list-item">
           <img src="image/new.svg" class="new-product" alt="new">
@@ -179,6 +185,8 @@
           <img src="image/s21g.jpg" alt="s21g" loading="lazy" class="smart_image">
           <p class="Smartphone__list-item-name">Смартфон Samsung Galaxy S21 128GB Phantom Gray</p>
           <p class="Smartphone__list-item-price">61 990 ₽</p>
+          <button class="button-korz"><img src="/image/shopping-cart .svg" alt="shop_icon" loading="lazy"
+            class="shop__icon"></button>
         </li>
         <li class="Smartphone__list-item">
           <img src="image/new.svg" class="new-product" alt="new">
@@ -186,12 +194,16 @@
           <img src="image/Mate40.jpg" alt="Mate40" loading="lazy" class="smart_image">
           <p class="Smartphone__list-item-name">Смартфон Huawei Mate 40 Pro Mystic Silver (NOH-NX9)</p>
           <p class="Smartphone__list-item-price">36 990 ₽</p>
+          <button class="button-korz"><img src="/image/shopping-cart .svg" alt="shop_icon" loading="lazy"
+            class="shop__icon"></button>
         </li>
         <li class="Smartphone__list-item">
           <button class="serd-button"></button>
           <img src="image/10X.jpg" alt="10X" loading="lazy" class="smart_image">
           <p class="Smartphone__list-item-name">Смартфон Honor 10X Lite 4+128GB Icelandic Frost</p>
           <p class="Smartphone__list-item-price">15 990 ₽</p>
+          <button class="button-korz"><img src="/image/shopping-cart .svg" alt="shop_icon" loading="lazy"
+            class="shop__icon"></button>
         </li>
         <li class="Smartphone__list-item">
           <img src="image/new.svg" class="new-product" alt="new">
@@ -199,12 +211,16 @@
           <img src="image/P40.jpg" alt="p40" loading="lazy" class="smart_image">
           <p class="Smartphone__list-item-name">Смартфон Huawei P40 Pro Silver Frost</p>
           <p class="Smartphone__list-item-price">65 990 ₽</p>
+          <button class="button-korz"><img src="/image/shopping-cart .svg" alt="shop_icon" loading="lazy"
+            class="shop__icon"></button>
         </li>
         <li class="Smartphone__list-item">
           <button class="serd-button"></button>
           <img src="image/9x.jpg" alt="9x" loading="lazy" class="smart_image">
           <p class="Smartphone__list-item-name">Смартфон Honor 9X 4+128GB Sapphire Blue</p>
           <p class="Smartphone__list-item-price">15 000 ₽</p>
+          <button class="button-korz"><img src="/image/shopping-cart .svg" alt="shop_icon" loading="lazy"
+            class="shop__icon"></button>
         </li>
         <li class="Smartphone__list-item">
           <img src="image/new.svg" class="new-product" alt="new">
@@ -212,6 +228,8 @@
           <img src="image/SE.jpg" alt="SE" loading="lazy" class="smart_image">
           <p class="Smartphone__list-item-name">Смартфон Apple iPhone SE 64GB Black</p>
           <p class="Smartphone__list-item-price">39 990 ₽</p>
+          <button class="button-korz"><img src="/image/shopping-cart .svg" alt="shop_icon" loading="lazy"
+            class="shop__icon"></button>
         </li>
       </ul>
       <ul class="content_button">
