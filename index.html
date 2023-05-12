@@ -83,75 +83,96 @@
                 <img class="header__button-catalog" src="img/Menu icon.png" width="24" alt="Избранное">
                 Каталог
             </button>
-
-            <nav class="header__main-nav main-nav flex_cont container">
-                <ul class="main-nav__list list">
-                    <li class="list__item">
-                        <a class="list__link" href="#">
-                            СКИДКИ
-                        </a>
-                    </li>
-                </ul>
-                <ul class="main-nav__list list">
-                    <li class="list__item">
-                        <a class="list__link" href="#">
-                            СМАРТФОНЫ
-                        </a>
-                    </li>
-                </ul>
-                <ul class="main-nav__list list">
-                    <li class="list__item">
-                        <a class="list__link" href="#">
-                            ТЕЛЕВИЗОРЫ
-                        </a>
-                    </li>
-                </ul>
-                <ul class="main-nav__list list">
-                    <li class="list__item">
-                        <a class="list__link" href="#">
-                            НОУТБУКИ
-                        </a>
-                    </li>
-                </ul>
-                <ul class="main-nav__list list">
-                    <li class="list__item">
-                        <a class="list__link" href="#">
-                            СТИРАЛЬНЫЕ МАШИНЫ
-                        </a>
-                    </li>
-                </ul>
-                <ul class="main-nav__list list">
-                    <li class="list__item">
-                        <a class="list__link" href="#">
-                            ХОЛОДИЛЬНИКИ
-                        </a>
-                    </li>
-                </ul>
-                <ul class="main-nav__list list">
-                    <li class="list__item">
-                        <a class="list__link" href="#">
-                            ПЫЛЕСОСЫ
-                        </a>
-                    </li>
-                </ul>
-                <ul class="main-nav__list list">
-                    <li class="list__item">
-                        <a class="list__link" href="#">
-                            МИКРОВОЛНОВКИ
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="main-nav__container">
+                <nav class="header__main-nav main-nav flex_cont container">
+                    <ul class="main-nav__list list">
+                        <li class="list__item">
+                            <a class="list__link" href="#">
+                                СКИДКИ
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="main-nav__list list">
+                        <li class="list__item">
+                            <a class="list__link" href="#">
+                                СМАРТФОНЫ
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="main-nav__list list">
+                        <li class="list__item">
+                            <a class="list__link" href="#">
+                                ТЕЛЕВИЗОРЫ
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="main-nav__list list">
+                        <li class="list__item">
+                            <a class="list__link" href="#">
+                                НОУТБУКИ
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="main-nav__list list">
+                        <li class="list__item">
+                            <a class="list__link" href="#">
+                                СТИРАЛЬНЫЕ МАШИНЫ
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="main-nav__list list">
+                        <li class="list__item">
+                            <a class="list__link" href="#">
+                                ХОЛОДИЛЬНИКИ
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="main-nav__list list">
+                        <li class="list__item">
+                            <a class="list__link" href="#">
+                                ПЫЛЕСОСЫ
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="main-nav__list list">
+                        <li class="list__item">
+                            <a class="list__link" href="#">
+                                МИКРОВОЛНОВКИ
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
+        <section class="header-third">
+            <div class="header-third__container1">
+                <img class="header-third__microwave" src="img/Main-banner/Image-1.png" alt="Микроволновка" width="870">
+                <div class="header-third__text-container">
+                    <p class="header-third__main-text"> Микроволновая печь HUNDAI</p>
+                    <p class="header-third__desc"> Готовьте вкусно и быстро</p>
+                </div>
+                <div class="header-third__slider-container header-third__container1">
+                    <img class="slider-left" src="img/Main-banner/Left.png" alt="#" width="46">
+                    <img class="slider-right" src="img/Main-banner/Right.png" alt="#" width="46">
+                </div>
+            </div>
+            <div class="header-third__container2">
+                <p class="header-third__main-text2"> Новая линейка телевизоров samsung </p>
+                <img class="header-third__tv" src="img/Main-banner/Image-2.png" alt="#" width="196">
+                <div class="header-third__button-container">
+                    <button class="header-third__button">Смотреть каталог</button>
+                </div>
+            </div>
+        </section>
     </header>
 
-    <main class="main container">
+    <main class="main">
 
-        <h1 class="visually-hidden">
+        <h1 class="visually-hidden container">
             Интернет-магазин бытовой электроники
         </h1>
 
-        <section class="main-banner">
+        <section class="main-banner container">
             <h2 class="visually-hidden">
                 Главный баннер
             </h2>
@@ -159,13 +180,12 @@
 
         <!-- Вставить блок со слайдером -->
 
-        <section class="top-selling">
-
+        <section class="top-selling container">
             <h2 class="visually-hidden">
                 Хиты продаж
             </h2>
             <nav class="flex_cont">
-                <p class="top-selling__header">
+                <p class="top-selling__header header-name">
                     Хиты продаж
                 </p>
                 <button class="top-selling__view-button view-button" href="#">
@@ -173,278 +193,367 @@
                 </button>
             </nav>
             <ul class="main__list__top-selling list__top-selling">
-                <li class="list__top-selling">
-                    <button class="list__button-fav button-fav">
-                        <img class="button-fav__fav" src="img/Hits/addfav.png" width="20" alt="Избранное">
-                    </button>
-                    <img class="list__top-selling__product" src="img/Hits/Image1.png" width="200" alt="Фото товара">
-                    <a class="list__top-selling__link" href="#">
-                        Название продукта
-                    </a>
-                    <p class="list__old-price">
-                        Старая цена
-                    </p>
-                    <p class="list__new-price">
-                        Новая цена
-                    </p>
+                <li class="list__top-selling box__top-selling">
+                    <div class="list__imgs">
+                        <button class="list__button-fav button-fav">
+                            <img class="button-fav__fav" src="img/Hits/addfav.png" width="20" alt="Избранное">
+                        </button>
+                    </div>
+                    <div class="list__namings">
+                        <img class="list__top-selling__product" src="img/Hits/Image1.png" width="200" alt="Фото товара">
+                        <a class="list__top-selling__link" href="#">
+                            Мультиварка Redmond
+                        </a>
+                    </div>
+                    <div class="price">
+                        <p class="list__old-price">
+                            6 990 ₽
+                        </p>
+                        <p class="list__new-price">
+                            5 533 ₽
+                        </p>
+                    </div>
                 </li>
-                <li class="list__top-selling">
-                    <img class="list__new" src="img/Hits/new.png" alt="new">
-                    <button class="list__button-fav button-fav">
-                        <img class="button-fav__fav" src="img/Hits/addfav.png" width="20" alt="Избранное">
-                    </button>
-                    <img class="list__top-selling__product" src="img/Hits/Image2.png" width="200" alt="Фото товара">
-                    <a class="list__top-selling__link" href="#">
-                        Название продукта
-                    </a>
-                    <p class="list__old-price">
-                        Старая цена
-                    </p>
-                    <p class="list__new-price">
-                        Новая цена
-                    </p>
+                <li class="list__top-selling box__top-selling">
+                    <div class="list__imgs">
+                        <img class="list__new" src="img/Hits/new.png" alt="new">
+                        <button class="list__button-fav button-fav">
+                            <img class="button-fav__fav" src="img/Hits/addfav.png" width="20" alt="Избранное">
+                        </button>
+                    </div>
+                    <div class="list__namings">
+                        <img class="list__top-selling__product" src="img/Hits/Image2.png" width="200" alt="Фото товара">
+                        <a class="list__top-selling__link" href="#">
+                            Смартфон Huawei Mate 40 Pro Mystic Silver
+                        </a>
+                    </div>
+                    <div class="price">
+                        <p class="list__new-price">
+                            36 990 ₽
+                        </p>
+                    </div>
                 </li>
-                <li class="list__top-selling">
-                    <button class="list__button-fav button-fav">
-                        <img class="button-fav__fav" src="img/Hits/addfav.png" width="20" alt="Избранное">
-                    </button>
-                    <img class="list__top-selling__product" src="img/Hits/Image3.png" width="200" alt="Фото товара">
-                    <a class="list__top-selling__link" href="#">
-                        Название продукта
-                    </a>
-                    <p class="list__old-price">
-                        Старая цена
-                    </p>
-                    <p class="list__new-price">
-                        Новая цена
-                    </p>
+                <li class="list__top-selling box__top-selling">
+                    <div class="list__imgs">
+                        <button class="list__button-fav button-fav">
+                            <img class="button-fav__fav" src="img/Hits/addfav.png" width="20" alt="Избранное">
+                        </button>
+                    </div>
+                    <div class="list__namings">
+                        <img class="list__top-selling__product" src="img/Hits/Image3.png" width="200" alt="Фото товара">
+                        <a class="list__top-selling__link" href="#">
+                            Электрочайник Moulinex
+                        </a>
+                    </div>
+                    <div class="price">
+                        <p class="list__old-price">
+                            3 990 ₽
+                        </p>
+
+                        <p class="list__new-price">
+                            1 990 ₽
+                        </p>
+                    </div>
                 </li>
-                <li class="list__top-selling">
-                    <img class="list__new" src="img/Hits/new.png" alt="new">
-                    <button class="list__button-fav button-fav">
-                        <img class="button-fav__fav" src="img/Hits/addfav.png" width="20" alt="Избранное">
-                    </button>
-                    <img class="list__top-selling__product" src="img/Hits/Image4.png" width="140" alt="Фото товара">
-                    <a class="list__top-selling__link" href="#">
-                        Название продукта
-                    </a>
-                    <p class="list__old-price">
-                        Старая цена
-                    </p>
-                    <p class="list__new-price">
-                        Новая цена
-                    </p>
+                <li class="list__top-selling box__top-selling">
+                    <div class="list__imgs">
+                        <img class="list__new" src="img/Hits/new.png" alt="new">
+                        <button class="list__button-fav button-fav">
+                            <img class="button-fav__fav" src="img/Hits/addfav.png" width="20" alt="Избранное">
+                        </button>
+                    </div>
+                    <div class="list__namings">
+                        <img class="list__top-selling__product-1" src="img/Hits/Image4.png" width="140"
+                            alt="Фото товара">
+                        <a class="list__top-selling__link" href="#">
+                            Пылесос с контейнером для пыли Tefal City Space
+                        </a>
+                    </div>
+                    <div class="price">
+                        <p class="list__old-price">
+                            16 990 ₽
+                        </p>
+                        <p class="list__new-price">
+                            14 990 ₽
+                        </p>
+                    </div>
                 </li>
             </ul>
         </section>
 
-        <section class="popular-brands">
+        <section class="popular-brands container">
             <h2 class="visually-hidden">
                 Популярные бренды
             </h2>
-            <p class="popular-brands__header">
-                Популярные бренды
-            </p>
-
-            <a class="popular-brands__view-button view-button" href="#">
-                Смотреть все
-            </a>
-
-            <img class="brand__image" src="img/Popular-brands/Image1.png" width="150" alt="Бренд">
-            <img class="brand__image" src="img/Popular-brands/Image2.png" width="108" alt="Бренд">
-            <img class="brand__image" src="img/Popular-brands/Image3.png" width="150" alt="Бренд">
-            <img class="brand__image" src="img/Popular-brands/Image4.png" width="85" alt="Бренд">
-            <img class="brand__image" src="img/Popular-brands/Image5.png" width="150" alt="Бренд">
-            <img class="brand__image" src="img/Popular-brands/Image6.png" width="62" alt="Бренд">
-            <img class="brand__image" src="img/Popular-brands/Image7.png" width="150" alt="Бренд">
-            <img class="brand__image" src="img/Popular-brands/Image8.png" width="118" alt="Бренд">
+            <div class="popular-brands__header flex_cont">
+                <p class="popular-brands__header-name header-name">
+                    Популярные бренды
+                </p>
+                <a class="popular-brands__view-button view-button" href="#">
+                    Смотреть все
+                </a>
+            </div>
+            <div class="brand__container">
+                <div class="brand__image-box"><img class="brand__image" src="img/Popular-brands/Image1.png" width="150"
+                        alt="Бренд"></div>
+                <div class="brand__image-box"><img class="brand__image" src="img/Popular-brands/Image2.png" width="108"
+                        alt="Бренд"></div>
+                <div class="brand__image-box"><img class="brand__image" src="img/Popular-brands/Image3.png" width="150"
+                        alt="Бренд"></div>
+                <div class="brand__image-box"><img class="brand__image" src="img/Popular-brands/Image4.png" width="85"
+                        alt="Бренд"></div>
+                <div class="brand__image-box"><img class="brand__image" src="img/Popular-brands/Image5.png" width="150"
+                        alt="Бренд"></div>
+                <div class="brand__image-box"><img class="brand__image" src="img/Popular-brands/Image6.png" width="62"
+                        alt="Бренд"></div>
+                <div class="brand__image-box"><img class="brand__image" src="img/Popular-brands/Image7.png" width="150"
+                        alt="Бренд"></div>
+                <div class="brand__image-box"><img class="brand__image" src="img/Popular-brands/Image8.png" width="118"
+                        alt="Бренд"></div>
+            </div>
         </section>
 
-        <section class="news-sales">
+        <section class="news-sales container">
             <h2 class="visually-hidden">
                 Новости и акции
             </h2>
-            <p class="news-sales__header">
-                Новости и акции
-            </p>
+            <div class="news-sales__header flex_cont">
+                <p class="news-sales__header-name header-name">
+                    Новости и акции
+                </p>
+                <a class="news-sales__view-button view-button" href="#">
+                    Смотреть все
+                </a>
+            </div>
 
-            <a class="news-sales__view-button view-button" href="#">
-                Смотреть все
-            </a>
-
-            <ul class="main__list__news-sales list__news-sales">
-                <li class="list__news-sales">
-                    <img class="news-sales__image" src="img/News/Image1.png" width="770" alt="Картинка товара">
-                    <a class="news-sales_name" href="#">
-                        Название товара
-                    </a>
-                    <p class="news-sales__description">
-                        Описание товара
-                    </p>
-                    <button class="news-sales__button">
-                        Подробнее
-                    </button>
-                </li>
-                <li class="list__news-sales">
-                    <img class="news-sales__image" src="img/News/Image2.png" width="370" alt="Картинка товара">
-                    <a class="news-sales_name" href="#">
-                        Название товара
-                    </a>
-                    <button class="news-sales__button">
-                        Подробнее
-                    </button>
-                </li>
-                <li class="list__news-sales">
-                    <img class="news-sales__image" src="img/News/Image3.png" width="370" alt="Картинка товара">
-                    <a class="news-sales_name" href="#">
-                        Название товара
-                    </a>
-                    <button class="news-sales__button">
-                        Подробнее
-                    </button>
-                </li>
-                <li class="list__news-sales">
-                    <img class="news-sales__image" src="img/News/Image4.png" width="370" alt="Картинка товара">
-                    <a class="news-sales_name" href="#">
-                        Название товара
-                    </a>
-                    <button class="news-sales__button">
-                        Подробнее
-                    </button>
-                </li>
-                <li class="list__news-sales">
-                    <img class="news-sales__image" src="img/News/Image5.png" width="370" alt="Картинка товара">
-                    <a class="news-sales_name" href="#">
-                        Название товара
-                    </a>
-                    <button class="news-sales__button">
-                        Подробнее
-                    </button>
-                </li>
-                <li class="list__news-sales">
-                    <img class="news-sales__image" src="img/News/Image6.png" width="370" alt="Картинка товара">
-                    <a class="news-sales_name" href="#">
-                        Название товара
-                    </a>
-                    <button class="news-sales__button">
-                        Подробнее
-                    </button>
-                </li>
+            <ul class="main__list__news-sales">
+                <div class="main__list__news-sales__container">
+                    <div class="list__container-big">
+                        <li class="list__news-sales">
+                            <img class="news-sales__image" src="img/News/Image1.png" width="770" alt="Картинка товара">
+                            <div class="list__container-text-big">
+                                <a class="news-sales_name-big" href="#">
+                                    Бренд BLOODY представил мышь W60 Pro
+                                </a>
+                                <p class="news-sales__description">
+                                    Популярный бренд компьютерных аксессуаров
+                                </p>
+                                <button class="news-sales__button-big">
+                                    Подробнее
+                                </button>
+                            </div>
+                        </li>
+                    </div>
+                    <div class="list__container">
+                        <li class="list__news-sales">
+                            <img class="news-sales__image" src="img/News/Image2.png" width="370" alt="Картинка товара">
+                            <div class="list__container-text">
+                                <a class="news-sales_name" href="#">
+                                    Плата asus
+                                </a>
+                                <button class="news-sales__button">
+                                    Подробнее
+                                </button>
+                            </div>
+                        </li>
+                    </div>
+                    <div class="list__container">
+                        <li class="list__news-sales">
+                            <img class="news-sales__image" src="img/News/Image3.png" width="370" alt="Картинка товара">
+                            <div class="list__container-text">
+                                <a class="news-sales_name" href="#">
+                                    Системный блок acer
+                                </a>
+                                <button class="news-sales__button">
+                                    Подробнее
+                                </button>
+                            </div>
+                        </li>
+                    </div>
+                    <div class="list__container">
+                        <li class="list__news-sales">
+                            <img class="news-sales__image" src="img/News/Image4.png" width="370" alt="Картинка товара">
+                            <div class="list__container-text">
+                                <a class="news-sales_name" href="#">
+                                    Планшет samsung
+                                </a>
+                                <button class="news-sales__button">
+                                    Подробнее
+                                </button>
+                            </div>
+                        </li>
+                    </div>
+                    <div class="list__container">
+                        <li class="list__news-sales">
+                            <img class="news-sales__image" src="img/News/Image5.png" width="370" alt="Картинка товара">
+                            <div class="list__container-text">
+                                <a class="news-sales_name" href="#">
+                                    Новые наушники Razer
+                                </a>
+                                <button class="news-sales__button">
+                                    Подробнее
+                                </button>
+                            </div>
+                        </li>
+                    </div>
+                    <div class="list__container">
+                        <li class="list__news-sales">
+                            <img class="news-sales__image" src="img/News/Image6.png" width="370" alt="Картинка товара">
+                            <div class="list__container-text">
+                                <a class="news-sales_name" href="#">
+                                    Мультипекарь Redmond плюс
+                                </a>
+                                <button class="news-sales__button">
+                                    Подробнее
+                                </button>
+                            </div>
+                        </li>
+                    </div>
+                </div>
             </ul>
+
         </section>
-        <section class="advantages">
+        <section class="advantages container">
             <h2 class="visually-hidden">
                 Преимущества
             </h2>
-            <p class="advantages__header">
-                Преимущества
-            </p>
+            <div class="advantages__header flex_cont">
+                <p class="advantages__header-name header-name">
+                    Преимущества
+                </p>
+            </div>
 
             <ul class="advantages__list list">
-                <li class="list__item item">
-                    <img class="item__image" src="img/Benefits/cart.png" width="55" alt="Иконка компьютера">
-                    <p class="item__header">
-                        Простая и удобная система заказа товара
-                    </p>
-                    <p class="item__text">
-                        Мы знаем, как важна простая система
-                        регистрации и оформления заказа, поэтому
-                        делаем все для того, чтобы оформить заказ
-                        было удобно (и быстро!).
-                    </p>
-                </li>
-                <li class="list__item item">
-                    <img class="item__image" src="img/Benefits/sms.png" width="55" alt="Иконка смартфона">
-                    <p class="item__header">
-                        Оповещаем о состоянии заказа по SMS
-                    </p>
-                    <p class="item__text">
-                        Для тех, кто всегда хочет быть в курсе: вы
-                        сами можете контролировать свой заказ,
-                        получая статус о его формировании
-                        посредством sms-сообщений.
-                    </p>
-                </li>
-                <li class="list__item item">
-                    <img class="item__image" src="img/Benefits/shipping.png" width="55" alt="Иконка грузовика">
-                    <p class="item__header">
-                        Оперативная доставка
-                    </p>
-                    <p class="item__text">
-                        Мы привыкли работать с большими
-                        объемами заказов, поэтому вам не стоит
-                        беспокоиться о том, что ваш заказ будет
-                        обработан не вовремя.
-                    </p>
-                </li>
+                <div class="advantages__container">
+                    <div class="list__item-container">
+                        <li class="list__item item">
+                            <img class="item__image" src="img/Benefits/cart.png" width="auto" alt="Иконка компьютера">
+                            <p class="item__header">
+                                Простая и удобная система заказа товара
+                            </p>
+                            <p class="item__text">
+                                Мы знаем, как важна простая система
+                                регистрации и оформления заказа, поэтому
+                                делаем все для того, чтобы оформить заказ
+                                было удобно (и быстро!).
+                            </p>
+                        </li>
+                    </div>
+                    <div class="list__item-container">
+                        <li class="list__item item">
+                            <img class="item__image" src="img/Benefits/sms.png" width="auto" height="auto"
+                                alt="Иконка смартфона">
+                            <p class="item__header">
+                                Оповещаем о состоянии заказа по SMS
+                            </p>
+                            <p class="item__text">
+                                Для тех, кто всегда хочет быть в курсе: вы
+                                сами можете контролировать свой заказ,
+                                получая статус о его формировании
+                                посредством sms-сообщений.
+                            </p>
+                        </li>
+                    </div>
+                    <div class="list__item-container">
+                        <li class="list__item item">
+                            <img class="item__image" src="img/Benefits/shipping.png" width="auto"
+                                alt="Иконка грузовика">
+                            <p class="item__header">
+                                Оперативная доставка
+                            </p>
+                            <p class="item__text">
+                                Мы привыкли работать с большими
+                                объемами заказов, поэтому вам не стоит
+                                беспокоиться о том, что ваш заказ будет
+                                обработан не вовремя.
+                            </p>
+                        </li>
+                    </div>
+                </div>
             </ul>
         </section>
 
-        <section class="contacts">
+        <section class="contacts container">
             <h2 class="visually-hidden">
                 Контакты
             </h2>
-            <p class="contacts__header">
+            <p class="contacts__header header-name">
                 Контакты
             </p>
-            <div class="contacts__map" style="position:relative;overflow:hidden;">
-                <iframe
-                    src="https://yandex.ru/map-widget/v1/?ll=37.675109%2C55.710692&mode=whatshere&whatshere%5Bpoint%5D=37.675109%2C55.710692&whatshere%5Bzoom%5D=17&z=16"
-                    width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+            <div class="contacts__container">
+                <div class="contacts__map" style="position:relative;overflow:hidden;">
+                    <iframe
+                        src="https://yandex.ru/map-widget/v1/?ll=37.675109%2C55.710692&mode=whatshere&whatshere%5Bpoint%5D=37.675109%2C55.710692&whatshere%5Bzoom%5D=17&z=16"
+                        width="6700" height="400" frameborder="0" allowfullscreen="true"
+                        style="position:relative;"></iframe>
+                </div>
+                <div class="contacts__list-container-full">
+                    <ul class="contacts__list list">
+                        <div class="contacts__list-container">
+                            <div class="contacts__list__container-text">
+                                <img src="img/Contacts/location.png" width="24" alt="Иконка метки">
+                                <li class="list__info info">
+                                    <p class="info__header">
+                                        Адрес
+                                    </p>
+                                    <p class="info__text">
+                                        7-я Кожуховская ул., 9, Москва (этаж 1)
+                                    </p>
+                                </li>
+                            </div>
+                            <div class="contacts__list__container-text">
+                                <img src="img/Contacts/phone.png" width="24" alt="Иконка трубки">
+                                <li class="list__info info">
+                                    <p class="info__header">
+                                        Телефон
+                                    </p>
+                                    <p class="info__text">
+                                        8 (495) 444-888-5
+                                    </p>
+                                </li>
+                            </div>
+                            <div class="contacts__list__container-text">
+                                <img src="img/Contacts/time.png" width="24" alt="Иконка часов">
+                                <li class="list__info info">
+                                    <p class="info__header">
+                                        График работы
+                                    </p>
+                                    <p class="info__text">
+                                        Пн-Пт 9:00 до 20:00
+                                    </p>
+                                </li>
+                            </div>
+                        </div>
+                    </ul>
+                    <button class="contacts__button">
+                        Написать нам
+                    </button>
+                </div>
             </div>
-            <ul class="contacts__list list">
-                <img src="img/Contacts/location.png" width="24" alt="Иконка метки">
-                <li class="list__info info">
-                    <p class="info__header">
-                        Адрес
-                    </p>
-                    <p class="info__text">
-                        7-я Кожуховская ул., 9, Москва (этаж 1)
-                    </p>
-                </li>
-                <img src="img/Contacts/phone.png" width="24" alt="Иконка трубки">
-                <li class="list__info info">
-                    <p class="info__header">
-                        Телефон
-                    </p>
-                    <p class="info__text">
-                        8 (495) 444-888-5
-                    </p>
-                </li>
-                <img src="img/Contacts/time.png" width="24" alt="Иконка часов">
-                <li class="list__info info">
-                    <p class="info__header">
-                        График работы
-                    </p>
-                    <p class="info__text">
-                        Пн-Пт 9:00 до 20:00
-                    </p>
-                </li>
-            </ul>
-            <button class="contacts__button">
-                Написать нам
-            </button>
         </section>
 
-        <section class="subscription">
+        <section class="subscription container header__3-container">
             <h2 class="visually-hidden">
                 Получайте самые интересные предложения первыми!
             </h2>
             <p class="subscription__header">
                 Получайте самые интересные предложения первыми!
             </p>
-
-            <input class="header__search" placeholder="Поиск" type="text" name="Searchbar">
-            <button class="subscription__button">
-                Подписаться
-            </button>
+            <div class="header__3-contaianer2">
+                <input class="header__search2" placeholder="Введите ваш e-mail" type="text" name="Searchbar">
+                <button class="subscription__button">
+                    Подписаться
+                </button>
+            </div>
         </section>
 
-        <footer class="footer">
-            <section class="footer__info">
-                <img class="footer__logo" src="img/Footer/Logo-footer.png" width="215.83" alt="Logo">
-                <p class="footer__adress-text">7-я Кожуховская ул., 9, Москва (этаж 1)</p>
-                <ul class="footer_list-first list-first">
+        <footer class="footer footer__background">
+            <section class="footer__info container">
+                <div class="footer__container1">
+                    <img class="footer__logo" src="img/Footer/Logo-footer.png" width="215.83" alt="Logo">
+                    <p class="footer__adress-text">7-я Кожуховская ул., 9, Москва (этаж 1)</p>
+                </div>
+                <ul class="footer__list-first list-first">
                     <li class="list-first__item item">
                         <a class="item__link" href="#">Скидки</a>
                     </li>
@@ -466,7 +575,7 @@
                     </li>
                 </ul>
 
-                <ul class="footer_list-second list-second">
+                <ul class="footer__list-second list-second">
                     <li class="list-second__item item">
                         <a class="item__link" href="#">Гарантия</a>
                     </li>
@@ -486,30 +595,34 @@
 
                 <div class="footer__icon-container icon-container">
                     <div class="icon-container__element element">
-                        <img class="element__img" src="img/Footer/Facebook-ico.png" width="60" alt="Facebook">
+                        <img class="element__img" src="img/Footer/Facebook-ico.png" width="10" alt="Facebook">
                     </div>
 
                     <div class="icon-container__element element">
-                        <img class="element__img" src="img/Footer/Instagram-ico.png" width="60" alt="Instagram">
+                        <img class="element__img" src="img/Footer/Instagram-ico.png" width="16" alt="Instagram">
                     </div>
 
                     <div class="icon-container__element element">
-                        <img class="element__img" src="img/Footer/VK-ico.png" width="60" alt="VK">
+                        <img class="element__img" src="img/Footer/VK-ico.png" width="18" alt="VK">
                     </div>
 
                     <div class="icon-container__element element">
-                        <img class="element__img" src="img/Footer/Youtube-ico.png" width="60" alt="YouTube">
+                        <img class="element__img" src="img/Footer/Youtube-ico.png" width="18" alt="YouTube">
                     </div>
                 </div>
             </section>
-
-            <section class="footer__dev-info dev-info">
-                <p class="dev-info__1text">© Electro place, 2003–2021</p>
-                <p class="dev-info__2text">Политика обработки персональных данных</p>
-                <p class="dev-info__developer">
-                    Разработка сайта:
+            <div class="footer__line"></div>
+            <section class="footer__dev-info dev-info container">
+                <div class="dev-info__container">
+                    <p class="dev-info__text">© Electro place, 2003–2021</p>
+                    <p class="dev-info__text">Политика обработки персональных данных</p>
+                </div>
+                <div class="dev-info__container2">
+                    <p class="dev-info__developer">
+                        Разработка сайта:
+                    </p>
                     <img class="dev-info__img" src="img/Footer/garpix-logo.png" width="92" alt="Garpix">
-                </p>
+                </div>
             </section>
         </footer>
     </main>
