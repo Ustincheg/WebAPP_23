@@ -1,15 +1,133 @@
-.footer__user-list {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 19px;
- }
+.footer__upp-part {
+   background-color: #F1F5F7;
+}
 
- .footer__general-list {
-    font-family: 'Open Sans';
+.footer__upp-part__subscribe{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 135px;
+   padding: 50px 0;
+}
+
+.footer__upp-part__text{
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 22px;
+   line-height: 26px;
+   min-width: 370px;
+   min-height: 52px;
+}
+
+.footer__upp-part__form {
+   display: flex;
+   align-items: center;
+   gap: 15px;
+}
+
+.footer__upp-part__email{
+   min-height: 46px;
+   min-width: 434px;
+   border: 1px solid #DEDEE2;
+   border-radius: 8px;
+   padding-left: 13px;
+}
+
+.footer__down-part {
+   font-family: 'Open Sans';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 19px;
+   color: white; 
+   background-color: #333333;
+   min-width: 270px;
+}
+
+.footer__down-part__container {
+   max-width: 1170px;
+   margin: 0 auto;
+   padding: 50px 0;
+}
+
+.footer__links{
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   gap: 135px;
+   padding: 0px 0px 50px 0px;
+}
+
+.footer__left-links{
+   display: flex;
+   flex-direction: column;
+   gap: 28px;
+   min-width: 270px;
+}
+
+.footer__user-list{
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+.footer__general-list{
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+
+.footer__general-list__link{
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   min-width: 135px;
+}
+
+
+.footer__social-list {
+   display: flex;
+   justify-content: space-between;
+   gap: 10px;
+}
+
+.footer__social-list__link {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-width: 58px;
+   min-height: 58px;
+   border: 1px solid #DEDEE2;
+   border-radius: 8px;
+}
+
+.footer__down-down-part__container {
+   max-width: 1170px;
+   margin: 0 auto;
+   padding: 10px 0;
+}
+
+.footer__upp-part__button{
+   font-family: 'Open Sans';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 14px;
     line-height: 19px;
- }
+    color: #FFFFFF;
+    width: 116px;
+    height: 45px;
+    background: #005AAB;
+    border-radius: 8px;
+    border: 0;
+    min-width: 210px;
+    min-height: 48px;
+}
+
+
+
+
+
+
+

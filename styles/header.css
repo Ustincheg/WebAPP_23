@@ -1,4 +1,16 @@
-.header__list {
+.header__upp-part__color {
+    background-color: #363636;
+ }
+
+ .header__upp-part{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: white;
+ }
+
+ .header__list {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
@@ -12,7 +24,7 @@
     padding: 17px 0px;
 }
 
-.header__list-item .list__link {
+.header__list__link {
     padding: 17px 15px;
 }
 
@@ -22,6 +34,8 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
+
+    padding-right: 10px;
 }
 
 .header__mid-part {
@@ -33,22 +47,57 @@
    margin: 30px auto;
 }
 
+.logo__image{
+    width: 215px;
+    height: 45px;
+}
+
 .header__search {
+    width: 100%;
+    height: 100%;
+    padding-right: 46px;
+    position: relative;
+}
+
+.header__search__input{
     height: 48px;
     width: 621px;
     border-radius: 8px;
-
-
     border: 1px solid #DEDEE2;
-    border-radius: 8px;
 }
 
-.user-list__item {
+.header__user-list {
+    margin-left: 32px;
+    margin-right: 10px;
+
+    display: flex;
+    gap: 53px;
+}
+
+.header__user-list__item {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
+
+    position: relative;
+    min-width: 97px;
+}
+
+.header__user-list__link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.header__down-part{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin: 28px auto;
 }
 
 .header__button {
@@ -78,9 +127,12 @@
     align-items: center;
     border-radius: 8px;
     padding: 0px 5px;
+    min-width: 1039px;
+    min-height: 45px;
+    justify-content: center;
 }
 
-.nav-list__link {
+.header__nav-list__link {
     padding: 13px 12.8px;
 }
 
@@ -90,27 +142,6 @@
     gap: 20px;
  }
  
- .header__upp-part{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    color: white;
- }
- 
- .header__down-part{
-    display: flex;
-    justify-content: space-between;
-    gap: 15px;
-    align-items: center;
-
-    margin: 30px auto 50px auto;
- }
-
- .header__upp-part__color {
-    background-color: #363636;
- }
- 
- .nav-list__item{
+ .header__nav-list__item{
     padding: 0px 0px;
  }
