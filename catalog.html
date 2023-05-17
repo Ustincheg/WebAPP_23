@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" co ntent="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ELECTRO PLACE</title>
     <link rel="stylesheet" href="style/style.css">
@@ -19,22 +19,25 @@
     <header class="header">
         <div class="header__top">
             <div class="content">
-                <ul class="header__top-nav-list top-nav-list">
-                    <li class="top-nav-list__item">
-                        <a href="#" class="top-nav-list__link">Магазины</a>
-                    </li>
-                    <li class="top-nav-list__item">
-                        <a href="#" class="top-nav-list__link">Доставка и оплата</a>
-                    </li>
-                    <li class="top-nav-list__item">
-                        <a href="#" class="top-nav-list__link">Кредиты и рассрочка</a>
-                    </li>
-                </ul>
-                <a href="tel:8(495)444-888-5" class="header__phone-link">8 (495) 444-888-5</a>
+                <div class="header-list">
+                    <ul class="header__top-nav-list top-nav-list">
+                        <li class="top-nav-list__item">
+                            <a href="#" class="top-nav-list__link">Магазины</a>
+                        </li>
+                        <li class="top-nav-list__item">
+                            <a href="#" class="top-nav-list__link">Доставка и оплата</a>
+                        </li>
+                        <li class="top-nav-list__item">
+                            <a href="#" class="top-nav-list__link">Кредиты и рассрочка</a>
+                        </li>
+                    </ul>
+                    <a href="tel:8(495)444-888-5" class="header__phone-link">8 (495) 444-888-5</a>
+                </div>
             </div>
         </div>
         <div class="header__button">
             <div class="content">
+
                 <div class="header-button">
                     <a href="#" class="header__logo"><img class="header__logo" src="images/little-img/Logo.svg"
                             alt="Логотип"></a>
@@ -43,11 +46,13 @@
                             placeholder="Поиск...."></form>
                     <ul class="header__list-link">
                         <li class="header__list-link-item"><a href="#" class="header__link"> <img class="header_like"
-                                    src="images/little-img/heart-icon.svg" alt="Избранное"> Избранное (2) </a></li>
+                                    src="images/little-img/heart-icon.svg" alt="Избранное">
+                                Избранное (2) </a></li>
                         <li class="header__list-link-item"><a href="#" class="header__link"> <img class="header_cart"
                                     src="images/little-img/shopping-cart-icon.svg" alt="Корзина"> Корзина (14) </a></li>
                     </ul>
                 </div>
+
                 <div class="catalog-menu">
                     <img class="menu-logo" src="images/little-img/Menu-icon.svg" alt="menu">
                     <button class="header__button button">Каталог</button>
@@ -107,6 +112,7 @@
                         СМАРТФОНЫ
                     </a>
                 </li>
+            </ul>
         </div>
         <section class="label">
             <div class="content">
@@ -140,25 +146,26 @@
                                     Цена, ₽
                                 </legend>
                                 <div class="filtr_price">
-                                    <input type="text-form" placeholder="от" class="filtr_price_txt">
+                                    <input type="text-form" placeholder="0" class="filtr_price_txt">
                                     <p style="padding-top: 23px; color: #DEDEE2">—</p>
-                                    <input type="text-form" placeholder="до" class="filtr_price_txt">
+                                    <input type="text-form" placeholder="90 000" class="filtr_price_txt">
                                 </div>
                                 <div class="price-range">
-                                    <input class="price-range-left" type="range" min="0" max="100000" value="0" >
-                                    <input class="price-range-right" type="range" min="0" max="100000" value="85 000">
+                                    <input class="price-range-left" type="range" min="0" max="90000" value="0">
+                                    <input class="price-range-right" type="range" min="0" max="90000" value="90 000">
                                 </div>
-                            </fieldset >
+                            </fieldset>
                             <fieldset class="forms-filters">
                                 <legend class="filtr-txt" style="padding-top: 35px;">
                                     Диагональ экрана
                                 </legend>
                                 <p class="filter_list"><select name="list1" class="filter_list_select">
-                                        <option class="text">Выберите из списка</option>
-                                        <option class="text">От 5”</option>
-                                        <option class="text">От 6”</option>
-                                        <option class="text">От 7”</option>
-                                        <option class="text">От 8”</option>
+                                        <option value="all" class="text">Все</option>
+                                        <option value="3.9" class="text">От 3,9”</option>
+                                        <option value="4.5" class="text">От 4,5” до 4,9”</option>
+                                        <option value="5" class="text">От 5” до 5,4”</option>
+                                        <option value="5.5" class="text">От 5,5” до 5,9”</option>
+                                        <option value="6" class="text">От 6”</option>
                                     </select></p>
                             </fieldset>
                             <fieldset class="forms-filters">
@@ -208,30 +215,32 @@
                             <p class="smart_price-old"></p>
                             <p class="smart_price">54 400 ₽</p>
                         </a>
-                        <button class="my_button_shop"><img src="images/shopping-cart.svg" alt="shop_icon" loading="lazy"
-                            class="shop__icon"></button>
+                        <button class="my_button_shop" style="top: 380px;left: 207px;"><img
+                                src="images/shopping-cart.svg" alt="shop_icon" loading="lazy"
+                                class="shop__icon"></button>
                     </li>
                     <li class="smart__list-item">
                         <div class="card-list__top-one">
-                            <button class="card-list__favorite"><img class="favorite__img"
-                                    src="images/hits/heart.svg" alt="picture-favorite"></button>
+                            <button class="card-list__favorite"><img class="favorite__img" src="images/hits/heart.svg"
+                                    alt="picture-favorite"></button>
                         </div>
                         <a href="#" class="phone-card__link">
                             <figure class="phone-card__figure">
-                                <img src="images/phones/phone_2.png"
-                                    alt="Смартфон Apple iPhone 11 128GB White" class="phone-card__img">
+                                <img src="images/phones/phone_2.png" alt="Смартфон Apple iPhone 11 128GB White"
+                                    class="phone-card__img">
                             </figure>
                             <p class="smart_info">Смартфон Apple iPhone 11 128GB White</p>
                             <p class="smart_price-old">62 990 ₽</p>
                             <p class="smart_price">59 990 ₽</p>
                         </a>
-                        <button class="my_button_shop"><img src="images/shopping-cart.svg" alt="shop_icon" loading="lazy"
-                            class="shop__icon"></button>
+                        <button class="my_button_shop" style="top: 380px;left: 207px;"><img
+                                src="images/shopping-cart.svg" alt="shop_icon" loading="lazy"
+                                class="shop__icon"></button>
                     </li>
                     <li class="smart__list-item">
                         <div class="card-list__top-one">
-                            <button class="card-list__favorite"><img class="favorite__img"
-                                    src="images/hits/heart.svg" alt="picture-favorite"></button>
+                            <button class="card-list__favorite"><img class="favorite__img" src="images/hits/heart.svg"
+                                    alt="picture-favorite"></button>
                         </div>
                         <a href="#" class="phone-card__link">
                             <figure class="phone-card__figure">
@@ -242,8 +251,9 @@
                             <p class="smart_price-old">32 990 ₽</p>
                             <p class="smart_price">26 790 ₽</p>
                         </a>
-                        <button class="my_button_shop"><img src="images/shopping-cart.svg" alt="shop_icon" loading="lazy"
-                            class="shop__icon"></button>
+                        <button class="my_button_shop" style="top: 380px;left: 207px;"><img
+                                src="images/shopping-cart.svg" alt="shop_icon" loading="lazy"
+                                class="shop__icon"></button>
                     </li>
                     <li class="smart__list-item">
                         <div class="card-list__top-two">
@@ -260,8 +270,9 @@
                             <p class="smart_price-old">65 990 ₽</p>
                             <p class="smart_price">61 990 ₽</p>
                         </a>
-                        <button class="my_button_shop"><img src="images/shopping-cart.svg" alt="shop_icon" loading="lazy"
-                            class="shop__icon"></button>
+                        <button class="my_button_shop" style="top: 380px;left: 207px;"><img
+                                src="images/shopping-cart.svg" alt="shop_icon" loading="lazy"
+                                class="shop__icon"></button>
                     </li>
                     <li class="smart__list-item">
                         <div class="card-list__top-two">
@@ -278,13 +289,14 @@
                             <p class="smart_price-old"></p>
                             <p class="smart_price">36 990 ₽</p>
                         </a>
-                        <button class="my_button_shop"><img src="images/shopping-cart.svg" alt="shop_icon" loading="lazy"
-                            class="shop__icon"></button>
+                        <button class="my_button_shop" style="top: 380px;left: 207px;"><img
+                                src="images/shopping-cart.svg" alt="shop_icon" loading="lazy"
+                                class="shop__icon"></button>
                     </li>
                     <li class="smart__list-item">
                         <div class="card-list__top-one">
-                            <button class="card-list__favorite"><img class="favorite__img"
-                                    src="images/hits/heart.svg" alt="picture-favorite"></button>
+                            <button class="card-list__favorite"><img class="favorite__img" src="images/hits/heart.svg"
+                                    alt="picture-favorite"></button>
                         </div>
                         <a href="#" class="phone-card__link">
                             <figure class="phone-card__figure">
@@ -295,8 +307,9 @@
                             <p class="smart_price-old"></p>
                             <p class="smart_price">15 990 ₽</p>
                         </a>
-                        <button class="my_button_shop"><img src="images/shopping-cart.svg" alt="shop_icon" loading="lazy"
-                            class="shop__icon"></button>
+                        <button class="my_button_shop" style="top: 380px;left: 207px;"><img
+                                src="images/shopping-cart.svg" alt="shop_icon" loading="lazy"
+                                class="shop__icon"></button>
                     </li>
                     <li class="smart__list-item">
                         <div class="card-list__top-two">
@@ -306,32 +319,34 @@
                         </div>
                         <a href="#" class="phone-card__link">
                             <figure class="phone-card__figure">
-                                <img src="images/phones/phone_7.png"
-                                    alt="Смартфон Huawei P40 Pro Silver Frost" class="phone-card__img">
+                                <img src="images/phones/phone_7.png" alt="Смартфон Huawei P40 Pro Silver Frost"
+                                    class="phone-card__img">
                             </figure>
                             <p class="smart_info">Смартфон Huawei P40 Pro Silver Frost</p>
                             <p class="smart_price-old">70 990 ₽</p>
                             <p class="smart_price">65 990 ₽</p>
                         </a>
-                        <button class="my_button_shop"><img src="images/shopping-cart.svg" alt="shop_icon" loading="lazy"
-                            class="shop__icon"></button>
+                        <button class="my_button_shop" style="top: 380px;left: 207px;"><img
+                                src="images/shopping-cart.svg" alt="shop_icon" loading="lazy"
+                                class="shop__icon"></button>
                     </li>
                     <li class="smart__list-item">
                         <div class="card-list__top-one">
-                            <button class="card-list__favorite"><img class="favorite__img"
-                                    src="images/hits/heart.svg" alt="picture-favorite"></button>
+                            <button class="card-list__favorite"><img class="favorite__img" src="images/hits/heart.svg"
+                                    alt="picture-favorite"></button>
                         </div>
                         <a href="#" class="phone-card__link">
                             <figure class="phone-card__figure">
-                                <img src="images/phones/phone_8.png"
-                                    alt="Смартфон Honor 9X 4+128GB Sapphire Blue" class="phone-card__img">
+                                <img src="images/phones/phone_8.png" alt="Смартфон Honor 9X 4+128GB Sapphire Blue"
+                                    class="phone-card__img">
                             </figure>
                             <p class="smart_info">Смартфон Honor 9X 4+128GB Sapphire Blue</p>
                             <p class="smart_price-old"></p>
                             <p class="smart_price">15 000 ₽</p>
                         </a>
-                        <button class="my_button_shop"><img src="images/shopping-cart.svg" alt="shop_icon" loading="lazy"
-                            class="shop__icon"></button>
+                        <button class="my_button_shop" style="top: 380px;left: 207px;"><img
+                                src="images/shopping-cart.svg" alt="shop_icon" loading="lazy"
+                                class="shop__icon"></button>
                     </li>
                     <li class="smart__list-item">
                         <div class="card-list__top-two">
@@ -341,15 +356,16 @@
                         </div>
                         <a href="#" class="phone-card__link">
                             <figure class="phone-card__figure">
-                                <img src="images/phones/phone_9.png"
-                                    alt="Смартфон Apple iPhone SE 64GB Black" class="phone-card__img">
+                                <img src="images/phones/phone_9.png" alt="Смартфон Apple iPhone SE 64GB Black"
+                                    class="phone-card__img">
                             </figure>
                             <p class="smart_info">Смартфон Apple iPhone SE 64GB Black</p>
                             <p class="smart_price-old"></p>
                             <p class="smart_price">39 990 ₽</p>
                         </a>
-                        <button class="my_button_shop"><img src="images/shopping-cart.svg" alt="shop_icon" loading="lazy"
-                            class="shop__icon"></button>
+                        <button class="my_button_shop" style="top: 380px;left: 207px;"><img
+                                src="images/shopping-cart.svg" alt="shop_icon" loading="lazy"
+                                class="shop__icon"></button>
                     </li>
                 </ul>
                 <ul class="content_button" style="padding: 40px 1000px 0 460px;">
@@ -378,7 +394,7 @@
                         <h2 class="visually-hidden">Подписка на новости и акции</h2>
                         <p class="subscription__title-title">Получайте самые интересные предложения первыми!</p>
                         <form action="#" method="get" class="subscription__form">
-                            <input type="text" class="text2" placeholder="Введите ваш e-mail"
+                            <input type="text" placeholder="Введите ваш e-mail"
                                 class="subscription__form-input">
                             <input type="button" value="Подписаться" class="subscription__form-button">
                         </form>
